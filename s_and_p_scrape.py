@@ -75,9 +75,10 @@ if __name__ == '__main__':
 	print(bad_names)
 	big_df.to_csv('all_s_and_p_data.csv')
 
-	# Save failed queries to a text file to retry
-	with open('failed_queries','w') as outfile:
-                for name in bad_names:
-                        outfile.write(name+'\n')
+	""" Save failed queries to a text file to retry """
+	if len(bad_names) > 0:
+		with open('failed_queries.txt','w') as outfile:
+			for name in bad_names:
+				outfile.write(name+'\n')
 
 
