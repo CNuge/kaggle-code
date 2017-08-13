@@ -62,7 +62,7 @@ if __name__ == '__main__':
 	bad_names =[]
 	for i, stock in enumerate(s_and_p):
 		try:
-			stock_df = get_american_stock_dat('NYSE:NBL', start_time, now_time)
+			stock_df = get_american_stock_dat('NYSE:{0}'.format(stock), start_time, now_time)
 			stock_df['Name'] = stock
 			output_name = stock + '_data.csv'
 			stock_df.to_csv(output_name)
@@ -74,5 +74,10 @@ if __name__ == '__main__':
 			bad_names.append(stock)
 	print(bad_names)
 	big_df.to_csv('all_s_and_p_data.csv')
+
+	# Save failed queries to a text file to retry
+	with open('failed_queries','w') as outfile:
+                for name in bad_names:
+                        outfile.write(name+'\n')
 
 
