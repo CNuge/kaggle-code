@@ -1,0 +1,2778 @@
+DATE,TIME (UTC),ACID,No. A/C,TYPE A/C,ALT,MAJOR CITY,COLOR,Injury Reported,CITY,STATE
+1-Jan-10,0102,AIR1,1,HELO,2000,LEX,Green,NO,Lexington,Kentucky
+1-Jan-10,0403,ASA513,1,B737,10000,LAX,Green,NO,Los Angeles,California
+1-Jan-10,0246,EGF3002,1,E135,7000,LAX,Green,NO,Los Angeles,California
+1-Jan-10,0157,EGF3086,1,E135,7000,LAX,Green,NO,Los Angeles,California
+1-Jan-10,0258,JBU300,1,A320,12500,SLI,Green,NO,Los Alamitos,California
+1-Jan-10,0255,JBU303,1,A320,2000,LGB,Green,NO,Los Angeles,California
+1-Jan-10,0857,PD2,1,E120,700,FAT,Green,NO,Fresno,California
+1-Jan-10,0044,SKW6083,1,CRJ2,6800,LNK,Green,NO,Lincoln,Nebraska
+1-Jan-10,0155,SKW6318,1,E120,1000,LAX,Green,NO,Los Angeles,California
+1-Jan-10,0730,SKW6433,1,CRJ2,1000,FAT,Green,NO,Fresno,California
+1-Jan-10,0302,SWA3652,1,B737,3000,OAK,Green,NO,Oakland,California
+2-Jan-10,0244,BTA2194,1,E145,36000,TBD,Green,NO, Thibodaux,Louisiana
+3-Jan-10,0822,ASH9421,1,CRJ9,2500,PHX,Green,NO,Phoenix,Arizona
+3-Jan-10,0231,COA1671,1,B733,1000,TUS,Green,NO,Tucson,Arizona
+3-Jan-10,0518,DAL1298,1,MD81,2000,PHL,Green,NO,Philadelphia,Pennsylvania
+3-Jan-10,0000,EGF2771,2,E135,UNKN,VPS,Green,NO,Eglin AFB,Florida
+3-Jan-10,0207,EGF4325,1,E145,800,ORD,Green,NO,Chicago,Illinois
+3-Jan-10,0828,FRT753,1,A319,9000,LAX,Green,NO,Los Angeles,California
+3-Jan-10,0315,JEM94,1,C750,3000,SGR,Green,NO,Sugar Land (Houston),Texas
+3-Jan-10,0606,SKW6430,1,CRJ7,UNKN,SAT,Green,NO,San Antonio,Texas
+4-Jan-10,0520,SSX3335,1,DH8D,11000,ALB,Green,NO,Albany,New York
+5-Jan-10,0309,AAL1543,1,MD81,5200,SJC,Red,NO,San Jose,California
+5-Jan-10,0049,BTA2901,1,E45X,FL300,TBD,Green,NO, Thibodaux,Louisiana
+5-Jan-10,0341,N725BH,1,PA31,3800,TUS,Green,NO,Tucson,Arizona
+5-Jan-10,0700,SKW6284,1,E120,1100,LAX,Green,NO,Los Angeles,California
+5-Jan-10,0226,SWA2542,1,B737,5000,MZB,Green,NO,Mission Bay ,California
+6-Jan-10,0350,AAL127,1,MD81,3500,MZB,Green,NO, Mission Bay ,California
+6-Jan-10,0153,N241CT,1,WW24,1800,SJU,Green,NO,San Juan,Puerto Rico
+6-Jan-10,0117,N35WS,1,C172,3000,CLT,Green,NO,Charlotte,North Carolina
+6-Jan-10,0346,AIR1,1,B206B,3000,TUS,Green ,NO,Tucson,Arizona
+6-Jan-10,0522,SWA2523,1,B737,13000,OCN,Green/White,NO,Oceanside,California
+6-Jan-10,0557,VRD418,1,A320,FL180,SLI,Green,NO,Los Alamitos,California
+6-Jan-10,0540,SKW5959,1,E120,4000,SFO,Green,NO,San Francisco,California
+7-Jan-10,0257,AAL443,1,B738,800,MIA,Green,NO,Miami,Florida
+7-Jan-10,0234,N945SM,1,C172,2000,SQL,Green,NO,San Carlos,California
+7-Jan-10,0420,SWA1236,1,B737,9000,LAX,Green,NO,Los Angeles,California
+8-Jan-10,0242,ASH2782,1,CRJ9,8000,PHX,Green,NO,Phoenix,Arizona
+8-Jan-10,0323,NWA2405,1,A320,3200,PBI,Green,NO,West Palm Beach,Florida
+8-Jan-10,0201,SKW6169,1,E120,3000,LAX,Green,NO,Los Angeles,California
+8-Jan-10,0440,SKW1236,1,B733,9000,LAX,Green,NO,Los Angeles,California
+9-Jan-10,0808,OMAHA30A ,1,HELO,900,MZB,Green,NO,San Diego,California
+9-Jan-10,0815,UAL485,1,A319,9000,SAC,Green,NO,Sacramento,California
+9-Jan-10,0913,VRD371,1,A320,10000,LAX,Green,NO,Los Angeles,California
+10-Jan-10,0548,ASA870,3,B738,1600,HNL,Green,NO,Honolulu,Hawaii
+10-Jan-10,0705,AAL2194,1,B737,6500,LAX,Green,NO,Los Angeles,California
+10-Jan-10,0514,N54FT,1,C501,2000,SAT,Green,NO,San Antonio,Texas
+10-Jan-10,1219,POLICE18,1,HELO,1000,LAX,Green,NO,Los Angeles,California
+11-Jan-10,0427,AAL2355,1,MD82,FL200,BYP,Green,NO,Bonham,Texas
+11-Jan-10,0410,HAL48,1,B763,3000,OAK,Green,NO,Oakland,California
+12-Jan-10,0619,EJA944,1,C750,10000,SJC,Green,NO,San Jose,California
+12-Jan-10,0617,SWA1337,1,B737,10000,SJC,Green,NO,San Jose,California
+13-Jan-10,0403,FDX1294,1,DC10,34000,LOU,Green,NO,Louisville,Kentucky
+13-Jan-10,2337,N871CP,1,C182,1500,CHA,Green,NO,Chattanooga,Tennessee
+13-Jan-10,0852,SKW6349,1,CRJ2,2000,SFO,Green,NO,San Francisco,California
+13-Jan-10,0254,SKW6699,1,CRJ2,13000,DEN,Green,NO,Denver,Colorado
+13-Jan-10,0044,TIGER22,1,P3,2000,MYR,Green,NO,Myrtle Beach,South Carolina
+14-Jan-10,0030,AWE1240,1,B737,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+14-Jan-10,0337,FIV629,1,C680,3000,SAC,Green,NO,Sacramento,California
+14-Jan-10,2333,JENA231,1,UNKN,2500,TMB,Green,NO,Tamiami,Florida
+14-Jan-10,0450,SWA1483,1,B737,2000,SFO,Green,NO,San Francisco,California
+14-Jan-10,0637,TV11,1,AS350,900,LGB,Green,NO,Long Beach,California
+15-Jan-10,0213,BTA3104,1,E45X,1000,IAH,Green,NO,Houston,Texas
+15-Jan-10,0443,SKW6049,1,CRJ2,2500,LAX,Green,NO,Los Angeles,California
+15-Jan-10,0621,SWA224,1,B733,7000,PHX,Green,NO,Phoenix,Arizona
+15-Jan-10,0215,UAL965,1,A320,1000,IAH,Green,NO,Houston,Texas
+15-Jan-10,0614,SWA798,1,B737,7000,SJC,Green,NO,San Jose,California
+15-Jan-10,1107,UPS1534,1,A306,1800,BHM,Green,NO,Birmingham,Alabama
+16-Jan-10,0333,AAL1831,1,B738,6500,MIA,Green,NO,Miami,Florida
+16-Jan-10,0100,JBU425,1,A306,2000,PBI,Green,NO,West Palm Beach,Florida
+16-Jan-10,0220 ,BTA2134,3,E145,1000,IAH,Green,NO,Houston,Texas
+16-Jan-10,0632,SWA1781,1,B737,7000,SNS,Green,NO,Salinas,California
+16-Jan-10,0205,SWA1999,1,B737,8000,SJC,Green,NO,San Jose,California
+16-Jan-10,0436,SKW649,1,UNKN,2500,LAX,Green,NO,Los Angeles,California
+16-Jan-10,0443,SWA826,1,B737,7000,LAS,Red,NO,Las Vegas,Nevada
+16-Jan-10,2310,SWA9003,1,B737,17000,PTW,Green,NO,Pottstown,Pennsylvania
+17-Jan-10,0041,AAL2055,1,B752,3000,MIA,Green,NO,Miami,Florida
+17-Jan-10,0203,AAY440,1,MD83,4000,FAY,Red,NO,Fayetteville,Arkansas
+17-Jan-10,0722,ASA463,1,B739,1000,SEA,Green,NO,Seattle,Washington
+17-Jan-10,0229,JENA65,1,C208,4000,FAY,Green,NO,Fayetteville,Arkansas
+18-Jan-10,1731,JBU715,1,A320,SFC,JFK,Green,NO,New York City,New York
+18-Jan-10,0528,N1243D,1,C208,1000,MOB,Green,NO,Mobile,Alabama
+18-Jan-10,0538,SWA2905,1,B737,5000,OAK,Green,NO,Oakland,California
+18-Jan-10,0214,SWA396,1,B733,6000,STL,Green,NO,St. Louis,Missouri
+18-Jan-10,0258,SWA962,1,B737,8000,PHX,Green,NO,Phoenix,Arizona
+19-Jan-10,0116,UAL645,1,B752,4000,ORD,Green,NO,Chicago,Illinois
+20-Jan-10,0453,FDX991,1,A306,7000,LAX,Green,NO,Los Angeles,California
+21-Jan-10,0145,A26995,1,UH60,2300,LAX,Green,NO,Killeen,Texas
+21-Jan-10,0202,COA795,1,B738,1300,LAX,Green,NO,Los Angeles,California
+21-Jan-10,0105,PHM003,1,S92,3000,LFT,Green,NO,Lafayette,Louisiana
+21-Jan-10,0026,STAT4,1,EC35,2200,PIT,Green,NO,Pittsburgh,Pennsylvania
+21-Jan-10,0515,UPS805,1,A306,UNKN,DEN,Green,NO,Denver,Colorado
+22-Jan-10,0207,AAL1187,1,MD82,7000,DFW,Green,NO,Dallas-Fort Worth,Texas
+22-Jan-10,2305,AAL1530,1,B752,3500,LGA,Green,NO,New York City,New York
+22-Jan-10,0118,NWA2538,1,B752,12000,MCO,Green,NO,Orlando,Florida
+22-Jan-10,0021,SHARK91,1,C130,1500,SJU,Green,NO,San Juan,Puerto Rico
+22-Jan-10,0436,VRD416,1,A320,13000,JFK,Green,NO,New York City,New York
+23-Jan-10,0351,AAL657,1,MD82,4000,DFW,Green,NO,Dallas-Fort Worth,Texas
+23-Jan-10,0709,AAY391,1,MD83,1800,LAX,Green,NO,Los Angeles,California
+23-Jan-10,0407,GLA765,1,B190,14000,SBD,Green,NO,San Bernardino,California
+23-Jan-10,0052,N3153Q,1,C182,3000,RSW,Green,NO,Fort Myers,Florida
+23-Jan-10,0335,N5553A,1,C210,3500,RHV,Green,NO,Gilroy,California
+23-Jan-10,0420,SWA765,1,B733,13700,SBD,Green,NO,San Bernardino,California
+23-Jan-10,0255,VNR140,1,P180,2600,PIE,Green,NO,St Petersburg-Clearwater,Florida
+24-Jan-10,0525,HAL361,1,B712,2000,HNL,Green,NO,Honolulu,Hawaii
+24-Jan-10,0955,SURVEY1,1,TCOU,5500,TUS,Green,NO,Tucson,Arizona
+24-Jan-10,0224,EJA337,1,C560,8000,SJC,Green,NO,Santa Clara,California
+24-Jan-10,0228,SSX3577,1,DH8D,6100,SLC,Green,NO,Salt Lake City,Utah
+24-Jan-10,0228,AWE456,1,A319,6100,SLC,Green,NO,Salt Lake City,Utah
+24-Jan-10,0229,ASH2897,1,DH8A,6000,PHX,Green,NO,Phoenix,Arizona
+24-Jan-10,0256,SWA3141,1,B737,10000,SLC,Green,NO,Salt Lake City,Utah
+24-Jan-10,0309,SWA2621,1,B737,12000,BUR,Green,NO,Burbank,California
+24-Jan-10,0326,DAL1193,1,B738,6000,SLC,Green,NO,Salt Lake City,Utah
+24-Jan-10,0349,N6LR,1,C337,3000,LAX,Green,NO,Los Angeles,California
+25-Jan-10,0016,N39704,1,PA44,1000,DAB,Green,NO,Daytona Beach,Florida
+25-Jan-10,0047,COA700,1,B738,6000,EWR,Green,NO,Newark,New Jersey
+25-Jan-10,0145,SKW5773,1,CRJ2,5500,ICT,Green,NO,Wichita,Kansas
+25-Jan-10,0247,N/A,1,Vehicle,SFC,SLC,Green,NO,Salt Lake City,Utah
+25-Jan-10,0250,SWA1341,2,B737,10000,SLC,Green,NO,Salt Lake City,Utah
+26-Jan-10,0211,BTA2907,1,E145,10000,LFT,Green,NO,Lafayette,Louisiana
+26-Jan-10,0301,DAL65,1,B763,UNKN,LAS,Green,NO,Las Vegas,Nevada
+26-Jan-10,0302,FFT773,1,A319,UNKN,LAS ,Green,NO,Las Vegas,Nevada
+26-Jan-10,0606,SKW6650,1,E120,7000,MOD,Green,NO,Modesto,California
+27-Jan-10,0534,N8310J,1,C150,1300,SEA,Green,NO,Seattle,Washington
+27-Jan-10,0055,CHQ5065,1,E135,4000,STL,Green,NO,St. Louis,Missouri
+27-Jan-10,0123,BTA3156,1,E145,36000,TBD,Green,NO, Thibodaux,Louisiana
+27-Jan-10,0312,UAL698,1,B752,1500,IAH,Green,NO,Houston,Texas
+28-Jan-10,0702,CHASE5,1,B206,700,MCO,Green,NO,Orlando,Florida
+28-Jan-10,0223,VVTS404,1,UH60,4000,SAN,Green,NO,San Diego,California
+28-Jan-10,0236,NKS678,1,A319,12000,RSW,Green/ Blue,NO,Fort Myers,Florida
+28-Jan-10,0401,SKW6519,1,CRJ2,UNKN,SJC,Green,NO,San Jose,California
+28-Jan-10,0451,N6720T,1,BE76,5000,TOA,Green,NO,Torrance,California
+29-Jan-10,0625,HAL22,1,B763,4000,SEA,Green,NO,Seattle,Washington
+29-Jan-10,0705,ASA245,1,B738,9000,PDX,Green,NO,Portland,Oregon
+29-Jan-10,0236,SWA386,1,B733,2000,MDW,Green,NO,Chicago,Illinois
+29-Jan-10,0237,ASH2716,1,CRJ9,6000,TUS,Green,NO,Tucson,Arizona
+29-Jan-10,0249,DAL1797,1,B752,15000,TEB,Green,NO,Teterboro,New Jersey
+29-Jan-10,0259,AWE371,1,A320,5000,PHX,Green,NO,Phoenix,Arizona
+29-Jan-10,0300,SKW5978,1,E120,2000,SBA,Green,NO,Santa Barbara,California
+29-Jan-10,0349,SKW6565,1,CRJ7,9000,TUS,Green,NO,Tucson,Arizona
+30-Jan-10,0245,N942TW,1,PA12,4000,OAK,Green,NO,Oakland,California
+30-Jan-10,0300,SWA1164,1,B737,6000,PHX,Green,NO,Phoenix,Arizona
+30-Jan-10,0621,ASA570,1,B737,5000,LAX,Green,NO,Los Angeles,California
+31-Jan-10,0530,LN1,1,AS50,6200,BJC,Green,NO,Denver,Colorado
+31-Jan-10,0611,ASA540,1,B738,5000,LAX,Green,NO,Los Angeles,California
+31-Jan-10,0820,SURVEY1,1,HELO,5500,TUS,Green,NO,Tucson,Arizona
+31-Jan-10,0236,SWA263,1,B737,8000,SMO,Green,NO,Santa Monica,California
+31-Jan-10,0443,AAL1260,1,B752,11000,TTN,Green,NO,Trenton,New Jersey
+31-Jan-10,0447,SURVEY2,1,HELO,5500,TUS,Green,NO,Tucson,Arizona
+1-Feb-10,0159,EGF4748,1,AT72,4000,DFW,Green,NO,Dallas-Fort Worth,Texas
+1-Feb-10,0300,DAL133,1,B752,8500,SLC,Green,NO,Salt Lake City,Utah
+1-Feb-10,0312,FDX1257,1,A310,2000,MIA,Green,NO,Miami,Florida
+2-Feb-10,0158,BTA3105,1,E145,5000,IAH,Green,NO,Houston,Texas
+2-Feb-10,0159,AAL686,1,MD82,2800,DFW,Green,NO,Dallas-Fort Worth,Texas
+2-Feb-10,0221,DAL1226,1,MD90,10000,SLC,Green,NO,Salt Lake City,Utah
+2-Feb-10,0319,ASH2850,1,DH8A,6000,PHX,Green,NO,Phoenix,Arizona
+2-Feb-10,0347,DAL2432,1,B752,FL190,SRQ ,Green,NO,Sarasota,Florida
+2-Feb-10,0353,SKW6440,1,CRJ2,1400,LAX,Green,NO,Los Angeles,California
+3-Feb-10,0107,N17,1,C41,2500,VPS,Green,NO,Eglin AFB,Florida
+3-Feb-10,0457,SWA308,1,B737,5000,SJC,Green,NO,San Jose,California
+3-Feb-10,0430,OPT812,2,UNKN,8000,PAM,Red,NO,Panama City,Florida
+4-Feb-10,0205,SWA1876,1,B733,4000,AGC,Green,NO,Pittsburgh,Pennsylvania
+5-Feb-10,2350,CJC297,1,DH8D,14000,ALB,Green,NO,Albany,New York
+5-Feb-10,0146,COA236,1,B738,14000,EBG,Green ,NO,Edinburg,Texas
+5-Feb-10,0227,AWE504,1,A320,8000,PHX,Green,NO,Phoenix,Arizona
+6-Feb-10,0315,N687AE,1,C441,1600,PHX,Green,NO,Phoenix,Arizona
+7-Feb-10,0525,BTA275,1,E45X,19000,CTF,Green,NO,Chesterfield  ,South Carolina
+8-Feb-10,0605,UAL19,1,B752,1000,SFO,Green,NO,San Francisco,California
+8-Feb-10,0312,SWA1995,1,B737,5000,PDX,Green,NO,Portland,Oregon
+8-Feb-10,0348,CTA309,1,C208,7000,LAS,Green ,NO,Las Vegas,Nevada
+9-Feb-10,0022,SWA402,1,B737,10000,SMF,Green,NO,Sacramento,California
+10-Feb-10,0200,SWA3163,1,B737,6000,HOU,Green,NO,Houston,Texas
+10-Feb-10,1101,FDX1857,1,DC10,14000,OAK,Green,NO,Oakland,California
+11-Feb-10,0330,UPS1013,1,A306,12000,BOS,Green,NO,Boston,Massachusetts
+11-Feb-10,0828,TRS49,1,B737,8000,SMO,Green,NO,Santa Monica,California
+11-Feb-10,0353,FDX1013,1,A306,12000,BOS,Green ,NO,Boston,Massachusetts
+11-Feb-10,0420,N608DL,1,C172,5500,ONT,Green,NO,Ontario,California
+12-Feb-10,0130,EMD15,1,HELO,2400,OJC,Green,NO,Olathe,Kansas
+12-Feb-10,0518,ASA241,1,B737,8000,EMT,Green ,NO,El Monte,California
+12-Feb-10,0600,SKW6131,1,CRJ2,1700,BUR,Green,NO, Burbank,California
+12-Feb-10,0620,ASA1000,1,B737,3500,SEA,Green ,NO,Seattle,Washington
+13-Feb-10,0430,SKW33M,1,CRJ9,4000,GEG,Green ,NO,Spokane,Washington
+13-Feb-10,0441,METRO4,1,HELO,2000,LAS,Green ,NO,Las Vegas,Nevada
+13-Feb-10,0033,LOF7983,1,E145,UNKN,ORD,Green ,NO,Chicago,Illinois
+13-Feb-10,0033,COA246,1,B738,UNKN,ORD,Green ,NO,Chicago,Illinois
+13-Feb-10,0222,QXE199,1,DH8D,6000,SMO,Green ,NO,Santa Monica,California
+13-Feb-10,0300,SWA1342,1,B733,2500,SMO,Green ,NO,Santa Monica,California
+13-Feb-10,0305,N911LP,1,OH58,2000,LEX,Green ,NO,Lexington,Kentucky
+13-Feb-10,0435,AAL889,1,B738,5000,POM,Green ,NO,Pomona,California
+14-Feb-10,0527,COA996,1,B737,8000,GUM,UNKN,NO,Agana,Guam
+14-Feb-10,0206,RPA3264,1,E170,4500,GSO,Green,NO,Greensboro ,North Carolina
+14-Feb-10,0214,N145FH,1,H60,800,MCO,Green,NO,Orlando,Florida
+14-Feb-10,0250,RPA3126,1,E170,10000,PIT,Green,NO,Pittsburgh,Pennsylvania
+15-Feb-10,0105,SKW6476,1,CRJ2,10000,ORD,Green,NO,Chicago,Illinois
+15-Feb-10,0508,DAL747,1,B752,5000,PHX,Green,NO,Phoenix,Arizona
+15-Feb-10,0532,SWA1209,1,B737,4000,PHX,Green,NO,Phoenix,Arizona
+15-Feb-10,0511,UAL52,1,B752,8000,LGB,Green,NO,Long Beach,California
+15-Feb-10,0540,UAL168,1,B752,8000,BWI,Green,NO,Baltimore,Maryland
+15-Feb-10,0518,SKW6843,1,E120,7000,SJC,Green,NO,San Jose,California
+15-Feb-10,0210,SWA6834,1,CRJ7,1800,ORD,Green,NO,Chicago,Illinois
+15-Feb-10,0210,UAL767,1,A319,1800,ORD,Green,NO,Chicago,Illinois
+15-Feb-10,0210,UAL332,1,A320,1800,ORD,Green,NO,Chicago,Illinois
+15-Feb-10,0228,N609DA,1,SR22,800,EFD,Green,NO,Ellington Field,Texas
+15-Feb-10,0319,AAL1798,1,MD82,7500,SJC,Green,NO,San Jose,California
+15-Feb-10,0430,METRO4,1,HELO,2800,LAS,Green,NO,Las Vegas,Nevada
+15-Feb-10,0430,EGF3924,1,E145,2300,ORD,Green,NO,Chicago,Illinois
+16-Feb-10,0230,SWA229,1,B737,3000,SNA,Green ,NO,Santa Ana,California
+16-Feb-10,0531,COA361,1,B739,11000,SJC,Green,NO,San Jose,California
+16-Feb-10,0107,ASQ5513,1,CRJ2,3500,MGM,Green,NO,Montgomery,Alabama
+16-Feb-10,0250,ASA245,1,B738,8000,POM,Green,NO,Pomona,California
+16-Feb-10,0310,UPS795,1,B752,6000,SAT,White,NO,San Antonio,Texas
+16-Feb-10,0409,JENA55,1,C182,4000,HWD,Green,NO,Hayward,California
+17-Feb-10,0524,QXE545,1,CRJ7,5500,SJC,Green,NO,San Jose,California
+17-Feb-10,0603,JBU828,2,A320,3000,SNA,Green,NO,Santa Ana,California
+17-Feb-10,0200,SWA1491,1,B735,1500,FLL,Green/White,NO,Fort Lauderdale,Florida
+17-Feb-10,0229,JENA55,1,C182,4000,HWD,Green,NO,Hayward,California
+17-Feb-10,0221,PMS1675,1,C208,2500,ICT,Green,NO,Wichita,Kansas
+17-Feb-10,0417,FDX1338,1,B722,3000,MEM,Green,NO,Memphis,Tennessee
+17-Feb-10,0430,SKW6048,1,CRJ2,3000,M30,Green,NO,Metropolis,Illinois
+18-Feb-10,0021,CJC9551,1,SF34,3000,TYR,Green,NO,Tyler,Texas
+18-Feb-10,0450,SWA2889,1,B737,4500,SAN,Green,NO,San Diego,California
+18-Feb-10,0620,UAL423,1,B772,1000,SFO,Green,NO,San Francisco,California
+18-Feb-10,0215,N965DS,1,DA40,3500,PHX,UNKN,NO,Phoenix,Arizona
+18-Feb-10,0330,RUF640,1,MU2,4000,MSY,Green,NO,New Orleans ,Louisiana
+19-Feb-10,0539,IFL1015,1,FA20,6000,SDF,Green ,NO,Louisville,Kentucky
+19-Feb-10,0450,ASA329,1,B737,UNKN,OLM,Green,NO,Olympia,Washington
+19-Feb-10,0006,JBU403,1,A320,3800,MIA,Green,NO,Miami,Florida
+19-Feb-10,0136,COA331,1,B738,1000,IAH,Green,NO,Houston,Texas
+19-Feb-10,0303,BTA2732,1,E45X,13000,IAH,Green,NO,Houston,Texas
+20-Feb-10,0220,N521PF,1,C525,3000,LAS,Green,NO,Las Vegas,Nevada
+20-Feb-10,0223,N424QS,1,GLF4,4000,LAS,Green ,NO,Las Vegas,Nevada
+20-Feb-10,0405,AWE575,1,A321,UNKN,SEA,Green,NO,Seattle,Washington
+21-Feb-10,0250,DAL1489,1,MD88,700,MCO,Green,NO,Orlando,Florida
+21-Feb-10,0005,VVLT624,1,P3,6000,JAX,Green,NO,Jacksonville,Florida
+22-Feb-10,2307,N3188X,1,H25B,4000,BDR,Green,NO,Bridgeport,Connecticut
+22-Feb-10,0150,BSO6,1,EC135,500,FLL,Green ,NO,Fort Lauderdale,Florida
+23-Feb-10,0435,QXE399,1,DH8D,8000,BOI,Green,NO,Boise,Idaho
+23-Feb-10,0113,N82222,1,R22,1500,LZU,Green,NO,Lawrenceville,Georgia
+23-Feb-10,0139,ASH2829,1,CRJ2,7000,PHX,Green,NO,Phoenix,Arizona
+23-Feb-10,0143,C2128,1,FA20,1500,HST,Green,NO,Homestead,Florida
+24-Feb-10,0500,EGF3048,1,E135,7000,SAN,Green,NO,San Diego,California
+24-Feb-10,0525,SGB700,1,B732,2000,MIA,Green ,NO,Miami,Florida
+24-Feb-10,0536,ASA706,1,B738,5000,SMO,Green,NO,Santa Monica,California
+24-Feb-10,0709,USC721,1,BE58,4000,ONT,Green,NO,Ontario,California
+24-Feb-10,0324,ASQ303A,1,CRJ2,5000,GRK,Green,NO,"Fort Hood, Killeen",Texas
+25-Feb-10,0037,ASQ5152,1,CRJ2,4000,IRQ,Green,NO,Colliers ,South Carolina
+25-Feb-10,2357,C2102,1,HU25,UNKN,HST,Green,NO,Homestead,Florida
+26-Feb-10,0320,FFT268,1,A318,2000,SNA,Green,NO,Santa Ana,California
+26-Feb-10,0445,METRO5,1,UH60,2500,LAS,Green,NO,Las Vegas,Nevada
+26-Feb-10,0705,QXE623,1,CRJ7,6000,SBD,Green,NO,San Bernardino,California
+26-Feb-10,0100,TRANS FLIGHT4455,1,UNKN,4500,PHX,Green,NO,Phoenix,Arizona
+26-Feb-10,0315,EGF3131,1,E135,4000,SJC,Green,NO,San Jose,California
+26-Feb-10,0359,SWA203,1,B737,1000,SMO,Green,NO,Santa Monica,California
+26-Feb-10,0321,AWI3572,1,CRJ7,1600,CHS,Green,NO,Charleston,South Carolina
+26-Feb-10,0415,SQH22,1,PC12,6000,PDX,Green,NO,Portland,Oregon
+27-Feb-10,0455,SWA1504,1,B737,6000,PHX,Green,NO,Phoenix,Arizona
+27-Feb-10,0500,SWA460,1,B737,15000,PHX,Green,NO,Phoenix,Arizona
+27-Feb-10,1017,N407FC,1,26VA,1500,DCA,Green,NO,Washington,District of Columbia
+27-Feb-10,0226,N95UT,1,BE20,6500,SLC,Green,NO,Salt Lake City,Utah
+27-Feb-10,0405,QXE91,1,DH80,3000,PDX,Green,NO,Portland,Oregon
+27-Feb-10,1015,FAIRFAX1,1,HELO,1500,DCA,Green,NO,Washington,District of Columbia
+28-Feb-10,0228,SKW6106,1,CRJ7,1400,PDX,Green,NO,Portland,Oregon
+28-Feb-10,0423,HAL20,1,B763,"10,000",SUU,Green,NO,Vacaville,California
+28-Feb-10,0418,SKW6337,1,CRJ7,7000,SFO,Green,NO,San Francisco,California
+28-Feb-10,0440,SWA1194,1,B737,2000,PVD,Green ,NO,Providence,Rhode Island
+28-Feb-10,0415,BTA2131,1,E45X,2000,CRP,Green,NO,Corpus Christi,Texas
+1-Mar-10,0446,N66684,1,C172,2000,CCR,Green,NO,Concord,California
+1-Mar-10,0515,QXE518,1,CRJ7,3500,PDX,Green,NO,Portland,Oregon
+1-Mar-10,0540,QXE114,1,DH8,UNKN,SEA,Green,NO,Seattle,Washington
+1-Mar-10,2330,LXJ151,1,BE40,3000,FTY,Green,NO,Atlanta,Georgia
+1-Mar-10,0149,SWA1600,1,B737,2500,MCI,Green,NO,Kansas City,Missouri
+1-Mar-10,0205,MADFOX9,1,P3,1300,HST,Green,NO,Homestead,Florida
+1-Mar-10,0245,SWA426,1,B737,4000,FLL,Red,NO,Fort Lauderdale,Florida
+2-Mar-10,0540,AAY386,1,MD88,5000,LAX,Green,NO,Los Angeles,California
+4-Mar-10,0025,LOF8022,1,E145,FL240,EKN,Green,NO,Elkins,West Virginia
+4-Mar-10,0405,SKW6342,1,E120,6000,LAX,Green,NO,Los Angeles,California
+4-Mar-10,0723,SMOKEY3,1,C182,2500,TCM,Green,NO,Tacoma,Washington
+4-Mar-10,1000,FDX1155,1,A306,3000,IAH,White,NO,Houston,Texas
+4-Mar-10,0405,N41VP,1,C560,6000,APC,Green,NO,Napa,California
+5-Mar-10,0505,FLC67,1,BE30,2300,ORD,Green,NO,Chicago,Illinois
+5-Mar-10,0312,SKW6341,1,CRJ2,5000,SAN,Green,NO,San Diego,California
+5-Mar-10,0625,ASH2817,1,CRJ9,8000,PHX,Green,NO,Phoenix,Arizona
+5-Mar-10,0700,ASA245,1,B738,8000,PDX,Green,NO,Portland,Oregon
+5-Mar-10,0040,SWA870,1,B733,11000,HTO,Green,NO,East Hampton,New York
+5-Mar-10,0228,SWA182,1,B737,7000,SJC,Green,NO,San Jose,California
+5-Mar-10,0256,SKW5917,1,CRJ2,9000,DEN,Green,NO,Denver,Colorado
+6-Mar-10,0605,SWA4601,1,B737,14000,SFO,Green,NO,San Francisco,California
+6-Mar-10,0738,UAL787,1,A319,7000,SAN,Green,NO,San Diego,California
+6-Mar-10,0246,ASQ5208,1,CRJ7,FL250,APE,Green,NO,Appleton,Ohio
+6-Mar-10,0323,FLG3887,1,CRJ2,1700,DAL,Blue,NO,Dallas,Texas
+6-Mar-10,2342,DAL1018,1,MD90,UNKN,PHL,Green,NO,Philadelphia,Pennsylvania
+7-Mar-10,0615,N80347,1,C172,1800,VUO,Green,NO,Vancouver,Washington
+7-Mar-10,0003,EJA984,1,C750,1000,PNE,Green,NO,Philadelphia,Pennsylvania
+8-Mar-10,0216,SKW6834,1,CRJ7,11000,ORD,Green ,NO,Chicago,Illinois
+9-Mar-10,0055,CJT916,1,B722,7000,CVG,Green,NO,Covington,Kentucky
+9-Mar-10,0148,BTA2539,1,E45X,7000,IAH,Green,NO,Houston,Texas
+9-Mar-10,0218,AAL324,1,MD83,9200,TTT,Green,NO,Talleyville,Texas
+9-Mar-10,2035,BTA2481,1,E145,11000,RKP,Green,NO,Rockport,Texas
+10-Mar-10,0450,FDX1635,1,A306,FL200,TTT,Green,NO,Talleyville,Texas
+10-Mar-10,0503,SKW6092,1,E120,5000,SMF,Green,NO,Sacramento,California
+10-Mar-10,0505,AWE406,1,A321,7500,SFO,Green,NO,San Francisco,California
+10-Mar-10,0100,N3512T,1,C172,3500,CTY,Green,NO,Cross City,Florida
+10-Mar-10,0330,JBU1404,1,E190,UNKN,AUS,Green,NO,Austin,Texas
+10-Mar-10,0330,SWA682,1,B737,UNKN,AUS,Green,NO,Austin,Texas
+10-Mar-10,2350,COA418,1,UNKN,1000,POS,Green,NO,Coeur d'Alene,Idaho
+11-Mar-10,0510,QXE545,1,CRJ7,6000,SJC,Green,NO,San Jose,California
+11-Mar-10,0119,AWI3656,1,CRJ2,1900,PVD,Green,NO,Providence,Rhode Island
+11-Mar-10,0342,AAY5115,1,MD87,5000,SAN,Green ,NO,San Diego,California
+11-Mar-10,0418,KING21,1,C130,UNKN,NUQ,Green,NO,Mountain View,California
+11-Mar-10,0342,VVTS414,1,H60,4000,SAN,Green,NO,San Diego,California
+12-Mar-10,2150,CM17,1,B738,UNKN,GUM,Green,NO,Agana,Guam
+12-Mar-10,0310,DAL1128,1,MD88,6500,ATL,Green,NO,Atlanta,Georgia
+12-Mar-10,0344,GLA121,1,E120,10000,DEN,Green,NO,Denver,Colorado
+12-Mar-10,0435,SWA401,1,B737,16000,AUS,Green,NO,Austin,Texas
+13-Mar-10,0711,SKW6461,1,E120,8000,IPL,Green,NO,Imperial,California
+13-Mar-10,0740,DPS100,1,HELO,1500,AUS,Green,NO,Austin,Texas
+13-Mar-10,0410,LN911CX,1,BE9L,5000,PHX,Green,NO,Phoenix,Arizona
+13-Mar-10,0443,COA1423,1,B738,11000,MSY,Green,NO,New Orleans ,Louisiana
+13-Mar-10,0446,AAY728,1,MD82,5000,SFB,Green,NO,Orlando,Florida
+14-Mar-10,0235,AWE187,1,B733,6000,PHX,Green,NO,Phoenix,Arizona
+15-Mar-10,0509,SWA728,1,B733,12000,PDX,Green,NO,Portland,Oregon
+15-Mar-10,2305,MRA636,1,C208,6000,RWI,Green ,NO,Rocky Mount,North Carolina
+15-Mar-10,0339,FLX421,1,C210,4000,FMY,Green,NO,Fort Myers,Florida
+16-Mar-10,0436,SWA190,1,B737,5000,PHX,Green,NO,Phoenix,Arizona
+16-Mar-10,0545,N3925M,1,C525,4000,SBA,Green,NO,Santa Barbara,California
+16-Mar-10,0622,N870SF,1,B230,2400,PIA,Green,NO,Peoria,Illinois
+16-Mar-10,0126,CPZ5733,1,E170,2000,MSP,Green,NO,Minneapolis,Minnesota
+16-Mar-10,0217,RPA3318,1,E170,4000,BTV,Green,NO,Burlington,Vermont
+17-Mar-10,0015,JZA995,1,CRJ1,UNKN,PQI,Red,NO,Presque Isle,Maine
+17-Mar-10,0309,XSR389,1,BE90L,17000,TYR,Green,NO,Tyler,Texas
+17-Mar-10,0330,N52AE,1,B206,1900,PKV,Green ,NO,Pocket City,Indiana
+18-Mar-10,0126,SHADOW16,1,C130,6500,ABQ,Green,NO,Albuquerque,New Mexico
+18-Mar-10,0305,N49048,1,C182,5000,SNA,Green,NO,Santa Ana,California
+18-Mar-10,0315,HAL44,1,B763,5000,SJC,Green,NO,San Jose,California
+18-Mar-10,0310,SWA1506,1,B737,8000,SNA,Green,NO,Santa Ana,California
+18-Mar-10,0315,AAL473,1,B738,5500,SNA,Green,NO,Santa Ana,California
+18-Mar-10,1346,PCM8710,1,C205,2000,OAK,Green,NO,Oakland,California
+18-Mar-10,0241,SWA1506,1,B737,FL190,BXK,Green,NO,Buckeye,Arizona
+18-Mar-10,0312,CJC9540,1,SF34,14000,SAT,Green,NO,San Antonio,Texas
+19-Mar-10,0127,AWE5,1,A320,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+19-Mar-10,0258,SWA974,1,B737,10500,ONT,Green,NO,Ontario,California
+19-Mar-10,0325,SWA59,1,B737,2000,HOU,Green,NO,Houston,Texas
+19-Mar-10,0340,SWA52,1,B737,2000,HOU,Green,NO,Houston,Texas
+19-Mar-10,0410,UAL723,1,B752,3000,SJC,Green,NO,San Jose,California
+19-Mar-10,0407,ASA711,1,B738,12000,BLI,Green,NO,Bellingham,Washington
+19-Mar-10,0405,SWA224,1,B737,16000,PHX,Green,NO,Phoenix,Arizona
+19-Mar-10,0153,WIS404,1,C310,4000,ANE,Green,NO,Minneapolis,Minnesota
+19-Mar-10,0233,MES3132,1,SF34,6000,DTW,Green,NO,Detroit ,Michigan
+19-Mar-10,0247,CPZ5744,1,E170,11000,MSP,Green,NO,Minneapolis,Minnesota
+19-Mar-10,0250,UPS907,1,A305,3000,BUR,Green,NO,Burbank,California
+19-Mar-10,0309,AAY419,1,MD88,6000,HND,Green,NO,Las Vegas,Nevada
+19-Mar-10,0338,UAL640T,1,A320,5000,PHL,Green,NO,Philadelphia,Pennsylvania
+19-Mar-10,0355,GJS7497,1,CRJ7,4000,STL,Green,NO,St. Louis ,Missouri
+20-Mar-10,0415,VRD814,1,A320,2200,SNA,Green,NO,Santa Ana,California
+20-Mar-10,0637,UAL249,1,A319,9000,SJC,Green,NO,San Jose,California
+20-Mar-10,0650,POLICE1,1,EC20,1000,SJC,Green,NO,San Jose,California
+20-Mar-10,0710,ASH1957,1,CRJ2,500,OGG,Green,NO,Kahului,Hawaii
+20-Mar-10,0107,STAT2,1,BL17,2500,AGC,Green,NO,Pittsburgh,Pennsylvania
+20-Mar-10,0357,DAL1525,1,B737,1100,TPA,Green,NO,Tampa,Florida
+21-Mar-10,0618,HAL18,1,B763,4500,LAS,Green,NO,Las Vegas,Nevada
+21-Mar-10,0008,BTA2683,1,UNKN,7000,EWR,Green,NO,Newark,New Jersey
+21-Mar-10,0139,MES987,1,CRJ9,11000,DSM,Green,NO,Des Moines,Iowa
+21-Mar-10,0221,DAL8819,1,UNKN,SFC,GEG,Green,NO,Spokane,Washington
+22-Mar-10,0225,SKW6084,1,CRJ2,9000,SMO,Green ,NO,Santa Monica,California
+22-Mar-10,0337,ASA642,1,B739,8000,SDL,Green ,NO,Scottsdale,Arizona
+22-Mar-10,0438,N367TT,1,UNKN,3000,SDL,Green,NO,Scottsdale,Arizona
+22-Mar-10,0500,AZ POLICE,1,HELO,UNKN,SDL,UNKN,NO,Scottsdale,Arizona
+23-Mar-10,0430,SWA910,1,B737,5000,PDX,Green,NO,Portland,Oregon
+23-Mar-10,0151,N462ER,1,C172,1800,VQQ,Green,NO,Jacksonville,Florida
+23-Mar-10,0250,SWA1921,1,B733,UNKN,LAS,Green,NO,Las Vegas,Nevada
+24-Mar-10,0435,CJC9536,1,SF34,5000,GRK,Green,NO,Killeen,Texas
+24-Mar-10,1005,FDX1401,1,DC10,3300,DFW,Green,NO,Dallas,Texas
+24-Mar-10,0026,N474ER,1,C172,3000,TIX,Red,NO,Titusville,Florida
+24-Mar-10,0048,ASH7149,1,CRJ7,2700,ORD,Green,NO,Chicago,Illinois
+24-Mar-10,0105,N442ER,1,C172,4500,DAB,Green ,NO,Daytona Beach,Florida
+24-Mar-10,0155,AAL1659,1,MD82,5500,ORD,Green,NO,Chicago,Illinois
+24-Mar-10,0905,UPS1354,1,A300,2400,BHM,Green,NO,Birmingham,Alabama
+25-Mar-10,0515,UPS953,1,B757,5000,ONT,Green,NO,Ontario,California
+25-Mar-10,0522,HAL196,1,B712,1700,OGG,Green,NO,Kahului,Hawaii
+25-Mar-10,0640,SWA8514,1,B737,1800,MDW,Green,NO,Chicago,Illinois
+26-Mar-10,0504,SWA160,1,B733,11000,LIN,Green,NO,Linden,California
+26-Mar-10,0310,N935SP,1,Pillataus,6000,PDX,Green,NO,Portland,Oregon
+26-Mar-10,0725,FLX810,1,C210,4000,LAL,Green,NO,Lakeland,Florida
+26-Mar-10,0056,BTA2825,1,E145,FL360,HVQ,Green,NO,Charleston,West Virginia
+26-Mar-10,0101,N313PP,1,PA32,1200,CRG,Green,NO,Jacksonville,Florida
+26-Mar-10,0110,COM608,1,CRJ1,8000,MSP,Green,NO,Minneapolis,Minnesota
+26-Mar-10,0110,FLG3661,1,CRJ2,8000,MSP, Green,NO,Minneapolis,Minnesota
+26-Mar-10,0130,SKW6011,1,CRJ7,FL140,UGN,Green,NO,Waukegan,Illinois
+26-Mar-10,0314,N280TT,1,BE20,7000,LAX,Green,NO,Los Angeles,California
+26-Mar-10,0305,COA176,1,B738,16000,MLB,Green,NO,Melbourne,Florida
+26-Mar-10,0309,UPS354,1,B752,10000,MIA,Green,NO,Miami,Florida
+27-Mar-10,0311,QXE2091,1,DH8,3000,PDX,Green,NO,Portland,Oregon
+27-Mar-10,0400,SWA103,1,B737,5000,SAN,Green,NO,San Diego,California
+27-Mar-10,0425,SWA419,1,B737,1000,SAN,Green,NO,San Diego,California
+27-Mar-10,0519,SGB1802,1,B734,1200,MIA,Green ,NO,Miami,Florida
+27-Mar-10,0314,DAL7283,1,DC93,2700,GRB,Green,NO,Green Bay,Wisconsin
+28-Mar-10,0403,QXE518,1,CRJ7,3000,PDX,Green,NO,Portland,Oregon
+28-Mar-10,0420,SWA2338,1,B737,3200,LAS,Green,NO,Las Vegas,Nevada
+28-Mar-10,0436,N811VG,1,C550,2400,SJC,Green,NO,San Jose,California
+28-Mar-10,0030,JBU337,1,E190,6000,MCO,Green,NO,Orlando,Florida
+28-Mar-10,0055,DAL378,1,MD88,3200,HOU,Green,NO,Houston,Texas
+28-Mar-10,0139,CPZ5742,1,E170,7000,FGT,Green,NO,Farmington,Minnesota
+28-Mar-10,0135,GFT9249,1,E190,1800,MIA,Green,NO,Miami,Florida
+28-Mar-10,0159,N122PD,1,EC120,1000,3CA1,Green,NO,Newport Beach,California
+28-Mar-10,0314,JBU597,1,E190,6000,MCO,Green,NO,Orlando,Florida
+28-Mar-10,0330,AWE371,1,A320,12000,PHX,Green,NO,Phoenix,Arizona
+29-Mar-10,0508,DAL1027,1,B752,5000,PHX,Green,NO,Phoenix,Arizona
+29-Mar-10,0205,CTA141,1,C310,5000,ELP,Green,NO,El Paso ,Texas
+29-Mar-10,0224,USC392,1,C208,6000,ATL,Green,NO,Atlanta,Georgia
+29-Mar-10,0236,WJA1451,1,B737,11000,PHX,Green,NO,Phoenix,Arizona
+29-Mar-10,0323,AWE705,1,A320,3200,LAX,Green,NO,Los Angeles,California
+29-Mar-10,0337,SWA172,1,B737,9000,VNY,Green,NO,Van Nuys,California
+29-Mar-10,0337,ASA463,1,B734,9000,VNY,Green,NO,Van Nuys,California
+30-Mar-10,0353,SWA966,1,B737,9000,SBD,Green,NO,San Bernardino,California
+30-Mar-10,0354,SWA956,1,B737,9000,SBD,Green,NO,San Bernardino,California
+30-Mar-10,0545,VRD349,1,A319,2500,SFO,Green,NO,San Francisco,California
+30-Mar-10,0014,N24339,1,C172,900,BFD,Green ,NO,Bedford,Indiana
+30-Mar-10,0255,N626DS,1,AC50,6000,VWV,Green,NO,Waterville,Ohio
+30-Mar-10,0336,ZAPPER21,1,C130,UNKN,NTD,Green,NO,Ventura,California
+30-Mar-10,0339,N4464R,1,C172,4000,EUL,Green,NO,Caldwell,Idaho
+31-Mar-10,0420,SWA764,1,B737,2000,HWD,Green,NO,Hayward,California
+31-Mar-10,0432,FDX1631,1,A300,7000,HFY,Green,NO,Greenwood,Indiana
+31-Mar-10,0433,AMF223,1,PA31,2100,HWD,Green,NO,Hayward,California
+31-Mar-10,0210,COA1752,1,B737,4000,OMA,Green,NO,Omaha,Nebraska
+31-Mar-10,0346,BTA2747,1,E145,UNKN,BNA,Green,NO,Nashville,Tennessee
+1-Apr-10,0702,FDX1631,1,A300,7000,HFY,Green,NO,Greenwood,Indiana
+1-Apr-10,0809,SO3,1,AS50,900,TPA,Green,NO,Tampa,Florida
+1-Apr-10,0144,VRD260,1,A320,14000,CRI,Green,NO,Canarsie,New York
+1-Apr-10,0307,AIR01,1,B06,1500,AUS,Green,NO,Austin,Texas
+1-Apr-10,0309,EGF4005,1,E145,5000,ORD,Green,NO,Chicago,Illinois
+1-Apr-10,0353,CHQ1457,1,E145,1000,MKE,Green,NO,Milwaukee,Wisconsin
+1-Apr-10,0604,QFA108,1,B747,FL195,LAX,Green,NO,Los Angeles,California
+2-Apr-10,0412,DAL1298,1,MD82,3000,STL,Green,NO,St. Louis,Missouri
+2-Apr-10,0653,N4335K,1,PA28,2000,OAK,Green,NO,Oakland,California
+2-Apr-10,1053,UPS1354,1,A306,3000,BHM,White,NO,Birmingham,Alabama
+2-Apr-10,0010,N423FT,1,C172,200,BCT,Green,NO,Boca Raton,Florida
+2-Apr-10,0027,N112MA,1,MU2,11000,N71,Green,NO,Mount Joy/Marietta,Pennsylvania
+2-Apr-10,0055,N450S,1,BE33,4000,OXC,Green,NO,Oxford,Connecticut
+2-Apr-10,0128,STAT1,1,EC35,2500,AGC,Green,NO,Pittsburgh,Pennsylvania
+2-Apr-10,0118,CHQ6077,1,E145,6500,SDF,Green,NO,Louisville,Kentucky
+2-Apr-10,0208,FDX1253,1,B722,2500,ABE,Green,NO,Allentown,Pennsylvania
+2-Apr-10,0215,FDX3,1,MD10,14000,PIT,Green,NO,Pittsburgh,Pennsylvania
+2-Apr-10,0320,NWA3809,1,CRJ2,2000,ERI,Green,NO,Erie,Pennsylvania
+2-Apr-10,0336,N607MM,1,AC50,6000,CGT,Green,NO,Chicago Heights,Illinois
+2-Apr-10,0145,AAL456,1,MD80,5000,ORD,Green,NO,Chicago,Illinois
+3-Apr-10,0457,DAL1835,1,B752,2500,SLC,Green,NO,Salt Lake City,Utah
+3-Apr-10,0457,UAL19,1,B752,500,SFO,Green ,NO,San Francisco,California
+3-Apr-10,0043,EJA84KP,1,C560,3500,LAS,Green,NO,Las Vegas,Nevada
+3-Apr-10,0055,N668SP,1,C172,2500,EVV,Green,NO,Evansville,Indiana
+3-Apr-10,0155,COM1735,1,CRJ1,3000,DCA,Green,NO,Washington,District of Columbia
+4-Apr-10,0420,SWA1132,1,B737,2300,BUR,Green,NO,Burbank,California
+4-Apr-10,0426,SWA1809,1,B737,2500,MCI,Green,NO,Kansas City,Missouri
+4-Apr-10,0018,N430S,1,BE90L,9000,MRB,Green,NO,Martinsburg,West Virginia
+4-Apr-10,0044,N419TM,1,BE40,1500,HPN,Green,NO,Westchester,New York
+4-Apr-10,0058,BJS339,1,CL60,1500,HPN,Green,NO,Westchester,New York
+4-Apr-10,0203,N564TJ,1,C560,FL380,ORL,Green,NO,Orlando,Florida
+4-Apr-10,0220,SKW6754,1,CRJ7,FL180,DEN,Green,NO,Denver,Colorado
+4-Apr-10,0235,AAL1254,1,B738,500,LAX,Green,NO,Los Angeles,California
+4-Apr-10,0246,VRD936,1,A319,3500,LAX,Green,NO,Los Angeles,California
+4-Apr-10,0247,SWA2896,1,B737,3000,AUS,Green,NO,Austin,Texas
+4-Apr-10,0253,SWA3676,1,B737,3600,VNY,Green,NO,Van Nuys,California
+4-Apr-10,0321,JBU271,1,A320,3600,VNY,Green,NO,Van Nuys,California
+4-Apr-10,0049,N339FX,1,C605,2000,HPN,Green,NO,Westchester,New York
+5-Apr-10,0406,COA468,1,B739,FL320,LBL,Green,NO,Liberal,Kansas
+5-Apr-10,0033,BTA3087,1,E145,5500,CLE,Green,NO,Cleveland,Ohio
+5-Apr-10,0219,COA1714,1,B739,8000,HOU,Green,NO,Houston,Texas
+6-Apr-10,0401,TF429,1,PA28,3500,PHX,Green,NO,Phoenix,Arizona
+6-Apr-10,0027,COA361,1,B752,11000,HPN,Green,NO,Westchester,New York
+6-Apr-10,0245,BTA2691,1,E145,FL190,MXE,Green,NO,Modena,Pennsylvania
+6-Apr-10,0315,QXE820,1,CRJ7,800,PDX,Green,NO,Portland,Oregon
+7-Apr-10,0432,SWA728*,2,B737,3200,OAK,Green,NO,Oakland,California
+7-Apr-10,0445,SWA2731,1,B737,2500,SMF,Green,NO,Sacramento,California
+7-Apr-10,0505,EAGLE22,1,HELO,2900,LAS,Green,NO,Las Vegas,Nevada
+7-Apr-10,0651,SWA3063,1,B737,8000,SJC,Green,NO,San Jose,California
+7-Apr-10,0537,MEMHR MEDFL,1,HELO,700,HOU,Green,NO,Houston,Texas
+8-Apr-10,0317,N68422,1,C152,7000,SLC,Green,NO,Salt Lake City,Utah
+8-Apr-10,0336,Delta1241,1,MD90,4000,SFO,Green,NO,San Francisco,California
+8-Apr-10,0335,CG6520,1,HELO,4000,SFO,Green,NO,San Francisco,California
+8-Apr-10,0428,SWA1669,1,B733,2000,SAN,Green,NO,San Diego,California
+8-Apr-10,0520,CJT701,1,B722,3000,TOL,UNKN,NO,Toledo,Ohio
+8-Apr-10,0550,SWA3567,1,B737,7000,LAS,Green,NO,Las Vegas,Nevada
+8-Apr-10,0945,FDX1401,1,DC10,10000,MEM,Green,NO,Memphis,Tennessee
+8-Apr-10,1018,OMAHA2,1,HELO,9,DCA,Green,NO,Washington,District of Columbia
+8-Apr-10,0117,SKIER93,1,C130,1400,ALB,Green,NO,Albany,New York
+8-Apr-10,0125,R1944,1,GLF5,1500,ADW,Red,NO,Clinton,Maryland
+8-Apr-10,0140,MEDFL1,1,HELO,800,OKC,Green,NO,Oklahoma City,Oklahoma
+8-Apr-10,0025,SWA770*,2,B737,5000,FLL,Green,NO,Fort Lauderdale,Florida
+8-Apr-10,0232,AAL785,1,MD82,3500,DFW,Green,NO,Dallas-Fort Worth,Texas
+8-Apr-10,0240,SWA3847,1,B737,6500,LFI,Green,NO,Hampton,Virginia
+8-Apr-10,0245,N177CA,1,PA44,3000,HOU,Green,NO,Houston,Texas
+8-Apr-10,0315,AWI3866,1,CRJ2,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+8-Apr-10,0319,SWA367,1,B737,3500,BUR,Green ,NO,Burbank,California
+8-Apr-10,0333,AIRMED3,1,HELO,6000,SLC,Green,NO,Salt Lake City,Utah
+8-Apr-10,0333,N489VC,1,H25B,1500,DEN,Green,NO,Denver,Colorado
+8-Apr-10,0352,SWA1710,1,B733,4500,PHX,Green,NO,Phoenix,Arizona
+8-Apr-10,0200,NJ ANG,1,HELO,900,2JY9,Green,NO,Camden,New Jersey
+9-Apr-10,0403,N622QW,1,F2TH,13000,DEN,Green,NO,Denver,Colorado
+9-Apr-10,0210,LANE CNTY SHERIFF,1,HELO,950,MDW,RED,NO,Chicago,Illinois
+9-Apr-10,0419,AAL192,1,B738,17000,LAX,Green,NO,Los Angeles,California
+9-Apr-10,0450,SWA107,1,B737,4000,BUR,Green,NO,Burbank,California
+9-Apr-10,0055,SWA3579,1,B737,6500,BHM,Green,NO,Birmingham,Alabama
+9-Apr-10,0230,BTA2257,1,E145,12000,EFD,Green,NO,Houston,Texas
+9-Apr-10,0322,FFT563,1,A320,14500,BJC,Green,NO,Denver,Colorado
+9-Apr-10,0328,FFT266,1,A319,15000,BJC,Red/Green,NO,Denver,Colorado
+9-Apr-10,0947,UPS1354,1,A300,2500,BHM,Green,NO,Birmingham,Alabama
+10-Apr-10,0502,FDX1348,1,B752,8000,MEM,Green,NO,Memphis,Tennessee
+10-Apr-10,0549,SWA3063,1,B737,8000,SFO,Green,NO,San Francisco,California
+10-Apr-10,0038,PDT4637,1,DH8A,5000,ROC,Green,NO,Rochester,New York
+10-Apr-10,0045,N9104W,1,PA28,6000,TGE,Green,NO,Tuskegee,Alabama
+10-Apr-10,0022,JBU381,1,A320,800,FLL,Green,NO,Fort Lauderdale,Florida
+10-Apr-10,0305,N75F,1,HELO,500,IAH,Green,NO,Houston,Texas
+10-Apr-10,0307,AAL742,1,MD83,FL200,HAO,Green,NO,Hamilton,Ohio
+10-Apr-10,0344,ASH2907,1,DH8,7500,GJT,Green,NO,Grand Junction,Colorado
+10-Apr-10,2254,ORNGE CNTY SHERIFF,1,HELO,700,ORL,Green,NO,Orlando,Florida
+11-Apr-10,0405,AAL2014,1,MD82,5000,DFW,Green,NO,Dallas-Fort Worth,Texas
+11-Apr-10,0456,EAGLEMED9,1,HELO,3000,ICT,Green,NO,Wichita,Kansas
+11-Apr-10,0540,N837SP,1,C172,2500,OAK,Green,NO,Oakland,California
+11-Apr-10,0044,EGF3569,1,E135,5000,AVL,Green,NO,Asheville,North Carolina
+11-Apr-10,0222,AAL1283,1,B763,15000,VPZ,Green,NO,Valparaiso,Indiana
+11-Apr-10,0353,AAL1332,1,MD82,8500,DAL,Green,NO,Dallas,Texas
+12-Apr-10,0101,SWA627,1,B733,4000,MCO,Green,NO,Orlando,Florida
+12-Apr-10,0250,JBU382,1,A320,2500,LGA,Green,NO,New York City,New York
+13-Apr-10,0428,FDX373,1,B752,7800,MEM,Green,NO,Memphis,Tennessee
+13-Apr-10,0435,FDX1343,1,B752,7000,MEM,Green,NO,Memphis,Tennessee
+13-Apr-10,0137,TCF5980,1,E170,16000,OVO,Green,NO,North Vernon,Indiana
+13-Apr-10,0155,SWA1746,1,B737,4000,MDW,Green,NO,Chicago,Illinois
+13-Apr-10,0222,COA744,1,B737,8000,ORD,Green,NO,Chicago,Illinois
+13-Apr-10,0305,AAL1951,1,MD83,8000,DFW,Green,NO,Dallas-Fort Worth,Texas
+13-Apr-10,1030,HELO Inc,1,HELO,700,MIA,Green,NO,Miami,Florida
+14-Apr-10,0150,C6529,1,H65,1600,TVC,Green,NO,Traverse City,Michigan
+14-Apr-10,0425,SWA685*,3,B737,3000,PHX,Green,NO,Phoenix,Arizona
+14-Apr-10,0352,ALTAS65,1,UH1,2500,NFG,Green,NO,Oceanside  ,California
+14-Apr-10,0513,FFT266,1,A320,10000,ONT,Green,NO,Ontario,California
+14-Apr-10,0537,N3640G,1,C310,7000,IIU,Green,NO,Louisville,Kentucky
+14-Apr-10,0551,CHASE2,1,B407,700,MCO,Green,NO,Orlando,Florida
+14-Apr-10,0617,LBQ610,1,PC12,4500,GPM,Green,NO,Grand Prairie,Texas
+14-Apr-10,0643,UJT55,1,LJ55,5000,PBI,Green,NO,West Palm Beach,Florida
+14-Apr-10,0312,N732EJ,1,C210,3000,MSY,Green,NO,New Orleans ,Louisiana
+14-Apr-10,0315,EGF3447,1,E145,5000,DFW,Green,NO,Dallas-Fort Worth,Texas
+14-Apr-10,0317,EGF4471,1,E-135,2000,JFK,Green,NO,New York City,New York
+14-Apr-10,0336,CHQ5036,1,E135,12000,ORD,Green,NO,Chicago,Illinois
+14-Apr-10,0339,N415BH,1,AC50,6000,ORD,Green,NO,Chicago,Illinois
+14-Apr-10,0352,SLANT27,1,C17,8000,VCV,Green,NO,Victorville,California
+15-Apr-10,0431,AMF282,1,PA31,600,OAK,Green,NO,Oakland,California
+15-Apr-10,0157,BALL36,1,T6,2200,END,Green,NO,Enid,Oklahoma
+15-Apr-10,0157,HYDRA29,1,T6,2200,END,Green,NO,Enid,Oklahoma
+15-Apr-10,0225,UPS1013,1,A306,FL180,BOS,Green,NO,Boston,Massachusetts
+15-Apr-10,0305,TCF7628,1,E170,8400,ORD,Green,NO,Chicago,Illinois
+15-Apr-10,0237,FFT984,1,A319,8000,MKE,Green,NO,Milwaukee,Wisconsin
+15-Apr-10,0230,AAY886,1,MD88,3000,PIE,Green,NO,St Petersburg-Clearwater,Florida
+15-Apr-10,0356,UAL122,1,A320,4000,ORD,Green,NO,Chicago,Illinois
+15-Apr-10,0350,UAL525,1,A320,FL250,DEN,Green,NO,Denver,Chicago
+16-Apr-10,1950,KAP9317,1,UNKN,4500,GUM,Green,NO,Agana,Guam
+16-Apr-10,0145,RPA3340,1,UNKN,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+16-Apr-10,0256,USC721,1,BE58,2700,LAS,Green,NO,Las Vegas,Nevada
+16-Apr-10,0300,AIR3,1,HELO,600,TUS,Green,NO,Tucson,Arizona
+16-Apr-10,0301,HAL44,1,B762,6200,SJC,Green,NO,San Jose,California
+16-Apr-10,0302,CHQ5028,1,E135,5000,ORD,Green,NO,Chicago,Illinois
+16-Apr-10,0307,SKW4442,1,CRJ9,11000,GYY,Green,NO,Gary,Indiana
+16-Apr-10,0320,N52364,1,C172,3500,SNA,Green,NO,Santa Ana,California
+17-Apr-10,0425,SKW5837,1,CRJ7,1200,ELP,Green,NO,El Paso ,Texas
+17-Apr-10,0450,N3149B,1,BE35,3200,CRQ,Green,NO,Carlsbad,California
+17-Apr-10,0455,SKW6233,1,E120,10000,PDX,Green,NO,Portland,Oregon
+17-Apr-10,0005,AAL4,1,B762,1000,JFK,Green,NO,New York City,New York
+17-Apr-10,0000,JBU607,1,E190,1000,JFK,Green,NO,New York City,New York
+17-Apr-10,0250,CHQ5888,1,E145,10000,SDF,Green,NO,Louisville,Kentucky
+17-Apr-10,0336,AAL2477,1,B752,16000,ONT,Green,NO,Ontario,California
+18-Apr-10,0421,COA47,1,B752,1500,LAX,Green,NO,Los Angeles,California
+18-Apr-10,0455,N372TA,1,C172,4000,MYF,Green,NO,Montgomery,California
+18-Apr-10,0549,N971TA,1,C172,6000,RIV,Green,NO,Riverside,California
+18-Apr-10,0607,AAL223,1,B731,2000,LAX,White,NO,Los Angeles,California
+18-Apr-10,0605,N574EH,1,S76,UNKN,DTW,Green,NO,Detroit ,Michigan
+18-Apr-10,0800,UAL86,1,B752,2000,HNL,Green,NO,Honolulu,Hawaii
+18-Apr-10,2349,EGF4475,1,E145,2500,LGA,Green,NO,New York City,New York
+18-Apr-10,0040,N700NY,1,GLF4,3000,SUA,White/Green,NO,Stuart,Florida
+18-Apr-10,0110,AAL768,1,B752,5500,STL,Green,NO,St. Louis,Missouri
+18-Apr-10,0323,N4947V,1,C172,1600,SLI,Green,NO,Los Alamitos,California
+18-Apr-10,0339,SWA840,1,B737,3500,VNY,Green ,NO,Van Nuys,California
+18-Apr-10,0338,N3048E,1,C172,1600,SNA,Green,NO,Santa Ana,California
+19-Apr-10,0359,RPA1578,1,E170,11000,MKE,Green ,NO,Milwaukee,Wisconsin
+19-Apr-10,0415,SKW6498,1,CRJ2,4200,TUS,UNKN,NO,Tucson,Arizona
+19-Apr-10,0415,N19688,1,C172,3000,BUR,Orange/Red,NO,Burbank,California
+19-Apr-10,0442,QXE623,1,CRJ7,6000,ONT,Green,NO,Ontario,California
+19-Apr-10,0144,DAL1812,1,B738,11000,RDU,Green,NO,Raleigh,North Carolina
+19-Apr-10,0259,N500SW,1,PA28A,2000,HFD,Green,NO,Hartford,Connecticut
+19-Apr-10,0250,SWA515,1,B733,6000,SJC,Green,NO,San Jose,California
+19-Apr-10,0250,SWA1438,1,B733,6000,SJC,Green,NO,San Jose,California
+20-Apr-10,0405,SWA3238,1,B737,5000,SNA,Green,NO,Santa Ana,California
+20-Apr-10,0427,FDX1309,1,A306,6000,MEM,Green,NO,Memphis,Tennessee
+20-Apr-10,0019,MTN7503,1,AT43,3000,GSO,Green,NO,Greensboro ,North Carolina
+21-Apr-10,0357,AAL1677,1,B752,2100,SNA,Green,NO,Santa Ana,California
+21-Apr-10,0437,AMF1601,1,B190,3000,JVY,Green,NO,Jeffersonville,Indiana
+21-Apr-10,0505,DAL2072,1,B752,1900,LAX,Green,NO,Los Angeles,California
+21-Apr-10,1441,N414EP,1,C414,1500,SEA,Green/Blue,NO,Seattle,Washington
+21-Apr-10,0038,WIG7404,1,C208,UNKN,ALB,Green,NO,Albany,New York
+21-Apr-10,0215,RAV73,1,H60,UNKN,ALB,Green,NO,Albany,New York
+21-Apr-10,0335,SKKW6048,1,CRJ2,2500,PAH,Green,NO,Paducah,Kentucky
+22-Apr-10,0052,UAL976,1,B737,600,IAD,Green,NO,Washington,District of Columbia
+22-Apr-10,0050,DAL10,1,MD88,UNKN,ATL,Green,NO,Atlanta,Georgia
+22-Apr-10,0152,UAL796,1,B752,2000,IAD,Green,NO,Washington,District of Columbia
+22-Apr-10,0143,MES3607,1,CRJ9,3000,DTW,Green,NO,Detroit ,Michigan
+22-Apr-10,0230,OMAHA65,1,HELO,5000,MSS,Green,NO,Messena,New York
+22-Apr-10,0236,AAL1005,1,MD82,10000,MDW,Green,NO,Chicago,Illinois
+22-Apr-10,0249,N95K,1,PA28,2500,ETB,Green,NO,West Bend,Wisconsin
+22-Apr-10,0309,JBU437,1,A320,6000,ORL,Green,NO,Orlando,Florida
+23-Apr-10,0610,VRD415,1,A320,17500,LAX,Green,NO,Los Angeles,California
+23-Apr-10,0029,AWE974,1,B752,6000,CLT,Green,NO,Charlotte,North Carolina
+23-Apr-10,0147,AWI3554,1,CRJ7,15000,DPK,Green,NO,Deer Park,Pennsylvania
+23-Apr-10,0233,DAL1134,1,B738,10000,BDL,Green,NO,Windsor Locks,Connecticut
+23-Apr-10,0328,JIA574,1,CRJ2,14000,RDU,Gray,NO,Raleigh,North Carolina
+23-Apr-10,0317,SWA275,1,B733,2500,LAX,Green,NO,Los Angeles,California
+23-Apr-10,0345,DAL2189,1,A320,5000,PHX,Green,NO,Phoenix,Arizona
+24-Apr-10,0345,SKW6581,1,CRJ7,700,COS,Green,NO,Colorado Springs,Colorado
+24-Apr-10,0350,SWA2519,1,B737,13500,LAX,Green,NO,Los Angeles,California
+24-Apr-10,0230,DAL427,1,B752,3000,TJSJ,Green ,NO,San Juan,Puerto Rico
+24-Apr-10,0345,SWA2210,1,B733,4000,AUS,Green,NO,Austin,Texas
+24-Apr-10,0345,N75651,1,C172,2200,SAN,Green,NO,San Diego,California
+25-Apr-10,0255,EVA16,1,B77W,2500,LAX,Green,NO,Los Angeles,California
+25-Apr-10,0332,SKW5842,1,CRJ2,5000,SFO,Green,NO,San Francisco,California
+26-Apr-10,0441,AAL2236,1,B738,8000,AUS,Green,NO,Austin,Texas
+26-Apr-10,0520,LN772MF,1,PAY2,11000,SLC,Green,NO,Salt Lake City,Utah
+26-Apr-10,0948,PDT4279,1,DH8C,3500,LYH,Green,NO,Lynchburg,Virginia
+26-Apr-10,0209,COA644,1,B737,2500,CLE,Green,NO,Cleveland,Ohio
+27-Apr-10,0453 ,UPS103,1,B763,FL180,OBK,Green,NO,Northbrook,Illinois
+28-Apr-10,0056,SWA235,1,B737,8000,PVD,Green,NO,Providence,Rhode Island
+28-Apr-10,0319,UAL146,1,A320,6000,RDU,Green,NO,Raleigh,North Carolina
+28-Apr-10,0338,N415BH,1,AC50,6000,ORD,Green,NO,Chicago,Illinois
+28-Apr-10,0527,HUNBCH1,1,HELO,700,SNA,Green,NO,Santa Ana,California
+28-Apr-10,0442,AAL1989,1,MD80,4000,FFZ,Green,NO,Mesa,Arizona
+28-Apr-10,0422,TF915,1,P28A,3500,PHX,Green,NO,Phoenix,Arizona
+29-Apr-10,0829,N51895,1,C170,2000,SNA,Green,NO,Santa Ana,California
+29-Apr-10,0320,UAL694,1,A320,13000,FJC,Green,NO,Allentown,Pennsylvania
+29-Apr-10,0327,SWA690,1,B737,13000,FJC,Green,NO,Allentown,Pennsylvania
+29-Apr-10,2310,RPA3207,1,E170,5000,ORF,Green,NO,Norfolk,Virginia
+30-Apr-10,0158,N54628,1,C172,2000,OSU,Red,NO,Columbus,Ohio
+30-Apr-10,0703,USC105,1,C208,4000,MDW,Green,NO,Chicago,Illinois
+30-Apr-10,0349,AIR2,1,B06,3100,TUS,Green ,NO,Tucson,Arizona
+30-Apr-10,0351,METRO1,1,C172,1500,RIC,Green,NO,Richmond,Virginia
+30-Apr-10,0354,BTA2800,1,E145,3000,XNA,Green,NO,Fayetteville/Springdale,Arkansas
+30-Apr-10,0357,FLG3940,1,CRJ2,3000,XNA,Green,NO,Fayetteville/Springdale,Arkansas
+30-Apr-10,0450,N3540N,1,PA31,3500,HIO,Green,NO,Hillsboro,Oregon
+30-Apr-10,0455,AMF425,1,PA31,3000,HIO,Green,NO,Hillsboro,Oregon
+1-May-10,0042,N8594N,1,P28A,UNKN,ALB,Green,NO,Albany,New York
+1-May-10,0101,N3016N,1,PA32,1500,ABE,Green,NO,Allentown,Pennsylvania
+1-May-10,0201,COM8694,1,DH8C,4000,MDT,Green,NO,Harrisburg,Pennsylvania
+1-May-10,0350,UAL1940,1,B737,3000,ALB,Green,NO,Albany,New York
+1-May-10,0448,HPN PD,1,HELO,2000,HPN,Green,NO,Westchester,New York
+2-May-10,0053,N627FT,1,PA32,UNKN,Jupiter,Green,NO,Jupiter,Florida
+2-May-10,0135,NKS403*,2,A319,10000,FLL,Green,NO,Fort Lauderdale,Florida
+2-May-10,0239,NWA3944,1,CRJ2,2600,MBS,Green ,NO,Saginaw,Michigan
+2-May-10,0318,UAL456,1,A319,11000,DEN,Green,NO,Denver,Colorado
+2-May-10,0350,SKW5865,1,E120,9000,LAX,Green,NO,Los Angeles,California
+3-May-10,0421,SKW6409,1,E120,4500,LAX,Green,NO,Los Angeles,California
+3-May-10,0428,SKW764,1,B737,2500,OAK,Green,NO,Oakland,California
+3-May-10,0508,SWA2718*,2,B737,UNKN,OAK,Green,NO,Oakland,California
+4-May-10,0150,SWA1925,1,B737,5000,BDL,Green,NO,Windsor Locks,Connecticut
+4-May-10,0540,N506,1,C172,3000,BUR,Green,NO,Burbank,California
+4-May-10,0842,SKW1059,1,E120,4000,FAT,Green,NO,Fresno,California
+4-May-10,0030,LBQ179,1,PC12,6000,SAT,Green,NO,San Antonio,Texas
+4-May-10,0128,TRS250,1,B712,3000,RIC,Green,NO,Richmond,Virginia
+4-May-10,0033,N757UR,1,C152,4000,ALB,Green,NO,Albany,New York
+4-May-10,0240,AAL1226,1,B752,1500,LGA,Green,NO,New York City,New York
+5-May-10,0321,UPS1487,1,B757,14000,OBK,Green,NO,Northbrook,Illinois
+5-May-10,0755,UPS64,1,B744,UNKN,SER,Green,NO,Seymour,Indiana
+5-May-10,0937,FDX1859,1,A306,8000,OAK,Green,NO,Oakland,California
+5-May-10,0018,SWA770 ,1,B733,3000,FLL,Green,NO,Fort Lauderdale,Florida
+5-May-10,0320,UPS1291,1,A306,11000,SDF,Green,NO,Louisville,Kentucky
+6-May-10,0405,SWA782,1,B737,13000,LAX,Green,NO,Los Angeles,California
+6-May-10,0345,PD77,1,HELO,700,SNA,Green,NO,Santa Ana,California
+6-May-10,0119,CJC3401,1,DH80,6000,BAL,Green,NO,Baltimore,Maryland
+6-May-10,0314,N6209Q,1,C152,1500,GLS,Green,NO,Galveston,Texas
+6-May-10,0317,NJT645,1,C560,5000,HZQ,Green,NO,Mesquite,Texas
+6-May-10,0340,BTA2654,1,E145,500,MFE,Green,NO,McAllen,Texas
+6-May-10,0346,ASA241,1,B737,16000,HDF,Green,NO,Riverside,Texas
+6-May-10,0359,SWA1947,1,B737,16000,FIL,Green,NO,Fillmore,Utah
+7-May-10,0044,N154ZP,1,Airship,1600,UDG,Green,NO,Darlington,South Carolina
+7-May-10,0227,COA88,1,B738,6000,IAH,Green,NO,Houston,Texas
+7-May-10,0241,DAL2928,1,A320,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+7-May-10,0255,SWA352,1,B737,2000,BNA,Green,NO,Nashville,Tennessee
+7-May-10,0325,411PT,1,AC50,3500,STL,Green,NO,St. Louis,Missouri
+7-May-10,0525,SKW4726,1,CRJ2,12000,OED,Green,NO,Medford,Oregon
+7-May-10,0527,AAL607,1,B752,1000,LAX,Green,NO,Los Angeles,California
+7-May-10,0800,AJT171,1,BE90 ,2100,OAK,Green,NO,Oakland,California
+7-May-10,2210,ASA221,1,B737,7000,SEA,Green,NO,Seattle,Washington
+8-May-10,0450,ABX1820,1,B762,9700,SFO,Green,NO,San Francisco,California
+8-May-10,0239,AAL2225,1,B752,3500,DFW,Green,NO,Dallas-Fort Worth,Texas
+8-May-10,0329,N2092L,1,P28A,1800,VNY,Green,NO,Van Nuys,California
+8-May-10,0351,GJS7444,1,CRJ7,3000,SAT,Green,NO,San Antonio,Texas
+9-May-10,1246,RCH2107,1,UNKN,3000,GUA,UNKN,NO,"Andersen, Mariana Is ",Guam
+9-May-10,0150,LOF7590,1,E145,5000,MDW,Green,NO,Chicago,Illinois
+9-May-10,0240,COA1593,1,B739,FL220,DQO,Green,NO,Wilmington,Delaware
+9-May-10,0315,TCF7710,1,E170,8000,ORD,Green,NO,Chicago,Illinois
+9-May-10,0353,SWA324,1,B733,2500,LAX,Green,NO,Los Angeles,California
+9-May-10,0356,SWA2274,1,B733,2000,SAN,Green,NO,San Diego,California
+10-May-10,0145,LOF7951,1,E145,5000,MDW,Green,NO,Chicago,Illinois
+10-May-10,0638,APW1446,1,DC10,4000,MIA,Green,NO,Miami,Florida
+10-May-10,0209,N485CT,1,BE40,17000,SBJ,Green,NO,Solberg,New Jersey
+10-May-10,0303,CJC9536,1,UNKN,7000,IAH,UNKN,NO,Houston,Texas
+10-May-10,0324,UPS1441,1,MD11,1000,SDF,Green,NO,Louisville,Kentucky
+10-May-10,0350,N861ZJ,1,C182,3500,ONT,Green,NO,Ontario,California
+11-May-10,0425,N125BP,1,PC12,3000,ONT,Green,NO,Ontario,California
+11-May-10,0430,QFA108,1,B744,14000,ONT,Green,NO,Ontario,California
+11-May-10,0434,N125BP,1,PC12,3000,ONT,Green,NO,Ontario,California
+11-May-10,0140,N812SA,1,C172,2000,MFE,Green,NO,McAllen,Texas
+12-May-10,0642,UPS805,1,A306,4000,ONT,Green,NO,Ontario,California
+12-May-10,0542,TV5,1,HELO,1600,BUR,Green,NO,Burbank,California
+12-May-10,0435,SWA1204,1,B737,3000,OAK,Green,NO,Oakland,California
+12-May-10,0345,AAL267,1,B757,6300,HNL,Green,NO,Honolulu,Hawaii
+13-May-10,0342,C6515,1,HELO,2500,HWD ,Green,NO,Hayward,California
+12-May-10,0630,SWA3412,1,B737,1000,OAK,Green,NO,Oakland,California
+13-May-10,0423,SWA772,1,B737,4000,OAK,Green,NO,Oakland,California
+13-May-10,0420,AAL1553,1,B737,4000,LAX,Green,NO,Los Angeles,California
+13-May-10,0444,ASA349,1,B737,5000,TCM,Green,NO,Tacoma,Washington
+13-May-10,0449,AWE627,1,A320,4000,OAK,Green,NO,Oakland,California
+13-May-10,0540,LN94KC,1,BE20,UNKN,SDF,Green,NO,Louisville,Kentucky
+13-May-10,0309,DAL2307,1,MD81,2700,IND,Green,NO,Indianapolis,Indiana
+14-May-10,0911,HAL26,1,B763,2500,PDX,Green,NO,Portland,Oregon
+14-May-10,0912,SWA2091,1,B733,3000,OAK,Green,NO,Oakland,California
+14-May-10,0912,VRD27,1,A320,6000,SJC,Green,NO,San Jose,California
+14-May-10,0243,N54859,1,C172,4500,APF,Green,NO,Naples,Florida
+14-May-10,0356,PDT4109,1,DH8B,8000,CHO,Green,NO,Charlottesville,Virginia
+15-May-10,0235,RPA3388,1,E170,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+15-May-10,0610,SKW63E,1,CRJ2,5000,ONT,Green,NO,Ontario,California
+15-May-10,0219,MES2690,1,CRJ9,9000,MDT,Green,NO,Harrisburg,Pennsylvania
+15-May-10,0222,PSA289,1,CRJ9,2000,SAV,Green,NO,Savannah,Georgia
+15-May-10,0311,LOF7974,1,E145,7000,ARD,Green,NO,Yardley,Pennsylvania
+15-May-10,0417,TRS365*,2,B712,4000,LGA,Green,NO,New York City,New York
+15-May-10,0431,N4624D,1,C172,4500,SAC,Green,NO,Sacramento,California
+15-May-10,0509,SWA186,1,B737,7000,BOS,Green,NO,Boston,Massachusetts
+16-May-10,0557,UAR9409,1,B737,7000,DEN,Green,NO,Denver,Colorado
+16-May-10,0712,N72EH,1,SK70,800,BOS,Green,NO,Boston,Massachusetts
+16-May-10,0715,NATIVE8,1,HELO,2400,LAS,Green,NO,Las Vegas,Nevada
+16-May-10,0624,LN381AL,1,LJ31,9500,DEN,Green,NO,Denver,Colorado
+16-May-10,0157,BTA2460,1,E145,FL270,PSF,Green,NO,Pittsfield,Massachusetts
+16-May-10,0159,RPA1530,1,E170,FL280,PSF,Green,NO,Pittsfield,Massachusetts
+16-May-10,0010,ULTJET425,1,J328,3000,CAK,Green,NO,Akron,Ohio
+16-May-10,0310,TVA7974,1,E145,7000,EWR,Green,NO,Newark,New Jersey
+16-May-10,0321,UAL338,1,B752,3000,DFW,Green,NO,Dallas-Fort Worth,Texas
+16-May-10,0350,SWA1033,1,B737,12000,PHX,Green,NO,Phoenix,Arizona
+16-May-10,0435,MEDFL2,1,SK76,800,BOS,Green,NO,Boston,Massachusetts
+17-May-10,0412,SWA143,1,B733,7000,SLC,Green,NO,Salt Lake City,Utah
+17-May-10,0424,N900SF,1,B733,6000,VNY,Green,NO,Van Nuys,California
+17-May-10,0430,AAL480,1,MD83,4000,DFW,Green,NO,Dallas-Fort Worth,Texas
+17-May-10,0431,SWA619,1,B733,4000,ORD,Green,NO,Chicago,Illinois
+17-May-10,0525,AAL2211,1,MD83,1500,PDX,Green,NO,Portland,Oregon
+17-May-10,0135,AAL1877,1,B752,9000,MIA,Green,NO,Miami,Florida
+18-May-10,0329,N52AE,1,BH06,1300,EVV,Red,NO,Evansville,Indiana
+18-May-10,0242,MAC6033,1,DC10,2000,BGR,Green,NO,Bangar,Maine
+18-May-10,0334,BTA2654,1,E145,1400,BRO,Green,NO,Brownsville,Texas
+19-May-10,0029,AAL1945,1,B738,7000,FLL,Green,NO,Fort Lauderdale,Florida
+19-May-10,0634,IDAHO30,1,UH60,2200,BUR,Green,NO,Burbank,California
+19-May-10,0403,VV5G330,1,BE20,2000,CRP,Green,NO,Corpus Christi,Texas
+19-May-10,0450,FDX1124,1,DC10,FL200,GVT,Green,NO,Greenville,Texas
+19-May-10,0618,USC301,1,LJ35,10000,MDW,Green,NO,Chicago,Illinois
+19-May-10,0336,N9075L,1,UNKN,3500,SNA,Blue/Purple,NO,Santa Ana,California
+19-May-10,0347,SKW6349,1,CRJ2,2500,BUR,Green,NO,Burbank,California
+19-May-10,0352,SWA349,1,B737,3000,BUR,Green,NO,Burbank,California
+20-May-10,0430,AMF1080,1,B190,8000,LAX,Green,NO,Los Angeles,California
+20-May-10,0402,FLX421,1,C210,4000,LBV,Green,NO,La Belle,Florida
+20-May-10,0614,FFT282,1,A319,3000,STL,UNKN,NO,St. Louis,Missouri
+20-May-10,0313,FFT387,1,A319,12500,DEN,Green,NO,Denver,Colorado
+21-May-10,0429,LXJ327,1,CL60,5000,TEB,Green,NO,Teterboro,New Jersey
+21-May-10,0230,UPS1345,1,B757,9000,FLL,Green,NO, Fort Lauderdale,Florida
+21-May-10,0535,N1395E,1,C172,2000,OUN,Green,NO,Norman,Oklahoma
+21-May-10,0542,AMF135,1,BE99,15000,POM,Green,NO,Pomona,California
+21-May-10,0550,Several Aircrat*,5,UNKN,15000,POM,Green,NO,Pomona,California
+21-May-10,0847,PDT4279,1,DH80,2500,LYH,Green,NO,Lynchburg,Virginia
+21-May-10,0102,N3975A,1,CL30,1500,ISP,Green,NO,Islip,New York
+21-May-10,0102,N5928E,1,C172,1500,ISP,Green,NO,Islip,New York
+21-May-10,0145,UPS1121,1,B752,3500,BDL,Green,NO,Windsor Locks,Connecticut
+22-May-10,0419,GLA199,1,B190,11000,FMN,Green,NO,Farmington,New Mexico
+22-May-10,0333,N623AC,1,PC12,7500,SLC,Red,NO,Salt Lake City,Utah
+22-May-10,0423,SWA1223,1,B737,3000,FLL,Green,NO,Fort Lauderdale,Florida
+22-May-10,0525,DAL2999,1,A320,16000,PHX,Green,NO,Phoenix,Arizona
+22-May-10,0512,N757VB,1,C172,4500,LGB,Green,NO,Long Beach,California
+22-May-10,0527,AWE257,1,A321,16000,PHX,Green,NO,Phoenix,Arizona
+22-May-10,0320,AirEvac,1,UNKN,1500,GDJ,Green,NO,Granbury,Texas
+22-May-10,0845,SKQ301,1,PA31,3000,BHM,Green,NO,Birmingham,Alabama
+22-May-10,0149,AAL844,1,B737,15000,APF,Green,NO,Naples,Florida
+22-May-10,0105,N62770,1,C172,3000,UST,Green,NO,St Augustine,Florida
+22-May-10,0255,JBU919,1,A320,6000,ORD,Green,NO,Chicago,Illinois
+23-May-10,0420,SWA874,1,B737,10000,OMA,Green,NO,Omaha,Nebraska
+23-May-10,0145,AAL1844,1,B738,15000,APF,Green,NO,Naples,Florida
+23-May-10,0515,N326RT,1,BE20,16000,HEC,Green,NO,Hector,California
+23-May-10,0638,SKW6848,1,E120,3000,SBA,Green,NO,Santa Barbara,California
+23-May-10,0105,PDT4631,1,DH8D,UNKN,LGA,Green,NO,New York City,New York
+23-May-10,0150,UJC407,1,J328,4000,CVG,Green,NO,Covington,Kentucky
+23-May-10,0202,N506BA,1,FA90,4000,BDR,Green,NO,Bridgeport,Connecticut
+23-May-10,0220,DAL302,1,MD88,4000,BDR,Green,NO,Bridgeport,Connecticut
+23-May-10,0305,TN221CC,1,C650,2200,PTK,Green,NO,Pontiac,Michigan
+23-May-10,0255,SKW6035,1,CRJ2,2000,RAP,Green,NO,Rapid City,South Dakota
+24-May-10,0409,AAL1147,1,MD82,4000,PHX,Green,NO,Phoenix,Arizona
+24-May-10,0846,N866MA,1,C208,1400,HNL,Green,NO,Honolulu,Hawaii
+24-May-10,0252,UPS1277,1,MD11,13500,DVK,Green,NO,Danville,Kentucky
+24-May-10,0255,JUS231,1,DC93,1500,MYR,Green,NO,Myrtle Beach,South Carolina
+24-May-10,0308,AAL1731,1,MD83,8000,AUS,Green,NO,Austin,Texas
+24-May-10,0320,FLG4084,1,CRJ2,9000,ITH,Green,NO,Ithaca,New York
+24-May-10,0303,EGF4609,1,E145,1100,PVD,Green,NO,Providence,Rhode Island
+25-May-10,0354,TRS28,1,B737,2500,MDW,Green,NO,Chicago,Illinois
+25-May-10,0347,N54794,1,C172,2500,GYY,Green,NO,Gary,Indiana
+25-May-10,0445,SNC1611,1,SH36,6000,IN14,Green,NO,Lanesville,Indiana
+25-May-10,0120,JIA557,1,CRJ2,5500,TYS,Green,NO,Knoxville,Tennessee
+25-May-10,0310,POLICE4,1,HELO,3500,SAT,Green,NO,San Antonio,Texas
+25-May-10,0145,BTA2564,1,E145,FL240,TOL,Green,NO,Toledo,Ohio
+26-May-10,0708,KING53,1,C130,5000,NUQ,Green,NO,Mountain View,California
+26-May-10,0707,FDX1601,1,DC10,2000,IND,Green,NO,Indianapolis,Indiana
+26-May-10,0852,SWA1288,1,B737,8000,LAX,Green,NO,Los Angeles,California
+27-May-10,0228,LANDON5,1,H60,500,OQU,UNKN,NO,North Kingstown ,Rhode Island
+27-May-10,0417,AAL794,1,B738,3500,ORD,Green,NO,Chicago,Illinois
+27-May-10,0418,SKW7787,1,E120,6000,SLC,Green,NO,Salt Lake City,Utah
+27-May-10,0419,N535LN,1,EC35,2200,ALB,Green,NO,Albany,New York
+27-May-10,0233,GGN7424,1,B190,3000,HPN,Green,NO,Westchester,New York
+28-May-10,0423,FLNT7030,1,C206,7500,LAX,Green,NO,Los Angeles,California
+28-May-10,0855,SWA2128,1,B737,5000,SFO,Green,NO,San Francisco,California
+28-May-10,0855,AIRLIFT6,1,EC35,700,BFI,Red,NO,Seattle,Washington
+28-May-10,0223,LOF7969,1,E145,8000,ORD,Green,NO,Chicago,Illinois
+28-May-10,0326,SKW87L,1,CRJ7,FL200,OMA,Green,NO,Omaha,Nebraska
+28-May-10,0327,SKW45B,1,CRJ7,UNKN,JAC,Green,NO,Jackson,Wyoming
+29-May-10,0415,FFT780,1,A319,12000,DEN,Green,NO,Denver,Colorado
+29-May-10,0615,N721AM,1,C172,2500,VNY,Green,NO ,Van Nuys,California
+29-May-10,0615,N80GD,1,UNKN,5500,GRR,Green,NO,Grand Rapids,Michigan
+29-May-10,0616,FFT563,1,A318,4300,SAN,Green,NO,San Diego,California
+29-May-10,0700,N7158S,1,R22,1000,HLI,Green,NO,Lihue,Hawaii
+30-May-10,0445,DAL1097,1,A319,2200,SJC,Green,NO,San Jose,California
+30-May-10,1028,AIRLIFE2,1,B430,2000,SAT,Green,NO,San Antonio,Texas
+30-May-10,0300,PDT4174,1,DH8C,4000,PTW,Green,NO,Pottstown,Pennsylvania
+31-May-10,0412,SWA3046,1,B733,7000,LAS,Green,NO,Las Vegas,Nevada
+31-May-10,0430,SWA1151,1,B733,5500,SJC,Green,NO,San Jose,California
+31-May-10,0444,SWA481,1,B737,9000,SJC,Green,NO,San Jose,California
+31-May-10,0548,N598EA,1,EA50,6000,ELP,Green,NO,El Paso ,Texas
+31-May-10,0220,CHQ3033,1,E145,14000,EWR,Green,NO,Newark,New Jersey
+31-May-10,0303,SWA2836,1,B737,4000,BWI,Green,NO,Baltimore,Maryland
+31-May-10,0332,TRS401,1,B712,4000,LGA,Green,NO,New York City,New York
+1-Jun-10,0658,N827DC,1,C680,1700,CNO,Green,NO,Chino,California
+2-Jun-10,0738,AAL18,1,B762,16500,CCR,Green,NO,Concord,California
+2-Jun-10,0739,SWA440*,2,B737,UNKN,LAS,Green,NO,Las Vegas,Nevada
+2-Jun-10,0911,N54SP,1,B206,2500,VHP,Green,NO,Indianapolis,Indiana
+2-Jun-10,0324,FDX1206,1,B722,FL320,HYK,Green,NO,Lexington,Kentucky
+2-Jun-10,0335,JANET210,1,B737,2900,LAS,Green,NO,Las Vegas,Nevada
+2-Jun-10,0542,SILVRDO76,1,AS35,3000,LAS,Green,NO,Las Vegas,Nevada
+2-Jun-10,0845,DAL137,1,B757,12000,LAX,Green,NO,Los Angeles,California
+3-Jun-10,0803,UAL522,1,A320,7800,PDX,Green,NO,Portland,Oregon
+3-Jun-10,0122,SGB5906,1,B734,10000,MIA,Green,NO,Miami,Florida
+4-Jun-10,0430,MAVRICK2*,2,HELOs,3000,LAS,Green,NO,Las Vegas,Nevada
+4-Jun-10,0651,SWA3419,1,B737,12000,APA,Green,NO,Denver,Colorado
+4-Jun-10,1135,UPS914,1,A306,12000,PMD,Green,NO,Palmdale,California
+4-Jun-10,0120,SP3,1,AS55,700,BCT,Green,NO,Boca Raton,Florida
+5-Jun-10,0120,MAPD3,1,AS55,700,LWN,Green,NO,Lawrence ,Massachusetts
+5-Jun-10,0459,SWA244,1,B737,4000,PHX,Green,NO,Phoenix,Arizona
+5-Jun-10,0510,CALSTAR70,1,C421,15000,SCK,Green,NO,Stockton,California
+5-Jun-10,0535,PD3,1,B06,1000,SAN,Green,NO,San Diego,California
+5-Jun-10,0540,FFT563,1,A319,2000,SAN,Green,NO,San Diego,California
+5-Jun-10,0649,N239CD,1,FA20,4000,DFW,Green,NO,Dallas-Fort Worth,Texas
+5-Jun-10,0851,AIRMED50,1,BE20,8000,WVI,Green,NO,Watsonville,California
+5-Jun-10,0314,SWA8421,1,B737,9000,HAR,Green,NO,Harrisburg,Pennsylvania
+6-Jun-10,0350,SWA2883,1,B737,2400,BUR,Green,NO,Burbank,California
+6-Jun-10,0516,SPECK96,1,TEX2,14000,PUB,Green,NO,Pueblo,Colorado
+6-Jun-10,0730,EAGLE1,1,HELO,1000,FAT,Green ,NO,Fresno,California
+7-Jun-10,0424,LXJ538,1,CL30,1500,BUR,Green,NO,Burbank,California
+7-Jun-10,0539,CHQ1325,1,E145,3000,DSM,Green,NO,Des Moines,Iowa
+8-Jun-10,0412,SWA1951,1,B731,5000,PHX,Green,NO,Phoenix,Arizona
+8-Jun-10,0550,SWA627,1,B737,11000,APA,Green,NO,Denver,Colorado
+8-Jun-10,0242,COA616,1,B735,3500,MSP,Green,NO, Minneapolis,Minnesota
+8-Jun-10,0318,GLA16,1,B19,11000,FMN,Green,NO,Farmington,New Mexico
+8-Jun-10,0332,UPS701,1,B752,5000,SDF,Green,NO,Louisville,Kentucky
+8-Jun-10,0333,UPS1333,1,B752,1300,LEX,Green,NO,Lexington,Kentucky
+8-Jun-10,0636,DAL2487,1,MD90,160,MSP,Green,NO,Minneapolis,Minnesota
+9-Jun-10,0425,SWA590,1,B737,8000,PHX,Green,NO,Phoenix,Arizona
+9-Jun-10,0600,DAL2477,1,B763,3000,OGG,Red,NO,Kahului,Hawaii
+9-Jun-10,1619,UPS701,1,B752,6000,SDF,Green,NO,Louisville,Kentucky
+9-Jun-10,0255,COA1488,1,B737,12000,LFR,Green,NO,Litchfield,Michigan
+9-Jun-10,0345,SKW5954,1,CRJ7,UNKN,ASE,Green,NO,Aspen,Colorado
+9-Jun-10,0346,DAL1054,1,MD88,4000,RDU,Green,NO,Raleigh,North Carolina
+10-Jun-10,0536,FDX1247,1,DC10,10000,ORD,Green,NO,Chicago,Illinois
+10-Jun-10,0630,HAL376,1,B712,2500,HNL,Green,NO,Honolulu,Hawaii
+10-Jun-10,0714,USC105,1,C208,6000,ORD,Green,NO,Chicago,Illinois
+10-Jun-10,0742,USC224,1,BE58,2500,SYR,Green,NO,Syracuse,New York
+10-Jun-10,0148,SWA1413,1,B733,10000,PIT,Green,NO,Pittsburgh,Pennsylvania
+10-Jun-10,0215,DAL2596,1,DC95,4000,DTW,Green,NO,Detroit ,Michigan
+10-Jun-10,0311,SWA1164,1,B731,9000,PHX,Green,NO,Phoenix,Arizona
+11-Jun-10,0249,NKS852,1,A319,4500,DTW,Green/Yellow,NO,Detroit ,Michigan
+11-Jun-10,0432,ASA330,1,B738,5000,SJC,Green ,NO,San Jose,California
+11-Jun-10,0450,AWE415,1,A319,4800,SFO,Green,NO,San Francisco,California
+11-Jun-10,0454,N208LT,1,CL60,2000,SAN,Green ,NO,San Diego,California
+11-Jun-10,0515,SWA1062,1,B737,10000,SJC,Green ,NO,San Jose,California
+11-Jun-10,0528,RUF420,1,MU2,4000,OJC,Green,NO,Olathe,Kansas
+11-Jun-10,0624,FRG600,1,BE99,3000,OBK,Green,NO,Northbrook,Illinois
+11-Jun-10,0142,PDT4336,1,DH8A,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+11-Jun-10,0237,EGF3361,1,E145,5000,DFW,Green,NO,Dallas-Fort Worth,Texas
+11-Jun-10,0237,EGF3229,1,E135,5000,DFW,Green,NO,Dallas-Fort Worth,Texas
+11-Jun-10,0330,SWA3569,1,B733,5000,TUS,Green,NO,Tucson,Arizona
+11-Jun-10,0430,N54628,1,C172,1800,OSU,Green,NO,Columbus,Ohio
+12-Jun-10,0225,N990M,1,C550,UNKN,AGC,Green,NO,Pittsburgh,Pennsylvania
+12-Jun-10,0415,SKW6169,1,E120,9000,BUR,Green,NO,Burbank,California
+12-Jun-10,0444,GLA759,1,B190,UNKN,ALS,Green,NO,Alamosa,Colorado
+12-Jun-10,0553,DAL736,1,B752,12000,SMF,Green,NO,Sacramento,California
+12-Jun-10,0133,FFT672,1,A319,7500,MCO,Green,NO,Orlando,Florida
+12-Jun-10,0318,BTA5797,1,E45X,8000,ORD,Green,NO,Chicago,Illinois
+12-Jun-10,0325,JBU529,1,A320,3500,MCO,Green,NO,Orlando,Florida
+12-Jun-10,0325,AWE1857,1,A321,3500,MCO,Green,NO,Orlando,Florida
+13-Jun-10,0542,ASA536,1,B734,5000,ONT,Green,NO,Ontario,California
+13-Jun-10,0005,G72069,1,EC45,6000,SJU,Green,NO,San Juan,Puerto Rico
+14-Jun-10,0120,UAL95,1,A310,1000,SFO,Green,NO,San Francisco,California
+14-Jun-10,0513,SWA2274,1,B737,6000,LAS,Green,NO,Las Vegas,Nevada
+14-Jun-10,0514,SLAM95,1,C17 ,7300,ONT,Green,NO,Ontario,California
+14-Jun-10,0514,DAL3850,1,CRJ9,6000,I19,Green ,NO,Dayton,Ohio
+14-Jun-10,0800,UAL455,1,A320,5500,LAS,Green,NO,Las Vegas,Nevada
+14-Jun-10,0120,RPA3391,1,E170,FL200,MOD,Green,NO,Modesto,California
+14-Jun-10,0336,AAY435,1,UNKN,4000,MFE,Green,NO,McAllen,Texas
+14-Jun-10,0339,ASH2033,1,E145,7000,CLE,Green,NO ,Cleveland,Ohio
+14-Jun-10,0108,FLG3850,1,CRJ9,6000,DAY,Green,NO,Dayton,Ohio
+15-Jun-10,0130,DAL2880,1,B763,11000,ATL,Green,NO,Atlanta,Georgia
+15-Jun-10,0130,EJA332P,1,C560,10000,ORH,Green,NO,Worcestor,Massachusetts
+15-Jun-10,0215,AAL1624,1,B738,8000,JOT,Green,NO,Joliet,Illinois
+15-Jun-10,0439,SKW6431,1,CRJ7,5000,LAX,Green,NO,Los Angeles,California
+15-Jun-10,0426,FDX86,1,DC10,UNKN,STS,Green,NO,Santa Rosa,California
+15-Jun-10,0444,AAL661,1,MD80,4000,ONT,Green,NO,Ontario,California
+16-Jun-10,1200,AAH222,1,B732,4000,HNL,Green,NO,Honolulu,Hawaii
+16-Jun-10,0614,LOF7993,1,E145,3000,ORD,UNKN,NO,Chicago,Illinois
+16-Jun-10,0615,JBU471,1,A320,2300,SJC,Green,NO,San Jose,California
+16-Jun-10,0616,JBU1761,1,A320,1900,TJSJ,Green,NO,San Juan,Puerto Rico
+16-Jun-10,0124,AAL532,1,B737,2000,BWI,Green,NO,Baltimore,Maryland
+17-Jun-10,0505,SWA2706,1,B734,5000,SNA,Green,NO,Santa Ana,California
+17-Jun-10,0546,UAL140,1,A320,5000,SNA,Green,NO,Santa Ana,California
+17-Jun-10,0630,FRHELOs,1,HELO,5600,DEN,Green,NO,Denver,Colorado
+17-Jun-10,0835,HAL516,1,B717,500,HI50,Green,NO,Lahaina,Hawaii
+17-Jun-10,0620,SKW6451,1,E120,10000,VTU,Green,NO,Oxnard,California
+17-Jun-10,0837,UPS1332,1,B752,3500,SDF,Green/White,NO,Louisville,Kentucky
+17-Jun-10,1016,BVN8281,1,C208,7000,AUS,White,NO,Austin,Texas
+17-Jun-10,0321,N362SP,1,C172,3500,CVG,Green,NO,Covington,Kentucky
+18-Jun-10,0630,JODY23,1,C130,1300,LRF,Red,No,Jacksonville,Arkansas
+18-Jun-10,0758,USC105,1,C208,4000,MDW,Green,NO,Chicago,Illinois
+18-Jun-10,0638,AIRWAR2,1,A10,7500,TUS,Green,NO,Tucson,Arizona
+18-Jun-10,0638,N227L,1,BE55,6000,ONT,Green,NO,Ontario,California
+18-Jun-10,0639,N7802N,1,C172,7000,COS,Green,NO,Colorado Springs,Colorado
+18-Jun-10,0355,DAL1027,1,B752,8700,TUS,Green,NO,Tucson,Arizona
+18-Jun-10,0207,N16789,1,C172,7500,BDR,Green,NO,Bridgeport,Connecticut
+18-Jun-10,0345,MES7246,1,CRJ7,3500,ORD,Green,NO,Chicago,Illinois
+18-Jun-10,0332,EMD39,1,UH1,5500,SLC,Green,NO,Salt Lake City,Utah
+19-Jun-10,0342,NKS710,1,A319,4000,LGA,Green,NO,New York City,New York
+19-Jun-10,0431,SKW6431,1,CRJ7,5500,LAX,Green,NO,Los Angeles,California
+19-Jun-10,0459,EMD3 ,1,UH1,5500,SLC,Green,NO,Salt Lake City,Utah
+19-Jun-10,0455,ASH7246,1,CRJ7,5000,ORD,Green,NO,Chicago,Illinois
+19-Jun-10,0509,COA410,1,B737,3000,EWR,Green,NO,Newark,New Jersey
+19-Jun-10,0553,UAL346,1,A319,7000,ORD ,Green,NO,Chicago,Illinois
+20-Jun-10,0438,AAL397,1,B738,8000,LAX,Green,NO,Los Angeles,California
+20-Jun-10,0222,N1282D,1,LCA,3000,ADS,Green,NO,Addison,Texas
+20-Jun-10,0301,N45LK,1,M7,6500,SUS,Green,NO,St. Louis,Missouri
+20-Jun-10,0545,SKW6962,1,CRJ7,12000,SFO,Green,NO,San Francisco,California
+20-Jun-10,0755,N513DL,1,CL60,6000,SFO,Green,NO,San Francisco,California
+20-Jun-10,0755,UAL155,1,B752,6000,SFO,Green,NO,San Francisco,California
+20-Jun-10,1310,S330,1,H1T,10000,HNL,Green,NO,Honolulu,Hawaii
+20-Jun-10,0122,JBU35,1,A320,4000,PBI,Green,NO,West Palm Beach,Florida
+20-Jun-10,0230,EMD9,1,UH1,500,74PN,Green,NO,Altoona,Pennsylvania
+20-Jun-10,0253,COM622,1,CRJ7,9000,JOT,Green,NO,Joliet,Illinois
+20-Jun-10,0345,USA69,1,A319,8000,LAS,Green,NO,Las Vegas,Nevada
+21-Jun-10,0558,N1032H,1,P46T,6000,PHX,Green,NO,Phoenix,Arizona
+21-Jun-10,0623,UAL158,1,B752,FL180,OAK,Green,NO,Oakland,California
+21-Jun-10,0618,ASH1018,1,CRJ1,2800,HI50,Green,NO,Lahaina,Hawaii
+21-Jun-10,0247,EGF3284,1,E135,2000,BTR,Green,NO,Baton Rouge,Louisiana
+21-Jun-10,0410,N624AF,1,PC12,22000,TOL,Green,NO,Toledo,Ohio
+22-Jun-10,0450,SKW6650,1,E120,7000,OAK,Green,NO,Oakland,California
+22-Jun-10,0510,CAP4311,1,C182,6500,SLC,Green,NO,Salt Lake City,Utah
+22-Jun-10,0615,UPS805,1,A306,2800,ONT,Green,NO,Ontario,California
+22-Jun-10,0617,UAL44,1,B763,2500,POM,Green,NO,Pomona,California
+23-Jun-10,0349,UPS3085,1,B752,3000,EWR,UNKN,NO,Newark,New Jersey
+23-Jun-10,0357,HAL44,1,B763,4500,SJC,Green,NO,San Jose,California
+23-Jun-10,0458,FFT269,1,A319,10000,DEN,Blue,NO,Denver,Colorado
+23-Jun-10,0544,SKW6453,1,CRJ2,4700,PHX,Green,NO,Phoenix,Arizona
+23-Jun-10,0251,UPS1153,1,B752,6000,MXE,Green,NO,Modena,Pennsylvania
+24-Jun-10,0409,UPS1269,1,A306,17000,DVK,Green,NO,Danville,Kentucky
+24-Jun-10,0301,UPS741*,1,B752,8000,1II4,Green,NO,Corydon,Indiana
+24-Jun-10,0445,DAL41,1,B738,5000,LAX,Green,NO,Los Angeles,California
+24-Jun-10,0535,SWA2088,1,B737,7000,LAS,Green,NO,Las Vegas,Nevada
+24-Jun-10,0722,HAL586,1,B712,5000,HNL,Green,NO,Honolulu,Hawaii
+24-Jun-10,0855,N421HB,1,DA20,2500,SEA,Green,NO,Seattle,Washington
+24-Jun-10,0313,FDX1350,1,B722,10000,SJI,Green,NO,Mobile,Alabama
+25-Jun-10,0351,N5223E,1,C172,3800,SAN,Green,NO,San Diego,California
+25-Jun-10,0535,N151LN,1,EC30,1000,RIC,Green,NO,Richmond,Virginia
+25-Jun-10,0605,UAL158,1,B763,15000,CCR,Green,NO,Concord,California
+25-Jun-10,0626,BUG14,1,C208,5500,KOA,Green,NO,Kailua/Kona,Hawaii
+25-Jun-10,0604,N320LE,1,Helo,1500,MKC,Green,NO,Kansas City,Missouri
+25-Jun-10,0435,UAL150,1,A320,7000,ORD,Green,NO,Chicago,Illinois
+25-Jun-10,0310,N51827,1,C172,3500,BLV,Green,NO,Belleville,Illinois
+25-Jun-10,0305,PETON35,1,C130,6400,CYS,Green,NO,Cheyenne,Wyoming
+25-Jun-10,0337,UPS1231,1,B752,15000,DVK,Green,NO,Danville,Kentucky
+25-Jun-10,0340,UPS1213,1,A306,11000,DVK,Green,NO,Danville,Kentucky
+25-Jun-10,0335,UPS1277,1,MD11,17000,DVK,Green,NO,Danville,Kentucky
+25-Jun-10,0330,EGF3251,1,E135,15000,AGJ,Green,NO,Lampasas,Texas
+25-Jun-10,0250,FDX1350,1,B722,10000,GCV,Green,NO,Leakesville,Mississippi
+26-Jun-10,0545,LBQ960,1,BE58,4000,0W3,Green,NO,Churchville,Maryland
+26-Jun-10,0205,FRL184,1,E145,UNKN,DTW,Green,NO,Detroit ,Michigan
+26-Jun-10,0225,EGF3945,1,E145,3000,PIT,Green,NO,Pittsburgh,Pennsylvania
+26-Jun-10,0252,SKW4484,1,CRJ9,400,LAS,Red/Green,NO,Las Vegas,Nevada
+26-Jun-10,0200,N858MJ,1,ERJ,UNKN,DTW,Green,NO,Detroit ,Michigan
+27-Jun-10,0354,SKW6680*,3,CRJ7,9800,DEN,Green,NO,Denver,Colorado
+27-Jun-10,0413,AAL699,1,B738,FL240,ONT,Green,NO,Ontario,California
+27-Jun-10,0430,JIA405,1,CRJ2,2000,XNA,Green,NO,Fayetteville/Springdale,Arkansas
+27-Jun-10,0510,N445PA,1,P28A,5000,PHX,Red,NO,Phoenix,Arizona
+27-Jun-10,0552,AIR1,1,P50,3200,TUS,Green,NO,Tucson,Arizona
+27-Jun-10,0602,DAL2463,1,B752,10000,LAX,Green,NO, Los Angeles,California
+27-Jun-10,0555,N159ND,1,P28A,3500,GEG,Green,NO,Spokane,Washington
+27-Jun-10,0155,TCF7741,1,E170,3000,PIT,Green,NO,Pittsburgh,Pennsylvania
+27-Jun-10,0155,TRS751,1,E170,4500,HSV,Green,NO,Huntsville,Alabama
+27-Jun-10,0220,COA190,1,B735,FL240,APF,Green,NO,Naples,Florida
+27-Jun-10,0226,COA644,1,B735,7000,CLE,Green,NO,Cleveland,Ohio
+27-Jun-10,0258,AAL1283,1,B738,11000,ARR,Green,NO,Aurora,Illinois
+28-Jun-10,0355,AAL20,1,B762,13000,JFK,Green,NO,New York City,New York
+28-Jun-10,0622,AAL133,1,B762,8000,POM,Green,NO,Pomona,California
+28-Jun-10,0143,UAL406,1,B752,8000,MGJ,Green,NO,Montgomery,New York
+28-Jun-10,0211,UCA8643,1,DH80,7000,FDK,Green,NO,Frederick,Maryland
+28-Jun-10,0219,ASH7278,1,CRJ7,5000,OKV,Green,NO,Winchester,Virginia
+28-Jun-10,0347,BTA2709,1,E145,7000,DWH,Green,NO,Houston,Texas
+28-Jun-10,0348,CJC3309,1,DH8B,3000,EWR,UNKN,NO,Newark,New Jersey
+29-Jun-10,0712,COA179,1,UNKN,1200,OGG,Green,NO,Kahului,Hawaii
+30-Jun-10,0235,RPA1578*,2,E170,5800,BUU,Green,NO,Burlington,Wisconsin
+30-Jun-10,0409,DAL2741,1,DC91,16000,GRR,Green,NO,Grand Rapids,Michigan
+30-Jun-10,0621,AAL1035,1,MD82,2000,SJC,Green,NO,San Jose,California
+30-Jun-10,0424,CTA307,1,C208,4000,PHX,Green,NO,Phoenix,Arizona
+30-Jun-10,0427,SWA772,1,B737,2000,OAK,Green,NO,Oakland,California
+30-Jun-10,0428,FDX1818,1,B752,2000,OAK,Green,NO,Oakland,California
+30-Jun-10,0426,SWA1204,1,B737,2000,OAK,Green,NO,Oakland,California
+30-Jun-10,0443,SKW6283,1,E120,800,LAX,White,NO,Los Angeles,California
+30-Jun-10,0308,N362G,1,S76,3000,EWB,Green,NO,New Bedford,Massachusetts
+30-Jun-10,0310,EGF4205,1,E145,11000,ALB,Green,NO,Albany,New York
+30-Jun-10,0353,CHQ5028,1,CRJ2,16000,ORD,Green,NO,Chicago,Illinois
+30-Jun-10,0354,DAL1224,1,B737,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+1-Jul-10,0715,N3052D,1,J5,1500,PHL,Green,NO,Philadelphia,Pennsylvania
+1-Jul-10,0717,SWA3419,1,B737,9000,LAS,Green,NO,Las Vegas,Nevada
+1-Jul-10,0717,CJC9536,1,SF34,4000,HLR,Green,NO,Killeen,Texas
+1-Jul-10,0716,NKS894,1,A321,1000,MCO,Green,NO,Orlando,Florida
+1-Jul-10,0715,N838SH,1,R22,3800,BOI,Green,NO,Boise,Idaho
+1-Jul-10,0355,CHQ1300,1,E145,16000,ENW,Green,NO,Kenosha,Wisconsin
+1-Jul-10,0359,FDX1618,1,MD10,FL330,ORD,Green,NO,Chicago,Illinois
+2-Jul-10,0635,USC105,1,C208,4000,MDW,Green,NO,Chicago,Illinois
+2-Jul-10,0705,FDX26,1,MD11,3500,HWD,Green,NO,Hayward,California
+2-Jul-10,0200,PRIVATE,1,UNKN,2500,7MA2,Green,NO,East Freetown,Massachusetts
+2-Jul-10,0320,N30MB,1,AC50,6000,DPA,Green,NO,Chicago,Illinois
+2-Jul-10,0243,SWA1099,1,B737,5000,MSY,Green,NO,New Orleans ,Louisiana
+2-Jul-10,0315,SURVEY2,1,Helo,5500,TUS,Green,NO,Tucson,Arizona
+2-Jul-10,0337,N6085M,1,C152,4500,57C,Green,NO,East Troy,Wisconsin
+2-Jul-10,0322,RPA3207,1,E170,2000,ORF,Green,NO,Norfolk,Virginia
+3-Jul-10,0418,CHQ5828,1,E145,6000,SDF,Green,NO,Louisville,Kentucky
+3-Jul-10,0457,FDX7221,1,MD10,2000,MEM,Green,NO,Memphis,Tennessee
+3-Jul-10,0530,LIFENET12,1,Helo,3200,TUS,Green,NO,Tucson,Arizona
+3-Jul-10,0645,QXE461,1,DH8D,4000,MFR,Green,NO,Medford,Oregon
+3-Jul-10,0338,AAL2018,1,B752,3000,JFK,Green,NO,New York City,New York
+3-Jul-10,0338,CJC3296,1,DH8B,11000,PWM,Green,NO,Portland,Maine
+3-Jul-10,0339,N409CP,1,PA46,3000,6G4,Green,NO,Mount Vernon,Ohio
+3-Jul-10,0340,COA1593,1,B737,16500,PHL,Green,NO,Philadelphia,Pennsylvania
+3-Jul-10,0351,GJS7359,1,CRJ7,11000,PWM,Green,NO,Portland,Maine
+4-Jul-10,0455,POLICE100,1,Helo,1200,BUR,Green,NO,Burbank,California
+4-Jul-10,0445,AWE128,1,A320,6000,MKE,Green,NO,Milwaukee,Wisconsin
+4-Jul-10,0422,N4863W,1,AC11,6000,ABE,Green,NO,Allentown,Pennsylvania
+5-Jul-10,2143,N13184,1,C172,1500,LIT,Green,NO,Little Rock,Arkansas
+5-Jul-10,0050,N49236,1,C303,1500,LNA,Green,NO,West Palm Beach,Florida
+5-Jul-10,0238,BTA2515,1,E145,13000,GLS,Green,NO,Galveston,Texas
+5-Jul-10,0412,SWA812,1,B737,10500,SLC,Green,NO,Salt Lake City,Utah
+5-Jul-10,0243,N95097,1,C152,1500,LIT,Green,NO,Little Rock,Arkansas
+5-Jul-10,0236,SWA1185,1,B737,2200,HOU,Green,NO,Houston,Texas
+5-Jul-10,0236,SKY13,1,Helo,UNKN,HOU,Green,NO,Houston,Texas
+6-Jul-10,2151,COA175,1,B757,2700,HJR,Red,NO,Kapolei,Hawaii
+6-Jul-10,0937,SWA3150,1,B737,11000,SLC,Green,NO,Salt Lake City,Utah
+6-Jul-10,0937,SKW6602,1,E120,FL180,ACV,Green,NO,Arcata/Eureka,California
+6-Jul-10,0345,SWA175,1,B737,10000,ABQ,Green,NO,Albuquerque,New Mexico
+6-Jul-10,0300,AAL22,1,B767,1600,JFK,Green,NO,New York City,New York
+6-Jul-10,0245,N5158Q,1,C172,UNKN,PHL,UNKN,NO,Philadelphia,Pennsylvania
+6-Jul-10,0143,AWI3774,1,CRJ2,1000,PHL,Green,NO,Philadelphia,Pennsylvania
+7-Jul-10,0903,SKW6274,1,CRJ2,7000,ORD,Green,NO,Chicago,Illinois
+7-Jul-10,0903,ASA300,1,B737,4000,SJC,Green,NO,San Jose,California
+7-Jul-10,0904,BISON20,1,T6,2300,END,Green,NO,Enid,Oklahoma
+7-Jul-10,0125,GGN7398,1,B190,16300,SYR,Green,NO,Syracuse,New York
+7-Jul-10,0154,BTA2718,1,E145,5000,TEB,Green,NO,Teterboro,New Jersey
+7-Jul-10,0105,EJA819,1,C560,500,PNE,Green,NO,Philadelphia,Pennsylvania
+7-Jul-10,0150,N117PR,1,C172,2500,X10,Green,NO,Belle Glade,Florida
+7-Jul-10,0218,UPS1153,1,B752,14000,MMJ,Green,NO,Pittsburgh,Pennsylvania
+7-Jul-10,0257,UKRAIN2,1,R22,5300,BFT,Green,NO,Bountiful/Framington,Utah
+7-Jul-10,0307,DAL1254,1,A320,3000,DTW,Green,NO,Detroit ,Michigan
+7-Jul-10,0311,DAL1264,1,A320,3000,DCA,Green,NO,Washington,District of Columbia
+7-Jul-10,0522,ASA330,1,B737,4000,SJC,Green,NO,San Jose,California
+7-Jul-10,0832,UPS1028,1,B757,21000,OBK,Green,NO,Northbrook,Illinois
+8-Jul-10,0105,EXJ819,1,C560,500,PHL,Green,NO,Philadelphia,Pennsylvania
+8-Jul-10,0450,SKW33M,1,CRJ2,11000,TUS,Green,NO,Tucson,Arizona
+8-Jul-10,0510,LN304ME,1,BK17,2800,JST,UNKN,NO,Johnstown,Pennsylvania
+8-Jul-10,0220,GFT9294,1,B190,5000,CLE,Green,NO,Cleveland,Ohio
+8-Jul-10,0207,FHP106,1,B06,500,PNS,Green,NO,Pensacola,Florida
+8-Jul-10,0300,RPA1102,1,E190,7000,OMA,Green,NO,Omaha,Nebraska
+8-Jul-10,0319,N734AU,1,C172,1500,JFK,Green,NO,New York City,New York
+9-Jul-10,0220,SWA878,1,B737,6000,CLE,Green,NO,Cleveland,Ohio
+9-Jul-10,0354,TRS64,1,B737,4000,PWM,Green,NO,Portland,Maine
+9-Jul-10,0445,AWE371,1,A320,5000,AUN,Green,NO,Auburn,California
+9-Jul-10,0516,SKW6545,1,E120,3000,SQL,Green,NO,San Carlos,California
+9-Jul-10,0512,RUF102,1,UNKN,4000,XNA,Green,NO,Fayetteville/Springdale,Arkansas
+9-Jul-10,0610,CRP331,1,SH33,4000,HNL,Green,NO,Honolulu,Hawaii
+9-Jul-10,0734,KAL213,1,B744,10000,OSI,Green,NO,Woodside,California
+10-Jul-10,0438,N63AE,1,B06,2500,LEX,Green,NO,Lexington,Kentucky
+10-Jul-10,0440,ROVE32,1,TEX2,1200,SHV,Green,NO,Shreveport,Louisiana
+10-Jul-10,0557,N399JA,1,DA40,2500,MDW,Green,NO,Chicago,Illinois
+10-Jul-10,0602,SWA3687,1,B737,16000,DTG,Green,NO,Dwight,Illinois
+10-Jul-10,0620,UAL975,1,B763,4000,SFO,Green,NO,San Francisco,California
+10-Jul-10,0612,COA648,1,B739,4000,SFO,Green,NO,San Francisco,California
+10-Jul-10,0630,AAL267,1,B752,8000,HNL,Green,NO,Honolulu,Hawaii
+10-Jul-10,0620,UAL21,1,B752,4000,SFO,White,NO,San Francisco,California
+10-Jul-10,0611,SKW76U,1,E120,9300,VNY,Red,NO,Van Nuys,California
+10-Jul-10,0620,SWA724,1,B737,4000,SJC,Green,NO,San Jose,California
+10-Jul-10,0130,N6345B,1,C172,1500,DAB,Green,NO,Daytona Beach,Florida
+10-Jul-10,0215,BTA5773,1,E145,2400,PIA,Green,NO,Peoria,Illinois
+10-Jul-10,0220,UPS424,1,B752,2300,MIA,Green,NO,Miami,Florida
+10-Jul-10,0310,SWA1138,1,B737,2000,HOU,Green,NO,Houston,Texas
+10-Jul-10,0330,PDT4196,1,DH8A,6000,CHO,Green,NO,Charlottesville,Virginia
+10-Jul-10,0355,SKW6014,1,CRJ7,8000,SJC,Green,NO,San Jose,California
+10-Jul-10,0355,UAL516,1,CRJ7,8000,SJC,Green,NO,San Jose,California
+11-Jul-10,0518,SWA1949,1,B737,FL220,SCK,Green,NO,Stockton,California
+11-Jul-10,0133,TRS482,1,B712,2000,BWI,Green,NO,Baltimore,Maryland
+11-Jul-10,0135,TRS482,1,B712,2000,BWI,Green,NO,Baltimore,Maryland
+11-Jul-10,0145,N726BC,1,SR20,2000,ISP,Green,NO,Islip,New York
+11-Jul-10,0316,JBU452,1,E190,4000,BOS,Green,NO,Boston,Massachusetts
+11-Jul-10,0354,HAL44,1,B763,2300,SJC,Green,NO,San Jose,California
+11-Jul-10,0359,SWA40,1,B733,9500,SJC,Green,NO,San Jose,California
+12-Jul-10,0221,EGF3930,1,E145,10000,DPA,Green,NO,Chicago,Illinois
+12-Jul-10,0255,BTA2808,1,E45X,6000,BWZ,Green,NO,Schooley's Mountain,New Jersey
+12-Jul-10,0327,RPA3129,1,E170,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+12-Jul-10,0327,DAL2162,1,B752,10000,PHL,Green,NO,Philadelphia,Pennsylvania
+12-Jul-10,0327,UPS1153,1,B752,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+13-Jul-10,0404,SWA171,1,B735,5000,SJC,Green,NO,San Jose,California
+13-Jul-10,0404,N807TH,1,BE58,4000,SJC,Green,NO,San Jose,California
+13-Jul-10,0409,CHP58,1,B206,900,LGB,Green,NO,Long Beach,California
+13-Jul-10,0617,HAL242,1,B712,1500,ITO,Green,NO,Hilo,Hawaii
+13-Jul-10,1617,IDAHO17,1,C208,UNKN,COS,UNKN,NO,Colorado Springs,Colorado
+13-Jul-10,0115,AAL1541,1,B738,1800,MIA,Green,NO,Miami,Florida
+13-Jul-10,0258,CPZ5699,1,E170,3800,SAT,Green,NO,San Antonio,Texas
+13-Jul-10,0304,LOF7982,1,E145,4500,STL,Green,NO,St. Louis,Missouri
+13-Jul-10,0350,IDAHO17,1,C208,10500,COS,Green,NO,Colorado Springs,Colorado
+13-Jul-10,0354,UAL273,1,A320,9000,DEN,Green,NO,Denver,Colorado
+14-Jul-10,0508,SWA1668,1,B737,11000,DEN,Green,NO,Denver,Colorado
+14-Jul-10,0540,FDX1802,1,A306,2000,HWD,Green,NO,Hayward,California
+14-Jul-10,0552,AWE258,1,A321,5000,PHX,Green,NO,Phoenix,Arizona
+14-Jul-10,0610,UAL45 ,1,B763,5000,SMF,Green,NO,Sacramento,California
+14-Jul-10,0613,DAL2985,1,B752,12000,SCK,Green,NO,Stockton,California
+14-Jul-10,0149,SWA595,1,B737,3000,BWI,Green,NO,Baltimore,Maryland
+14-Jul-10,1300,COA893,1,UNKN,5000,MNL,Green,NO,Valdez,Alaska
+15-Jul-10,0534,COA868,1,B739,9000,LAS,Green,NO,Las Vegas,Nevada
+15-Jul-10,0217,LFENET62,1,Helo,1000,PHL,Green,NO,Philadelphia,Pennsylvania
+15-Jul-10,0140,SWA595,1,B737,3000,ANP,Green,NO,Annapolis,Maryland
+15-Jul-10,0401,DAL2789,1,A320,17000,PDZ,Green,NO,Ontario,California
+15-Jul-10,0431,DAL1476,1,DC96,5000,IAG,Green,NO,Niagara Falls,New York
+15-Jul-10,0450,ASA489,1,B738,3000,SEA,Green,NO,Seattle,Washington
+15-Jul-10,0502,SKW34P,1,CRJ2,1000,PSP,Green,NO,Palm Springs,California
+15-Jul-10,0521,EGF3751,1,CRJ7,12000,PVU,Green,NO,Provo,Utah
+15-Jul-10,0448,N2199Z,1,PA44,7000,VIS,Green,NO,Visalia,California
+15-Jul-10,0409,DAL1333,1,B752,10500,PVU,Green,NO,Provo,Utah
+15-Jul-10,0418,DAL1289,1,B737,14000,ONT,Green,NO,Ontario,California
+15-Jul-10,0135,JIA252,1,CRJ7,1000,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+15-Jul-10,0150,GGN7398,1,BE19,2000,ALB,Green,NO,Albany,New York
+15-Jul-10,0150,GJS7417,1,CRJ7,2000,ALB,Green,NO,Albany,New York
+15-Jul-10,0158,JUS231,1,DC93,900,MYR,Green,NO,Myrtle Beach,South Carolina
+15-Jul-10,0219,MEDIVAC5,1,Helo,1000,PHL,Green,NO,Philadelphia,Pennsylvania
+15-Jul-10,0323,FFX1,1,Helo,1600,DCA,Green,NO,Washington,District of Columbia
+15-Jul-10,0330,NKS126,1,A319,UNKN,MYR,Red,NO,Myrtle Beach,South Carolina
+16-Jul-10,0412,N1701D,1,M20P,1000,OAK,Green,NO,Oakland,California
+16-Jul-10,0412,SWA1275,1,B737,1000,OAK,Green,NO,Oakland,California
+16-Jul-10,0440,EGF3019,1,E135,5300,FAT,Green,NO,Fresno,California
+16-Jul-10,0506,FDX1225,1,DC10,6000,AWM,Green,NO,West Memphis,Arkansas
+16-Jul-10,0620,SV072,1,AS350,2900,LAS,Green ,NO,Las Vegas,Nevada
+16-Jul-10,0640,FDX26,1,MD11,1200,OAK,Green,NO,Oakland,California
+16-Jul-10,0659,SKW6032,1,CRJ7,12000,SEA,Green,NO,Seattle,Washington
+16-Jul-10,0645,AAL2281,1,B738,7000,SFO,Green,NO,San Francisco,California
+16-Jul-10,0630,SWA3569,3,B733,1500,OAK,Green,NO,Oakland,California
+16-Jul-10,0620,SV074,1,AS350,2900,LAS,Green ,NO,Las Vegas,Nevada
+16-Jul-10,0421,SWA122,1,B737,1500,PHX,Green,NO,Phoenix,Arizona
+16-Jul-10,0412,BSK4001,2,B737,1000,OAK,Green,NO,Oakland,California
+16-Jul-10,0135,PSA252,1,CARJ,1000,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+16-Jul-10,0215,UCA8661,1,DH8,UNKN,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+16-Jul-10,0219,RPA1103,1,E190,UNKN,SJC,Green,NO,San Jose,California
+16-Jul-10,0138,EGF4497,1,E135,3500,DCA,Green,NO,Washington,District of Columbia
+16-Jul-10,0205,N102PA,1,E50P,6000,HOU,Green,NO,Houston,Texas
+16-Jul-10,0233,UAL359,1,A320,2300,BAL,Green,NO,Baltimore,Maryland
+16-Jul-10,0300,AAL1452,1,MD82,2500,AUS,Green,NO,Austin,Texas
+16-Jul-10,0249,UNKN,2,UNKN,UNKN,NEL,Red,NO,Lakehurst,New Jersey
+16-Jul-10,0235,CHQ6081,1,E145,3000,CLE,Green,NO,Cleveland,Ohio
+16-Jul-10,0205,N6221,1,UNKN,6000,HOU,Green,NO,Houston,Texas
+17-Jul-10,0416,AAL75,1,B762,FL190,PSP,Green,NO,Palm Springs,California
+17-Jul-10,0420,DAL2033,1,A320,FL190,PSP,Green,NO,Palm Springs,California
+17-Jul-10,0205,N43FC,1,C650,6000,IAH,Green,NO,Houston,Texas
+17-Jul-10,0337,GLA759,1,B190,12000,DEN,Green,NO,Denver,Colorado
+17-Jul-10,0405,FDX2350,1,B722,3800,BHM,Green ,NO,Birmingham,Alabama
+17-Jul-10,0500,SKW6233,1,E120,15000,UBG,UNKN,NO,Newburg,Oregon
+17-Jul-10,0510,TRS743,1,B712,1100,MCO,Green ,NO,Orlando,Florida
+17-Jul-10,0530,NKS894,1,A320,1400,MCO,Green ,NO,Orlando,Florida
+17-Jul-10,0500,FDX2336,1,B752,2000,MEM,Green,NO,Memphis,Tennessee
+17-Jul-10,0600,N59936,1,PA31,4000,SAT,Green,NO,San Antonio,Texas
+17-Jul-10,0740,AIR1,1,Helo,3000,DMA,Green,NO,Davis Monthan,Arizona
+17-Jul-10,1016,UPS1366,1,A306,3000,BHM,Green,NO,Birmingham,Alabama
+17-Jul-10,0235,TRS576,1,B712,2000,FLL,Green,NO,Fort Lauderdale,Florida
+17-Jul-10,0316,AAL1262,1,B752,11000,JOT,Green,NO,Joliet,Illinois
+17-Jul-10,1954,TRS538,1,B712,UNKN,ABE,Green,NO,Allentown,Pennsylvania
+18-Jul-10,0456,N429FC,1,LJ55,4000,PHX,Green,NO,Phoenix,Arizona
+18-Jul-10,0155,AAL2356,1,MD83,3000,TEB,Green,NO,Teterboro,New Jersey
+18-Jul-10,0203,SWA3741,1,B737,2500,JOT,Green,NO,Joliet,Illinois
+18-Jul-10,0238,CENTRAL6,1,EC35,1300,ROC,UNKN,NO,Rochester,New York
+18-Jul-10,0236,NKS195,1,A319,8000,FLL,Green,NO,Fort Lauderdale,Florida
+18-Jul-10,0355,LGF8895,1,Helo,1000,MIA,Green,NO,Miami,Florida
+19-Jul-10,0432,COA1878,1,B737,FL190,EWR,UNKN,NO,Newark,New Jersey
+19-Jul-10,0400,COA190,1,B735,2500,MIA,Green,NO,Miami,Florida
+19-Jul-10,0635,SKW73R,1,CRJ2,3500,FAT,Green,NO,Fresno,California
+19-Jul-10,0641,SWA1964,1,B734,1800,LAX,Green,NO,Los Angeles,California
+19-Jul-10,0726,COA179,1,B737,4000,OGG,Green,NO,Kahului,Hawaii
+19-Jul-10,0107,C6565,1,HH65,300,CHS,Green,NO,Charleston,South Carolina
+19-Jul-10,0120,SWA151,1,B737,13000,MRB,Green,NO,Martinburg,West Virginia
+19-Jul-10,0133,SWA1202,1,B737,3000,RSW,Green,NO,Fort Myers,Florida
+19-Jul-10,0136,SWA3576,1,B733,3000,RSW,Green,NO,Fort Myers,Florida
+19-Jul-10,0225,TCY4399,1,C402,7000,PSF,Green,NO,Pittsfield,Massachusetts
+19-Jul-10,0225,BTA5783,1,E45X,UNKN,MCI,Green,NO,Kansas City,Missouri
+19-Jul-10,0305,BTA2803,1,E145,15000,LFK,Green,NO,Lufkin,Texas
+19-Jul-10,0313,N86BJ,1,C172,75000,DEN,Blue/Green,NO,Denver,Colorado
+20-Jul-10,0358,PDT4174,1,DH8C,3000,ABE,Green,NO,Allentown,Pennsylvania
+20-Jul-10,0435,COA1812,1,B733,4000,OMA,Green,NO,Omaha,Nebraska
+20-Jul-10,0531,SKW4794,1,CRJ9,11000,SLC,Green,NO,Salt Lake City,Utah
+20-Jul-10,0551,FDX1100,1,DC10,5000,FUZ,Green,NO,Dallas-Fort Worth,Texas
+20-Jul-10,0158,JBU510,1,A320,2000,TEB,Green,NO,Teterboro,New Jersey
+20-Jul-10,0226,BTA2197,1,E145,4000,TEB,Green,NO,Teterboro,New Jersey
+20-Jul-10,0310,TRS822,1,B712,2800,BWI,Green,NO,Baltimore,Maryland
+20-Jul-10,0312,N888UH,1,B06,2000,CHD,UNKN,NO,Chandler,Arizona
+20-Jul-10,0317,TRS822,1,B712,2800,BWI,Green,NO,Baltimore,Arizona
+20-Jul-10,0329,BTA2681,1,E45X,6000,SDF,Green,NO,Louisville,Kentucky
+20-Jul-10,0335,LBQ900,1,BE58,5500,HFD,Green,NO,Hartford,Connecticut
+20-Jul-10,0338,N757VB,1,C172,UNKN,LGB,Green,NO,Long Beach,California
+20-Jul-10,0344,N400RX,1,MU2,11000,SLC,Green,NO,Salt Lake City,Utah
+21-Jul-10,0400,HAL12,1,B763,1800,SFO,Green,NO,San Francisco,California
+21-Jul-10,0408,UPS1391,1,B752,3500,SDF,Green,NO,Louisville,Kentucky
+21-Jul-10,0416,SWA2365,1,B737,3500,VNY,Green,NO,Van Nuys,California
+21-Jul-10,0433,EGF4330,1,E145,2500,DTW,Green,NO,Detroit ,Michigan
+21-Jul-10,0445,FLG4433,1,CRJ2,2300,DTW,Green,NO,Detroit ,Michigan
+21-Jul-10,0440,DAL1906,1,B757,2300,DTW,Green,NO,Detroit ,Michigan
+21-Jul-10,0447,N757VB,1,C172,UNKN,LGB,Green,NO,Long Beach,California
+21-Jul-10,1049,TRANSAIR1,1,SH36,13000,HNL,Green,NO,Honolulu,Hawaii
+21-Jul-10,0205,C6595,1,AS65,1500,ACY,Green,NO,Atlantic City,New Jersey
+21-Jul-10,0318,SWA586,1,B737,13000,JOT,Green,NO,Joliet,Illinois
+21-Jul-10,0332,UPS6305,1,A306,6000,SDF,Green,NO,Louisville,Kentucky
+21-Jul-10,0158,COA2197,1,E145,UNKN,TEB,Green,NO,Teterboro,New Jersey
+21-Jul-10,0332,UPS1285,1,A306,6000,SDF,Green,NO,Louisville,Kentucky
+21-Jul-10,0337,UPS1325,1,MD11,6000,SDF,Green,NO,Louisville,Kentucky
+21-Jul-10,0340,N79853,1,M20P,2300,EMI,Green,NO,Westminster,Maryland
+21-Jul-10,0347,N79853,1,M20P,UNKN,DMW,Green,NO,Westminster,Maryland
+21-Jul-10,0250,N911AT,1,C172,5000,MDT,Green,NO,Harrisburg,Pennsylvania
+21-Jul-10,0240,NKS350,1,A319,2000,ACY,Green,NO,Atlantic City,New Jersey
+22-Jul-10,0240,N965AS,1,MD83,7000,TUS,Green,NO,Tucson,Arizona
+22-Jul-10,0240,RPA3126,1,E170,5800,PIT,Green,NO,Pittsburgh,Pennsylvania
+22-Jul-10,0210,C6536,1,HH65,2000,ACY,Green,NO,Atlantic City,New Jersey
+22-Jul-10,0305,UAL359,1,A320,200,BWI,Green,NO,Baltimore,Maryland
+23-Jul-10,0433,N4661Q,1,C152,1300,LGB,Green,NO,Long Beach,California
+23-Jul-10,0114,N709FA,1,SR22,4000,BDR,Green,NO,Bridgeport,Connecticut
+23-Jul-10,0235,UPS1333,1,B752,4000,SDF,Blue,NO,Louisville,Kentucky
+23-Jul-10,0259,N54MC,1,PA28,1600,GTU,Green,NO,Georgetown,Texas
+24-Jul-10,0423,UAL807,1,A320,11000,SJC,Green,NO,San Jose,California
+24-Jul-10,0513,SWA1242,1,B737,2200,OAK,Green,NO,Oakland,California
+24-Jul-10,0517,LASER2,1,C21,6000,EDW,Green,NO,Edwards,California
+24-Jul-10,0204,N717MR,1,C210,8000,GFD,Green,NO,Greenfield,Indiana
+24-Jul-10,0301,SKW3044,1,CRJ2,2600,RAC,Green,NO,Racine,Wisconsin
+24-Jul-10,0348,SURVEY42,1,UH1,5500,TUS,Green,NO,Tucson,Arizona
+25-Jul-10,0450,TRS478,1,B712,2500,BWI,Green,NO,Baltimore,Maryland
+25-Jul-10,0547,AAL1747,1,B738,14000,BNG,Green,NO,Banning,California
+25-Jul-10,0600,EGF2005,1,CRJ7,2800,SAN,Green,NO,San Diego,California
+25-Jul-10,0242,JZA7936,1,DH8A,3000,BWI,Green,NO,Baltimore,Maryland
+26-Jul-10,0726,HAL307,1,B712,3000,HNL,Green,NO,Honolulu,Hawaii
+26-Jul-10,0139,LBQ850,1,BE58,3000,PNS,Green,NO,Pensacola,Florida
+26-Jul-10,0216,PAT03,1,H60,1000,DAA,Green,NO,Fort Belvoir,Virginia
+26-Jul-10,0225,SURVEY1,1,Helo,5000,TUS,UNKN,NO,Tucson,Arizona
+26-Jul-10,0245,SUB1019,1,B190,2000,CVG,Green,NO,Covington,Kentucky
+26-Jul-10,0335,LYM726,1,SW4,14000,20CO,Green,NO,Golden,Colorado
+27-Jul-10,0401,AAY518,1,MD83,10000,LAS,Green,NO,Las Vegas,Nevada
+27-Jul-10,0604,UPS9222,1,A306,3000,IIU,Green,NO,Louisville,Kentucky
+27-Jul-10,0215,SWA158,1,B737,4500,PVD,Green,NO,Providence,Rhode Island
+27-Jul-10,0127,SWA570,1,B731,1700,BWI,Green,NO,Baltimore,Maryland
+27-Jul-10,0258,N3705A,1,C172,1700,RVS,Green,NO,Tulsa,Oklahoma
+28-Jul-10,0410,EGF4090,1,E145,3000,IRW,Green,NO,Olkahoma City,Oklahoma
+28-Jul-10,0425,N907MA,1,C172,2000,SUS,Green,NO,St. Louis,Missouri
+28-Jul-10,0420,N2362RM,1,C208,UNKN,IGN,Green,NO,Kingston, New York
+28-Jul-10,0200,SWA656,1,B737,4000,PIT,Green,NO,Pittsburgh,Pennsylvania
+28-Jul-10,0317,BTA2556,1,E45X,6000,ABE,Green,NO,Allentown,Pennsylvania
+28-Jul-10,0335,SKW6157,1,CRJ2,11000,DEN,Green,NO,Denver,Colorado
+28-Jul-10,0410,EGE4019,1,E145,3000,OKC,UNKN,NO,Oklahoma City,Oklahoma
+29-Jul-10,0400,MRA600,1,SW4,10000,LUK,Green,NO,Cincinnati,Ohio
+29-Jul-10,1125,UPS914,1,A306,FL190,VCV,Green,NO,Victorville,California
+29-Jul-10,1208,N865MN,1,C208,1500,HNL,Green ,NO,Honolulu,Hawaii
+29-Jul-10,0100,AAL363,1,MD83,6000,LGA,Green,NO,New York City,New York
+29-Jul-10,0121,LOF7998,1,E145,1400,IAD,Green,NO,Washington,District of Columbia
+29-Jul-10,0236,AIRCARE3,1,EC20,1700,EMI,Green,NO,Westminster,Maryland
+29-Jul-10,0235,BTA2279,1,E145,12000,SMQ,Green,NO,Somerville,New Jersey
+29-Jul-10,0247,AAL1738,1,B738,16000,SIE,Green,NO,Sea Isle,New Jersey
+29-Jul-10,0250,SWA1218,1,B733,13000,SIE,Green,NO,Sea Isle,New Jersey
+29-Jul-10,0328,N184PD,1,SR20,4500,OXC,Green,NO,Oxford,Connecticut
+30-Jul-10,0100,TRS221,1,B733,10000,EMI,Green,NO,Westminster,Maryland
+30-Jul-10,0330,UNKN,2,H60,800,NRS,Green,NO,Imperial Beach,California
+30-Jul-10,0432,SKW88K,1,CRJ7,8000,TOA,Green,NO,Torrance,California
+30-Jul-10,0500,DAL1284,1,B752,5500,PDX,Green,NO,Portland,Oregon
+30-Jul-10,0400,UPS806,1,A306,3500,ONT,Green,NO,Ontario,California
+30-Jul-10,0720,N5331Y,1,PA44,11000,BOI,Green,NO,Boise,Idaho
+30-Jul-10,0438,FFT861,1,A319,9000,PHX,Green,NO,Phoenix,Arizona
+30-Jul-10,0426,DAL2145,1,B738,6300,PDX,Green,NO,Portland,Oregon
+30-Jul-10,0305,CHQ6081,1,E145,2500,CLE,Green,NO,Cleveland,Ohio
+30-Jul-10,0153,AWE191,1,A319,12000,BAL,Green,NO,Baltimore,Maryland
+30-Jul-10,0125,JIA483,2,CRJ2,5000,CLT,Green,NO,Charlotte ,North Carolina
+30-Jul-10,0130,AAL1883,1,MD83,2500,MFE,Green,NO,McAllen,Texas
+30-Jul-10,0250,N275GT,1,C172,3000,GRB,Green,NO,Green Bay,Wisconsin
+30-Jul-10,0329,N584DG,2,BE58,9500,BMC,Green,NO,Brigham,Utah
+30-Jul-10,0345,CJC7840,1,SF34,5000,CKB,Green,NO,Clarksburg,West Virginia
+31-Jul-10,0345,GLA467,1,B190,12000,FMN,Green,NO,Farmington,New Mexico
+31-Jul-10,0418,JBU489,1,A320,10000,RIV,Green,NO,Riverside,California
+31-Jul-10,0430,AIR1,1,Helo,2200,ONT,Green,NO,Ontario,California
+31-Jul-10,0512,N456TM,1,BE40,UNKN,RHI,Green,NO,Rhineland,Wisconsin
+31-Jul-10,0445,AIREVA81,1,B206,2000,PIT,White,NO,Pittsburgh,Pennsylvania
+31-Jul-10,0533,PLRY04,1,C208,2500,CHA,Green,NO,Chattanooga,Tennessee
+31-Jul-10,0440,METRO1,1,Helo,1200,BNA,Green,NO,Nashville,Tennessee
+31-Jul-10,0255,PDT4217,1,DH8A,6000,RDG,Green,NO,Reading,Pennsylvania
+1-Aug-10,0441,N800CK,1,LJ31,13000,GIJ,Green,NO,Niles,Michigan
+1-Aug-10,0532,AWE415,1,A319,6000,SFO,Green,NO, San Francisco,California
+1-Aug-10,0804,N168TY,1,C560,4000,POM,Green,NO,Pomona,California
+1-Aug-10,0100,DAL1839,1,MD88,4500,DCA,Green,NO,Washington,District of Columbia
+1-Aug-10,0133,BKJK1,1,AS65,900,DCA,Green,NO,Washington,District of Columbia
+1-Aug-10,0135,N305SJ,1,S76,2500,ACY,Green,NO,Atlantic City,New Jersey
+1-Aug-10,0200,N201WR,1,F2TH,4000,EMI,Red,NO,Westminster,Maryland
+1-Aug-10,0140,BTA2837,1,E45X,3000,CLE,Green,NO,Cleveland,Ohio
+1-Aug-10,0216,TERP54,1,C130,UNKN,MTN,UNKN,NO,Baltimore,Maryland
+1-Aug-10,0223,AAL1902,1,MD83,2500,HSV,White,NO,Huntsville,Alabama
+2-Aug-10,0325,BTA2609,1,E145,5000,MKE,Green,NO,Milwaukee,Wisconsin
+2-Aug-10,0337,RPA3262,1,E170,2000,PVD,Green,NO,Providence,Rhode Island
+2-Aug-10,0343,DAL2197,1,A320,2500,MSP,Green,NO,Minneapolis,Minnesota
+2-Aug-10,0516,AAL661,1,MD82,5000,CA29,Green,NO,Fontana,California
+2-Aug-10,0555,BORA72,1,DC10,2000,HNL,Green,NO,Honolulu,Hawaii
+2-Aug-10,0100,C6588,1,AS65,800,ACY,Green,NO,Atlantic City,New Jersey
+2-Aug-10,0118,WIG7302,1,C208,6000,06N,Green,NO,Middletown,New York
+2-Aug-10,0100,N132DR,2,C152,1000,PNE,Green,NO,Philadelphia,Pennsylvania
+2-Aug-10,0215,N6136J,1,PA28,2400,LZU,Green,NO,Lawrenceville,Georgia
+2-Aug-10,0240,DAL2406,1,A320,3000,PIE,Green,NO,St Petersburg-Clearwater,Florida
+2-Aug-10,0315,BTA2131,1,E145,1600,CRP,Green,NO,Corpus Christi,Texas
+2-Aug-10,0348,UAL423,1,B772,7000,DEN,Green,NO,Denver,Colorado
+3-Aug-10,0105,BLKJK1,1,HH65,2000,ADW,Green,NO,Clinton,Maryland
+3-Aug-10,0105,DAL2994,1,MD88,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+3-Aug-10,0052,MTN7126,1,AT72,9000,MIA,Green,NO,Miami,Florida
+3-Aug-10,0105,N389ER,1,C172,2500,DAB,Green,NO,Daytona Beach,Florida
+3-Aug-10,0058,N493ER,1,C172,1600,OMN,Green,NO,Ormond Beach,Florida
+3-Aug-10,0217,AAL1808,1,MD82,1000,PBI,Green,NO,West Palm Beach,Florida
+3-Aug-10,0243,SWA242,1,B737,4000,GYY,Green,NO,Gary,Indiana
+3-Aug-10,0343,FLG4114,1,CRJ2,3000,GSP,Green,NO,Greer,South Carolina
+3-Aug-10,0350,UPS1383,1,A300,2400,SDF,Green,NO,Louisville,Kentucky
+3-Aug-10,0445,AAY526,1,MD83,6000,LAS,Green,NO,Las Vegas,Nevada
+3-Aug-10,0445,AAL1677,1,B752,8000,RIV,Green,NO,Riverside,California
+4-Aug-10,0438,AAL397,2,B738,3500,LAX,Green,NO,Los Angeles,California
+4-Aug-10,0240,VRD371,1,A320,10000,LAX,Green,NO,Los Angeles,California
+4-Aug-10,0100,AWI3709,1,CRJ2,2500,PHL,Green,NO,Philadelphia,Pennsylvania
+4-Aug-10,0216,AAL1708,1,B738,3800,ORD,Green,NO,Chicago,Illinois
+4-Aug-10,0209,N1NJ,1,S76,800,PNE,Green,NO,Philadelphia,Pennsylvania
+4-Aug-10,0023,SWA1331,1,B737,4000,BWI,Green,NO,Baltimore,Maryland
+4-Aug-10,0255,SWA1413,1,B737,5000,PIT,Green,NO,Pittsburgh,Pennsylvania
+4-Aug-10,0300,RPA3307,1,E170,4000,MMJ,Green,NO,Pittsburgh,Pennsylvania
+5-Aug-10,0442,UPS1151,1,A306,4000,JVY,Green,NO,Jeffersonville,Indiana
+5-Aug-10,0349,N444WB,1,LJ35,2000,FLL,Green,NO,Fort Lauderdale,Florida
+5-Aug-10,0553,HAL556,1,B712,2000,HNL,Green,NO,Honolulu,Hawaii
+5-Aug-10,0109,LOF7998,1,E145,4000,AML,Green,NO,Herndon,Virginia
+5-Aug-10,0516,SWA327,1,B737,3700,LAS,Green,NO,Las Vegas,Nevada
+5-Aug-10,0112,TRS751,1,B712,6500,BAL,Green,NO,Baltimore,Maryland
+5-Aug-10,0150,MADFX22,1,P3,5000,MYR,Green,NO,Myrtle Beach,South Carolina
+5-Aug-10,0208,DAL1153,1,MD88,4000,CVG,Green,NO,Covington,Kentucky
+5-Aug-10,0249,CJC9578,1,SF34,3000,CLL,Green,NO,College Station,Texas
+5-Aug-10,0314,SWA493,1,B737,7000,PHX,Green,NO,Phoenix,Arizona
+6-Aug-10,0140,BTA3073,1,E145,8000,EWR,Green,NO,Newark,New Jersey
+6-Aug-10,0310,N4603H,1,R44,2000,ONT,Green,NO,Ontario,California
+6-Aug-10,0124,TCF7679,1,E170,3000,ORD,Green,NO,Chicago,Illinois
+6-Aug-10,0124,GJS7369,1,CRJ7,3000,ORD,Green,NO,Chicago,Illinois
+6-Aug-10,0103,N154ZP,1,A-1-70,UNKN,LGA,Green,NO,New York City,New York
+6-Aug-10,0224,FDX1362,1,B722,14000,ROA,Green,NO,Roanoke,Virginia
+6-Aug-10,0255,DAL1596,1,MD88,13000,ABE,Green,NO,Allentown,Pennsylvania
+6-Aug-10,0255,COA732,1,B737,13000,ABE,Green,NO,Allentown,Pennsylvania
+6-Aug-10,0512,SKW182Y,1,CRJ2,UNKN,MFR,Green,NO,Medford,Oregon
+7-Aug-10,0035,PDT4528,1,DH8,1600,PHL,Green,NO,Philadelphia,Pennsylvania
+7-Aug-10,0432,QXE444,1,DH8D,1000,SEA,Red,NO,Seattle,Washington
+7-Aug-10,0446,FDX2286,1,MD11,6500,FYE,Green,NO,Somerville,Tennessee
+7-Aug-10,0446,FDX1303,1,A306,6500,FYE,Green,NO,Somerville,Tennessee
+7-Aug-10,0113,WIG7450,1,C208,UNKN,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+7-Aug-10,0130,CLX834,1,B744,FL200,HTO,Green,NO,East Hampton,New York
+7-Aug-10,0146,UAL514,2,B752,7000,BWZ,Green,NO,Schooley's Mountain,New Jersey
+7-Aug-10,0140,EGF4167,1,E145,3000,CMH,Green,NO,Columbus,Ohio
+7-Aug-10,0153,GCN7462,1,B190,11000,LCI,Green,NO,Laconia,New Hampshire
+7-Aug-10,0200,FLG4005,1,CRJ2,8000,ICT,Green,NO,Wichita,Kansas
+7-Aug-10,0250,FFT984,1,A319,6000,MKE,Green,NO,Milwaukee,Wisconsin
+7-Aug-10,0250,CHQ5052,1,E135,6000,ORD,Green,NO,Chicago,Illinois
+7-Aug-10,0310,NKS400,1,A319,2200,ORD,Green,NO,Chicago,Illinois
+7-Aug-10,0315,JBU1208,1,E190,6000,BDR,Green,NO,Bridgeport,Connecticut
+7-Aug-10,0315,NAT562,1,PC12,10500,TUS,Green,NO,Tucson,Arizona
+7-Aug-10,0330,FFT449,1,A319,16300,DEN,Green,NO,Denver,Colorado
+8-Aug-10,0545,AAL2281,1,B738,14000,PYE,Green,NO,Point Reyes,California
+8-Aug-10,1118,ASY607,1,C17 ,2300,GUA,Green,NO,"Andersen, Mariana Is ",Guam
+8-Aug-10,0200,EJA841,1,C560,4000,BWI,Green ,NO,Baltimore,Maryland
+8-Aug-10,0205,NTJ841,1,C560,4000,BWI,Green,NO,Baltimore,Maryland
+8-Aug-10,0307,AAL1737,1,B752,3000,MIA,Green,NO,Miami,Florida
+8-Aug-10,0314,N183JS,1,C560,4000,TKI,Green,NO,Dallas  ,Texas
+9-Aug-10,0545,SWA627,1,B737,9000,DEN,Green,NO,Denver,Colorado
+9-Aug-10,0459,TRS90,1,B737,14000,ONT,Green,NO,Ontario,California
+9-Aug-10,0645,SKW6244,1,B737,12000,MFR,Green,NO,Medford,Oregon
+9-Aug-10,0504,SWA677,1,B737,5000,LAS,Green,NO,Las Vegas,Nevada
+9-Aug-10,0501,SKW6169,1,E120,12000,LAX,Green,NO,Los Angeles,California
+9-Aug-10,0300,CHQ1458,1,CRJ2,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+9-Aug-10,0315,VVRS316,1,DC9,5000,WRI,Green,NO,Wrightstown,New Jersey
+9-Aug-10,0300,JBU562,1,A320,1400,SWF,Green,NO,Newburgh,New York
+9-Aug-10,0140,EGF4248,1,E145,2300,ORD,Green,NO,Chicago,Illinois
+9-Aug-10,0105,MTN7460,1,C208,1500,BAL,Green,NO,Baltimore,Maryland
+9-Aug-10,0300,MTN7305,1,C208,5000,PPM,Green,NO,Aberdeen,Maryland
+9-Aug-10,0246,CHQ1384,1,E135,4000,PIT,Green,NO,Pittsburgh,Pennsylvania
+9-Aug-10,0345,MRA535,1,C208,1700,FSM,Green,NO,Fort Smith,Arkansas
+10-Aug-10,0425,SWA2004,1,B737,3000,BUR,Green,NO,Burbank,California
+10-Aug-10,0115,CG6562,1,AS65,2000,ACY,Green,NO,Atlantic City,New Jersey
+10-Aug-10,0200,CG6580,1,AS65,UNKN,ACY,Green,NO,Atlantic City,New Jersey
+10-Aug-10,0345,GLA735,1,B190,FL220,44U,Green,NO,Salina,Utah
+10-Aug-10,0740,N501MS,1,BE9L,5500,MDW,Green,NO,Chicago,Illinois
+10-Aug-10,0220,N1377U,1,UNKN,2500,9W8,Green,NO,Brogue,Pennsylvania
+10-Aug-10,0116,SWA3404,1,B737,5000,BCT,Green,NO,Boca Raton,Florida
+10-Aug-10,0035,N3709N,1,M20P,6000,HMV,Green,NO,Holston Mountain,Tennessee
+10-Aug-10,0228,AWE1044,1,B737,2000,PHL,Green,NO,Philadelphia,Pennsylvania
+10-Aug-10,0228,AWE1410,1,E190,2000,PHL,Green,NO,Philadelphia,Pennsylvania
+10-Aug-10,0228,AWI3656,1,CRJ2,2000,PHL,Green,NO,Philadelphia,Pennsylvania
+10-Aug-10,0305,MED9,1,BH407,800,HOU,Green,NO,Houston,Texas
+10-Aug-10,0341,FFT266,1,A319,8500,DEN,Green,NO,Denver,Colorado
+10-Aug-10,0708,HAL378,1,B712,4200,HNL,Green,NO,Honolulu,Hawaii
+10-Aug-10,0710,UAL85,1,B752,1500,HNL,Green,NO,Honolulu,Hawaii
+11-Aug-10,0446,N576ER,1,PA44,10500,DVT,Green,NO,Phoenix,Arizona
+11-Aug-10,0740,AMF137,1,BE99,8000,POM,Green,NO,Pomona,California
+11-Aug-10,0800,FDX1153,1,DC10,16000,F46,Green,NO,Rockwall,Texas
+11-Aug-10,0512,SWA8541,1,B733,4000,DFW,Green,NO,Dallas-Fort Worth,Texas
+11-Aug-10,0150,SWA2613,1,B737,2200,PHL,Green,NO,Philadelphia,Pennsylvania
+11-Aug-10,0224,TCF7636,1,E170,5000,ORD ,Green,NO,Chicago,Illinois
+11-Aug-10,0246,SWA951,1,B737,5000,HFD,Green,NO,Hartford,Connecticut
+11-Aug-10,0254,G80103,1,H47,2000,LCK,Green,NO,Columbus,Ohio
+11-Aug-10,0256,SKW6221,1,CRJ7,12000,APA,Green,NO,Denver,Colorado
+11-Aug-10,0256,SKW6227,1,CRJ7,12000,APA,Green,NO,Denver,Colorado
+11-Aug-10,0303,SKW6854,1,CRJ2,16000,DEN,Green,NO,Denver,Colorado
+11-Aug-10,0309,AAL1283,1,B752,14300,OXI,Green,NO,Knox,Indiana
+11-Aug-10,0329,TAI1,1,B206,1000,PHL,Green ,NO,Philadelphia,Pennsylvania
+11-Aug-10,0348,AWE4217,1,DH80,3000,HAR,Green,NO,Harrisburg,Pennsylvania
+11-Aug-10,0353,UPS9709,1,A300,11000,SDF,White,NO,Louisville,Kentucky
+12-Aug-10,0923,UAL158,1,B762,2000,ORD,Green,NO,Chicago,Illinois
+12-Aug-10,0927,UAL2,1,B772,6000,ORD,Green,NO,Chicago,Illinois
+12-Aug-10,0251,N6725B,1,PA22,4000,LHY,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+12-Aug-10,0241,BTA5841,1,E145,6400,GSP,Green,NO,Green,South Carolina
+12-Aug-10,0258,JIA619,1,B752,4000,CRG,Green,NO,Jacksonville,Florida
+12-Aug-10,0358,AAL254,1,B752,2500,LAX,Green,NO,Los Angeles,California
+13-Aug-10,0422,C6539,1,AS65,2000,ACY,Green,NO,Atlantic City,New Jersey
+13-Aug-10,0536,AAL2246,1,B738,3000,AUS,Green,NO,Austin,Texas
+13-Aug-10,0539,CHP41,1,C206,3000,FAT,Green,NO,Fresno,California
+13-Aug-10,0837,LNNATIVE8,1,UH1,300,LAS,Green,NO,Las Vegas,Nevada
+13-Aug-10,0152,PDT4648,1,DH8C,UNKN,SBY,Green,NO,Salisbury,Maryland
+13-Aug-10,0218,N167CA,1,PA44,1000,JAX,Green,NO,Jacksonville,Florida
+13-Aug-10,0247,N179SA,1,C208,10000,BLF,Green,NO,Bluefield,West Virginia
+13-Aug-10,0330,SKW6436,1,CRJ7,12000,SLI,Green,NO,Los Alamitos,California
+13-Aug-10,0335,CG6577,1,AS65,2000,WWD,Green,NO,Wildwood,New Jersey
+13-Aug-10,0310,UPS1133,1,B757,4000,PHL,Green ,NO,Philadelphia,Pennsylvania
+13-Aug-10,0305,AAL2529,1,MD80,3800,ORD,Green,NO,Chicago,Illinois
+13-Aug-10,0135,DAL2394,1,MD88,2000,PHL,Green ,NO,Philadelphia,Pennsylvania
+14-Aug-10,0428,SWA820,1,B737,8500,SAT,Green,NO,San Antonio,Texas
+14-Aug-10,0428,SWA792,1,B737,6200,SAT,Green,NO,San Antonio,Texas
+14-Aug-10,0440,EJA932,1,C750,4000,SJC,UNKN,NO,San Jose,California
+14-Aug-10,0450,AWI3848,1,CRJ2,2500,CVG,Green,NO,Covington,Kentucky
+14-Aug-10,0530,EGF3750,1,CRJ7,10000,ORD,Green,NO,Chicago,Illinois
+14-Aug-10,0537,SKW189G,1,CRJ2,16000,STS,Green,NO,Santa Rosa,California
+14-Aug-10,0722,JBU778,1,A320,13000,BLD,Green,NO,Boulder City,Nevada
+14-Aug-10,0933,AAL984,1,B763,5000,MIA,Green,NO,Miami,Florida
+14-Aug-10,0715,CTA308,1,C208,5000,LAS,Green,NO,Las Vegas,Nevada
+14-Aug-10,0724,DAL1428,1,B737,10000,LAS,Green,NO,Las Vegas,Nevada
+14-Aug-10,0724,JBU778,1,A320,10000,LAS,Green,NO,Las Vegas,Nevada
+14-Aug-10,0129,N8765W,1,SR20,2000,DCA,Green,NO,Washington,District of Columbia
+14-Aug-10,0109,PDT4112,1,DH8C,8000,WWD,Green,NO,Wildwood,New Jersey
+14-Aug-10,0255,AAL20,1,B762,FL220,SAX,Green,NO,Sparta,New Jersey
+14-Aug-10,0310,AAL1221,1,MD82,4000,ORD,Green,NO,Chicago,Illinois
+14-Aug-10,0314,RANGER804,1,T349,1000,CRP,Green,NO,Corpus Christi,Texas
+14-Aug-10,0315,SKW337W,1,CRJ7,12000,DEN,Green,NO,Denver,Colorado
+14-Aug-10,0355,TRS268,1,B712,9000,WWD,Green,NO,Wildwood,New Jersey
+15-Aug-10,0410,CLX779,1,B744,2500,ORD,Green ,NO,Chicago,Illinois
+15-Aug-10,0425,SKW4803,1,CRJ9,6000,MDW,Green,NO,Chicago,Illinois
+15-Aug-10,0444,QXE518,1,CRJ7,3000,PDX,Green,NO,Portland,Oregon
+15-Aug-10,0444,SKW6357,1,E120,3000,PDX,Green,NO,Portland,Oregon
+15-Aug-10,0447,AIR2,1,B06,3000,TUS,Green,NO,Tucson,Arizona
+15-Aug-10,0512,SURVEY1,1,COUR,5500,TUS,Green,NO,Tucson,Arizona
+15-Aug-10,0542,LN357EF,1,LJ35,7000,EAT,Green,NO,Wenatchee,Washington
+15-Aug-10,0543,SKW6284,1,E120,7000,WHP,Green,NO,Los Angeles,California
+15-Aug-10,0555,RUF102,1,MU2,17000,F46,Green,NO,Rockwall,Texas
+15-Aug-10,0630,AIR1,1,EC20,1400,AUS,Green,NO,Austin,Texas
+15-Aug-10,0632,LG1,1,EC20,6500,DEN,Green,NO,Denver,Colorado
+15-Aug-10,0735,RUF120,1,MU2,13000,OKM,Green,NO,Okmulgee,Oklahoma
+15-Aug-10,0807,DAL1239,1,B752,6000,ANC,Green,NO,Anchorage,Alaska
+15-Aug-10,0512,FDX43,1,MD11,7500,TJSJ,Green,NO,San Juan,Puerto Rico
+15-Aug-10,0241,COA1417,1,B738,12000,PIT,Green,NO,Pittsburgh,Pennsylvania
+15-Aug-10,0255,NKS425,1,A320,1800,FLL,Green,NO,Fort Lauderdale,Florida
+15-Aug-10,0325,SWA659,1,B737,2500,BUR,Green,NO,Burbank,California
+15-Aug-10,0359,QXE617,1,CRJ7,5000,SJC,Green,NO,San Jose,California
+16-Aug-10,0040,RLR321,1,E110,6000,ELM,Green,NO,Elmira,New York
+16-Aug-10,0107,COA632,2,B737,7000,N87,Green,NO,Trenton-Robbinsville,New Jersey
+16-Aug-10,0148,N345BB,1,AS50,2000,GTU,Green,NO,Georgetown,Texas
+16-Aug-10,0150,C6580,1,AS65,1000,OXB,Green,NO,Ocean City,Maryland
+16-Aug-10,0212,USC103,1,C208,4000,CMH,Green,NO,Columbus,Ohio
+16-Aug-10,0218,BTA2044,1,E145,12000,CLT,Green,NO,Charlotte,North Carolina
+16-Aug-10,0223,N206CK,1,LJ45,6000,LUK,Green,NO,Cincinnati,Ohio
+16-Aug-10,0235,OMAHA1,1,PC12,8500,MSS,Green,NO,Messena,New York
+16-Aug-10,0249,AWI3714,1,CRJ2,4000,BGM,Green,NO,Binghamton,New York
+16-Aug-10,0309,SKW4707,1,CRJ2,7000,SLC,Green,NO,Salt Lake City,Utah
+16-Aug-10,0324,QXE445,1,DH8D,8000,BUR,Green,NO,Burbank,California
+16-Aug-10,0334,AWE493,1,A320,13000,DEN,Green,NO,Denver,Colorado
+16-Aug-10,0336,FDX1124,1,DC10,10000,ATL,Green ,NO,Atlanta,Georgia
+17-Aug-10,0438,AAL1035,1,B762,15000,SLI,Green,NO,Los Alamitos,California
+17-Aug-10,0608,SKW179V,1,CRJ2,4000,GPI,Green,NO,Kalispell,Montana
+17-Aug-10,0724,COA12,1,B738,7000,HNL,Green,NO,Honolulu,Hawaii
+17-Aug-10,0024,C6530,1,HH65,1000,ACY,Green,NO,Atlantic City,New Jersey
+17-Aug-10,0307,MTN7308,1,C208,500,BWI,Green,NO,Baltimore,Maryland
+18-Aug-10,0107,EGF4445,1,E135,10000,RBV,Green,NO,Robbinsville,New Jersey
+18-Aug-10,0335,MTN7309,1,C208,5000,BWI,Green,NO,Baltimore,Maryland
+18-Aug-10,0432,SKW6342,1,E120,8000,SLI,Green,NO,Los Alamitos,California
+18-Aug-10,0600,FLX953,1,C210,4000,OAK,Green,NO,Oakland,California
+19-Aug-10,0816,AAH12,1,B737,3000,HNL,Green,NO,Honolulu,Hawaii
+19-Aug-10,0817,AAL102,1,B762,4000,HNL,Green,NO,Honolulu,Hawaii
+19-Aug-10,0818,SWA3253,1,B737,6500,SLI,Green,NO,Los Alamitos,California
+19-Aug-10,0818,AMF229,1,BE99,7000,BUR,Green,NO,Burbank,California
+19-Aug-10,0819,R26524,1,H64,3000,HLR,Green,NO,Killeen,Texas
+19-Aug-10,0043,N7NJ,1,S76,1000,MMU,Green,NO,Morristown,New Jersey
+19-Aug-10,0104,SWA9005,1,B737,11000,EMI,Green,NO,Westminster,Maryland
+19-Aug-10,0138,POE135,1,DH80,UNKN,HUO,Green,NO,Huguenot,New York
+19-Aug-10,0128,SKQ601,1,PA31,5000,MTN,Green,NO,Baltimore,Maryland
+19-Aug-10,0142,EGF4445,1,E135,600,LGA,Green,NO,New York City,New York
+19-Aug-10,0142,CHQ5035,1,E135,14000,PLL,Green,NO,Polo,Illinois
+19-Aug-10,0152,TRS742,1,B712,3500,BWI,Green,NO,Baltimore,Maryland
+19-Aug-10,0314,GLA199,1,B190,FL250,TBC,White,NO,Tuba City,Arizona
+19-Aug-10,0315,N978AF,1,PC12,3000,PSM,Green,NO,Portsmouth,New Hampshire
+19-Aug-10,0335,DAL2083,1,B737,4000,LAS,Green,NO,Las Vegas,Nevada
+19-Aug-10,0130,AWE5,1,A320,1000,PHL,Green,NO,Philadelphia,Pennsylvania
+19-Aug-10,0338,TCF7532,1,E170,3000,MIA,Green,NO,Miami,Florida
+20-Aug-10,0044,N7935P,1,UNKN,1100,ILG,Green,NO,Wilmington,Delaware
+20-Aug-10,0045,N61929,1,C172,1100,OXB,Green,NO,Ocean City,Maryland
+20-Aug-10,0145,SKQ601,1,PA31,5000,MTN,Green,NO,Baltimore,Maryland
+20-Aug-10,0200,CHQ5035,1,E135,14000,PLL,Green,NO,Polo,Illinois
+20-Aug-10,0206,TRS822,1,B717,10000,APG,Green,NO,Aberdeen,Maryland
+20-Aug-10,0209,FOXTROT1,1,Helo,800,BAL,Green ,NO,Baltimore,Maryland
+20-Aug-10,0423,AAL1677,1,B757,4300,SNA,Green,NO,Santa Ana,California
+20-Aug-10,0418,AWE656,1,A321,6000,SNA,Green,NO,Santa Ana,California
+20-Aug-10,0410,WTV53,1,PA32,6000,SLI,Green,NO,Los Alamitos,California
+20-Aug-10,0353,UAL357,1,A320,10000,LAX,Green,NO,Los Angeles,California
+20-Aug-10,0351,SWA1418,1,B737,7000,LAX,Green,NO,Los Angeles,California
+21-Aug-10,0827,LIFEFLT37,1,Helo,5000,SLC,Green,NO,Salt Lake City,Utah
+21-Aug-10,0828,FLX954,1,C210,6500,MAE,Green,NO,Madera,California
+21-Aug-10,0828,TRS687,1,B712,3000,ICT,Green,NO,Wichita,Kansas
+21-Aug-10,0045,N61929,1,C172,1100,ACY,Green,NO,Atlantic City,New Jersey
+21-Aug-10,0051,BTA5785,1,E145,8000,AML,Green,NO,Herndon,Virginia
+21-Aug-10,0105,AAL742,1,MD82,2000,LGA,Green,NO,New York City,New York
+21-Aug-10,0108,C6588,1,H65,1800,ACY,Green,NO,Atlantic City,New Jersey
+21-Aug-10,0113,BTA5785,1,E145,8000,FRR,Green,NO,Front Royal,Virginia
+21-Aug-10,0159,UAL653,1,B757,5000,BDL,Green,NO,Windsor Locks,Connecticut
+22-Aug-10,0711,SKW45,1,CRJ7,UNKN,RIV,Green,NO,Riverside,California
+22-Aug-10,0711,UAL129,3,B752,10000,LAX,Green,NO,Los Angeles,California
+22-Aug-10,0712,BLAR202,1,T45,2600,SAT,Green,NO,San Antonio,Texas
+22-Aug-10,0124,AWE1840,1,B737,200,PIT,Green,NO,Pittsburgh,Pennsylvania
+22-Aug-10,0142,TRS321,1,B712,6000,BAL,Green,NO,Baltimore,Maryland
+22-Aug-10,0152,TRS638,1,B712,6000,BAL,Green,NO,Baltimore,Maryland
+22-Aug-10,0157,TRS638,1,B712,3500,BWI,Green,NO,Baltimore,Maryland
+22-Aug-10,0205,N49090,1,C172,4000,TUP,Green,NO,Tupelo,Mississippi
+22-Aug-10,0233,UNVRY1,1,Helo,2000,CGF,Green,NO,Cuyahoga,Ohio
+22-Aug-10,0315,CHQ5028,1,E145,10000,61C,Green,NO,Fort Atkinson,Wisconsin
+22-Aug-10,0345,N2774J,1,C172,2000,VNY,Green,NO,Van Nuys,California
+23-Aug-10,0215,N80X,1,C560,2500,MQJ,Green,NO,Indianapolis,Indiana
+23-Aug-10,0425,SWA1014,1,B737,6000,SJC,Green,NO,San Jose,California
+23-Aug-10,0433,AAL2033,1,MD83,7000,SEA,Green,NO,Seattle,Washington
+23-Aug-10,0517,SKW6810,1,E120,5000,PDX,Green,NO,Portland,Oregon
+23-Aug-10,0523,TN117AL,1,F2TH,3000,BUR,Green,NO,Burbank,California
+23-Aug-10,0832,HAL8,1,B763,7500,HNL,Green,NO,Honolulu,Hawaii
+23-Aug-10,1003,AAH45,1,B732,1500,HNL,Green,NO,Honolulu,Hawaii
+23-Aug-10,1222,TV7,1,AS50,1500,BUR,Green,NO,Burbank,California
+23-Aug-10,0054,N6269K,1,C172,1600,DAB,Green,NO,Daytona Beach,Florida
+23-Aug-10,0115,MTN7460,1,C208,4000,W29,Green,NO,Stevensville,Maryland
+23-Aug-10,0115,N603ME,1,EC20,1800,ERI,Green,NO,Erie,Pennsylvania
+24-Aug-10,0205,N1656ME,1,EC20,500,ERI,Green,NO,Erie,Pennsylvania
+24-Aug-10,0401,FDX1810,1,A306,6000,ONT,Green,NO,Ontario,California
+24-Aug-10,0555,FFT449,1,A319,600,PDX,Green,NO,Portland,Oregon
+24-Aug-10,0546,SKW6453,1,CRJ7,7000,PHX,Green,NO,Phoenix,Arizona
+24-Aug-10,0405,AWE656,1,A321,8000,SLI,Green,NO,Los Alamitos,California
+24-Aug-10,0428,HAL16,1,B763,9000,SAN,Green,NO,San Diego,California
+24-Aug-10,0432,SKW145P,1,CRJ7,5000,VNY,Green,NO,Van Nuys,California
+24-Aug-10,0148,LOF7972,1,E145,4000,IAD,Green,NO,Washington,District of Columbia
+24-Aug-10,0347,JBU307,1,A320,4000,SLI,Green,NO,Los Alamitos,California
+24-Aug-10,0340,C6584,1,UNKN,1000,LAX,Green,NO,Los Angeles,California
+25-Aug-10,0400,N7562P,1,R22,1100,BUR,Green,NO,Burbank,California
+25-Aug-10,0435,DAL2953,1,MD88,5000,TPA,Green,NO,Tampa,Florida
+25-Aug-10,0512,POLICE1,1,Helo,900,SJC,Green,NO,San Jose,California
+25-Aug-10,2311,SWA1104,1,B737,UNKN,PVD,Green,NO,Providence,Rhode Island
+25-Aug-10,0054,CJC4658,1,SF34,UNKN,MVY,Green,NO,Vineyard Haven,Massachusetts
+25-Aug-10,0220,UAL417,1,A320,7000,ORD,Green,NO,Chicago,Illinois
+25-Aug-10,0200,CHQ5044,1,E135,1000,GRR,Green,NO,Grand Rapids,Michigan
+25-Aug-10,0150,N926JA,1,C172,4500,DTW,Green,NO,Detroit ,Michigan
+25-Aug-10,0315,COUNTY1,1,B206,500,BWI,Green,NO,Baltimore,Maryland
+25-Aug-10,0330,G20722,1,UH60,4000,RAP,Green,NO,Rapid City,South Dakota
+25-Aug-10,0400,N215SC,1,OH58,2800,SFF,Green,NO,Spokane,Washington
+26-Aug-10,0405,NYPD16,1,A109,600,LGA,Green,NO,New York City,New York
+26-Aug-10,0425,STNFRD1,1,Helo,900,NUQ,Green,NO,Mountain View ,California
+26-Aug-10,0438,SKW6283,1,E120,5000,SMO,Green,NO,Santa Monica,California
+26-Aug-10,0510,CPZ574,1,E170,4000,SDF,Green,NO,Louisville,Kentucky
+26-Aug-10,0526,COA648,1,B738,6000,SFO,Green,NO,San Francisco,California
+26-Aug-10,1420,N62TV,1,B206,1000,SJC,Green,NO,San Jose,California
+26-Aug-10,0050,JBU1207,1,E190,4000,RSW,Green,NO,Fort Myers,Florida
+26-Aug-10,0115,AAL2684,1,MD82,7000,BNA,Green,NO,Nashville,Tennessee
+26-Aug-10,0120,N442GJ,1,BE40,FL340,PIT,UNKN,NO,Pittsburgh,Pennsylvania
+26-Aug-10,0100,LBQ920,1,BE58,8500,PIT,Green,NO,Pittsburgh,Pennsylvania
+26-Aug-10,0133,N33RV,1,F2TH,UNKN,PWK,Green,NO,Chicago,Illinois
+26-Aug-10,0145,SKW162T,1,CRJ2,2000,CLE,Green,NO,Cleveland,Ohio
+26-Aug-10,0155,BTA2658,1,E45X,10000,CLE,Green,NO,Cleveland,Ohio
+26-Aug-10,0155,TRS707,1,B712,9000,HAO,Green,NO,Hamilton,Ohio
+26-Aug-10,0230,N392ER,1,C172,1600,ORM,White,NO,Ormond Beach,Florida
+26-Aug-10,0256,SWA2119,1,B737,3000,ISP,Green,NO,Islip,New York
+26-Aug-10,0332,UNKN,1,Helo,1000,HOU,Green,NO,Houston,Texas
+26-Aug-10,0341,USC492,1,BE48,6000,SGR,Green,NO,Houston,Texas
+27-Aug-10,0413,C6584,1,H60,50,LAX,Green ,NO,Los Angeles,California
+27-Aug-10,0545,N11BV,1,F2TH,2500,MDW,Green,NO,Chicago,Illinois
+27-Aug-10,0707,UNKN,1,UNKN,8000,RNO,Green,NO,Reno,Nevada
+27-Aug-10,0015,N3084Z,1,BE35,3000,BDR,Green,NO,Bridgeport,Connecticut
+27-Aug-10,0052,DAL78,1,B763,10300,DPK,Green,NO,Deer Park,Pennsylvania
+27-Aug-10,0028,RPA3219,1,E170,3000,MYR,Green,NO,Myrtle Beach,South Carolina
+27-Aug-10,0132,RPA1625,1,B77L,FL240,MKG,Green,NO,Muskegon,Michigan
+27-Aug-10,0140,JBU1261,1,A320,1500,AML,Green,NO,Herndon,Virginia
+27-Aug-10,0140,SWA1091,1,B737,8000,LRP,Green,NO,Lancaster,Pennsylvania
+27-Aug-10,0200,EGF4295,1,E145,UNKN,TOL,Green,NO,Toledo,Ohio
+27-Aug-10,0222,AAL144,1,B738,1500,AML,Green,NO,Herndon,Virginia
+27-Aug-10,0229,ASH7225,1,CRJ7,1500,AML,Green,NO,Herndon,Virginia
+27-Aug-10,0241,BTA2338,1,E45X,3500,RIC,Green,NO,Richmond,Virginia
+27-Aug-10,0254,AAL2347,1,B772,FL250,MLC,Green,NO,Mc Alester,Oklahoma
+27-Aug-10,0215,N456MT,1,EC25,750,BLM,Green,NO,Belmar/Farmingdale,New Jersey
+28-Aug-10,0245,SNC1259,1,SH33,8000,CRW,Green,NO,Charleston,West Virginia
+28-Aug-10,0300,N477DA,1,SR22,3000,MCO,Green,NO,Orlando,Florida
+28-Aug-10,0439,JBU50,1,A320,13400,ACY,Green,NO,Atlantic City,New Jersey
+28-Aug-10,0445,AWE9,1,A320,2500,ORD,Green,NO,Chicago,Illinois
+28-Aug-10,0625,SKW6433,1,CRJ2,3000,FAT,Green,NO,Fresno,California
+28-Aug-10,0019,COM464,1,CRJ1,4000,BWI,Green,NO,Baltimore,Maryland
+28-Aug-10,0136,SWA1514,1,B737,5500,GYY,Green,NO,Gary,Indiana
+28-Aug-10,0233,BTA338,1,E190,8000,DCA,Green,NO,Washington,District of Columbia
+28-Aug-10,0220,BTA2288,1,E145,3000,DAY,Green,NO,Dayton ,Ohio
+28-Aug-10,0155,N95PD,1,B206,500,PHL,Green,NO,Philadelphia,Pennsylvania
+28-Aug-10,0155,DAL1296,1,B752,3000,MSP,Green,NO,Minneapolis,Minnesota
+28-Aug-10,0240,STAT14,1,EC35,2400,PIT,Green,NO,Pittsburgh,Pennsylvania
+28-Aug-10,0237,SKW4806,1,CRJ2,12000,GEP,Green,NO,Minneapolis,Minnesota
+28-Aug-10,0224,TRS76,1,B737,3500,FLL,Green,NO,Fort Lauderdale,Florida
+28-Aug-10,0224,N418SR,1,SR22,6500,BPT,Green,NO,Beaumont,Texas
+28-Aug-10,0314,N25028,1,C152,3000,SYR,Green,NO,Syracuse,New York
+28-Aug-10,0312,AAL1405,1,B738,1000,MIA,Green,NO,Miami,Florida
+29-Aug-10,0110,STAT3,1,EC35,1800,PIT,Green,NO,Pittsburgh,Pennsylvania
+29-Aug-10,0445,NKS350,1,A319,6000,WWD,Green,NO,Wildwood,New Jersey
+29-Aug-10,0438,C6559,1,HH65,700,WWD,Green,NO,Wildwood,New Jersey
+29-Aug-10,0620,UAL263,1,A319,3000,PAO,Green,NO,Palo Alto,California
+29-Aug-10,0620,WOA2847,1,B744,3000,PAO,Green,NO,Palo Alto,California
+29-Aug-10,0748,FFX1,1,B407,1400,DCA,Green,NO,Washington,District of Columbia
+29-Aug-10,0010,IDAHO17,1,C208,1600,BWI,Green,NO,Baltimore,Maryland
+29-Aug-10,0043,BTA3112,1,E145,5000,PVD,Green,NO,Providence,Rhode Island
+29-Aug-10,0053,EJM90,1,F900,1500,ORL,Green,NO,Orlando,Florida
+29-Aug-10,0055,RPA3353,1,E170,8000,DCA,Green,NO,Washington,District of Columbia
+29-Aug-10,0108,N486LF,1,BK17,2200,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+29-Aug-10,0245,SKW4857,1,CRJ9,5000,MSP,Blue,NO,Minneapolis,Minnesota
+29-Aug-10,0328,SWA2376,1,B737,9000,LAX,Green,NO,Los Angeles,California
+29-Aug-10,0304,CHQ5028,1,E135,10000,MKE,Green,NO,Milwaukee,Wisconsin
+29-Aug-10,0330,SWA422,1,B737,4500,PVD,Green,NO,Providence,Rhode Island
+29-Aug-10,0341,UAL363,1,A319,7000,ORD,Green,NO,Chicago,Illinois
+30-Aug-10,0357,SWA1929,1,B737,3000,MDW,Green,NO,Chicago,Illinois
+30-Aug-10,0711,N102CG,1,MD52,2000,BUR,Green,NO,Burbank,California
+30-Aug-10,0949,COA315,1,B738,1200,EWR,Green,NO,Newark,New Jersey
+30-Aug-10,0127,SKQ601,1,PA31,4000,BAL,Green,NO,Baltimore,Maryland
+30-Aug-10,0255,AWI3670,1,CRJ1,12000,ETX,Green,NO,East Texas,Pennsylvania
+30-Aug-10,0121,EGF4471,1,E135,2700,JFK,Green,NO,New York City,New York
+30-Aug-10,0315,DAL2342,1,B737,11000,ARD,Green,NO,Yardley,Pennsylvania
+30-Aug-10,0325,UPS789,1,A306,FL280,BMQ,Green,NO,Burnet,Texas
+31-Aug-10,0345,CPF221,1,C172,5800,PRC,Green,NO,Prescott,Arizona
+31-Aug-10,0503,SKW6196,1,E120,13500,CIC,Green,NO,Chico,California
+31-Aug-10,0245,UAL712,1,A320,10000,SFO,Green,NO,San Francisco,California
+31-Aug-10,0130,AWI3621,1,CRJ2,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+31-Aug-10,0011,N5290F,1,C206,UNKN,RDG,White,NO,Reading,Pennsylvania
+31-Aug-10,0040,CDR1,1,UH1,300,DCA,Multicolor,NO,Washington,District of Columbia
+1-Sep-10,0035,PDT4275,1,DH8,3000,MDT,Green,NO,Harrisburg,Pennsylvania
+1-Sep-10,0120,NWA4300,1,CRJ2,7000,BDL,Green,NO,Windsor Locks,Connecticut
+1-Sep-10,0130,AWI3848,1,CRJ2,1000,PHL,Green,NO,Philadelphia,Pennsylvania
+1-Sep-10,0205,UPS,1,B752,14000,BDL,Green,NO,Windsor Locks,Connecticut
+1-Sep-10,0413,SKW6508,1,CRJ7,9000,SJC,Green,NO,San Jose,California
+1-Sep-10,0413,UAL522,1,B752,10000,SJC,Green,NO,San Jose,California
+1-Sep-10,1021,N125SA,1,DHC6,1700,L65,Green,NO,Perris,California
+1-Sep-10,1031,FDX1802,1,A306,3500,HWD,Green,NO,Hayward,California
+1-Sep-10,0414,UAL841,1,A320,8000,SJC,Green,NO,San Jose,California
+1-Sep-10,0415,N326RT,1,BE20,14500,SLI,Green,NO,Los Alamitos,California
+1-Sep-10,0612,UPS423,1,B752,6000,MIA,Green,NO,Miami,Florida
+1-Sep-10,0613,FDX1813,1,A306,3000,HWD,Green,NO,Hayward,California
+1-Sep-10,0613,GASSR19,1,K35A,FL210,SHV,Green,NO,Shreveport,Louisiana
+1-Sep-10,0133,SWA2231,1,B738,5000,PVD,Green,NO,Providence,Rhode Island
+1-Sep-10,0055,GJS7395,1,CRJ7,3000,AML,Green,NO,Herndon,Virginia
+1-Sep-10,0132,TOPCAT4,1,K35R,2000,RBV,Green,NO,Robbinsville,New Jersey
+1-Sep-10,0400,AIRLIFE ,1,UNKN,1500,BAZ,UNKN,NO,New Braunfels,Texas
+2-Sep-10,0408,PDT9311,1,DH8A,4000,PS14,Green,NO,Middletown,Pennsylvania
+2-Sep-10,0409,LION1,1,UNKN,2000,PS14,Green,NO,Middletown,Pennsylvania
+2-Sep-10,0410,BTA2279,1,E145,5000,TYS,Green,NO,Knoxville,Tennessee
+2-Sep-10,0504,AAL607,1,B737,5000,LAX,Green,NO,Los Angeles,California
+2-Sep-10,0000,AWI3635,1,CRJ2,4000,LGA,Green,NO,New York City,New York
+2-Sep-10,0059,N92GT,1,TRIN,8000,EMI,Green,NO,Westminster,Maryland
+2-Sep-10,0105,N82SV,1,F900,8000,EMI,Green,NO,Westminster,Maryland
+2-Sep-10,0106,CJC7798,1,SF34,8000,EMI,Green,NO,Westminster,Maryland
+2-Sep-10,0108,TCF7519,1,E170,8000,EMI,Green,NO,Westminster,Maryland
+2-Sep-10,0200,TROOPER2,1,Helo,2200,2W5,Green,NO,Indian Head,Maryland
+2-Sep-10,0300,MTN7309,1,C208,5000,BAL,Green,NO,Baltimore,Maryland
+2-Sep-10,0318,SWA351,1,B737,3000,JYO,Green,NO,Leesburg,Virginia
+3-Sep-10,0325,PDT4569,1,UNKN,4000,BAL,Green,NO,Baltimore,Maryland
+3-Sep-10,0558,JBU489,1,A320,3000,SNA,Green,NO,Santa Ana,California
+3-Sep-10,0051,N61579,1,C172,UNKN,RDG,Green,NO,Reading,Pennsylvania
+3-Sep-10,0143,UPS301,1,A306,2000,AUS,Green,NO,Austin,Texas
+3-Sep-10,0351,TCF5972,1,E170,2000,ORD,Green,NO,Chicago,Illinois
+3-Sep-10,0136,EGF3729,1,CRJ7,4000,ORD,Green,NO,Chicago,Illinois
+3-Sep-10,0127,WIG7450,1,C208,3000,MDT,Green,NO,Harrisburg,Pennsylvania
+3-Sep-10,0310,JBU810,1,A320,FL180,JFK,Green,NO,New York City,New York
+3-Sep-10,0231,CHQ6048,1,E145,6000,LHQ,Green,NO,Lancaster,Ohio
+3-Sep-10,0252,USC1107,1,C208,3000,PAH,Green,NO,Paducah,Kentucky
+3-Sep-10,0353,SWA3509,1,B737,7000,SLC,Green,NO,Salt Lake City,Utah
+3-Sep-10,0354,BTA5852,1,E145,4000,GRB,Green,NO,Green Bay,Wisconsin
+3-Sep-10,0354,BTA2803,1,E145,1500,SHV,Green,NO,Shreveport,Louisiana
+3-Sep-10,0355,SKW6534,1,CRJ2,13000,BJC,Green,NO,Denver,Colorado
+4-Sep-10,0006,DAL89,1,B738,17000,HPN,Green,NO,Westchester,New York
+4-Sep-10,0059,SKW6310,1,CRJ7,3000,ABE,Green,NO,Allentown,Pennsylvania
+4-Sep-10,0132,RPA3492,1,UNKN,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+4-Sep-10,0155,LN658PC,1,PC12,10000,MAF,Green,NO,Midland,Texas
+4-Sep-10,0226,AAL1377,1,B737,17000,DPA,Green,NO,Chicago,Illinois
+4-Sep-10,0230,EGF4692,1,E145,10000,CMH,Green,NO,Columbus,Ohio
+4-Sep-10,0232,SWA3929,1,B737,11000,HVN,Green,NO,New Haven,Connecticut
+4-Sep-10,0235,AAL598,1,MD82,5200,DAY,Green,NO,Dayton ,Ohio
+4-Sep-10,0255,SWA357,1,B737,15000,FTZ,Green,NO,Foristell,Missouri
+4-Sep-10,0525,AIR01,1,B206,1500,SYR,Green,NO,Syracuse,New York
+4-Sep-10,0403,JBU22,1,A320,5000,SYR,Green,NO,Syracuse,New York
+4-Sep-10,0555,VRD338,1,A320,16000,SLI,Green,NO,Los Alamitos,California
+5-Sep-10,0610,AAL1817,1,B752,8600,SJC,Green,NO,San Jose,California
+5-Sep-10,0530,N724SP,1,C172,1000,LGB,Green,NO,Long Beach,California
+5-Sep-10,0518,ASA492,1,B737,5000,SAN,Green,NO,San Diego,California
+5-Sep-10,0025,NKS265,1,A319,1500,FLL,Green,NO,Fort Lauderdale,Florida
+5-Sep-10,0021,N934HA,1,C172,6000,MDT,Green,NO,Harrisburg,Pennsylvania
+5-Sep-10,0047,RPA3280,1,E170,7000,CLT,Green,NO,Charlotte,North Carolina
+5-Sep-10,0048,AWE1475,1,A320,4500,CLT,Green,NO,Charlotte,North Carolina
+5-Sep-10,0108,UAL9904,1,A320,6000,61MI,Green,NO,New Baltimore,Michigan
+5-Sep-10,0133,SIERRA560,1,C560,2500,61MI,Green,NO,New Baltimore,Michigan
+5-Sep-10,0125,AAL1880,1,B731,13000,MIA,Green,NO,Miami,Florida
+5-Sep-10,0138,N676US,1,DA40,UNKN,HGR,Green,NO,Hagertown,Maryland
+5-Sep-10,0223,SWA1100,1,B737,4000,MDW,Green,NO,Chicago,Illinois
+5-Sep-10,0218,RPA1098,1,E170,2200,ICT,Green,NO,Wichita,Kansas
+5-Sep-10,0240,DAL1263,1,A320,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+5-Sep-10,0245,AAL1639,1,B752,1200,SJU,Green,NO,San Juan,Puerto Rico
+5-Sep-10,0259,SKW6471,1,CRJ7,12000,TTE,Green,NO,Porterville,California
+5-Sep-10,0258,SWA3239,1,B737,9000,LAS,Green,NO,Las Vegas,Nevada
+5-Sep-10,0300,N567MT,1,UNKN,6500,ATL,Green,NO,Atlanta,Georgia
+5-Sep-10,0300,PDT4328,1,DH8,8000,PHL,Green,NO,Philadelphia,Pennsylvania
+5-Sep-10,0329,SKW6474,1,CRJ2,UNKN,LAX,Green,NO,Los Angeles,California
+5-Sep-10,0345,RCH820,1,C17,UNKN,HTO,Green,NO,East Hampton,New York
+5-Sep-10,0445,N8416J,1,R22,2500,OLM,Green,NO,Olympia,Washington
+6-Sep-10,0319,PDT4139,1,DH8,1000,PHL,Green,NO,Philadelphia,Pennsylvania
+6-Sep-10,0434,GLA763,1,B190,18000,SEZ,Green,NO,Sedona,California
+6-Sep-10,0739,UAL76,1,B772,8500,SFO,Green,NO,San Francisco,California
+6-Sep-10,0015,TRS751,1,B712,7000,BWI,Green,NO,Baltimore,Maryland
+6-Sep-10,0105,UAL406,1,A320,13000,ABE,Green,NO,Allentown,Pennsylvania
+6-Sep-10,0108,RPA1990,1,E190,15000,ABE,Green,NO,Allentown,Pennsylvania
+6-Sep-10,0040,SWA3155,1,B733,700,HOU,Green,NO,Houston,Texas
+6-Sep-10,0203,LF5,1,Helo,700,HOU,Green,NO,Houston,Texas
+6-Sep-10,0250,AAL141,1,B772,4000,JFK,Green,NO,New York City,New York
+6-Sep-10,0350,N207TR,1,FA7X,5000,BDL,Green,NO,Windsor Locks,Connecticut
+6-Sep-10,2340,WESTCTRPD,1,Helo,1000,HPN,Green,NO,Westchester,New York
+7-Sep-10,0533,JBU22,1,A320,1600,SYR,Green,NO,Syracuse,New York
+7-Sep-10,0003,TCF636,1,E170,11000,IAD,Green,NO,Washington,District of Columbia
+7-Sep-10,0030,BTA5888,1,E145,11000,IAD,Green,NO,Washington,District of Columbia
+7-Sep-10,0018,UAL691,1,A319,3500,ORD,Green,NO,Chicago,Illinois
+7-Sep-10,0040,N8215X,1,C172,800,PTK,Green,NO,Pontiac,Michigan
+7-Sep-10,0100,N51UT,1,SK70,3500,4B8,Green,NO,Plainville,Connecticut
+7-Sep-10,0128,SWA767,1,B737,7200,CGT,Green,NO,Chicago Heights,Illinois
+7-Sep-10,0129,AAL141,1,B772,FL400,AUG,Green,NO,Augusta,Maine
+7-Sep-10,0130,AAY951,1,MD83,3000,GRR,Green,NO,Grand Rapids,Michigan
+7-Sep-10,0157,JBU1264,1,E190,6000,BOS,Green,NO,Boston,Massachusetts
+7-Sep-10,0206,N969ME,1,EC35,2500,ACY,Green,NO,Atlantic City,New Jersey
+7-Sep-10,0241,COA1174,1,B737,11000,BWZ,Green,NO,Schooley's Mountain,New Jersey
+7-Sep-10,0357,CJC4688,1,SF34,3000,LGA,Green,NO,New York City,New York
+7-Sep-10,0358,N483ER,1,C172,3000,DAB,Green,NO,Daytona Beach,Florida
+8-Sep-10,0134,AAL1471,1,MD83,4500,MCI,Green,NO,Kansas City,Missouri
+8-Sep-10,0116,EGF4969,1,AT72,4000,MIA,Green,NO,Miami,Florida
+8-Sep-10,0359,VRD327,1,A319,2500,LAX,Green,NO,Los Angeles,California
+8-Sep-10,0402,UPS1307,1,B757,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+9-Sep-10,0525,FLX953,1,C210,2000,STS,Green,NO,Santa Rosa,California
+9-Sep-10,0508,AMF497,1,C210,2000,PDX,Green,NO,Portland,Oregon
+9-Sep-10,0425,SWA1751,1,B737,1100,OAK,Green,NO,Oakland,California
+9-Sep-10,0425,FDX1818,1,B757,1100,OAK,Green,NO,Oakland,California
+9-Sep-10,0042,BTA2517,1,E45X,13000,PHL,Green,NO,Philadelphia,Pennsylvania
+10-Sep-10,0142,EGF3389,1,E145,17000,PRX,Green,NO,Paris,Texas
+10-Sep-10,0430,DAL2255,1,B752,2000,LAX,Green,NO,Los Angeles,California
+10-Sep-10,0512,N615PG,1,E135,1500,OAK,Green,NO,Oakland,California
+10-Sep-10,0854,N587PB,1,BE9L,500,HNL,Green,NO,Honolulu,Hawaii
+10-Sep-10,0431,SWA606,1,B737,3000,ONT,Green,NO,Ontario,California
+10-Sep-10,0528,FDX1810,1,B757,FL190,SNS,Green,NO,Salinas,California
+10-Sep-10,0115,RPA3492,1,E170,6000,MXE,Green,NO,Modena,Pennsylvania
+10-Sep-10,0200,SWA507,1,B737,2000,BAL,Green,NO,Baltimore,Maryland
+10-Sep-10,0221,PSA252,1,CRJ7,4000,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+10-Sep-10,0224,UCA8661,1,DH80,5000,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+10-Sep-10,0252,BTA2862,1,E145,4000,UES,Green,NO,Waukesha,Wisconsin
+10-Sep-10,0311,G20568,1,OH58,4400,RAP,Green,NO,Rapid City,South Dakota
+10-Sep-10,0350,AAL2479,1,B752,3700,LAX,Green,NO,Los Angeles,California
+11-Sep-10,0200,SWA507,1,B737,2000,BWI,Green,NO,Baltimore,Maryland
+11-Sep-10,0425,ABX1820,1,DC10,FL410,MFR,Green,NO,Medford,Oregon
+11-Sep-10,0444,FDX1818,1,B752,1700,OAK,Green,NO,Oakland,California
+11-Sep-10,0501,JBU173,1,A320,4000,SJC,Green,NO,San Jose,California
+11-Sep-10,0510,FDX1813,1,A306,2000,OAK,Green,NO,Oakland,California
+11-Sep-10,0657,HAL377,1,B712,3000,HNL,Green,NO,Honolulu,Hawaii
+11-Sep-10,0802,DAL2263,1,B752,10000,LAX,Green,NO,Los Angeles,California
+11-Sep-10,1035,AIP3030,1,BE99,5000,GPI,Green,NO,Kalispell,Montana
+11-Sep-10,0014,N9417L,1,C172,3500,PIT,Green,NO,Pittsburgh,Pennsylvania
+11-Sep-10,0132,NCA166,1,B744,10000,ORD,Green,NO,Chicago,Illinois
+11-Sep-10,0137,SWA3073,1,B737,8000,PHL,Green,NO,Philadelphia,Pennsylvania
+11-Sep-10,0150,JIA252,1,CRJ7,4000,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+11-Sep-10,0159,AWI3774,1,CRJ2,8000,PHL,Green,NO,Philadelphia,Pennsylvania
+11-Sep-10,0226,BAW292,1,B772,13000,BWI,Green,NO,Baltimore,Maryland
+11-Sep-10,0301,SKW6708,1,CRJ2,1700,BOI,Green,NO,Boise,Idaho
+11-Sep-10,0315,AAL794,1,B737,11000,PIA,Green,NO,Peoria,Illinois
+11-Sep-10,0316,AAL1890,1,B737,11000,PIA,Green,NO,Peoria,Illinois
+11-Sep-10,0359,EGLMED8963,1,S76,2400,FSM,Green,NO,Fort Smith,Arkansas
+12-Sep-10,0526,RCH132,1,C17,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+12-Sep-10,0543,PDAIR1,1,H500,1900,RIV,Green,NO,Riverside,California
+12-Sep-10,0645,LN300AJ,1,BE20,3000,HOU,Green,NO,Houston,Texas
+12-Sep-10,0720,TAI588,1,A320,7000,ORD,Green,NO,Chicago,Illinois
+12-Sep-10,0743,AAL10,1,A320,7000,ORD,Green,NO,Chicago,Illinois
+12-Sep-10,0032,COM1748,1,CRJ1,4000,INT,Green,NO,Winston Salem,North Carolina
+12-Sep-10,0105,LOF8051,1,E145,8000,FDK,Green,NO,Frederick,Maryland
+12-Sep-10,0042,TRS190,1,B737,11000,ATL,Green,NO,Atlanta,Georgia
+12-Sep-10,0025,ECJ41,1,H25B,UNKN,ABE,Green,NO,Allentown,Pennsylvania
+12-Sep-10,0115,RPA3109,1,E170,4500,CLT,Green,NO,Charlotte,North Carolina
+12-Sep-10,0130,EGF3945,1,E145,FL250,GIJ,Green,NO,Niles,Michigan
+12-Sep-10,0127,BTA3116,1,E145,7000,IAH,Green,NO,Houston,Texas
+12-Sep-10,0127,N411QS,1,GLF4,2000,AUS,Green,NO,Austin,Texas
+12-Sep-10,0127,EGF4531,1,E135,4300,BNA,Green,NO,Nashville,Tennessee
+12-Sep-10,0132,NCA134,1,B747,UNKN,ORD,Green,NO,Chicago,Illinois
+12-Sep-10,0142,AWE948,1,B734,4000,CLE,Green,NO,Cleveland,Ohio
+12-Sep-10,0300,COA566,1,UNKN,6000,IAH,Green,NO,Houston,Texas
+12-Sep-10,0345,UAL183,1,A320,7000,LAS,Green,NO,Las Vegas,Nevada
+13-Sep-10,0516,SWA2175,1,B737,5000,PHX,Green,NO,Phoenix,Arizona
+13-Sep-10,0708,ASA111,1,B739,1800,ANC,Green,NO,Anchorage,Alaska
+13-Sep-10,0115,IDAHO17,1,C208,4500,MTN,Green,NO,Baltimore,Maryland
+13-Sep-10,0210,N106JT,1,C25B,5000,DFW,Green,NO,Dallas-Fort Worth,Texas
+13-Sep-10,0345,TRS647,1,B737,10000,SAT,Green,NO,San Antonio,Texas
+14-Sep-10,0440,N4078B,1,PA31,3500,2OG3,Green,NO,Lake Oswego,Oregon
+14-Sep-10,0536,AMF424,1,PA31,2500,PDX,Green,NO,Portland,Oregon
+14-Sep-10,0540,RAT11,1,K35A,4000,RIV,Green,NO,Riverside,California
+14-Sep-10,0752,AWE496,1,A319,9000,DEN,Green,NO,Denver,Colorado
+14-Sep-10,0754,HAL376,1,B712,6000,HNL,Green,NO,Honolulu,Hawaii
+14-Sep-10,0100,N106JT,1,C25,10000,DAL,Green,NO,Dallas,Texas
+14-Sep-10,0114,BJS515,1,C30,10000,DAL,Green,NO,Dallas  ,Texas
+14-Sep-10,0211,RPA3316,1,E170,3000,BTV,Green,NO,Burlington,Vermont
+14-Sep-10,0230,DAL2162,1,B738,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+14-Sep-10,0247,FIV624,1,C680,8000,MSP,Green,NO,Minneapolis,Minnesota
+14-Sep-10,0318,RPA1653,1,E170,10000,MKE,Green,NO,Milwaukee,Wisconsin
+14-Sep-10,0318,CHQ1325,1,E135,10000,MKE,Green,NO,Milwaukee,Wisconsin
+14-Sep-10,0345,ASA663,1,B737,4500,SEA,Green,NO,Seattle,Washington
+15-Sep-10,0405,N6634N,1,C210,3500,BDR,Green,NO,Bridgeport,Connecticut
+15-Sep-10,0501,FLX701,1,C210,1800,CPS,Green,NO,Cahokia/St Louis,Illinois
+15-Sep-10,0030,SWA2546,1,B737,3000,BNA,Green,NO,Nashville,Tennessee
+15-Sep-10,0137,AAL590,1,B738,5000,ORD,Green,NO,Chicago,Illinois
+15-Sep-10,0235,HAL36,1,B763,10000,PHX,Green,NO,Phoenix,Arizona
+15-Sep-10,0240,SWA344,1,B737,6000,LAS,Green,NO,Las Vegas,Nevada
+15-Sep-10,0250,SWA3239,1,B737,15000,SLI,Green,NO,Los Alamitos,California
+15-Sep-10,0302,CJC9578,1,SF34,3500,60R,Green,NO,Navasota,Texas
+15-Sep-10,0305,UNKN,1,UNKN,6000,PVU,Green,NO,Provo,Utah
+15-Sep-10,0336,SWA108,1,B737,4000,JOT,Green,NO,Joliet,Illinois
+15-Sep-10,0353,N517FD,1,PA32,UNKN,BIS,Green,NO,Bismarck,North Dakota
+15-Sep-10,0643,PHM65335,1,Helo,300,PHL,Green,NO,Philadelphia,Pennsylvania
+16-Sep-10,0250,SWA565,1,B737,3000,SLI,Green,NO,Los Alamitos,California
+16-Sep-10,0250,RPA1019,1,E190,3000,SLI,Green,NO,Los Alamitos,California
+16-Sep-10,0308,IFTA07,3,BE36,4500,FAT,Green,NO,Fresno,California
+16-Sep-10,0428,SWA1147,1,B737,1100,SFO,Green,NO,San Francisco,California
+16-Sep-10,0545,AMF137,1,SW4,3000,PHX,Green,NO,Phoenix,Arizona
+16-Sep-10,0040,BTA3054,1,E45X,9000,MPO,Green,NO,Mount Pocono,Pennsylvania
+16-Sep-10,0143,AWE1853,1,A319,2000,BWI,Green,NO,Baltimore,Maryland
+16-Sep-10,0235,SWA2988,1,B737,6000,SDF,Green,NO,Louisville,Kentucky
+16-Sep-10,0247,PETRO2,1,AS50,3100,TUS,Green,NO,Tucson,Arizona
+16-Sep-10,0340,SWA509,1,B733,3000,SNA,Green,NO,Santa Ana,California
+16-Sep-10,0414,UAL846,1,UNKN,2500,UNKN,Green,NO,UNKN,UNKN
+17-Sep-10,0040,RPA3280,1,E170,4000,CLT,Green,NO,Charlotte,North Carolina
+17-Sep-10,0050,BTA5979,1,E145,7000,ORD,Green,NO,Chicago,Illinois
+17-Sep-10,0120,TRIDT08,1,T33,2000,CHS,Green,NO,Charleston,South Carolina
+17-Sep-10,0144,DAL1770,1,B737,8500,MSP,Blue,NO,Minneapolis,Minnesota
+17-Sep-10,0148,N404PX,1,T4,2000,HOU,Green,NO,Houston,Texas
+17-Sep-10,0349,AAL2368,1,MD82,8500,ORD,Green,NO,Chicago,Illinois
+17-Sep-10,0929,HAL324,1,B717,1000,HNL,Green,NO,Honolulu,Hawaii
+18-Sep-10,0010,TCF7519,1,E170,8000,FDK,Green,NO,Frederick,Maryland
+18-Sep-10,0112,EGF4088,1,E145,13000,MKE,Green,NO,Milwaukee,Wisconsin
+18-Sep-10,0055,SKW6592,2,CRJ2,10000,AVL,Green,NO,Asheville,North Carolina
+18-Sep-10,0101,N516R,1,SR22,10000,AVL,Green,NO,Asheville,North Carolina
+18-Sep-10,0124,N6109S,1,P28A,3700,ERI,Green,NO,Erie,Pennsylvania
+18-Sep-10,0143,N94566,1,C172,3000,ERI,Green,NO,Erie,Pennsylvania
+18-Sep-10,0302,AAL597,1,MD83,12000,HYI,Green,NO,San Marcos,Texas
+18-Sep-10,0305,N935SH,1,R33,600,LAX,Green,NO,Los Angeles,California
+18-Sep-10,0325,TRS131,1,B737,3000,TPA,Green,NO,Tampa,Florida
+19-Sep-10,0405,LIFEFLT2,1,B206,1700,BNA,Green,NO,Nashville,Tennessee
+19-Sep-10,0500,ASH2834,1,CRJ9,7000,TUS,Green,NO,Tucson,Arizona
+19-Sep-10,0531,AAL2493,1,B738,2000,LAX,Green,NO,Los Angeles,California
+19-Sep-10,0108,N60451,1,BE76,4000,0A2,Green,NO,Calhoun Falls,South Carolina
+19-Sep-10,0117,SWA2790,1,B733,1200,TPA,Green,NO,Tampa,Florida
+19-Sep-10,0325,SWA3937,1,B737,1200,SJC,Green,NO,San Jose,California
+19-Sep-10,0341,SKW6215,1,CRJ2,5000,GPI,Green,NO,Kalispell,Montana
+19-Sep-10,0342,SWA1014,1,B737,1500,SJC,Green,NO,San Jose,California
+20-Sep-10,0746,AAL700,1,B737,FL210,ELB,Green,NO,Santa Ana,California
+20-Sep-10,2359,AWE1890,2,A319,2500,EWR,Green,NO,Newark,New Jersey
+20-Sep-10,0005,TRS639,1,B712,6000,BAL,Green,NO,Baltimore,Maryland
+20-Sep-10,2344,C6559,1,HH65,2000,WWD,Green,NO,Wildwood,New Jersey
+20-Sep-10,0019,GGZ7457,1,B190,14000,ROC,Green,NO,Rochester,New York
+20-Sep-10,0044,BTA2332,1,E145,1500,EWR,Green,NO,Newark,New Jersey
+20-Sep-10,0225,SWA890,1,B737,17000,K34,Green,NO,Gardner,Kansas
+20-Sep-10,0252,CHQ1458,1,E145,FL200,HAR,Green,NO,Harrisburg,Pennsylvania
+20-Sep-10,0304,GRIT59,1,UH60,6200,CYS,Red,NO,Cheyenne,Wyoming
+20-Sep-10,0311,N20LH,1,BE20,1200,HOU,Green,NO,Houston,Texas
+21-Sep-10,0117,BTA2837,3,E145,2000,BKL,Green,NO,Cleveland,Ohio
+21-Sep-10,0146,SWA9004,1,B737,10000,IAH,Green,NO,Houston,Texas
+21-Sep-10,0059,PDT4275,1,DH8A,3000,MDT,Green,NO,Harrisburg,Pennsylvania
+21-Sep-10,0237,SKW6324,1,CRJ2,3000,ORD,Green,NO,Chicago,Illinois
+21-Sep-10,0300,FDX1017,1,DC10,16000,PWL,Green,NO,Poughkeepsie,New York
+22-Sep-10,0815,SWA328,1,B737,11000,LAS,Green,NO,Las Vegas,Nevada
+22-Sep-10,0039,COM9468,1,CRJ1,6700,CVG,Green,NO,Covington,Kentucky
+22-Sep-10,  0048,BVN7571,1,C208,4000,OMA,Green,NO,Omaha,Nebraska
+22-Sep-10,0059,CTL16,3,AC50,2000,BKL,Green,NO,Cleveland,Ohio
+22-Sep-10,0150,GWNTTPD,1,Helo,2000,LZU,Green,NO,Lawrenceville,Georgia
+22-Sep-10,0222,SWA256 ,1,B737,2000,MCI,Green,NO,Kansas City,Kansas
+22-Sep-10,0224,CPZ5286,1,E170,2000,MCI,Green,NO,Kansas City,Kansas
+22-Sep-10,0243,JAMIE42,1,UNKN,9000,22MS,Green,NO,Lucedale,Mississippi
+22-Sep-10,0347,ASH2829,1,CRJ9,1000,TUS,Green,NO,Tucson,Arizona
+22-Sep-10,0348,AAL1202,1,B737,7000,MIA,Green,NO,Miami,Florida
+22-Sep-10,0603,KING66,2,C130,2500,NUQ,Green,NO,Mountain View,California
+23-Sep-10,0705,AWE152,1,A319,17000,STL,Green,NO,St. Louis,Missouri
+23-Sep-10,0025,N6138V,1,PA28,2100,TZR,Green,NO,Columbus,Ohio
+23-Sep-10,0035,N365DC,1,DV20,4500,LYH,Green,NO,Lynchburg,Virginia
+23-Sep-10,0050,OPT710,1,C750,10000,AZO,Green,NO,Kalamazoo,Michigan
+23-Sep-10,0103,AIRPTRL1924,1,C172,2500,9B1,Green,NO,Marlborough,Massachusetts
+23-Sep-10,0214,N117KS,1,C172,1000,CAK,Green,NO,Akron,Ohio
+23-Sep-10,0257,UNKN,1,UNKN,1500,BRO,Green,NO,Brownsville,Texas
+23-Sep-10,0259,N7751,1,UNKN,6000,3R9,Green,NO,Austin,Texas
+23-Sep-10,0352,AIR1,1,Helo,1800,FTY,Green,NO,Atlanta,Georgia
+24-Sep-10,0430,N170E,1,C172,2000,MZB,Green,NO,San Diego,California
+24-Sep-10,0431,SWA3509,1,B737,11000,SLC,Green,NO,Salt Lake City,Utah
+24-Sep-10,0659,EJA945,1,C750,7500,SNA,Green,NO,Santa Ana,California
+24-Sep-10,0010,CHQ3035,1,E145,6000,PHL,Green,NO,Philadelphia,Pennsylvania
+24-Sep-10,0152,N709FP,1,A22,1500,SAV,Green,NO,Savannah,Georgia
+24-Sep-10,0243,ASA876,1,B737,1000,PDX,Green,NO,Portland,Oregon
+24-Sep-10,0250,N417C,1,C525,3000,VNY,Green,NO,Van Nuys,California
+24-Sep-10,0250,CJC7797,1,SF34,9000,JYO,Green,NO,Leesburg,Virginia
+25-Sep-10,0410,UAL901,1,B752,7000,MZB,Green,NO,San Diego,California
+25-Sep-10,0416,N6982W,1,PA28,5000,WHP,Green,NO,Los Angeles,California
+25-Sep-10,0538,SURVEY2,1,B06,5500,TUS,Green,NO,Tucson,Arizona
+25-Sep-10,0615,N97AK,1,C172,2200,SNA,Green,NO,Santa Ana,California
+25-Sep-10,0001,AWI3809,1,CRJ2,6000,DCA,Green,NO,Washington,District of Columbia
+25-Sep-10,0140,NKS936,1,A319,12000,DTW,Green,NO,Detroit ,Michigan
+25-Sep-10,0234,SWA1968,1,B733,5500,TUS,Green,NO,Tucson,Arizona
+25-Sep-10,0325,N903JP,1,C510,1700,NUQ,Green,NO,Mountain View,California
+25-Sep-10,0325,SKW4722,1,CRJ2,UNKN,COS,Green,NO,Colorado Springs,Colorado
+25-Sep-10,1017,UPS1366,1,UNKN,2400,1A9,Green,NO,Prattville,Alabama
+26-Sep-10,0345,AAL1202,1,B737,3500,PHL,Green,NO,Philadelphia,Pennsylvania
+26-Sep-10,0525,FFT449,1,A319,2500,PDX,Green,NO,Portland,Oregon
+26-Sep-10,0345,SURVEY2,1,B06,5500,TUS,Green,NO,Tucson,Arizona
+26-Sep-10,0121,SKW4878,1,CRJ2,8000,MSP,Blue,NO,Minneapolis,Minnesota
+26-Sep-10,0128,SKW4734,1,CRJ2,8000,MSP,Blue,NO,Minneapolis,Minnesota
+26-Sep-10,0129,SNOOPY1,1,Blimp,2000,LGA,Green,NO,New York City,New York
+26-Sep-10,0327,N89WC,1,B350,700,SNA,Green,NO,Santa Ana,California
+26-Sep-10,0655,AIRNAC19,1,B206,1700,BNA,Green,NO,Nashville,Tennessee
+27-Sep-10,0457,SKW6432,1,E120,600,ACV,Green,NO,Arcata/Eureka,California
+27-Sep-10,0605,UAL56,1,A320,6000,OAK,Green,NO,Oakland,California
+27-Sep-10,0125,AAL532,1,B738,9000,OTT,Green,NO,Nottingham,Maryland
+27-Sep-10,0150,BVN7754,1,C208,4000,AUS,Green,NO,Austin,Texas
+27-Sep-10,0232,CAP552,1,C182,8500,DEN,Green,NO,Denver,Colorado
+27-Sep-10,0234,N58ES,1,BE30,9000,SLK,Green,NO,Saranac Lakeq,New York
+27-Sep-10,0238,N95UT,1,BE20,6500,SLC,Green,NO,Salt Lake City,Utah
+28-Sep-10,0407,SKW6679,1,E120,6000,SFO,Green,NO,San Francisco,California
+28-Sep-10,0414,TVD900,1,C402,5000,PIH,Green,NO,Pocatello,Idaho
+28-Sep-10,0120,LBQ611,1,PC12,2000,MFE,Green,NO,McAllen,Texas
+28-Sep-10,0041,FLG4380,1,CRJ2,5000,CID,Green,NO,Cedar Rapids,Iowa
+28-Sep-10,0223,COA1140,1,B737,6000,EWR,Green,NO,Newark,New Jersey
+28-Sep-10,0210,AWE277,4,B733,2000,PHX,Green,NO,Phoenix,Arizona
+28-Sep-10,0244,SKW6446,1,E120,1000,SMX,Green,NO,Santa Maria,California
+28-Sep-10,0300,SWA509,1,B737,10000,UAO,Green,NO,Aurora,Oregon
+28-Sep-10,1104,GLA790,1,B190,6000,OJC,Green,NO,Olathe,Kansas
+28-Sep-10,1205,FDX3645,1,DC10,14000,SLI,Green,NO,Los Alamitos,California
+29-Sep-10,0442,FDX1116,1,B722,11000,ONT,Green,NO,Ontario,California
+29-Sep-10,1205,FDX3645,1,DC10,14000,SLI,Green,NO,Los Alamitos,California
+29-Sep-10,2337,CARMN7,1,C130,11000,LNS,Red,NO,Lancaster,Pennsylvania
+29-Sep-10,0015,ACA7687,1,CRJ1,11000,BOS,Green,NO,Boston,Massachusetts
+29-Sep-10,0312,DAL2083,3,B738,5000,LAS,Green,NO,Las Vegas,Nevada
+29-Sep-10,0133,EJA616,1,C560,4000,TEB,Green,NO,Teterboro,New Jersey
+29-Sep-10,0138,TCF7651,1,E170,4000,ORD,Green,NO,Chicago,Illinois
+29-Sep-10,0310,SWA1833,1,A300,UNKN,LAS,Green,NO,Las Vegas,Nevada
+29-Sep-10,0231,EGF3251,1,E145,11000,HQZ,Green,NO,Mesquite,Texas
+29-Sep-10,0254,N882LE,1,GALX,3000,EWR,Green,NO,Newark,New Jersey
+29-Sep-10,0254,N518,1,C182,7500,LAX,Green,NO,Los Angeles,California
+30-Sep-10,0359,SWA726,1,B737,11000,60R,Green,NO,Navasota,Texas
+30-Sep-10,0410,UAL787,1,A319,5000,SFO,Green,NO,San Francisco,California
+30-Sep-10,0449,AAL1865,1,MD82,8000,VNY,Green,NO,Van Nuys,California
+30-Sep-10,0442,UNKN,1,C172,4500,OAK,Green,NO,Oakland,California
+30-Sep-10,0445,SWA114,1,B733,5000,OAK,Green,NO,Oakland,California
+30-Sep-10,0330,EGF3050,1,E135,14000,HJO,Green,NO,Hanford,California
+30-Sep-10,0050,JZA24,1,CRJ2,2000,VHP,White,NO,Indianapolis,Indiana
+30-Sep-10,0134,N17KE,1,SR22,1700,ORD,Green,NO,Chicago,Illinois
+30-Sep-10,0134,COA1901,2,B737,FL200,GSH,Green,NO,Goshen ,Illinois
+30-Sep-10,0215,N495ER,1,C172,2000,2J8,Blue,NO,Pierson,Florida
+30-Sep-10,0303,USC143,1,C208,4000,LUK,Green,NO,Cincinnati,Ohio
+30-Sep-10,0250,N90GL,1,C208,4500,CRP,UNKN,NO,Corpus Christi,Texas
+30-Sep-10,0310,BTA2403,1,E45X,7000,TUL,Green,NO,Tulsa,Oklahoma
+30-Sep-10,0312,N6161X,1,C421,7000,FNL,Green,NO,Loveland,Colorado
+1-Oct-10,0519,SWA1084,1,B737,10000,JOT,Green,NO,Joliet,Illinois
+1-Oct-10,0658,USC105,1,C208,3000,MDW,Green,NO,Chicago,Illinois
+1-Oct-10,0125,AAL339,1,MD82,9400,CNO,Green,NO,Chino,California
+1-Oct-10,0810,FALCN4,1,Helo,2000,FFZ,Green,NO,Mesa,Arizona
+1-Oct-10,2342,CJC3342,1,DH8D,600,EWR,Green,NO,Newark,New Jersey
+1-Oct-10,0015,N469LC,1,C421,2300,HGR,Green,NO,Hagertown,Maryland
+1-Oct-10,0111,N4777B,1,C172,1900,APF,Green,NO,Naples,Florida
+1-Oct-10,0107,HOOK37,1,TEX2,3000,ICT,Green,NO,Wichita,Kansas
+1-Oct-10,0153,TANKR10,1,P2,7000,SLC,Green,NO,Salt Lake City,Utah
+1-Oct-10,0155,GTX682,1,BE36,3500,DAL,Green,NO,Dallas,Texas
+1-Oct-10,0159,LN501HC,1,BE20,9000,SLC,Green,NO,Salt Lake City,Utah
+1-Oct-10,0118,EGF2909,1,E135,FL230,THA,Green,NO,Tullahoma,Tennessee
+1-Oct-10,0220,USC103,1,BE58,2500,CMH,Green,NO,Columbus,Ohio
+1-Oct-10,0228,DAL1031,1,MD88,1600,CHS,Green,NO,Charleston,South Carolina
+1-Oct-10,0256,EGF2996,1,E135,10000,CYS,Green,NO,Cheyenne,Wyoming
+1-Oct-10,0300,TN128TB,1,GLF4,3000,AML,Green,NO,Herndon,Virginia
+1-Oct-10,0248,BTA5879,1,E45X,4000,CMH,Green,NO,Columbus,Ohio
+1-Oct-10,0335,SWA46,1,B733,6000,PHX,Green,NO,Phoenix,Arizona
+2-Oct-10,0355,EGF3751,1,CRJ9,9000,SLC,Green,NO,Salt Lake City,Utah
+2-Oct-10,0515,ABX397,1,B762,8000,CVG,Green,NO,Covington,Kentucky
+2-Oct-10,0909,N257AL,1,C750,9500,PMD,Green,NO,Palmdale,California
+2-Oct-10,1005,LVPD,1,Helo,3000,LAS,Green,NO,Las Vegas,Nevada
+2-Oct-10,0130,ASQ5400,1,CRJ2,1000,MYR,Green,NO,Myrtle Beach,South Carolina
+2-Oct-10,0150,BTA2116,1,E45X,1400,COS,Green,NO,Colorado Springs,Colorado
+2-Oct-10,0040,AAL264,1,B737,9400,BOS,Green,NO,Boston,Massachusetts
+2-Oct-10,0205,XSR389,1,BE9L,6000,H71,Green,NO,Pryor,Oklahoma
+2-Oct-10,0250,N4664S,1,C82R,4000,AUW,Green,NO,Wausau,Wisconsin
+2-Oct-10,0240,UAL8932,3,B772,FL280,PHL,Green,NO,Philadelphia,Pennsylvania
+3-Oct-10,0426,UAL712,1,A320,6000,SJC,Green,NO,San Jose,California
+3-Oct-10,0717,METRO5,1,Helo,2000,LAS,Green,NO,Las Vegas,Nevada
+3-Oct-10,0044,XPRESCARE1,1,B206,1500,BAL,Green,NO,Baltimore,Maryland
+3-Oct-10,0155,EGF3030,1,E135,3400,LAX,Green,NO,Los Angeles,California
+3-Oct-10,0210,GUARD896,1,H56,1500,PHL,Green,NO,Philadelphia,Pennsylvania
+3-Oct-10,0229,ASQ5203,1,CRJ7,1400,MFE,Green,NO,McAllen,Texas
+3-Oct-10,0301,JBU1436,1,A320,2400,SFO,Green,NO,San Francisco,California
+4-Oct-10,0455,SURVEY1,1,Helo,5500,DMA,Green,NO,Davis Monthan,Arizona
+4-Oct-10,0222,DAL2206,1,MD88,2300,BUF,Green,NO,Buffalo,New York
+4-Oct-10,0231,UPS1131,1,B752,2300,BUF,Green,NO,Buffalo,New York
+5-Oct-10,0421,FFT25A,1,A319,15000,DEN,Green,NO,Denver,Colorado
+5-Oct-10,0529,SWA596,1,B737,5500,PHX,Green,NO,Phoenix,Arizona
+5-Oct-10,2340,NKS375,1,A319,2000,ACY,Green,NO,Atlantic City,New Jersey
+5-Oct-10,0135,N5274V,1,C172,4100,ERI,Green,NO,Erie,Pennsylvania
+5-Oct-10,0148,SKW4860,1,CRJ9,5000,ORD,Green,NO,Chicago,Illinois
+5-Oct-10,0219,N53720,1,C172,3500,OUN,Green,NO,Norman,Oklahoma
+5-Oct-10,0202,EGF3649,1,E145,7000,OPF,Green,NO,Miami,Florida
+5-Oct-10,0204,N800PJ,1,GALX,4500,SJC,Green,NO,San Jose,California
+5-Oct-10,0212,DAL2419,1,MD90,4500,SJC,Green,NO,San Jose,California
+5-Oct-10,0218,SWA829,1,B733,2000,SMF,Green,NO,Sacramento,California
+5-Oct-10,0252,CHP21,1,C206,3000,SMF,Green,NO,Sacramento,California
+6-Oct-10,0047,N471ER,1,C172,1000,DAB,Green,NO,Daytona Beach,Florida
+6-Oct-10,0231,UPS903,1,B763,12500,LAX,Green,NO,Los Angeles,California
+6-Oct-10,0310,UAL254,1,B752,7000,ORD,Green,NO,Chicago,Illinois
+7-Oct-10,0020,GFT9238,1,B190,5000,MCO,Green,NO,Orlando,Florida
+7-Oct-10,0110,POE946,1,DH8D,13000,ROC,Green,NO,Rochester,New York
+7-Oct-10,0255,AIRCARE1,1,UNKN,2500,SAT,Green,NO,San Antonio,Texas
+7-Oct-10,0317,SWA418,1,B737,6000,PHX,Green,NO,Phoenix,Arizona
+7-Oct-10,0311,AIR1,1,B06,3300,TUS,Green,NO,Tucson,Arizona
+7-Oct-10,0320,N172CA,1,C172,3500,O69,Green,NO,Petaluma,California
+8-Oct-10,0429,N827BW,1,C172,3300,TOA,Green,NO,Torrance,California
+8-Oct-10,0557,METRO5,1,H500,3100,LAS,Green,NO,Las Vegas,Nevada
+8-Oct-10,0452,AIR3,1,B06,3600,TUS,Green,NO,Tucson,Arizona
+8-Oct-10,0603,SKW6986,1,E120,FL200,5CA9,Green,NO,Kelseyville,California
+8-Oct-10,2352,BTA2567,2,E145,6000,SBJ,Green,NO,Solberg,New Jersey
+8-Oct-10,0002,WDY801,1,H25B,2500,PWK,Green,NO,Chicago,Illinois
+8-Oct-10,0012,SKW6442,1,CRJ7,10000,JOT,Green,NO,Joliet,Illinois
+8-Oct-10,0012,CHQ5027,1,E135,8000,JOT,Green,NO,Joliet,Illinois
+8-Oct-10,0025,CHQ6034,1,E145,FL200,HOP,Green,NO,Hopkinsville,Kentucky
+8-Oct-10,0037,N610LG,1,Blimp,900,PHL,Green,NO,Philadelphia,Pennsylvania
+8-Oct-10,0042,CTL15,1,AC50,4000,DAY,Green,NO,Dayton ,Ohio
+8-Oct-10,0120,AAL1338,1,MD82,4500,STL,Green,NO,St. Louis,Missouri
+8-Oct-10,0142,N3176W,1,BE35,6000,SLI,Green,NO,Los Alamitos,California
+8-Oct-10,0245,JBU87,1,A320,3000,SNA,Green,NO,Santa Ana,California
+8-Oct-10,0231,BTA5977,1,E145,3000,FSD,Green,NO,Sioux Falls,South Dakota
+8-Oct-10,0225,FLG3976,1,CRJ2,4500,CAK,Green,NO,Akron,Ohio
+8-Oct-10,0305,FLG4350,1,CRJ2,3500,GSP,Green,NO,Green,South Carolina
+8-Oct-10,0335,GLA715,1,B190,7700,CYS,Green,NO,Cheyenne,Wyoming
+8-Oct-10,2300,TALON26,1,S76,3000,OQN,Green,NO,West Chester,Pennsylvania
+9-Oct-10,0335,N600NP,1,CL2P,7000,IND,Green,NO,Indianapolis,Indiana
+9-Oct-10,0422,VRD236,1,A320,16000,SJC,Green,NO,San Jose,California
+9-Oct-10,0525,ASA566,1,B737,7000,SMO,Green,NO,Santa Monica,California
+9-Oct-10,0200,SWA1158,1,B737,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+9-Oct-10,0235,SKW6433,1,CRJ2,10000,VIS,Green,NO,Visalia,California
+9-Oct-10,0122,BAW228,1,B763,FL180,ILG,Green,NO,Wilmington,Delaware
+9-Oct-10,0111,RPA1709,1,E170,2000,COS,Green,NO,Colorado Springs,Colorado
+9-Oct-10,0150,PDT4474,1,DH8D,4000,PHL,Blue,NO,Philadelphia,Pennsylvania
+9-Oct-10,0050,AAL1399,1,MD88,7000,ORD,Green,NO,Chicago,Illinois
+9-Oct-10,2353,DAL2171,1,MD82,4500,DTW,Green,NO,Detroit ,Michigan
+9-Oct-10,0048,EGF4857,1,AT72,3000,SJU,Green,NO,San Juan,Puerto Rico
+9-Oct-10,0051,MES3185,1,SF34,5300,MSP,Green,NO,Minneapolis,Minnesota
+9-Oct-10,0243,LBQ968,1,BE58,1800,AGC,Green,NO,Pittsburgh,Pennsylvania
+9-Oct-10,0245,JB870,1,A320,3000,SNA,Green,NO,Santa Ana,California
+9-Oct-10,0104,N76DA,1,C206,3500,HAR,Green,NO,Harrisburg,Pennsylvania
+9-Oct-10,0310,AAL1012,1,B738,17000,RIC,Green,NO,Richmond,Virginia
+9-Oct-10,0324,N2900Y,1,C182,6000,SBJ,Green,NO,Solberg,New Jersey
+9-Oct-10,0325,FIV550,1,C56X,5000,SBJ,Green,NO,Solberg,New Jersey
+9-Oct-10,0304,TCF7546,1,E170,10000,SDF,Green,NO,Louisville,Kentucky
+9-Oct-10,0255,SWA3091,1,B737,3500,FLL,Green,NO,Fort Lauderdale,Florida
+9-Oct-10,0351,FFT652,1,A319,12000,HOP,Green,NO,Hopkinsville,Kentucky
+10-Oct-10,0540,UAL933,1,A319,13000,OKV,Green,NO,Winchester,Virginia
+10-Oct-10,0835,HAL397,1,B712,1500,HNL,Green,NO,Honolulu,Hawaii
+10-Oct-10,1003,HAL324,1,B712,3500,HNL,Green,NO,Honolulu,Hawaii
+10-Oct-10,0957,HAL515,1,B712,UNKN,HNL,Green,NO,Honolulu,Hawaii
+10-Oct-10,0259,N211MJ,1,M20P,UNKN,SMX,Green,NO,Santa Maria,California
+10-Oct-10,0020,SWA1430,1,B733,6000,GYY,Green,NO,Gary ,Indiana
+10-Oct-10,0120,EGF4531,1,E135,FL240,LOZ,Green,NO,London,Kentucky
+10-Oct-10,0149,AWI3646,1,CRJ2,1500,PHL,Green,NO,Philadelphia,Pennsylvania
+10-Oct-10,0232,FX1,1,B206,1400,AML,Green,NO,Herndon,Virginia
+10-Oct-10,0332,CALSTAR70,1,CH20,1000,SAC,Green,NO,Sacramento,California
+11-Oct-10,0028,UAL691,1,A319,7000,ORD,Green,NO,Chicago,Illinois
+11-Oct-10,0021,CLNIC2,1,S76,2400,CAK,Green,NO,Akron,Ohio
+11-Oct-10,0110,CJC9534,1,SF34,1500,IAH,Green,NO,Houston,Texas
+11-Oct-10,0238,GLA179,1,B190,FL220,FLG,Green,NO,Flagstaff,Arizona
+11-Oct-10,0234,AAY427,1,MD88,8000,BLD,Green,NO,Boulder City,Nevada
+12-Oct-10,0421,FDX1365,1,DC10,FL200,GVT,Green,NO,Greenville,Texas
+12-Oct-10,0419,AAL403,1,MD82,7000,TUS,Green,NO,Tucson,Arizona
+12-Oct-10,0500,EGF3019,1,E135,16000,VIS,Green,NO,Visalia,California
+12-Oct-10,0454,SWA114,1,B737,1200,OAK,Green,NO,Oakland,California
+12-Oct-10,1005,FDX1864,1,B752,4000,LAS,Green,NO,Las Vegas,Nevada
+12-Oct-10,2350,TRS830,1,B712,10000,JYO,Green,NO,Leesburg,Virginia
+12-Oct-10,0058,N118EC,1,B06,500,SJU,Green,NO,San Juan,Puerto Rico
+12-Oct-10,0106,AAL1069,2,MD82,3000,DAL,Green,NO,Dallas,Texas
+12-Oct-10,2350,N741SK,1,UNKN,1500,FL60,Green,NO,Green Cove Springs,Florida
+13-Oct-10,0410,UPS557,1,B757,15000,PHL,Green,NO,Philadelphia,Pennsylvania
+13-Oct-10,0434,FDX1684,1,MD11,9000,FXE,Green,NO,Fort Lauderdale,Florida
+13-Oct-10,0448,METRO2,1,C172,1500,RIC,Green,NO,Richmond,Virginia
+13-Oct-10,0452,CLINIC1,1,UH60,3000,CAK,Green,NO,Akron,Ohio
+13-Oct-10,0523,UPS983,1,B757,5000,ONT,Green,NO,Ontario,California
+13-Oct-10,0615,N825JW,1,C560,3000,VNY,Green,NO,Van Nuys,California
+13-Oct-10,1138,ABX1920,1,B762,FL310,ENI,Green,NO,Ukiah,California
+13-Oct-10,2257,TRS752,1,B712,UNKN,BWI,Green,NO,Baltimore,Maryland
+13-Oct-10,0104,LJY824,1,C550,12000,MMJ,Green,NO,Pittsburgh,Pennsylvania
+13-Oct-10,0130,MES3149,1,SF34,12000,ATW,Green,NO,Appleton,Wisconsin
+13-Oct-10,0201,NKS816,1,A319,5000,DCA,Green,NO,Washington,District of Columbia
+13-Oct-10,0234,BTA2882,1,E145,8000,ARD,Green,NO,Yardley,Pennsylvania
+13-Oct-10,0348,COA421,1,B738,8000,SJC,Green,NO,San Jose,California
+13-Oct-10,0353,ASA111,1,B737,23000,SEA,Green,NO,Seattle,Washington
+13-Oct-10,0356,N235GW,1,C172,7000,UT44,Green,NO,Layton,Utah
+14-Oct-10,0533,SWA1627,1,B737,4000,OAK,Green,NO,Oakland,California
+14-Oct-10,0652,SKW6433,1,CRJ7,9000,HJO,Green,NO,Hanford,California
+14-Oct-10,2337,LXJ824,1,C550,5000,AGC,Green,NO,Pittsburgh,Pennsylvania
+14-Oct-10,0033,AAL1731,1,MD83,6000,AUS,Green,NO,Austin,Texas
+14-Oct-10,0200,BARON7754,1,C206,4500,AUS,Green,NO,Austin,Texas
+14-Oct-10,0200,N412SM,1,UNKN,5700,GJT,UNKN,NO,Grand Junction,Colorado
+14-Oct-10,0208,N730LM,1,FA50,8000,APA,Green,NO,Denver,Colorado
+14-Oct-10,0250,BTA2411,1,E45X,FL330,DAS,Green,NO,Daisetta,Texas
+14-Oct-10,0355,AAL590,1,B738,3000,ORD,Green,NO,Chicago,Illinois
+15-Oct-10,0015,UNKN,1,C130,4000,56NY,Green,NO,Kendall,New York
+15-Oct-10,0258,JBU307,1,A320,UNKN,LGB,Green,NO,Long Beach,California
+15-Oct-10,1325,SWA515,1,B733,7500,SEA,Green,NO,Seattle,Washington
+15-Oct-10,0029,SWA339,1,B737,200,MDW,Green,NO,Chicago,Illinois
+15-Oct-10,0030,AAL2574,1,B738,6000,ATL,Green,NO,Atlanta,Georgia
+15-Oct-10,0050,AAL358,1,MD82,1600,LGA,Green,NO,New York City,New York
+15-Oct-10,0122,BTA2999,1,E145,UNKN,VWV,Green,NO,Waterville,Ohio
+15-Oct-10,0249,DAL721,1,MD88,12000,ATL,Green,NO,Atlanta,Georgia
+15-Oct-10,0250,SWA1747,1,B737,1800,SEA,Green,NO,Seattle,Washington
+15-Oct-10,0258,CGC9558,1,SF34,2000,K52,Green,NO,Monroe City ,Missouri
+15-Oct-10,0313,PGX217,1,C208,6000,LBB,Green,NO,Lubbock,Texas
+15-Oct-10,0350,LN862NC,1,B206,2000,FAY,Green,NO,Fayetteville ,North Carolina
+16-Oct-10,0445,USC142,1,PA31,6000,HFD,Green,NO,Hartford,Connecticut
+16-Oct-10,0227,AAL9456,1,B752,4000,BHM,Green,NO,Birmingham,Alabama
+16-Oct-10,0328,SWA2926,1,B737,5000,OMA,Green,NO,Omaha,Nebraska
+16-Oct-10,0337,AAL2734,1,MD81,6000,ORD,Green,NO,Chicago,Illinois
+16-Oct-10,1000,MT4,1,H500,2100,LAS,Green,NO,Las Vegas,Nevada
+16-Oct-10,0317,AAL850,1,B737,2500,IAD,Green,NO,Washington,District of Columbia
+17-Oct-10,0419,LFLT1,1,A109,1500,BGR,Green,NO,Bangar,Maine
+17-Oct-10,0832,N35K,1,UNKN,1500,HNL,Green,NO,Honolulu,Hawaii
+17-Oct-10,0017,TCF5973,1,E170,FL320,PA69,Green,NO,Dillsburg,Pennsylvania
+17-Oct-10,0018,N690PC,1,AC90,4000,TRI,Green,NO,Bristol/Johnson/Kingsport,Tennessee
+17-Oct-10,0021,COA24,1,B752,6000,LGA,Green,NO,New York City,New York
+17-Oct-10,0023,EGF4696,1,E135,17000,BDR,Green,NO,Bridgeport,Connecticut
+17-Oct-10,0035,AAL1189,1,MD82,3500,DFW,Green,No,Dallas-Fort Worth,Texas
+17-Oct-10,0221,SKW6751,1,CRJ2,16000,ENW,Green,NO,Kenosha,Wisconsin
+17-Oct-10,0248,POLICE1,1,Helo,600,SNA,Red,NO,Santa Ana,California
+18-Oct-10,0701,SWA152,1,B737,6800,LAS,Green,NO,Las Vegas,Nevada
+18-Oct-10,0900,WJA1865,1,B738,600,HNL,Green,NO,Honolulu,Hawaii
+18-Oct-10,0903,COA685,1,B739,3000,TEB,Green,NO,Teterboro,New Jersey
+18-Oct-10,0054,AWI3709,1,CRJ2,1500,PHL,Green,NO,Philadelphia,Pennsylvania
+18-Oct-10,0205,AAL1708,1,B738,7000,ORD,Green,NO,Chicago,Illinois
+18-Oct-10,0210,ASA894,1,B738,5000,SJC,Green,NO,San Jose,California
+18-Oct-10,0211,N30DD,1,RV6,4500,SJC,Green,NO,San Jose,California
+18-Oct-10,0300,AAY552,1,MD83,5000,LAS,Green,NO,Las Vegas,Nevada
+19-Oct-10,0416,CTA307,1,C208,4500,PHX,Green,NO,Phoenix,Arizona
+19-Oct-10,0441,ABX102,1,B762,15600,BYP,Green,NO,Bonham,Texas
+19-Oct-10,0455,N5241Q,1,C152,4500,GVT,Green,NO,Greenville,Texas
+19-Oct-10,0740,HAL595,1,B712,900,HNL,Green,NO,Honolulu,Hawaii
+19-Oct-10,2341,TRS442,1,B737,UNKN,BWI,Green,NO,Baltimore,Maryland
+19-Oct-10,2354,EGF4028,1,E145,2200,ORD,Green,NO,Chicago,Illinois
+19-Oct-10,0020,BTA5875,1,E145,500,ORD,Green,NO,Chicago,Illinois
+19-Oct-10,0150,UPS781,1,B752,4000,SAT,Green,NO,San Antonio,Texas
+19-Oct-10,0205,AAL1701,1,B737,UNKN,ORD,Green,NO,Chicago,Illinois
+19-Oct-10,0212,BTA5817,1,E145,FL190,HGR,Green,NO,Hagertown,Maryland
+19-Oct-10,0226,N722XJ,1,C750,FL290,LXV,Green,NO,Leadville,Colorado
+19-Oct-10,0235,SKW6987,1,CRJ7,5000,OG20,Green,NO,Portland,Oregon
+19-Oct-10,0241,XTNDR23,1,DC10,FL220,FOT,Green,NO,Fortuna,California
+20-Oct-10,0418,JBU488,1,A320,1700,LGB,Green,NO,Long Beach,California
+20-Oct-10,0551,UNKN,1,UNKN,1000,SRQ,Red,NO,Sarasota,Florida
+20-Oct-10,0012,C2303,1,CN35,2500,MOB,Green,NO,Mobile,Alabama
+20-Oct-10,0115,BTA2209,1,E145,6000,HPY,Green,NO,Baytown,Texas
+20-Oct-10,0130,UPS781,1,B757,6000,SAT,Green,NO,San Antonio,Texas
+20-Oct-10,0140,BVN7751,1,C208,4000,AUS,Green,NO,Austin,Texas
+20-Oct-10,0255,SWA658,1,B737,5000,PDX,Green,NO,Portland,Oregon
+20-Oct-10,0337,SKW4556,1,CRJ2,11000,TUS,Green,NO,Tucson,Arizona
+21-Oct-10,0501,TV9,1,Helo,1300,BUR,Green,NO,Burbank,California
+21-Oct-10,0835,AAL907,1,B772,2300,MIA,Green,NO,Miami,Florida
+21-Oct-10,0140,N638QS,1,C56X,200,MIA,Green,NO, Miami,Florida
+21-Oct-10,0205,SWA493,1,B733,1300,CRP,Green,NO,Corpus Christi,Texas
+21-Oct-10,0206,RANGR826,1,T34P,UNKN,CRP,Green,NO,Corpus Christi,Texas
+21-Oct-10,0215,N10WW,1,PA32,4500,HBI,Green,NO,Salisbury,North Carolina
+21-Oct-10,0220,EGF2774,1,E145,1800,CRP,Green,NO,Corpus Christi,Texas
+21-Oct-10,0222,AAL1312,1,B738,6000,HFD,Green,NO,Hartford,Connecticut
+21-Oct-10,0254,JBU1424,1,A320,3800,LGB,Green,NO,Long Beach,California
+21-Oct-10,0330,CHQ6048,1,E145,4000,PWM,Green,NO,Portland,Maine
+22-Oct-10,0426,N515BP,1,CL60,6500,HPY,Green,NO,Baytown,Texas
+22-Oct-10,2352,N737CG,1,C172,2500,ORD,Red,NO,Evansville,Indiana
+22-Oct-10,0032,CHQ5024,1,E135,3000,ORD,Green,NO,Chicago,Illinois
+22-Oct-10,0050,TCF7541,1,E170,5500,DPA,Green,NO,Chicago,Illinois
+22-Oct-10,0122,EGF3248,1,E145,3000,FTW,Green,NO,Fort Worth,Texas
+22-Oct-10,0139,AWE1645,1,A319,8000,TPA,Green,NO,Tampa,Florida
+22-Oct-10,0230,TCF7653,1,E170,3600,PIT,Green,NO,Pittsburgh,Pennsylvania
+22-Oct-10,0316,AWE645,1,B733,6000,PHX,Green,NO,Phoenix,Arizona
+22-Oct-10,0319,DAL2189,1,B738,13000,OGD,Green,NO,Ogden,Utah
+22-Oct-10,0320,AAL794,1,B737,9000,ORD,Green,NO,Chicago,Illinois
+22-Oct-10,0334,N126WC,1,C560,2500,MOD,Green,NO,Modesto,California
+23-Oct-10,0515,N765DC,1,DA20,6000,BTF,Green,NO,Bountiful,Utah
+23-Oct-10,0958,UPS1366,1,A306,2200,BHM,Green,NO,Birmingham,Alabama
+23-Oct-10,0042,SWA419,1,B737,9000,STL,Green,NO,St. Louis,Missouri
+23-Oct-10,0126,UAL406,1,A320,4000,JFK,Green,NO,New York City,New York
+23-Oct-10,0158,UAL691,1,B752,1400,ORD,Green,No,Chicago,Illinois
+23-Oct-10,0333,AAL2529,1,MD82,2000,MSY,Green,NO,New Orleans,Louisiana
+24-Oct-10,0709,SKW319Y,1,CRJ2,16000,SLI,Green,NO,Los Alamitos,California
+24-Oct-10,2318,BTA2685,1,E145,8500,SWF,Green,NO,Newburgh,New York
+24-Oct-10,2350,AWI4069,1,CRJ2,9000,CHA,Green,NO,Chattanooga,Tennessee
+24-Oct-10,0020,SWA1513,1,B733,4000,BNA,Green,NO,Nashville,Tennessee
+25-Oct-10,2230,TRS702,1,B737,5500,FFO,White,NO ,Wright Patterson AFB,Ohio
+25-Oct-10,2250 ,EAGLE1,1,B06,500,PBI,Green,NO,West Palm Beach,Florida
+25-Oct-10,2300,CJC3473,1,DH8D,6000,SAX,Green,NO,Sparta,New Jersey
+25-Oct-10,2316,EJA984,1,C750,4000,SBJ,Green,NO,Solberg,New Jersey
+25-Oct-10,0005,BTA2144,1,E145,2500,ROC,Green,NO,Rochester,New York
+25-Oct-10,0006,CRTL6,1,EC35,2000,ROC,Green,NO,Rochester,New York
+25-Oct-10,0054,BTA2121,1,E135,5000,IAH,Green,NO,Houston,Texas
+26-Oct-10,0600,DAL1161,1,B737,10000,RIV,Green,NO,Riverside,California
+26-Oct-10,0843,IDAHO5,1,C182,2200,SJC,Green,NO,San Jose,California
+26-Oct-10,0843,SKW458M,1,E120,FL210,BSR,Green,NO,Big Sur,California
+26-Oct-10,0117,N759TN,1,C182,6000,HEE,Green,NO,Helena/West Helena,Arkansas
+26-Oct-10,0131,AAL1321,1,B738,FL250,FZT,Green,NO,Frankston,Texas
+26-Oct-10,0136,FIV408,1,C25B,4000,OPF,Green,NO,Miami,Florida
+26-Oct-10,0136,N302DP,1,GLF4,2000,OPF,Green,NO,Miami,Florida
+26-Oct-10,0200,EGF3371,1,E135,16500,DFW,Green,NO,Dallas-Fort Worth,Texas
+26-Oct-10,0201,N636FT,1,P28A,2500,BOW,Green,NO,Bartow, Florida
+26-Oct-10,0245,USA34,1,A320,2000,LAX,Green,NO,Los Angeles,California
+26-Oct-10,0302,BLADE45,1,UH1,UNKN,CYS,Green,NO,Cheyenne,Wyoming
+26-Oct-10,0318,N556ER,1,C172,10000,DRK,Green,NO,Prescott,Arizona
+26-Oct-10,0332,CJC9583,1,SF34,4000,ACT,Green,NO,Waco,Texas
+26-Oct-10,0340,Aerospatiale,1,AS50,5500,TUS,Green,NO,Tucson,Arizona
+27-Oct-10,2300,DAL1161,1,MD80,9000,ORF,Green,NO,Norfolk,Virginia
+27-Oct-10,0408,N478FJ,1,FA7X,FL250,BUF,Green,NO,Buffalo,New York
+27-Oct-10,0410,SWA2954,1,B737,2000,SJC,White,NO,San Jose ,California
+27-Oct-10,0435,ASA590,1,B737,3000,SNA,Green,NO,Santa Ana,California
+27-Oct-10,0502,BTA5817,1,E415,1500,YNG,Green,NO,Youngstown-Warren,Ohio
+27-Oct-10,0621,E33119,1,C17,FL280,CLL,Violet,NO,College Station,Texas
+27-Oct-10,0029,CHQ6041,1,E145,50,RIC,Green/White,NO,Richmond,Virginia
+27-Oct-10,0116,BTA2739,1,E145,1700,EWR,Green,NO,Newark,New Jersey
+27-Oct-10,0134,BTA2492,1,E145,6000,SBJ,Green,NO,Solberg,New Jersey
+27-Oct-10,0155,SKW6864,1,CRJ2,7000,ORD,Green/Yellow,NO,Chicago,Illinois
+27-Oct-10,0155,JBU547,1,A320,1500,PBI,Green,NO,West Palm Beach,Florida
+27-Oct-10,0202,BJS617,1,LJ40,1500,PBI,Green,NO,West Palm Beach,Florida
+27-Oct-10,0209,AAL2218,1,B738,7000,ORD,Green/Yellow,NO,Chicago,Illinois
+27-Oct-10,0258,BTA5856,1,E145,3000,ORD,Green ,NO,Chicago,Illinois
+28-Oct-10,2348,MES3481,1,MD80,UNKN,AUS,Green,NO,Austin,Texas
+28-Oct-10,0140,N617FX,1,UNKN,2000,PBI,Green,NO,West Palm Beach,Florida
+28-Oct-10,0404,EGF3639,1,E145,4000,CLT,Green,NO,Charlotte,North Carolina
+28-Oct-10,0454,SWA584,1,B737,6500,SAN,Green,NO,San Diego,California
+28-Oct-10,0637,SKW6219,1,CRJ7,10000,LAX,Green,NO,Los Angeles,California
+28-Oct-10,0638,UAL137,1,A320,10000,LAX ,Green,NO,Los Angeles,California
+28-Oct-10,0150,N3289Q,1,PA28,2800,RIC,Green,NO,Richmond,Virginia
+28-Oct-10,0257,AWE16,1,A320,3000,JFK,Green,NO,New York City,New York
+28-Oct-10,0302,JBU672,1,A320,3000,JFK,Green,NO,New York City,New York
+29-Oct-10,0836,SKW6433,1,CRJ2,10000,VIS,Green,NO,Visalia,California
+29-Oct-10,0924,N3287Q,1,PA28,2800,RIC,Green,NO,Richmond,Virginia
+29-Oct-10,0928,SWA305,1,B733,3000,HOU,Green,NO,Houston,Texas
+29-Oct-10,0938,CTL15,1,AC50,2500,LUK,Green,NO,Cincinnati,Ohio
+29-Oct-10,0009,EGF4489,1,E135,7000,BOS,Green,NO,Boston,Massachusetts
+29-Oct-10,0043,EJM465,1,CL60,FL280,N51,Green,NO,Solberg,New Jersey
+29-Oct-10,0129,SWA1605,1,B733,13000,STL,Green,NO,St. Louis,Missouri
+29-Oct-10,0137,N415CL,1,H60,2500,ROA,Green,NO,Roanoke,Virginia
+29-Oct-10,0203,AIR2,1,B206,2000,AUS,Green,NO,Austin,Texas
+29-Oct-10,0323,SWA2008,1,B737,1700,BUR,Green,NO,Burbank,California
+29-Oct-10,0330,AWE668,1,B733,10000,1U7,Green,NO,Paris,Idaho
+29-Oct-10,1044,PA4292,1,DHC8,4000,PHL,UNKN,NO,Philadelphia,Pennsylvania
+30-Oct-10,0446,SWA1522,1,B737,8000,AUR,Green,NO,Sulphur,Louisiana
+30-Oct-10,0623,OMAHA6RE,1,C550,14300,DUG,Green,NO,Douglas/Bisbee,Arizona
+30-Oct-10,0926,SWA1162,1,B737,8000,MZB,Green,NO,San Diego,California
+30-Oct-10,0933,UPS1195,1,MD11,4000,SDF,Green,NO,Louisville,Kentucky
+30-Oct-10,2326,N493TM,1,BE40,14000,STW,Green,NO,Stillwater,New Jersey
+30-Oct-10,0058,CRZ5641,1,UNKN,7000,AUW,Green,NO,Wausau,Wisconsin
+30-Oct-10,0107,STAT15,1,BK17,2300,AGC,Green,NO,Pittsburgh,Pennsylvania
+30-Oct-10,0111,UAL116,1,A319,7000,ORD,Green,NO,Chicago,Illinois
+30-Oct-10,0216,AAL2094,1,B738,7000,RSW,Green,NO,Fort Myers, Florida
+30-Oct-10,0239,N680CH,1,HELO,600,TPA,Green,NO,Tampa,Florida
+30-Oct-10,0246,N523P,1,BE36,6000,DQH,UNKN,NO,Douglas,Georgia
+30-Oct-10,0305,SWA14,1,B737,4000,AUS,Green,NO,Austin,Texas
+30-Oct-10,0322,UAL395,1,B737,17500,IPL,Green,NO,Imperial,California
+31-Oct-10,2334,CENTRAL6,1,HELO,1700,D38,UNKN,NO,Canandaigua,New York
+31-Oct-10,0714,AAL405,1,B738,UNKN,LAX,Green,NO,Los Angeles,California
+31-Oct-10,0723,DAL2455,1,B763,7000,LAX,Green,NO,Los Angeles, California
+31-Oct-10,1136,METRO5,1,UNKN,2300,LAS,Green,NO,Las Vegas,Nevada
+31-Oct-10,2311,VOLT14,1,C17,3000,ADW,Green,NO,Clinton,Maryland
+31-Oct-10,0127,EGF284,1,E145,UNKN,SHV,Green,NO,Shreveport,Louisiana
+31-Oct-10,0130,LOF8020,1,E145,5500,ORD,UNKN,NO,Chicago,Illinois
+31-Oct-10,0146,N53210,1,C172,3500,TIX,Green,NO,Titusville,Florida
+31-Oct-10,0201,CHQ5041,1,E135,9000,ARR,Green,NO,Aurora,Illinois
+31-Oct-10,0215,NVT37,1,HELO,4500,LBB,Green,NO,Lubbock,Texas
+31-Oct-10,0218,SWA153,1,B733,2500,FLL,Green,NO,Ft. Lauderdale,Florida
+31-Oct-10,0222,N912VR,1,A109,1500,FAT,Green,NO,Fresno,California
+31-Oct-10,0232,ASA620,1,B737,4000,LAS,Green,NO,Las Vegas,Nevada
+31-Oct-10,0256,TCF7533,1,E170,FL300,ISW,Green,NO,Wisconsin Rapids,Wisconsin
+31-Oct-10,0258,SWA1712,1,B737,6000,LAX,Green,NO,Los Angeles,California
+31-Oct-10,0313,SWA1530,1,B737,6000,PHX,Green ,NO,Phoenix,Arizona
+31-Oct-10,0320,SWA365,1,B737,3500,SJC,Green,NO,San Jose,California
+31-Oct-10,0340,N830SF,1,B230,2500,PIA,Green,NO,Peoria,Illinois
+31-Oct-10,0348,AWE368,1,A319,5000,PHX,UNKN,NO,Phoenix,Arizona
+1-Nov-10,0054,EGF2874,1,E145,UNKN,EMG,Green,NO,Shreveport,Louisiana
+1-Nov-10,0057,BTA2412,1,E145,UNKN,IAH,Green,NO,Houston,Texas
+1-Nov-10,0413,BTA2320,1,E45X,4900,ELP,Green,NO,El Paso,Texas
+1-Nov-10,0438,SWA584,1,B737,6800,SAN,Green,NO,San Diego,California
+1-Nov-10,0545,N757VB,1,C172,5500,SBA,Green ,NO,Santa Barbara,California
+1-Nov-10,0057,CHQ1158,1,E145,9000,BTV,Green,NO,Burlington,Vermont
+1-Nov-10,0201,BTA2173,1,E145,600,GSO,Green,NO,Greensboro,North Carolina
+1-Nov-10,0216,N13818,1,C182,1800,VNY,Green,NO,Van Nuys,California
+1-Nov-10,0323,DAL2165,1,B738,9200,SDF,Green,NO,Louisville,Kentucky
+1-Nov-10,0337,SWA1527,1,B733,10000,SEA,Green,NO,Seattle,Washington
+2-Nov-10,0412,CHP50,1,B206,500,LGB,Green,NO,Long Beach,California
+2-Nov-10,0458,ASA731,1,B738,10000,SEA,Green,NO,Seattle,Washington
+2-Nov-10,0539,FDX1837,1,DC10,4500,OAK,Green,NO,Oakland,California
+2-Nov-10,0539,AWE627,1,A319,4500,OAK,Green,NO,Oakland,California
+2-Nov-10,0729,FDX2642,1,A306,5000,IND,Red,NO,Indianapolis,Indiana
+2-Nov-10,0013,COA351,1,B737,UNKN,EWR,Green,NO,Newark,New Jersey
+2-Nov-10,0013,AAL2530,1,UNKN,1500,MIA,Green,NO,Miami,Florida
+2-Nov-10,0107,N828WC,1,GLAS,9500,AVL,Green,NO,Asheville,North Carolina
+2-Nov-10,0205,ASA896,1,B738,3500,SJC,Green,NO,San Jose,California
+2-Nov-10,0212,SWA30,1,B737,10000,SJC,Green,NO,San Jose,California
+2-Nov-10,0241,N72RL,1,BE9L,1500,SBA,Green,NO,Santa Barbara,California
+2-Nov-10,0257,SWA456,1,B737,15000,SFO,Green,NO,San Francisco,California
+2-Nov-10,0341,CPZ5831,1,E170,2000,RDU,Green,NO,Raleigh-Durham,North Carolina
+3-Nov-10,0209,BVN7809,1,C208,6000,LBB,Green,NO,Lubbock,Texas
+3-Nov-10,0211,N454KC,1,DA20,1700,OJC,Green,NO,Olathe,Kansas
+3-Nov-10,0214,WTV52,1,P32R,6500,ONT,Green,NO,Ontario,California
+3-Nov-10,0312,ASA474,1,B738,3000,LAX,Green,NO,Los Angeles,California
+4-Nov-10,0155,BVN708,1,C208,6000,LBB,Green,NO,Lubbock,Texas
+4-Nov-10,0444,UPS313,1,B752,FL370,HOP,Green,NO,Hopkinsville,Kentucky
+4-Nov-10,0448,CPF465,1,C182,4000,FUL,Green,NO,Fullerton,California
+4-Nov-10,0451,AWE113,1,A319,8000,LAX,Green,NO,Los Angeles,California
+4-Nov-10,1027,UPS856,1,B757,FL200,PHX,Green,NO,Phoenix,Arizona
+4-Nov-10,1038,UPS858,1,B763,12000,PHX,Green,NO,Phoenix,Arizona
+4-Nov-10,1310,SWA1388,1,B733,9000,PHX,Green,NO,Phoenix,Arizona
+4-Nov-10,1312,CTA124,1,C402,6000,PHX,Green,NO ,Phoenix,Arizona
+4-Nov-10,0119,DAL1822,1,A319,2200,DTW,Green,NO,Detroit ,Michigan
+4-Nov-10,0123,MRA600,1,SW4,2500,DTW,Green,NO,Detroit ,Michigan
+4-Nov-10,0308,N724TM,1,C172,1300,PAE,Green,NO,Everett,Washington
+4-Nov-10,0311,SKW329M,1,CRJ2,7000,BFL,Green,NO,Bakersfield,California
+5-Nov-10,2344,MAC7499,1,AT72,2600,CRW,Green,NO,Charleston,West Virginia
+5-Nov-10,1216,QXE92,1,DH8D,16000,MFR,Green,NO,Medford,Oregon
+6-Nov-10,0155,N424CK,1,SR22,UNKN,IMB,UNKN,NO,Kimberly,Oregon
+6-Nov-10,0211,N101LA,1,P28A,2800,ABI,Green,NO,Abilene,Texas
+6-Nov-10,0245,N75TV,1,B206,1400,OAK,Green ,NO,Oakland,California
+6-Nov-10,0245,AFA074,1,B777,1500,LAX,Green,NO,Los Angeles,California
+6-Nov-10,0350,UAL723,1,B757,2400,SJC,Green,NO,San Jose,California
+6-Nov-10,0500,AWE656,1,A321,10000,RIV,Green,NO,Riverside,California
+6-Nov-10,0920,FDX9303,1,A310,2500,MIA,Green,NO,Miami,Florida
+6-Nov-10,0105,HOOK51,1,TEX2,3000,SUS,Green,NO,St. Louis,Missouri
+6-Nov-10,0113,EGF3328,1,E145,FL250,DKR,Green,NO,Crockett,Texas
+6-Nov-10,0118,N370GS,1,YK55,2200,OMA,Green,NO,Omaha,Nebraska
+6-Nov-10,0143,N4KB,1,PA18,5500,SLC,Green,NO,Salt Lake City,Utah
+6-Nov-10,0342,SWA327,1,B737,13000,DEN,Green,NO,Denver,Colorado
+7-Nov-10,0952,SKW591Z,1,E120,1500,SEA,Red,NO,Seattle,Washington
+7-Nov-10,1336,N192M,1,GLF4,3200,HNL,Green,NO,Honolulu,Hawaii
+7-Nov-10,2341,COM483,1,CRJ1,8000,MDT,Green ,NO,Harrisburg,Pennsylvania
+7-Nov-10,0011,TRS1155,1,B737,9000,IND,Green,NO,Indianapolis,Indiana
+7-Nov-10,0146,SKW6561,1,CRJ2,7000,FSD,Green,NO,Sioux Falls,North Dakota
+7-Nov-10,0227,ASH2864,1,DH8B,14000,FLG,Green,NO,Flagstaff,Arizona
+7-Nov-10,0434,UAL522,1,B752,1500,SAN,Green,NO,San Diego,California
+8-Nov-10,2235,BLKJK1,1,HH65,1100,CGS,Green,NO ,College Park,Maryland
+8-Nov-10,0222,N765XJ,1,C750,13000,ILG,Green,NO,Wilmington,Delaware
+8-Nov-10,0319,LIFETEAM57,1,HELO,2500,SAT,Green,NO,San Antonio,Texas
+8-Nov-10,0330,ASA064,1,B737,UNKN,SEA,Red,NO,Seattle,Washington
+8-Nov-10,0500,UAL21,1,UNKN,2500,OAK,Green,NO,Oakland,California
+8-Nov-10,0508,N368AG,1,GLF4,5000,BUR,Green,NO,Burbank,California
+9-Nov-10,2350,PCL3839,1,CRJ7,5000,BNA,Green,NO,Nashville,Tennessee
+9-Nov-10,2351,SWA2005,1,B737,5000,BNA,Green,NO,Nashville,Tennessee
+9-Nov-10,2351,SWA157,1,B733,5000,BNA,Green,NO,Nashville,Tennessee
+9-Nov-10,2353,SKW4736,1,CRJ2,11000,PIT,Green ,NO,Pittsburgh,Pennsylvania
+9-Nov-10,0036,EGF2794,1,E145,10000,DFW,Green,NO,Dallas-Fort Worth,Texas
+9-Nov-10,0058,N9914Q,1,C172,2500,INT,Green,NO,Winston Salem,North Carolina
+9-Nov-10,0129,N963JF,1,FA50,5700,STL,Green,NO,St. Louis,Missouri
+9-Nov-10,0137,N44DQ,1,R44,5700,OGD,Green,NO,Ogden,Utah
+9-Nov-10,0205,AMF1941,1,SW4,2500,SMX,Green,NO,Santa Maria,California
+9-Nov-10,0255,SWA2397,1,B737,FL410,NTD,Green,NO,Ventura,California
+10-Nov-10,1311,MES3613,1,SF34,5500,BUR,Green,NO,Burbank,California
+10-Nov-10,2343,CHQ5094,1,E135,9000,MDW,Green,NO,Chicago,Illinois
+10-Nov-10,0119,ASQ7137,1,CRJ2,7000,BRV,Green,NO,Brooke,Virginia
+10-Nov-10,0125,AWI3594,1,CRJ2,16000,PHL,Green,NO,Philadelphia,Pennsylvania
+10-Nov-10,0400,SWA727,1,B737,3000,BUR,Green,NO,Burbank,California
+10-Nov-10,0423,CTL301,1,AC50,6000,STL,Green,NO,St. Louis,Missouri
+10-Nov-10,0549,BVN7279,1,C208,2000,AFW,Green,NO,Fort Worth,Texas
+10-Nov-10,0557,FDX1104,1,A306,8000,AFW,Green,NO,Fort Worth,Texas
+11-Nov-10,0121,N301HG,1,B206,2000,ABY,Green,NO,Albany,Georgia
+11-Nov-10,0222,BTA2862,1,E45X,10000,IAH,Green,NO,Houston,Texas
+11-Nov-10,0438,EGF4214,1,E145,2000,ORD,Green,NO,Chicago,Illinois
+11-Nov-10,0439,ACA658,1,CRJ9,2000,ORD,Green,NO,Chicago,Illinois
+11-Nov-10,1045,FDX1411,1,A306,2000,HOU,Green,NO,Houston,Texas
+11-Nov-10,1045,ASA890,1,B737,12000,SAN,Green,NO,San Diego,California
+12-Nov-10,0049,CJC9559,1,SF34,3000,IAH,Green,NO,Houston,Texas
+12-Nov-10,0050,SWA1174,1,B733,16000,HEF,Green ,NO,Manassas,Virginia
+12-Nov-10,0105,CYO277,1,LJ55,4000,AUS,Green,NO,Austin,Texas
+12-Nov-10,0112,SWA359,1,B737,3000,LAS,Green,NO,Las Vegas,Nevada
+12-Nov-10,0145,IASCOFLTTRNG48,1,C172,3500,RBL,Green,NO,Red Bluff ,Califiornia
+12-Nov-10,0230,MAVERICK33,1,EC130,500,LAS,Red,NO,Las Vegas,Nevada
+12-Nov-10,0238,CHQ6016,1,E145,9000,CMK,Green,NO,Carmel,New York
+12-Nov-10,0238,BTA5938,1,E45X,8800,CVG,Green,NO,Cincinnati,Ohio
+12-Nov-10,0247,N9451X,1,C172,1700,SFB,Green,NO,Orlando,Florida
+12-Nov-10,0310,LOF8051,1,E145,4000,IAD,Green,NO,Washington,District of Columbia
+12-Nov-10,0432,PD10,1,AS350,2000,ONT,Green,NO,Ontario,California
+12-Nov-10,0441,RPA3217,1,E170,2500,STL,Green,NO,St. Louis,Missouri
+12-Nov-10,0441,AAL572,1,MD82,2000,DFW,Green,NO,Dallas-Fort Worth,Texas
+12-Nov-10,0517,SWA1795,1,B733,9000,CA89,Green,NO,Lake Elsinore,California
+12-Nov-10,0519,SWA1578,1,B737,7000,SFO,Green,NO,San Francisco,California
+12-Nov-10,0519,SWA1578,1,B737,7000,SFO,Green,NO,San Francisco,California
+13-Nov-10,0032,AWI4009,1,CRJ2,10000,ZZV,Green,NO,Zanesville,Ohio
+13-Nov-10,0125,BTA5902,1,E145,40,DCA,Green,NO,Washington,District of Columbia
+13-Nov-10,0139,AAL408,1,B738,5000,HAR,Green,NO,Harrisburg, Pennsylvania
+13-Nov-10,0148,N8MM,1,HELO,3500,OXC,Green,NO,Oxford,Connecticut
+13-Nov-10,0154,N490ER,1,C172,6000,ISM,Green,NO,Orlando,Florida
+13-Nov-10,0223,METRO05,1,H500,2000,LAS,Green,NO,Las Vegas,Nevada
+13-Nov-10,0300,JBU562,1,A320,16000,CCC,Green,NO,Calverton,New York
+13-Nov-10,0310,TRANSTATES 8051,1,E145,4000,IAD,Green,NO,Washington,District of Columbia
+13-Nov-10,0435,AWE257,1,A321,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+13-Nov-10,0435,SWA1110,1,B737,5000,IAH,Green,NO,Houston,Texas
+13-Nov-10,0645,QXE82,1,DH8,UNKN,PDX,Green ,NO,Portland,Oregon
+13-Nov-10,2205,EGF4529,1,E135,12000,BOS,Green,NO,Boston,Massachusetts
+14-Nov-10,0135,JBU1264,1,E190,11000,BOS,Green,NO,Boston,Massachusetts
+14-Nov-10,0250,AWE257,1,A321,3000,PHL,Green,NO,Philadelphia,Pennsylvania
+14-Nov-10,0349,AMR4399,1,E135,17000,BDR,Green,NO,Bridgeport,Connecticut
+14-Nov-10,0355,LIFEFLIGHT,1,HELO,2000,LNK,UNKN,NO,Lincoln,Nebraska
+14-Nov-10,0403,SWA359,1,B737,220,BSR,Green,NO,Big Sur,California
+14-Nov-10,2253,AAL1178,1,MD82,4000,BWI,Green,NO,Baltimore,Maryland
+15-Nov-10,0046,N98913,1,C172,1700,GTU,Green,NO,Georgetown,Texas
+15-Nov-10,0242,SWA775,1,B737,800,LAS,Green,NO,Las Vegas,Nevada
+15-Nov-10,0327,UCA8738,1,DH8B,7000,ERI,Green,NO,Erie,Pennsylvania
+15-Nov-10,0350,USA174,1,A319,4700,LAS,Green,NO,Las Vegas,Nevada
+15-Nov-10,0255,SWA379,1,B737,F220,BSR,Green,NO,Big Sur,California
+15-Nov-10,0359,SKW6440,1,CRJ2,7000,SNA,Green,NO,Santa Ana,California
+15-Nov-10,0447,RPA3109,1,E170,FL360,STL,Green,NO,St. Louis,Missouri
+15-Nov-10,1008,N683EF,1,L35A,UNKN,EAT,UNKN,NO,Wenatchee,Washington
+15-Nov-10,2328,JIA265,1,CRJ7,6000,CLT,Green,NO,Charlotte,North Carolina
+16-Nov-10,0006,TCF7559,1,E170,3000,ORD,Green,NO,Chicago,Illinois
+16-Nov-10,0010,COA1185,1,B738,3000,ORD,Green,NO,Chicago,Illinois
+16-Nov-10,0054,BTA2849,1,E145,500,CLE,Green,NO,Cleveland,Ohio
+16-Nov-10,0147,EGF4374,1,E135,3000,CMI,Green,NO,Champaigne/Urbana,Illinois
+16-Nov-10,0200,EGF4292,1,E145,2500,ORD,Green,NO,Chicago,Illinois
+16-Nov-10,0242,SWA775,1,B737,800,LAS,Green,NO,Las Vegas,Nevada
+16-Nov-10,0600,AAY228,1,MD83,16000,PAE,Multicolor,NO,Everett,Washington
+16-Nov-10,0605,Spirit706,1,A319,1700,LAX,Green,NO,Los Angeles,California
+16-Nov-10,0706,AAY285,1,MD88,12000,PAE,Green,NO,Everett,Washington
+17-Nov-10,0013,N695PC,1,PC12,4000,BZM,Green,NO,  Hickory,North Carolina
+17-Nov-10,0052,AWE1774,1,A320,25000,MIA,Green,NO,Miami,Florida
+17-Nov-10,0201,VNR163,1,P180,FL230,JKA,Green,NO,Gulf Shores,Alabama
+17-Nov-10,0402,VNR130,1,P180,6000,TPA,Green,NO,Tampa,Florida
+17-Nov-10,0416,N6501,1,LNC4,UNKN,MLB,Green,NO,Melbourne,Florida
+17-Nov-10,0441,FDX1124,1,DC10,12500,ATL,Green,NO,Atlanta,Georgia
+18-Nov-10,0017,AAL1245,1,B752,1000,MIA,Green,NO,Miami,Florida
+18-Nov-10,0026,N18MC,1,B350,4200,DTW,Green,NO,Detroit ,Michigan
+18-Nov-10,0120,CJC3352,1,DH8D,2100,EWR,Green,NO,Newark,New Jersey
+18-Nov-10,0136,SWA1458,1,B737,6000,IAH,Green,NO,Houston,Texas
+18-Nov-10,0153,SWA57,1,B737,500,HOU,Green,NO,Houston,Texas
+18-Nov-10,0225,SKW3061,1,CRJ2,10000,MKE,Green,NO,Milwaukee,Wisconsin
+19-Nov-10,0041,UAL499,1,B752,3000,MCO,Green,NO,Orlando,Florida
+19-Nov-10,0137,N738VA,1,C172,3000,CCR,Green,NO,Concord,California
+19-Nov-10,0145,AAL1709,1,B752,FL180,,Green,NO,,
+19-Nov-10,0159,LJY228,1,C560,5000,IAG,Green,NO,Niagara Falls,New York
+19-Nov-10,0248,ASH7273,1,CRJ7,1500,ORD,Green,NO,  Chicago,Illinois
+19-Nov-10,0300,SWA1204,1,B737,9000,DVT,Green,NO,Phoenix,California
+19-Nov-10,0319,N2396Z,1,BE23,4000,VUZ,Green,NO,Birmingham,Alabama
+19-Nov-10,0405,TRS276,1,B712,11000,BOS,Green,NO,Boston,Massachusetts
+19-Nov-10,0430,OMAHA1,1,UNKN,1000,PBG,Red,NO,Plattsburgh,New York
+20-Nov-10,0005,NKS395,1,A320,4000,FLL,Green,NO,Fort Lauderdale,Florida
+20-Nov-10,0012,SWA3186,1,B735,15000,DCA,Green,NO,Washington,District of Columbia
+20-Nov-10,0105,USC731,1,C208,UNKN,AVP,Green,NO,Wilkes-Barre/Scranton,Pennsylvania
+20-Nov-10,0112,DAL1774,1,MD88,FL210,CSG,Green,NO,Columbus,Georgia
+20-Nov-10,0112,DAL1096,1,B752,FL240,CSG,Green,NO,Columbus,Georgia
+20-Nov-10,0142,JBU259,1,A319,3000,SLI,Green,NO,Los Alamitos,California
+20-Nov-10,0144,N394ER,1,C172,2000,DAB,Green,NO,Daytona Beach,Florida
+20-Nov-10,0300,SWA1204,1,B737,9000,DVT,Green,NO,Phoenix,Arizona
+20-Nov-10,0410,JBU302,1,A320,1500,IAD,Green,NO,Washington,District of Columbia
+21-Nov-10,0022,SWA413,1,B737,6000,BNA,Green,NO,Nashville,Tennessee
+21-Nov-10,0023,SWA3186,1,B737,15000,DCA,Green,NO,Washington,District of Columbia
+21-Nov-10,0051,SWA2108,1,B737,5000,TPA,Green,NO,Tampa,Florida
+21-Nov-10,0106,ABX501,1,B762,15000,BMT,Green,NO,Beaumont,Texas
+21-Nov-10,0109,BTA2292,1,E145,15000,BMT,Green,NO,Beaumont,Texas
+21-Nov-10,0218,SWA3332,1,B737,3500,DAL,Green,NO,Dallas   ,Texas
+21-Nov-10,0308,EGF4781,1,AT72,13000,SHV,Green,NO,Shreveport,Louisiana
+21-Nov-10,0430,COA709,1,B738,6000,PDX,Green,NO,Portland,Oregon
+21-Nov-10,2238,LIFEFLIGHT6,1,HELO,2000,AGC,Green,NO,Pittsburgh,Pennsylvania
+21-Nov-10,2255,DAL2444,1,B738,4800,CVG,Green,NO,Covington,Kentucky
+22-Nov-10,0059,ASH2734,1,CRJ9,UNKN,PHX,Green,NO,Phoenix,Arizona
+22-Nov-10,0128,HTL309,1,C56X,1000,HOU,Green,NO,Houston,Texas
+22-Nov-10,0140,EMD6,1,HELO,1700,TUL,Spotlight,NO,Tulsa,Oklahoma
+22-Nov-10,0225,N618FT,1,P28A,1000,MLB,Green,NO,Melbourne,Florida
+23-Nov-10,0000,Trooper3,1,Helo,1400,UNKN,Green,NO,UNKN,Maryland
+23-Nov-10,0237,UAL318,1,A319,13000,DEN,Green,NO,Denver,Colorado
+23-Nov-10,0425,BTA6008,1,E45X,1000,ABE,Green,NO,Allentown,Pennsylvania
+23-Nov-10,0545,WJA1495,1,B737,3500,PHX,Green,NO,Phoenix,Arizona
+23-Nov-10,0708,SWA3939,1,B733,13000,MEV,Green,NO,Minden,Nevada
+23-Nov-10,1121,N752GS,1,C550,500,AGC,Green,NO,Pittsburgh,Pennsylvania
+23-Nov-10,2245,ASQ7110,1,CRJ2,14500,BWI,Green,NO,Baltimore,Maryland
+23-Nov-10,2350,N211GA,1,MU30,1000,BCT,Green,NO,Boca Raton,Florida
+23-Nov-10,0033,N117SE,1,PA32,4500,SAV,Green,NO,Savannah,Georgia
+23-Nov-10,0045,N642FT,1,F11,1000,MLB,Green,NO,Melbourne,Florida
+24-Nov-10,0130,MFE05,1,UNKN,1500,MFE,Green,NO,McAllen,Texas
+24-Nov-10,0142,XAGMG,1,C560,38000,JAN,Green,NO,Jackson,Mississippi
+24-Nov-10,0441,FLX803,1,FLX803,3000,TPA,Green,NO,Tampa,Florida
+24-Nov-10,0454,OMAHA20,1,HELO,1500,MFE,Green,NO,McAllen,Texas
+25-Nov-10,0007,PDT4160,1,DH8A,4000,PHL,Green,NO,Philadelphia,Pennsylvania
+25-Nov-10,0120,LOF8070,1,E145,3000,IAD,Green,NO,Washington,District of Columbia
+25-Nov-10,0540,SWA416,1,B735,8000,SDL,Green,NO,Scottsdale ,Arizona
+25-Nov-10,1048,AAL904,1,B762,3200,MIA,Green,NO,Miami,Florida
+25-Nov-10,2338,N163JB,1,C182,500,OCF,Green,NO,Ocala,Florida
+25-Nov-10,0025,AAL2004,1,B752,10000,MIA,Green,NO,Miami,Florida
+25-Nov-10,0026,TCF7501,1,E170,10000,MIA,Green,NO,Miami,Florida
+25-Nov-10,0054,N900GW,1,C525,3000,MLB,Green,NO,Melbourne,Florida
+26-Nov-10,0045,EGF2721,1,E135,2400,ABI,Green,NO,Abilene,Texas
+26-Nov-10,2247,N1424U,1,C172,9000,FAK,Green,NO,Flat Rock,Virginia
+27-Nov-10,0228,OPT910,1,E135,UNKN,DTS,Green,NO,Destin,Florida
+27-Nov-10,0245,ASA971,1,B737,13000,DVO,Green,NO,Novato,California
+27-Nov-10,0245,WESTAIR 7771,1,C208,6000,DVO,Green,NO,Novato,California
+27-Nov-10,0245,QXE563,1,DHC8,7000,JMC,Green,NO,Sausalito,California
+27-Dec-10,0317,AAL850,1,B737,2500,DCA,Green,,,
+27-Nov-10,0345,CHQ6028,1,E145,3500,BDL,Green,NO,Windsor Locks,Connecticut
+27-Nov-10,0520,RPA1735,1,E170,10000,AUS,Green,NO,Austin,Texas
+27-Nov-10,0521,KAP381,1,C402,5000,STL,Green,NO,St. Louis,Missouri
+27-Nov-10,0521,SWA723,1,B737,1100,HOU,Green,NO,Houston,Texas
+27-Nov-10,0830,EAGLE1,1,HELO,3500,SNA,Green,NO,Santa Ana,California
+27-Nov-10,1755,COA119,1,B735,6000,EWR,Blue,NO,Newark,New Jersey
+28-Nov-10,0010,ACA584,1,E170,2100,EWR,Green,NO,Newark,New Jersey
+28-Nov-10,0112,COA1186,1,B735,2200,EWR,Green,NO,Newark,New Jersey
+28-Nov-10,0118,SWA116,1,B737,4000,BNA,Green,NO,Nashville,Tennessee
+28-Nov-10,0138,COA22,1,B767,6000,EWR,Green,NO,Newark,New Jersey
+28-Nov-10,0155,COA355,1,UNKN,1800,EWR,Green,NO,Newark,New Jersey
+28-Nov-10,0202,JBU534,1,A320,1700,EWR,Green,NO,Newark,New Jersey
+28-Nov-10,0210,AAL1151,1,MD82,6000,ORD,Green,NO,Chicago,Illinois
+28-Nov-10,0250,COA1641,1,B738,1700,EWR,Green,NO,Newark,New Jersey
+28-Nov-10,0256,N541LN,1,EC20,500,EYW,Green,NO,Key West ,Florida
+28-Nov-10,0256,N954H,1,C182,2000,TEB,Green,NO,Teterboro,New Jersey
+28-Nov-10,0346,SWA3670,1,B737,6800,SJC,Green,NO,San Jose,California
+29-Nov-10,0020,N2272X,1,C206,700,MSY,Green,NO,New Orleans,Louisiana
+29-Nov-10,0330,COA255,3,B739,1500,EWR,Green,NO,Newark,New Jersey
+29-Nov-10,0359,EGF3741,1,CRJ7,1500,EWR,Green,NO,Newark,New Jersey
+29-Nov-10,0717,UAL180,1,B752,UNKN,CCR,Green,NO,Concord,California
+30-Nov-10,0110,N52LP,1,BE30,UNKN,BNA,Green,NO,Nashville,Tennessee
+30-Nov-10,0315,COM523,1,CRJ7,3000,LGA,Green,NO,New York City,New York
+30-Nov-10,0528,ASA14,1,B738,2000,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0025,N1PD,1,OH58,1500,MKC,Green,NO,Kansas City,Missouri
+1-Dec-10,0028,BTA2424,1,E145,2800,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0030,POE133,1,DH8,2000,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0030,UCA8804,1,DH8,2000,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0058,UCA8674,1,DH8B,2500,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0120,DAL2142,1,MD88,2000,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0125,CJT246,1,B722,2500,EWR,Green,NO,Newark,New Jersey
+1-Dec-10,0220,EGF3052,1,E135,7000,RNO,Green,NO,Reno,Nevada
+1-Dec-10,0400,SKW414H,1,E120,9000,L70,Green,NO,Agua Dulce,California
+2-Dec-10,0230,AMF1935,3,SA227,UNKN,SAN,Green,NO,San Diego,California
+2-Dec-10,0315,AIRLIF4,1,B06,UNKN,SAT,Green,NO,San Antonio,Texas
+2-Dec-10,0555,HAL556,1,B712,7000,OGG,Green,NO,Kahului,Hawaii
+3-Dec-10,0045,CFS799,1,C208,UNKN,EAT,Green,NO,Wenatchee,Washington
+3-Dec-10,0149,SKW469P,1,E120,7000,9CA8,Green,NO,Huntington Beach,California
+3-Dec-10,0224,AAL1876,1,B738,2500,LGA,Green,NO,New York City,New York
+3-Dec-10,0301,ASQ5492,1,CRJ7,12500,RYY,Green,NO,Atlanta,Georgia
+3-Dec-10,0410,POLICE1,1,B06,1000,9CA8,Green,NO,Huntington Beach,California
+3-Dec-10,2250,COA1731,1,B735,5400,EWR,Blue,NO,Newark,New Jersey
+4-Dec-10,0128,N89839,1,UNKN,UNKN,MBT,UNKN,NO,Murfreesbobo,Tennessee
+4-Dec-10,0203,SWA2561,1,B737,FL215,MCO,Green,NO,Orlando,Florida
+4-Dec-10,0208,FLINT752,1,C206,4500,SLI,Green,NO,Los Alamitos,California
+4-Dec-10,0249,SKW6825,1,CRJ7,5500,SFO,Green,NO,San Francisco,California
+4-Dec-10,0302,SKW6524,1,CRJ2,5000,PDX,Green,NO,Portland,Oregon
+4-Dec-10,0502,AIRMED3,1,HELO,6600,SLC,Green,NO,Salt Lake City,Utah
+4-Dec-10,0702,N778DS,1,DA40,1600,HNL,Green,NO,Honolulu,Hawaii
+4-Dec-10,0759,HAL516,1,B712,7000,OGG,Green,NO,Kahului,Hawaii
+4-Dec-10,0808,N554VR,1,PC12,4000,98L,Blue,NO,Pomona,California
+4-Dec-10,0841,AAL1817,1,B752,8000,SJC,Green,NO,San Jose,California
+4-Dec-10,0845,AAL231,1,B763,10000,LAX,Green,NO,Los Angeles,California
+5-Dec-10,0626,AAL2227,1,B752,UNKN,LAS,Green,NO,Las Vegas,Nevada
+5-Dec-10,0023,BTA3005,1,E145,2000,NGW,Green,NO,Corpus Christi,Texas
+5-Dec-10,0055,UAL730,1,B752,1000,ORD,Green,NO,Chicago,Illinois
+5-Dec-10,2343,AWE1602,1,B763,3500,CLT,Green,NO,Charlotte,North Carolina
+5-Dec-10,2349,FLG3839,1,CRJ2,2500,BNA,Green,NO,Nashville,Tennessee
+6-Dec-10,0054,SKW6697,1,CRJ7,1300,DEN,Green,NO,Denver,Colorado
+6-Dec-10,0533,SWA861,1,B737,5000,OAK,Green,NO,Oakland,California
+6-Dec-10,0623,HAL595,1,B712,10500,HNL,Green,NO,Honolulu,Hawaii
+7-Dec-10,0120,UAL706,1,A320,1000,PHX,Green,NO,Phoenix,Arizona
+7-Dec-10,0156,BTA6000,1,C90,2300,ORD,Green,NO,Chicago,Illinois
+7-Dec-10,0434,QXE111,1,DH8D,1200,SEA,Red,NO,Seattle,Washington
+8-Dec-10,0039,LIFENET3,1,B06,2300,OMA,Green,NO,Omaha,Nebraska
+8-Dec-10,0230,N5182A,1,C172,3000,CL43,Green,NO,Seal Beach,California
+8-Dec-10,0251,UAL116,1,B752,11000,COL,Green,NO,Colts Neck,New Jersey
+8-Dec-10,0312,SKW4744,1,CRJ8,6000,SLC,Green,NO,Salt Lake City,Utah
+8-Dec-10,0330,SKYCARE1,1,HELO,600,PHL,Green,NO,Philadelphia,Pennsylvania
+8-Dec-10,0333,UAL174,1,A320,4000,RIC,Green,NO,Richmond,Virginia
+8-Dec-10,0405,SKW470R,1,E120,1900,LAX,Green,NO,Los Angeles,California
+8-Dec-10,0505,N96575,1,C172,2000,SMO,Green,NO,Santa Monica,California
+9-Dec-10,0000,N531SW,1,BE20,2700,CHD,Green ,NO,Chandler,Arizona
+9-Dec-10,0019,N321AL,1,C172,1800,SNA,Green,NO,Santa Ana,California
+9-Dec-10,0143,UAL11,1,B752,11000,COL,Green,NO,Colts Neck,New Jersey
+9-Dec-10,0257,JBU259,1,A320,13000,LGB,Red,NO,Long Beach,California
+9-Dec-10,0321,UAL174,1,A320,4000,RIC,Green,NO,Richmond,Virginia
+9-Dec-10,0333,N625FT,1,PA28,1000,MLB,Green,NO,Melbourne,Florida
+9-Dec-10,1126,UAL56,1,B752,4000,MMU,Green,NO,Morristown,New Jersey
+10-Dec-10,0220,JBU259,1,A320,13000,BNG,Red,NO,Banning,California
+10-Dec-10,0344,SKW6709,1,CRJ7,1600,MRY,Green ,NO,Monterey,California
+10-Dec-10,0552,SWA1064,2,B735,9000,LAS,Green,NO,Las Vegas,Nevada
+10-Dec-10,0503,DAL175,1,B752,1000,MCO,Green,NO,Orlando,Florida
+10-Dec-10,0617,N777DB,1,CL60,9000,LAS,Green,NO,Las Vegas,Nevada
+10-Dec-10,0108,BTA2751,1,E145,3500,IAH,Green,NO,Houston,Texas
+10-Dec-10,0140,DPS149,1,AS350,4000,ELP,Green,NO,El Paso,Texas
+10-Dec-10,0303,BMJ53,1,BE99,5000,MSP,Blue,NO,Minneapolis,Minnesota
+10-Dec-10,0303,SMJ57,1,SW4,7000,MSP,Blue,NO,Minneapolis,Minnesota
+10-Dec-10,0336,BTA2716,1,E45X,3500,HOU,Green,NO,Houston,Texas
+10-Dec-10,0337,AVLON74,1,B737,3000,SPI,Green,NO,Springfield,Illinois
+11-Dec-10,0048,HELO,1,UNKN,600,SGR,Green,NO,Houston,Texas
+11-Dec-10,0244,SWA1110,1,B737,3000,HOU,Green,NO,Houston,Texas
+11-Dec-10,0404,AAL372,1,UNKN,5000,TPA,Green,NO,Tampa, Florida
+11-Dec-10,0125,UNKN,1,HELO,4800,ELP,Green,NO,El Paso,Texas
+11-Dec-10,0514,AAL759,1,B752,16000,CA28,Green,NO,Moreno Valley,California
+12-Dec-10,0147,FDX336,1,MD11,7000,LAX,Green,NO,Los Angeles,California
+12-Dec-10,0345,UAL765,1,B757,4500,LAX,Green,NO,Los Angeles,California
+12-Dec-10,0430,UAL167,1,A319,17000,SBD,Green,NO,San Bernardino,California
+12-Dec-10,0047,AAL2195,1,B738,15500,DFW,Green,NO,Dallas-Fort Worth,Texas
+12-Dec-10,0253,BTA2505,1,E45X,UNKN,RIC,Green,NO,Richmond,Virginia
+13-Dec-10,0001,AAL2195,1,B738,15500,TTT,Green,NO,Dallas-Fort Worth,Texas
+13-Dec-10,0115,CARE FLIGHT 2,1,A119,2500,GYR,Green,NO,Goodyear,Arizona
+13-Dec-10,0135,N5301H,1,C152,2400,LGB,Green,NO,Long Beach,California
+13-Dec-10,0246,COA535,1,B737,3500,LAX,Green,NO,Los Angeles,California
+13-Dec-10,0538,SKW6841,1,CRJ7,3000,ORD,Green,NO,Chicago,Illinois
+13-Dec-10,0011,FLG3927,1,CRJ2,8000,CLT,Green,NO,Charlotte,North Carolina
+14-Dec-10,0145,AWE301,1,A321,UNKN,PHX,Green,NO,Phoenix,Arizona
+14-Dec-10,0237,BTA2922,1,E45X,FL260,33R,Green,NO,Groveton,Texas
+14-Dec-10,0355,UPS907,1,A306,1500,BUR,Green,NO,Burbank,California
+14-Dec-10,0427,SWA1587,1,B737,5000,OAK,Green,NO,Oakland,California
+14-Dec-10,0441,AWE288,1,A319,3500,PHX,Green,NO,Phoenix,Arizona
+15-Dec-10,0145,USA301,1,A321,UNKN,PHX,Green,NO,Phoenix,Arizona
+15-Dec-10,0403,SWA1587,1,B737,5000,OAK,Green,NO,Oakland,California
+15-Dec-10,0441,USA288,1,A321,3500,PHX,Green,NO,Phoenix,Arizona
+15-Dec-10,0455,UPS2865,1,B752,1000,PHX,Green,NO,Phoenix,Arizona
+15-Dec-10,1232,BTA5958,1,E145,8000,BUU,Green,NO,Burlington,Wisconsin
+15-Dec-10,0135,N60FT,1,C550,6000,SAT,Green,NO,San Antonio,Texas
+15-Dec-10,0144,SKW6305,1,E120,2000,PSP,Green,NO,Palm Springs,California
+15-Dec-10,0222,KFS915,1,DC91,3000,SAT,Green,NO,San Antonio,Texas
+15-Dec-10,0222,SWA122,1,B737,3000,SAT,Green,NO,San Antonio,Texas
+15-Dec-10,0222,AAL1197,1,MD83,3000,SAT,Green,NO,San Antonio,Texas
+15-Dec-10,0229,RPA3274,1,E170,15000,W29,Green,NO,Stevensville,Maryland
+15-Dec-10,0247,SWA867,1,B733,FL370,GGG,Green,NO,Longview,Texas
+15-Dec-10,0247,EGF2824,1,E145,FL270,GGG,Green,NO,Longview,Texas
+15-Dec-10,0257,SWA1057,1,B737,3000,HOU,Green,NO,Houston,Texas
+16-Dec-10,0122,SKW305,1,E120,2500,PSP,Green,NO,Palm Springs,California
+16-Dec-10,0125,SKW630,1,E120,2000,PSP,Green,NO,Palm Springs,California
+16-Dec-10,0600,SKW6292,1,CRJ2,2200,LAX,Green,NO,Los Angeles,California
+17-Dec-10,0048,FDX3743,1,DC10,9500,BOS,Green,NO,Boston,Massachusetts
+17-Dec-10,0231,BOE88,1,C17,1600,CL43,Green,NO,Seal Beach,California
+17-Dec-10,0313,JBU250,1,A320,2500,OAK,Green,NO,Oakland,California
+17-Dec-10,0458,N227M,1,R22,6000,SLC,Green,NO,Salt Lake City,Utah
+17-Dec-10,0709,AAL647,1,MD82,2500,LAX,Green,NO,Los Angeles,California
+17-Dec-10,0715,SWA2191,1,B737,5000,LAX,Green,NO,Los Angeles,California
+17-Dec-10,0019,DAL117,1,B763,8000,MIA,Green,NO,Miami,Florida
+18-Dec-10,0230,AAL1306,1,MD83,6000,DFW,Amber,NO,Dallas-Fort Worth,Texas
+18-Dec-10,0647,SWA247,1,B737,5000,CCR,Green,NO,Concord,California
+18-Dec-10,2347,TRS1745,1,B712,4000,MMJ,Green,NO,Montour,Pennsylvania
+18-Dec-10,0156,AAL1654,1,B738,3000,CL43,Red,NO,Seal Beach,California
+19-Dec-10,0023,ARC99,1,DH8C,4000,SEA,Green,NO,Seattle,Washington
+19-Dec-10,0330,BTA6014,1,E145,16000,CSN,Green,NO,Casanova,Virginia
+19-Dec-10,0720,FDX511,1,A318,2500,SEA,Green,NO,Seattle,Washington
+20-Dec-10,0113,EGF2744,1,E135,6000,DFW,Green,NO,Dallas-Fort Worth,Texas
+20-Dec-10,2328,PDT4470,1,DH8A,900,ALB,Green,NO,Albany,New York
+20-Dec-10,0039,CHQ6060,1,E135,4000,LUK,Green,NO,Cincinnati,Ohio
+20-Dec-10,0115,N75919,1,C172,1500,PBI,Green,NO,West Palm Beach,Florida
+20-Dec-10,0151,NKS946,1,B737,3000,FLL,Green,NO,Fort Lauderdale,Florida
+20-Dec-10,0237,SWA1235,1,B737,9000,SMO,Green,NO,Santa Monica,California
+21-Dec-10,0103,N440AH,1,R44,1000,SSF,Green,NO,San Antonio,Texas
+21-Dec-10,0215,SWA1235,1,B737,9000,CA50,Green,NO,Malibu,California
+21-Dec-10,0304,GLA165,1,B190,12000,DEN,Green,NO,Denver,Colorado
+21-Dec-10,0415,TERRA29,1,B757,6000,PHL,Green ,NO,Philadelphia,Pennsylvania
+21-Dec-10,1031,UAL78,1,B757,1200,HNL,Green,NO,Honolulu,Hawaii
+21-Dec-10,0019,UNKN,1,S04,700,TPA,Green,NO,Tampa,Florida
+22-Dec-10,0035,RPA3443,1,E170,2200,PIT,Green,NO,Pittsburgh,Pennsylvania
+22-Dec-10,0105,DAL2021,1,B752,3000,PHX,Green,NO,Phoenix,Arizona
+22-Dec-10,0203,SWA802,1,B737,6000,PHX,Green,NO,Phoenix,Arizona
+22-Dec-10,0324,AAL85,1,B767,5000,SFO,Green,NO,San Francisco,California
+22-Dec-10,0525,DAL2401,1,B738,7000,DVT,Green,NO,Deer Valley,Arizona
+22-Dec-10,0531,Air03,1,B06,3100,TUS,Red,NO,Deer Valley,Arizona
+22-Dec-10,0611,SKW502R,1,CRJ2,3000,FAT,Green,NO,Fresno,California
+23-Dec-10,0036,RPA3186,1,E170,2500,LGA,Green,NO,New York City,New York
+23-Dec-10,0338,AWE940,1,A321,8000,PHX,Green,NO,Phoenix,Arizona
+23-Dec-10,1603,MUI3,1,SH36,2000,HNL,Green,NO,Honolulu,Hawaii
+23-Dec-10,0040,COA1603,1,B738,5000,AUS,Green,NO,Austin,Texas
+23-Dec-10,0210,SWA386,1,B737,4000,AUS,Green,NO,Austin,Texas
+23-Dec-10,0211,BTA2271,1,E45X,6000,IAH,Purple,NO,Houston,Texas
+23-Dec-10,0211,METRO01,1,UNKN,1200,BNA,Red,NO,Nashville,Tennessee
+23-Dec-10,0304,DAL1217,1,B752,6000,LAS,Green,NO,Las Vegas,Nevada
+23-Dec-10,0437,UAL745,1,B752,8000,PDX,Green ,NO,Portland,Oregon
+23-Dec-10,0439,ASA695,1,B737,1000,SEA,Red,NO,Seattle,Washington
+23-Dec-10,0450,AAL1687,1,B752,8000,MIA, Green,NO,Miami,Florida
+24-Dec-10,0616,FDX1813,1,A306,13000,SGD,Green,NO,Napa,California
+24-Dec-10,1440,MUI3,1,SH36,2000,HNL,Green,NO,Honolulu,Hawaii
+24-Dec-10,1446,TN145KA,1,C208,2000,HNL,Green,NO,Honolulu,Hawaii
+24-Dec-10,0147,SWA2261,1,B737,9000,PHX,Green,NO,Phoenix,Arizona
+24-Dec-10,0207,COA535,1,B739,7000,MSY,Green ,NO,New Orleans,Louisiana
+24-Dec-10,0240,ACA245,1,A319,10000,POM,Green,NO,Pomona,California
+24-Dec-10,0410,AAL231,1,B762,16000,ONT,"Red, Green, White",NO, Ontario,California
+25-Dec-10,0543,HAL392,1,B712,5000,ITO,Green,NO,Hilo,Hawaii
+25-Dec-10,0630,SWA3237,1,B737,2200,LAX,Green,NO,Los Angeles,California
+25-Dec-10,0654,COA1095,1,B753,2200,LAX,Green,NO,Los Angeles,California
+25-Dec-10,0700,AAL1253,1,B738,16000,RIV,Green,NO,Riverside,California
+25-Dec-10,0705,LN911VA,1,AS350,1800,SAT,Green,NO,San Antonio,Texas
+25-Dec-10,0146,EJA332P,1,C560,500,APF,Green,NO,Naples, Florida
+25-Dec-10,0223,METRO5,1,H500,2800,LAS,Green,NO,Las Vegas,Nevada
+25-Dec-10,0234,N725MM,1,GLF5,9000,LAS,Green ,NO,Las Vegas,Nevada
+26-Dec-10,0114,AWE940,1,A320,8000,DVT,Green,NO,Phoenix,Arizona
+26-Dec-10,0302,SWA457,1,B737,UNKN,SJC,Green,NO,San Jose,California
+26-Dec-10,0307,SWA1554,1,B737,15000,POM,Green,NO,Pomona,California
+26-Dec-10,0424,QXE243,1,DH8D,1100,SEA,Red,NO,Seattle,Washington
+26-Dec-10,0444,BTA6017,1,E1345,3000,RDU,Red,NO, Raleigh-Durham,North Carolina
+27-Dec-10,0625,ASH2836,1,CRJ9,16000,TUS,Green,NO,Tucson,Arizona
+27-Dec-10,0104,AAL823,1,MD83,7000,DMA,Green,NO,Davis Monthan,Arizona
+27-Dec-10,0148,BTA2350,1,E145,16000,JAS,Green,NO,Jasper,Texas
+27-Dec-10,0225,AAL1873,1,UNKN,5800,OPF,Green,NO,Miami,Florida
+27-Dec-10,0251,UAL499,1,B752,UNKN,BRV,Green,NO,Brooke,Virginia
+27-Dec-10,0255,ASQ7102,1,CRJ2,UNKN,BRV,Green,NO,Brooke,Virginia
+27-Dec-10,0303,UNKN,1,UNKN,UNKN,EHF,Green,NO,Bakersfield,California
+27-Dec-10,0328,N997CA,1,DA40,1700,CHD,Green,NO,Chandler,Arizona
+27-Dec-10,0330,N910PA,1,PA28,4000,CHD,Green,NO,Chandler,Arizona
+28-Dec-10,0146,BTA3005,1,E145,2000,CRP,Green,NO, Corpus Christi,Texas
+28-Dec-10,0151,N421RJ,1,C421,2000,CRP,Green,NO,Corpus Christi,Texas
+28-Dec-10,0224,BTA2425,1,E145,UNKN,BRO,Green,NO,Brownsville,Texas
+28-Dec-10,0245,BTA2751,1,E145,8000,HPY,Green,NO,Baytown,Texas
+28-Dec-10,0324,BTA2658,1,E45X,6000,CXR,Green ,NO,Chardon,Ohio
+28-Dec-10,0333,EGF4241,1,E145,27000,ROA,Green,NO,Roanoke,Virginia
+29-Dec-10,0559,AWE940,1,A320,3500,ORD,Green,NO,Chicago,Illinois
+29-Dec-10,0559,SWQ802,1,B734,3500,ORD, Green,NO,Chicago,Illinois
+29-Dec-10,2325,EGF3647,1,E145,5000,HEG,Blue,NO,Jacksonville,Florida
+29-Dec-10,0118,QFA108,1,A332,11500,COL,Green,NO,Colts Neck,New Jersey
+29-Dec-10,0223,SWA707,1,B737,2000,BUR,Green,NO,Burbank,California
+30-Dec-10,0131,RPA1087,1,E170,12000,SAT,Green,NO,San Antonio,Texas
+30-Dec-10,0140,AMF1979,1,E120,5000,MAF,Green,NO,Midland ,Texas
+30-Dec-10,0151,COM258,1,CRJ2,6000,PTW,Green,NO,Pottstown,Pennsylvania
+30-Dec-10,0241,N5114Z,1,C172,3500,PIE,Green,NO,St Petersburg-Clearwater,Florida
+31-Dec-10,0531,SWA484,1,B737,3000,OAK,Green,NO,Oakland,Florida
+31-Dec-10,0546,TRS891,1,B712,11000,LAX,Green,NO,Los Angeles,California
+31-Dec-10,0600,DAL2033,1,A320,12000,LAX,Green,NO,Los Angeles,California
+31-Dec-10,0600,TRS891,1,B737,2000,LAX,Red,NO,Los Angeles,California 
+31-Dec-10,1517,CPT222,1,B190,1500,HNL,Green,NO,Honolulu,Hawaii
+31-Dec-10,1658,HAL205,1,B712,1000,HNL,Green,NO,Honolulu,Hawaii
+31-Dec-10,1726,HAL114,1,B712,2000,HNL,Green,NO,Honolulu,Hawaii
+31-Dec-10,2358,UCA8737,1,DH8B,8500,DJB,Green,NO,Cleveland,Ohio
+31-Dec-10,0009,N99D,1,C172,1500,DAL,Green,NO,Dallas,Texas
+31-Dec-10,0017,AAL1575,1,MD83,UNKN,MCO,Green,NO,Orlando,Florida
+31-Dec-10,0056,NKS230,1,A319,300,FLL,Green,NO ,Fort Lauderdale,Florida
+31-Dec-10,0112,AAL1298,1,MD82,30,BWI,Green,NO,Baltimore,Maryland
+31-Dec-10,0114,NKS642,1,A319,3000,TPA,White,NO,Tampa,Florida
+31-Dec-10,0140,SWA484,1,B733,8000,TRL,Green,NO,Terrell,Texas
+31-Dec-10,0150,UAL 718,1,A319,8300,SJC,Green,NO,San Jose,California
+31-Dec-10,0152,ASA328,1,B734,5000,SJC,Green,NO,San Jose,California
+31-Dec-10,0213,ASH2644,1,CRJ9,2000,HYW,Green,NO,Conway,South Carolina
+31-Dec-10,0213,SWA2084,1,B737,4000,PVD,Green ,NO,Providence ,Rhode Island
+31-Dec-10,0240,BYA227,1,SW4,8500,ONT,Green,NO,Ontario,California
+31-Dec-10,0446,HAL387,1,B712,1500,HNL,Green ,NO,Honolulu,Hawaii
+31-Dec-10,0458,HAL375,1,B712,10000,HNL,Green,NO,Honolulu,Hawaii
+,,2010 Total,2837.00,,,,,,,
