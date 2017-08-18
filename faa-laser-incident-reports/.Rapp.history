@@ -18,3 +18,34 @@ head(laser_dat)
 holiday_breakdown = table(laser_dat$holidays)
 holiday_breakdown
 barplot(holiday_breakdown)
+setwd('/Users/Cam/Desktop/ds_practice/faa-laser-incident-reports')
+laser_dat = read.csv('adjusted_laser_data.csv')
+head(laser_dat)
+day_breakdown = table(laser_dat$day_of_week)
+barplot(day_breakdown)
+?barplot
+barplot(day_breakdown)
+barplot(day_breakdown, border=c('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'))
+barplot(day_breakdown, order=c('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'))
+day_breakdown
+?table
+laser_dat$day_of_week
+laser_dat$day_of_week = factor(laser_dat$day_of_week,c('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'))
+day_breakdown = table(laser_dat$day_of_week)
+day_breakdown
+barplot(day_breakdown)
+barplot(day_breakdown,ylim=3000)
+barplot(day_breakdown,ylim=c(0,3000))
+barplot(day_breakdown,ylim=c(2000,3000))
+barplot(day_breakdown,ylim=c(2000,3000))
+barplot(day_breakdown,ylim=c(0,3000))
+chisq(day_breakdown)
+chi.sq(day_breakdown)
+chi(day_breakdown)
+chisq.test(day_breakdown)
+results = chisq.test(day_breakdown)
+results
+results$observed
+results$expected
+summary(results)
+results
