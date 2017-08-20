@@ -1,0 +1,10 @@
+
+
+#load the data and take a peek to make sure everything is in order
+train = read.csv('../input/predict-nhl-player-salaries/train.csv')
+head(train)
+test_x = read.csv('../input/predict-nhl-player-salaries/test.csv')
+head(test_x)
+test_y = read.csv('../input/predict-nhl-player-salaries/test_salaries.csv')
+head(test_y)
+
