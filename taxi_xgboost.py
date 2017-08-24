@@ -54,8 +54,8 @@ only 11 columns including a unique id and a response. so 9 predictors
 #sd trim
 mean_trip = np.mean(train['trip_duration'])
 sd_trip = np.std(train['trip_duration'])
-train = train[train['trip_duration'] <= mean_trip + 2*sd_trip]
-train = train[train['trip_duration'] >= mean_trip - 2*sd_trip]
+train = train[train['trip_duration'] <= mean_trip + 4*sd_trip]
+train = train[train['trip_duration'] >= mean_trip - 4*sd_trip]
 
 
 
@@ -96,30 +96,30 @@ pc = train.groupby('passenger_count')['trip_duration'].mean()
 # on the pickup and dropoff coordinates
 
 def haversine_array(lat1, lng1, lat2, lng2):
-    lat1, lng1, lat2, lng2 = map(np.radians, (lat1, lng1, lat2, lng2))
-    AVG_EARTH_RADIUS = 6371  # in km
-    lat = lat2 - lat1
-    lng = lng2 - lng1
-    d = np.sin(lat * 0.5) ** 2 + np.cos(lat1) * np.cos(lat2) * np.sin(lng * 0.5) ** 2
-    h = 2 * AVG_EARTH_RADIUS * np.arcsin(np.sqrt(d))
-    return h
+	lat1, lng1, lat2, lng2 = map(np.radians, (lat1, lng1, lat2, lng2))
+	AVG_EARTH_RADIUS = 6371  # in km
+	lat = lat2 - lat1
+	lng = lng2 - lng1
+	d = np.sin(lat * 0.5) ** 2 + np.cos(lat1) * np.cos(lat2) * np.sin(lng * 0.5) ** 2
+	h = 2 * AVG_EARTH_RADIUS * np.arcsin(np.sqrt(d))
+	return h
 
 def dummy_manhattan_distance(lat1, lng1, lat2, lng2):
-    a = haversine_array(lat1, lng1, lat1, lng2)
-    b = haversine_array(lat1, lng1, lat2, lng1)
-    return a + b
+	a = haversine_array(lat1, lng1, lat1, lng2)
+	b = haversine_array(lat1, lng1, lat2, lng1)
+	return a + b
 
 def bearing_array(lat1, lng1, lat2, lng2):
-    AVG_EARTH_RADIUS = 6371  # in km
-    lng_delta_rad = np.radians(lng2 - lng1)
-    lat1, lng1, lat2, lng2 = map(np.radians, (lat1, lng1, lat2, lng2))
-    y = np.sin(lng_delta_rad) * np.cos(lat2)
-    x = np.cos(lat1) * np.sin(lat2) - np.sin(lat1) * np.cos(lat2) * np.cos(lng_delta_rad)
-    return np.degrees(np.arctan2(y, x))
+	AVG_EARTH_RADIUS = 6371  # in km
+	lng_delta_rad = np.radians(lng2 - lng1)
+	lat1, lng1, lat2, lng2 = map(np.radians, (lat1, lng1, lat2, lng2))
+	y = np.sin(lng_delta_rad) * np.cos(lat2)
+	x = np.cos(lat1) * np.sin(lat2) - np.sin(lat1) * np.cos(lat2) * np.cos(lng_delta_rad)
+	return np.degrees(np.arctan2(y, x))
 
 train.loc[:, 'distance_haversine'] = haversine_array(train['pickup_latitude'].values, train['pickup_longitude'].values, train['dropoff_latitude'].values, train['dropoff_longitude'].values)
-test.loc[:, 'distance_haversine'] = haversine_array(test['pickup_latitude'].values, test['pickup_longitude'].values, test['dropoff_latitude'].values, test['dropoff_longitude'].values)    
-    
+test.loc[:, 'distance_haversine'] = haversine_array(test['pickup_latitude'].values, test['pickup_longitude'].values, test['dropoff_latitude'].values, test['dropoff_longitude'].values)	
+	
 train.loc[:, 'distance_dummy_manhattan'] =  dummy_manhattan_distance(train['pickup_latitude'].values, train['pickup_longitude'].values, train['dropoff_latitude'].values, train['dropoff_longitude'].values)
 test.loc[:, 'distance_dummy_manhattan'] =  dummy_manhattan_distance(test['pickup_latitude'].values, test['pickup_longitude'].values, test['dropoff_latitude'].values, test['dropoff_longitude'].values)
 
@@ -138,10 +138,9 @@ test.loc[:, 'direction'] = bearing_array(test['pickup_latitude'].values, test['p
 
 
 
-
 #create the "Neighborhoods" using k means clustering
 coords = np.vstack((train[['pickup_latitude', 'pickup_longitude']].values,
-                    train[['dropoff_latitude', 'dropoff_longitude']].values))
+					train[['dropoff_latitude', 'dropoff_longitude']].values))
 
 
 sample_ind = np.random.permutation(len(coords))[:500000]
@@ -196,7 +195,7 @@ coord_stats = coord_stats[coord_stats['id'] > 100]
 fr1 = pd.read_csv('fastest_routes_train_part_1.csv', usecols=['id', 'total_distance', 'total_travel_time',  'number_of_steps'])
 fr2 = pd.read_csv('fastest_routes_train_part_2.csv', usecols=['id', 'total_distance', 'total_travel_time', 'number_of_steps'])
 test_street_info = pd.read_csv('fastest_routes_test.csv',
-                               usecols=['id', 'total_distance', 'total_travel_time', 'number_of_steps'])
+							   usecols=['id', 'total_distance', 'total_travel_time', 'number_of_steps'])
 train_street_info = pd.concat((fr1, fr2))
 train = train.merge(train_street_info, how='left', on='id')
 test = test.merge(test_street_info, how='left', on='id')
@@ -255,38 +254,38 @@ passenger_count_test = passenger_count_test.drop('pc_9', axis = 1)
 #drop the categorical columns that were replaced with dummies
 
 train = train.drop(['id','vendor_id','passenger_count','store_and_fwd_flag','Month','DayofMonth','Hour','dayofweek',
-                   'pickup_longitude','pickup_latitude','dropoff_longitude','dropoff_latitude'],axis = 1)
+				   'pickup_longitude','pickup_latitude','dropoff_longitude','dropoff_latitude'],axis = 1)
 Test_id = test['id']
 test = test.drop(['id','vendor_id','passenger_count','store_and_fwd_flag','Month','DayofMonth','Hour','dayofweek',
-                   'pickup_longitude','pickup_latitude','dropoff_longitude','dropoff_latitude'], axis = 1)
+				   'pickup_longitude','pickup_latitude','dropoff_longitude','dropoff_latitude'], axis = 1)
 
 train = train.drop(['dropoff_datetime','avg_speed_h','avg_speed_m','pickup_lat_bin','pickup_long_bin','trip_duration'], axis = 1)
 
 #add indicator variables to the dataset
 
 Train_Master = pd.concat([train,
-                          vendor_train,
-                          passenger_count_train,
-                          store_and_fwd_flag_train,
-                          cluster_pickup_train,
-                          cluster_dropoff_train,
-                         month_train,
-                         dom_train,
-                          hour_test,
-                          dow_train
-                         ], axis=1)
+						  vendor_train,
+						  passenger_count_train,
+						  store_and_fwd_flag_train,
+						  cluster_pickup_train,
+						  cluster_dropoff_train,
+						 month_train,
+						 dom_train,
+						  hour_test,
+						  dow_train
+						 ], axis=1)
 
 
 Test_master = pd.concat([test, 
-                         vendor_test,
-                         passenger_count_test,
-                         store_and_fwd_flag_test,
-                         cluster_pickup_test,
-                         cluster_dropoff_test,
-                         month_test,
-                         dom_test,
-                          hour_test,
-                          dow_test], axis=1)
+						 vendor_test,
+						 passenger_count_test,
+						 store_and_fwd_flag_test,
+						 cluster_pickup_test,
+						 cluster_dropoff_test,
+						 month_test,
+						 dom_test,
+						  hour_test,
+						  dow_test], axis=1)
 
 
 #these data are kept in other columns
@@ -328,7 +327,6 @@ watchlist = [(dtrain, 'train'), (dvalid, 'valid')]
 
 
 
-
 ##############
 # The XGBoost code for model training - with iterative tweaks
 ##############
@@ -337,22 +335,99 @@ md = [5,6,7,8]
 lr = [0.1, 0.2, 0.3]
 mcw = [20,25,30]
 for m in md:
-    for l in lr:
-        for n in mcw:
-            t0 = datetime.now()
-            xgb_pars = {'min_child_weight': n, 'eta': l, 'colsample_bytree': 0.9, 
-                        'max_depth': m,
-            'subsample': 0.9, 'lambda': 1., 'nthread': -1, 'booster' : 'gbtree', 'silent': 1,
-            'eval_metric': 'rmse', 'objective': 'reg:linear'}
-            model = xgb.train(xgb_pars, dtrain, 50, watchlist, early_stopping_rounds=10,
-                  maximize=False, verbose_eval=1)
-            print('Modeling iteration %s, RMSLE %.5f' % (xgb_pars, model.best_score))
+	for l in lr:
+		for n in mcw:
+			t0 = datetime.now()
+			xgb_pars = {'min_child_weight': n, 'eta': l, 'colsample_bytree': 0.9, 
+						'max_depth': m,
+			'subsample': 0.9, 'lambda': 1., 'nthread': -1, 'booster' : 'gbtree', 'silent': 1,
+			'eval_metric': 'rmse', 'objective': 'reg:linear'}
+			model = xgb.train(xgb_pars, dtrain, 50, watchlist, early_stopping_rounds=10,
+				  maximize=False, verbose_eval=1)
+			print('Modeling iteration %s, RMSLE %.5f' % (xgb_pars, model.best_score))
 
-#pick the lowest RMSE from above, train and make predictions
+#pick the lowest RMSE from above, train and make predictions using below
+
+
+
+"""
+
+#current top score on submission: 0.45585
+
+#model vals:
+
+Modeling iteration {'min_child_weight': 20, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.41339
+Modeling iteration {'min_child_weight': 25, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.41369
+Modeling iteration {'min_child_weight': 30, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.41336
+Modeling iteration {'min_child_weight': 20, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40251
+Modeling iteration {'min_child_weight': 25, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40283
+Modeling iteration {'min_child_weight': 30, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40342
+Modeling iteration {'min_child_weight': 20, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39897
+Modeling iteration {'min_child_weight': 25, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39904
+Modeling iteration {'min_child_weight': 30, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 5, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39962
+Modeling iteration {'min_child_weight': 20, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40828
+Modeling iteration {'min_child_weight': 25, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40794
+Modeling iteration {'min_child_weight': 30, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40815
+Modeling iteration {'min_child_weight': 20, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39881
+Modeling iteration {'min_child_weight': 25, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39831
+Modeling iteration {'min_child_weight': 30, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39932
+Modeling iteration {'min_child_weight': 20, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39587
+Modeling iteration {'min_child_weight': 25, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39664
+Modeling iteration {'min_child_weight': 30, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 6, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39571
+Modeling iteration {'min_child_weight': 20, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40387
+Modeling iteration {'min_child_weight': 25, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40368
+Modeling iteration {'min_child_weight': 30, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40402
+Modeling iteration {'min_child_weight': 20, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39596
+Modeling iteration {'min_child_weight': 25, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39557
+Modeling iteration {'min_child_weight': 30, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39590
+Modeling iteration {'min_child_weight': 20, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39341
+Modeling iteration {'min_child_weight': 25, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39304
+Modeling iteration {'min_child_weight': 30, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 7, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39373
+Modeling iteration {'min_child_weight': 20, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40078
+Modeling iteration {'min_child_weight': 25, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40041
+Modeling iteration {'min_child_weight': 30, 'eta': 0.1, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.40026
+Modeling iteration {'min_child_weight': 20, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39323
+Modeling iteration {'min_child_weight': 25, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39368
+Modeling iteration {'min_child_weight': 30, 'eta': 0.2, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39316
+Modeling iteration {'min_child_weight': 20, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39133
+Modeling iteration {'min_child_weight': 25, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39165
+Modeling iteration {'min_child_weight': 30, 'eta': 0.3, 'colsample_bytree': 0.9, 'max_depth': 8, 'subsample': 0.9, 'lambda': 1.0, 'nthread': -1, 'booster': 'gbtree', 'silent': 1, 'eval_metric': 'rmse', 'objective': 'reg:linear'}, RMSLE 0.39172
+"""
+
+
 
 ##############
 # The XGBoost code for model training
 ##############
+
+
+#here I have upped the iterations to 100, to see if we can go beyond the best
+#trained model that was found when we ran with only 50 as the max.
+n=20
+l=0.3
+m=8
+xgb_pars = {'min_child_weight': n, 'eta': l, 'colsample_bytree': 0.9, 
+      'max_depth': m,
+'subsample': 0.9, 'lambda': 1., 'nthread': -1, 'booster' : 'gbtree', 'silent': 1,
+'eval_metric': 'rmse', 'objective': 'reg:linear'}
+model = xgb.train(xgb_pars, dtrain, 200, watchlist, early_stopping_rounds=10,
+    maximize=False, verbose_eval=1)
+print('Modeling RMSLE %.5f' % model.best_score)
+
+"""Modeling iteration , RMSLE 0.39133
+#Modeling RMSLE 0.38903 for 100 training rounds and params:
+n=20
+l=0.3
+m=8
+the extra 100 iterations provided ~ a 0.002 decrease in the RMSE
+
+next:try to retrain the model with sd=4 included! also double the rounds.
+Modeling RMSLE 0.38982 for sd 4 and same params as above.
+the RMSLE on the validation set was slightly higher but this model generalized to
+the test data better.
+0.43661
+
+#original run
 
 xgb_pars = {'min_child_weight': 1, 'eta': 0.5, 'colsample_bytree': 0.9, 
             'max_depth': 6,'subsample': 0.9, 'lambda': 1., 'nthread': -1, 'booster' : 'gbtree', 'silent': 1,
@@ -360,21 +435,19 @@ xgb_pars = {'min_child_weight': 1, 'eta': 0.5, 'colsample_bytree': 0.9,
 model = xgb.train(xgb_pars, dtrain, 10, watchlist, early_stopping_rounds=2,
       maximize=False, verbose_eval=1)
 print('Modeling RMSLE %.5f' % model.best_score)
-
-
-
 #Feature importance for model
-xgb.plot_importance(model, max_num_features=28, height=0.7)            
 
 pred = model.predict(dtest)
 pred = np.exp(pred) - 1
+"""
 
-
+pred = model.predict(dtest)
+pred = np.exp(pred) - 1
 # get data to submission format
 submission = pd.concat([Test_id, pd.DataFrame(pred)], axis=1)
 submission.columns = ['id','trip_duration']
 submission['trip_duration'] = submission.apply(lambda x : 1 if (x['trip_duration'] <= 0) else x['trip_duration'], axis = 1)
-submission.to_csv("submission_cam_full_trainXGBoost.csv", index=False)
+submission.to_csv("submission_cam_full_trainXGBoost_rounds200_4sd.csv", index=False)
 
 
 
