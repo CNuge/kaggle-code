@@ -12,9 +12,9 @@ library('randomForest')
 library('plyr')
 library('stringr')
 library('tidyverse')
-library("magrittr")
-library("scatterplot3d")
-
+library('magrittr')
+library('scatterplot3d')
+library('xgboost')
 
 #3 Read in the data
 train = read.csv('train.csv')
@@ -333,6 +333,34 @@ first_importance_list = importance(rf_result)
 first_importance_list  = sort(first_importance_list[,1], decreasing=TRUE)
 first_importance_list
 
+
+
+#####################
+# R random forest cross validation for feature selection
+#####################
+
+#This function shows the cross-validated prediction performance of models with sequentially reduced number of predictors (ranked by variable importance) via a nested cross-validation procedure.
+
+?rfcv
+rf_cv_feature_selection =  rfcv(train_dat[,predictor_columns],train_dat[,y_column], cv.fold=5,scale='log', step=.25, recursive=TRUE ,ntree=1000)
+
+
+#this provides a good range of where we should be looking for the optimal MSE
+#with these data we can then target the range  my feature selection below.
+#starting with x number of top predictors and iteratively dropping them.
+rf_cv_feature_selection$n.var
+rf_cv_feature_selection$error.cv
+
+# step=10 , recursive=TRUE)
+#step can be a fraction if scale='log' or a number to drop if scale!='log'
+
+
+
+
+#####################
+# my feature selection through continued reduction
+#####################
+
 #function to run random forest, then drop worst predictor and repeat
 
 rf_train_test_feature_selection = function(train_df, test_df, y_column , predictor_columns){
@@ -386,12 +414,20 @@ x = model_selection$lowest_predictor[67:length(model_selection$lowest_predictor)
 write.csv(x,"temp.txt")
 all_top_preds= append(as.character(x),'SF' )
 
-
+?randomForest
+?rfcv
 test_final_input=select(test_df,one_of(all_top_preds))
 trian_final_input=select(train_df,one_of("Salary",all_top_preds))
 
 #final rf run
 final_rf_result = randomForest(Salary~., data = trian_final_input, ntree = 10000, importance = TRUE)
 final_rf_result
+x=sqrt(1.75511e+12)
+x
 final_importance_list  = sort(importance(final_rf_result)[,1], decreasing=TRUE)
 final_importance_list
+
+test_prediction	= predict(final_rf_result, test_df[,predictor_columns])
+
+test_rmse = sqrt(mean((test_prediction - test_df[, y_column])^2))
+test_rmse
