@@ -6,7 +6,7 @@ options(continue = '\t')
 
 save.image('hockey_salary')
 load('hockey_salary')
-
+install.packages('ggplot2')
 # load libraries
 library('randomForest')
 library('plyr')
@@ -54,6 +54,7 @@ all_data$undrafted = is.na(all_data$DftRd)
 #4cDONE fill the Pr.St column with 'INT' for international players
 
 all_data$Pr.St = mapvalues(all_data$Pr.St, from = "", to="INT")
+?mapvalues
 
 #4dDONE Make team boolean columns
 #get the unique list of team acronymns
@@ -78,7 +79,6 @@ for(i in 1:length(all_data$Team)){
 		all_data[,x][i] = 1	
 	}
 }
-
 
 
 #4e Make position boolean columns
@@ -191,7 +191,6 @@ for( i in 1:length(all_missing_list)){
 #how many players from each country?
 #Canadians are over half of the NHL!
 barplot(sort(table(all_data$Nat),decreasing=TRUE), horiz=TRUE, las=1,col=c("red","blue4","blue","red3","skyblue"))
-
 
 #age distribution
 table(all_data$birth_year)
