@@ -63,7 +63,7 @@ param_grid = {
                  'max_depth': [5, 7, 9]
              }
 
-grid = GridSearchCV(z_rf, param_grid, cv=10, scoring='accuracy')
+grid = GridSearchCV(z_rf, param_grid, cv=10)
 
 grid.fit(x_train, y_train)
 
