@@ -107,7 +107,7 @@ full_pipeline = FeatureUnion(transformer_list=[
 #######
 
 #X_train_clean = full_pipeline.fit_transform(X_train)
-#X_test_clean = full_pipeline.fit_transform(X_train)
+#X_test_clean = full_pipeline.transform(X_train)
 
 #check that the number of columns are the same for both
 #X_train_clean.shape
