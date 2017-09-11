@@ -1,4 +1,3 @@
-
 """ these are generic functions for specific munging tasks and data assessment"""
 """ see the pipeline below for standard treatment of data using scikit learn builtins """
 
@@ -28,8 +27,9 @@ def fill_value(dataframe, col, val):
 
 
 #############
-# Generic pipeline for imputation of numericals and one hot coding of categoricals
-#use the below as a starting point for the processing of data before ml use
+# Generic pipeline for imputation of numericals(median) and one-hot coding of categoricals
+# use below as a starting point for the processing of data before ml use
+#can tailor with some feature engineering in the combined attributes adder function
 #############
 
 import pandas as pd
