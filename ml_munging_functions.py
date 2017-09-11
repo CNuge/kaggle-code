@@ -1,6 +1,15 @@
 
-""" these are generic functions for specific munging tasks"""
+""" these are generic functions for specific munging tasks and data assessment"""
 """ see the pipeline below for standard treatment of data using scikit learn builtins """
+
+def display_scores(scores):
+    """ pass in a list of validation output scores and 
+        this returns the data in formatted manner """
+    print('Scores:', scores)
+    print('Mean:', scores.mean())
+    print('std_dev:', scores.std())
+    
+
 def fill_median(dataframe, cols):
 	"""impute the mean for a list of columns in the dataframe"""
 	for i in cols:
@@ -23,7 +32,8 @@ def fill_value(dataframe, col, val):
 #use the below as a starting point for the processing of data before ml use
 #############
 
-
+import pandas as pd
+import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
