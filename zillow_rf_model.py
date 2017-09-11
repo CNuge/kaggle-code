@@ -5,7 +5,7 @@ a standalone XGBoost model or standalone LightGBM model (both found in other ker
 models together and I have had success with integrating the random forest regression outputs from this script at a low weight.
 I hope some other people can integrate this small snippet of code into their solutions and improve their results as well. 
 
-Sorry I'm not showing my whole model... but this is a competition after all!
+
 """
 
 
