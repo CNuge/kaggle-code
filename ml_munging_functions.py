@@ -26,6 +26,35 @@ def fill_value(dataframe, col, val):
 	return dataframe
 
 
+
+
+class MultiColBinarize(BaseEstimator, TransformerMixin):
+	""" take a df with multiple categoricals
+		one hot encode them all and return the numpy array"""
+	def __init__(self, alter_df= True):
+		self.alter_df = alter_df
+	def fit(self, X, y=None):
+		"""load the data in """
+		self.X = X
+		return self
+	def transform(self, X):
+		""" iterate through the input columns, binarizing each """
+		self.cols_list = list(self.X.columns)
+		encoder = LabelBinarizer()	
+		self.binarized_cols = encoder.fit_transform(self.X[self.cols_list.pop(0)])
+		self.classes_ = list(encoder.classes_)
+		for i in self.cols_list:
+			encoder = LabelBinarizer()
+			binarized_col = encoder.fit_transform(self.X[i])
+			self.binarized_cols = np.concatenate((self.binarized_cols , binarized_col), axis = 1)
+			self.classes_.extend(list(encoder.classes_))
+
+		#take each column in the baseline data, transform it using onehot
+		return self.binarized_cols
+
+
+
+
 #############
 # Generic pipeline for imputation of numericals(median) and one-hot coding of categoricals
 # use below as a starting point for the processing of data before ml use
@@ -56,6 +85,7 @@ class DataFrameSelector(BaseEstimator, TransformerMixin):
 		return X[self.attribute_names].values
 
 
+
 class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 	""" this is a custom class to make alterations to the numeric variables
 		in a dataframe in preparation for machine learning algorithm use """
@@ -66,11 +96,13 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
 	def transform(self, X, y=None):
 		if self.alter_df:
 			""" code in aterations to df here """
-			return np.c_[X, rooms_per_household, population_per_household,
-						 bedrooms_per_room]
+			return np.c_[X,  #THINGS you've added
+						]		
 		else:
 			""" if alter_df=False, then just return the df """
-			return np.c_[X, rooms_per_household, population_per_household]
+			return np.c_[X]
+
+
 
 
 
