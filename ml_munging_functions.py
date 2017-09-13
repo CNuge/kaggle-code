@@ -27,13 +27,14 @@ def fill_value(dataframe, col, val):
 
 
 
+
 class MultiColBinarize(BaseEstimator, TransformerMixin):
 	""" take a df with multiple categoricals
 		one hot encode them all and return the numpy array"""
 	def __init__(self, alter_df= True):
 		self.alter_df = alter_df
 	def fit(self, X, y=None):
-		"""load the data in """
+		"""load the data in, initiate the binarizer for each column"""
 		self.X = X
 		self.cols_list = list(self.X.columns)
 		self.binarizers = []
@@ -42,7 +43,8 @@ class MultiColBinarize(BaseEstimator, TransformerMixin):
 			encoder.fit(self.X[i])
 			self.binarizers.append(encoder)
 		return self
-	def transform(self, X):		
+	def transform(self, X):
+		""" for each of the columns, use the existing binarizer to make new cols """		
 		self.X = X
 		self.binarized_cols = self.binarizers[0].transform(self.X[self.cols_list[0]])
 		self.classes_ = list(self.binarizers[0].classes_)
