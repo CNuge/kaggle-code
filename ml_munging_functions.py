@@ -27,7 +27,6 @@ def fill_value(dataframe, col, val):
 
 
 
-
 class MultiColBinarize(BaseEstimator, TransformerMixin):
 	""" take a df with multiple categoricals
 		one hot encode them all and return the numpy array"""
@@ -36,21 +35,23 @@ class MultiColBinarize(BaseEstimator, TransformerMixin):
 	def fit(self, X, y=None):
 		"""load the data in """
 		self.X = X
-		return self
-	def transform(self, X):
-		""" iterate through the input columns, binarizing each """
 		self.cols_list = list(self.X.columns)
-		encoder = LabelBinarizer()	
-		self.binarized_cols = encoder.fit_transform(self.X[self.cols_list.pop(0)])
-		self.classes_ = list(encoder.classes_)
+		self.binarizers = []
 		for i in self.cols_list:
 			encoder = LabelBinarizer()
-			binarized_col = encoder.fit_transform(self.X[i])
+			encoder.fit(self.X[i])
+			self.binarizers.append(encoder)
+		return self
+	def transform(self, X):		
+		self.X = X
+		self.binarized_cols = self.binarizers[0].transform(self.X[self.cols_list[0]])
+		self.classes_ = list(self.binarizers[0].classes_)
+		for i in range(1,len(self.cols_list)):
+			binarized_col = self.binarizers[i].transform(self.X[self.cols_list[i]])
 			self.binarized_cols = np.concatenate((self.binarized_cols , binarized_col), axis = 1)
-			self.classes_.extend(list(encoder.classes_))
-
-		#take each column in the baseline data, transform it using onehot
+			self.classes_.extend(list(self.binarizers[i].classes_))
 		return self.binarized_cols
+
 
 
 
