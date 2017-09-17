@@ -148,3 +148,71 @@ full_pipeline = FeatureUnion(transformer_list=[
 #X_train_clean.shape
 #X_test_clean.shape
 
+
+
+
+
+#####
+# make combine predictions based on several ml functions
+#below example is set up for rf, xgb and svm combined model
+#####
+
+
+
+class ensemble_predictor(BaseEstimator, TransformerMixin):
+	""" take in a dataset and train it with three models,
+		combining the outputs to make predictions"""
+	def __init__(self, weights= { 'xgb': 0.33, 'rf': 0.33, 'svm' : 0.34}):
+		self.weights = weights
+		self.opt_xgb_params = {'colsample_bytree': 0.9,
+					'learning_rate': 0.1,
+					'max_depth': 7,
+					'min_child_weight': 30,
+					'nthread': -1,
+					'objective': 'reg:linear',
+					'reg_lambda': 1.0}
+		self.opt_svm_params = {'C': 1000.0, 
+				'gamma': 0.01, 
+				'kernel': 'linear'}
+		self.opt_rf_params= {'max_features': 8, 'n_estimators': 100}
+
+	def fit(self, X, y):
+		"""load the data in, initiate the models"""
+		self.X = X
+		self.y = y
+		self.opt_XGBoost_reg = xgb.XGBRegressor(**self.opt_xgb_params)
+		self.opt_forest_reg = RandomForestRegressor(**self.opt_rf_params)
+		self.opt_svm_reg = SVR(**self.opt_svm_params)
+		""" fit the models """
+		self.opt_XGBoost_reg.fit(self.X ,self.y)
+		self.opt_forest_reg.fit(self.X ,self.y)
+		self.opt_svm_reg.fit(self.X ,self.y)
+	def predict(self, X2):
+		""" make the predictions for the models, combine based on weights """
+		self.y_xgb = opt_XGBoost_reg.predict(X2)
+		self.y_rf = opt_forest_reg.predict(X2)
+		self.y_svm =opt_svm_reg.predict(X2)
+		""" multiply the predictions by their weights, return optimal """
+		self.prediction = self.y_xgb * self.weights['xgb'] \
+						+ self.y_rf * self.weights['rf'] \
+						+ self.y_svm * self.weights['svm']
+		return self.prediction
+
+#pass in a list of weight paramater options
+weight_variants = [
+{ 'xgb': 0.33, 'rf': 0.33, 'svm' : 0.34},
+{ 'xgb': 0.9, 'rf': 0.05, 'svm' : 0.05},
+{ 'xgb': 0.8, 'rf': 0.1, 'svm' : 0.1},
+{ 'xgb': 0.5, 'rf': 0.3, 'svm' : 0.2},
+{ 'xgb': 0.3, 'rf': 0.2, 'svm' : 0.5},
+{ 'xgb': 0.3, 'rf': 0.5, 'svm' : 0.2}
+]
+
+
+#determine the optimal weights for the different models via cross validation
+for params in weight_variants:
+	model = ensemble_predictor(weights = params)
+	ensemble_score = cross_val_score(model, train_x_clean, train_y,
+							scoring="neg_mean_squared_error", cv=5)
+	ensemble_rmse = np.sqrt(-ensemble_score)
+	print('%s\t %s'% (params, ensemble_rmse.mean()))
