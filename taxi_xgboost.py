@@ -404,7 +404,7 @@ Modeling iteration {'min_child_weight': 30, 'eta': 0.3, 'colsample_bytree': 0.9,
 #here I have upped the iterations to 100, to see if we can go beyond the best
 #trained model that was found when we ran with only 50 as the max.
 n=20
-l=0.3
+l=0.2
 m=8
 xgb_pars = {'min_child_weight': n, 'eta': l, 'colsample_bytree': 0.9, 
       'max_depth': m,
@@ -447,16 +447,12 @@ pred = np.exp(pred) - 1
 submission = pd.concat([Test_id, pd.DataFrame(pred)], axis=1)
 submission.columns = ['id','trip_duration']
 submission['trip_duration'] = submission.apply(lambda x : 1 if (x['trip_duration'] <= 0) else x['trip_duration'], axis = 1)
-submission.to_csv("submission_cam_full_trainXGBoost_rounds200_4sd.csv", index=False)
+submission.to_csv("submission_cam_full_trainXGBoost_rounds200_4sd_eta2.csv", index=False)
 
 
 
 
 
 
-
-
-
-#come back and see if changing the sd trim to 4 standard deviations improves model fit.
 
 
