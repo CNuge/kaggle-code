@@ -1,0 +1,377 @@
+j=2
+selected_cell = selected_row[trend$column == j,]
+head(selected_cell)
+select(selected_cell$correct_respondent,1)
+sample(selected_cell$correct_respondent,1)
+selected_cell$correct_respondent
+head(selected_cell)
+selected_row = trend[trend$row == i,]
+tail(selected_row)
+tail(selected_cell)
+selected_cell = selected_row[trend$column == j,]
+tail(selected_cell)
+selected_row = trend[trend$row == i,]
+selected_cell = selected_row[selected_row $column == j,]
+sample(selected_cell$correct_respondent,1)
+correct_respondant_mat = matrix(data = rep(0, times = 30),6,5)
+for(i in 1:6){#
+	for(j in 1:5){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row $column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		top = sort(table(selected_cell$correct_respondent), decreasing=TRUE)#
+		correct_respondant_mat[i,j] = names(top)[1]#
+	}#
+}
+selected_weighted_prob = sample(selected_cell$correct_respondent,1)
+correct_respondant_mat
+correct_respondant_mat = matrix(data = rep(0, times = 30),6,5)#
+#
+for(i in 1:6){#
+	for(j in 1:5){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row $column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		correct_respondant_mat[i,j] = selected_weighted_prob#
+	}#
+}
+sample(selected_cell$correct_respondent,1)
+selected_row = trend[trend$row == i,]
+i
+j
+correct_respondant_mat = matrix(data = rep(0, times = 30),6,5)
+for(i in 1:6){#
+	for(j in 1:5){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row $column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		correct_respondant_mat[i,j] = selected_weighted_prob#
+	}#
+}
+trend[trend$row == i,]
+trend$row[1]
+head(trend)
+selected_row = trend[trend$row == i,]
+selected_row
+for(i in 1:6){#
+	for(j in 1:5){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row$column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		correct_respondant_mat[i,j] = selected_weighted_prob#
+	}#
+}
+?sample
+selected_row = trend[trend$row == i,]
+tail(selected_row)
+trend[trend$row == i,]
+trend$row == i
+i
+selected_row = trend[trend$row == i,]
+selected_row
+head(trend)
+trend$row
+correct_respondant_mat = matrix(data = rep(0, times = 30),5,6)
+correct_respondant_mat
+for(i in 1:5){#
+	for(j in 1:6){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row$column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		correct_respondant_mat[i,j] = selected_weighted_prob#
+	}#
+}
+visited_cells = matrix(data = rep(0, times = 30),5,6)
+correct_respondant_mat
+tail(selected_row)
+tail(selected_cell)
+selected_cell$correct_respondent
+sample(selected_cell$correct_respondent,1)
+selected_weighted_prob
+correct_respondant_mat = matrix(data = rep(0, times = 30),5,6)
+for(i in 1:5){#
+	for(j in 1:6){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row$column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		correct_respondant_mat[i,j] = selected_weighted_prob#
+	}#
+}
+as.character(selected_weighted_prob)
+correct_respondant_mat
+for(i in 1:5){#
+	for(j in 1:6){#
+		selected_row = trend[trend$row == i,]#
+		selected_cell = selected_row[selected_row$column == j,]#
+		selected_weighted_prob = sample(selected_cell$correct_respondent,1)#
+		correct_respondant_mat[i,j] = as.character(selected_weighted_prob)#
+	}#
+}
+correct_respondant_mat
+save.image('jeopardy_explore')
+load.image('jeopardy_explore')
+setwd('/Users/Cam/Desktop/ds_practice/jeopardy/')
+load.images('jeopardy_explore')
+load.image('jeopardy_explore')
+load('jeopardy_explore')
+correct_respondant_mat
+right_choice_mat
+left_selections = trend[trend$clue_picker == "returning_champ",]#
+middle_selections = trend[trend$clue_picker == "middle",]#
+right_selections = trend[trend$clue_picker == "right",]#
+#
+left_choice_mat  = table(left_selections$row,left_selections$column)#
+left_choice_mat[] = rank(left_choice_mat)#
+#
+middle_choice_mat  = table(middle_selections$row,middle_selections$column)#
+middle_choice_mat[] = rank(middle_choice_mat)#
+#
+right_choice_mat  = table(right_selections$row,right_selections$column)#
+right_choice_mat[] = rank(right_choice_mat)
+right_choice_mat
+min(right_choice_mat)
+right_choice_mat[min(right_choice_mat)]
+right_choice_mat  == min(right_choice_mat)
+?DataFrame
+?data.frame
+question_board = data.frame(BEFORE_and_AFTER = character(), #
+							POTPOURRI = character(), #
+							SCIENCE = character(),#
+							AMERICAN HISTORY  = character(),#
+							STUPID ANSWERS = character(),#
+							WORD ORIGINS = character())
+question_board = data.frame(BEFORE_and_AFTER = character(), #
+							POTPOURRI = character(),#
+							SCIENCE = character(),#
+							AMERICAN_HISTORY  = character(),#
+							STUPID_ANSWERS = character(),#
+							WORD_ORIGINS = character())
+question_board
+question_board[1,]
+question_board[,1]
+questions
+head(questions)
+col =1
+name = category_freq[col]
+category_freq = sort(table(questions$category), decreasing=TRUE)
+q_df = questions[questions$category == name]
+name = category_freq[col]
+q_df = questions[questions$category == name]
+head(q_df)
+questions[questions$category == name]
+name
+name = category_freq[col+1]
+q_df = questions[questions$category == name]
+category_freq = category_freq[2:length(category_freq)]
+name = category_freq[col]
+q_df = questions[questions$category == name]
+head(q_df)
+questions[questions$category == name]
+questions$category
+name
+questions$category == name
+questions[questions$category == name]
+name
+category_freq
+name
+label(name)
+name(name)
+labels(name)
+questions$category == labels(name)
+q_df = questions[questions$category == labels(name)]
+q_df = questions[questions$category == labels(name),]
+head(q_df)
+sample(q_df,6)
+answer_board = question_board
+sample(1:length(q_df$),6)
+head(q_df)
+sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+questions
+answers = q_df$answer[q_to_pick]
+answers
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+answers = q_df$answer[q_to_pick]
+questions
+answers
+questions = q_df$question[q_to_pick]
+questions
+answers = q_df$answer[q_to_pick]
+answers
+q_to_pick = sample(1:length(q_df$answer),6)
+questions
+q_to_pick = sample(1:length(q_df$answer),6)
+q_to_pick
+questions = q_df$question[q_to_pick]
+questions
+answers = q_df$answer[q_to_pick]
+answers
+questions$question[1200]
+col=3
+name = category_freq[col]
+q_df = questions[questions$category == labels(name),]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+questions
+answers = q_df$answer[q_to_pick]
+q_df = questions[questions$category == 'SCIENCE']
+q_df = questions[questions$category == 'SCIENCE',]
+category_freq[col]
+name = category_freq[col]
+labels(name)
+q_df = questions[questions$category == labels(name),]
+questions$category == labels(name)
+labels(name)
+head(questions)
+questions = read.csv('questions.csv')
+name = category_freq[col]
+q_df = questions[questions$category == labels(name),]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+questions
+answers = q_df$answers[q_to_pick]
+answers
+answers = q_df$answers[q_to_pick]
+answers = q_df$answer[q_to_pick]
+answers
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+answers = q_df$answer[q_to_pick]
+questions
+answers
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+answers = q_df$answer[q_to_pick]
+questions
+answers = q_df$answer[q_to_pick]
+answers
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = q_df$question[q_to_pick]
+answers = q_df$answer[q_to_pick]
+questions
+answers
+col=3
+col=5
+name = category_freq[col]#
+	q_df = questions[questions$category == labels(name),]#
+	q_to_pick = sample(1:length(q_df$answer),6)#
+	questions = q_df$question[q_to_pick]#
+	answers = q_df$answer[q_to_pick]
+name = category_freq[col]
+q_df = questions[questions$category == labels(name),]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions = read.csv('questions.csv')
+col=5#
+	name = category_freq[col]#
+	q_df = questions[questions$category == labels(name),]#
+	q_to_pick = sample(1:length(q_df$answer),6)#
+	linear_questions = q_df$question[q_to_pick]#
+	answers = q_df$answer[q_to_pick]
+linear_questions = q_df$question[q_to_pick]
+linear_questions
+answers
+col=6#
+	name = category_freq[col]#
+	q_df = questions[questions$category == labels(name),]#
+	q_to_pick = sample(1:length(q_df$answer),6)#
+	linear_questions = q_df$question[q_to_pick]#
+	answers = q_df$answer[q_to_pick]
+linear_questions
+answers
+sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(q_df$answer),6)
+questions[q_to_pick,]
+q_to_pick = sample(1:length(question$answer),6)
+q_to_pick = sample(1:length(questions$answer),6)
+questions[q_to_pick,]
+question_board = data.frame(BEFORE_and_AFTER = character(), #
+							POTPOURRI = character(),#
+							SCIENCE = character(),#
+							AMERICAN_HISTORY  = character(),#
+							STUPID_ANSWERS = character(),#
+							WORD_ORIGINS = character())#
+#
+answer_board = question_board#
+#
+#pull 6 random questions from that category and add them to the question df#
+for(col in 1:6){#
+	col=6#
+	name = category_freq[col]#
+	q_df = questions[questions$category == labels(name),]#
+	q_to_pick = sample(1:length(q_df$answer),6)#
+	linear_questions = q_df$question[q_to_pick]#
+	answers = q_df$answer[q_to_pick]#
+	question_board[col,] = linear_questions#
+	answer_board[col,] = answers#
+}
+warnings()
+question_board = data.frame(BEFORE_and_AFTER = character(), #
+							POTPOURRI = character(),#
+							SCIENCE = character(),#
+							AMERICAN_HISTORY  = character(),#
+							STUPID_ANSWERS = character(),#
+							WORD_ORIGINS = character())
+answer_board = question_board
+question_board[col,]
+question_board = data.frame(BEFORE_and_AFTER = rep(0, times=6), #
+							POTPOURRI = rep(0, times=6),#
+							SCIENCE = rep(0, times=6),#
+							AMERICAN_HISTORY  =rep(0, times=6),#
+							STUPID_ANSWERS = rep(0, times=6),#
+							WORD_ORIGINS = rep(0, times=6))
+answer_board = question_board
+answer_board
+col=6
+name = category_freq[col]
+q_df = questions[questions$category == labels(name),]
+q_to_pick = sample(1:length(q_df$answer),6)
+linear_questions = q_df$question[q_to_pick]
+answers = q_df$answer[q_to_pick]
+linear_questions
+name
+question_board[col,]
+question_board[,col]
+question_board[,col] = linear_questions
+answer_board[,col] = answers
+question_board
+for(col in 1:6){#
+	col=6#
+	name = category_freq[col]#
+	q_df = questions[questions$category == labels(name),]#
+	q_to_pick = sample(1:length(q_df$answer),6)#
+	linear_questions = q_df$question[q_to_pick]#
+	answers = q_df$answer[q_to_pick]#
+	question_board[,col] = linear_questions#
+	answer_board[,col] = answers#
+}
+question_board
+for(col in 1:6){#
+	name = category_freq[col]#
+	q_df = questions[questions$category == labels(name),]#
+	q_to_pick = sample(1:length(q_df$answer),6)#
+	linear_questions = q_df$question[q_to_pick]#
+	answers = q_df$answer[q_to_pick]#
+	question_board[,col] = linear_questions#
+	answer_board[,col] = answers#
+}
+answer_board
+question_board
+answer_board
