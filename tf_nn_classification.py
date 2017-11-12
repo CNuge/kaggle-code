@@ -1,9 +1,3 @@
-#make the optimizer the gini_normalized function so that the nn
-#feedback is based on the right thing! this will optimize for
-#the gini, as opposed for the ability to make correct preditions
-#it isn't correctness we are after, but rather the correct
-#order of the claims relative to one another
-
 
 import pandas as pd
 import numpy as np
