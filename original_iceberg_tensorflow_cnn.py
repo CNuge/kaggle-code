@@ -116,7 +116,7 @@ reset_graph()
 print('designing model')
 # Training Parameters
 learning_rate = 0.005
-n_epochs = 1400
+n_epochs = 2500
 
 
 # Network Parameters
