@@ -2,7 +2,7 @@
 library(tidyverse)
 library(reshape2)
 
-housing = read.csv('/Users/Cam/Desktop/Code/hands_on_maching_learning/supplemental/datasets/housing/housing.csv')
+housing = read.csv('housing.csv')
 
 head(housing)
 

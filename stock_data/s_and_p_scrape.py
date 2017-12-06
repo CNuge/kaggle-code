@@ -1,10 +1,10 @@
 from datetime import datetime
 from pandas import DataFrame
-import pandas_datareader.data as web
+import pandas_datareader as web
 
 def get_american_stock_dat(stock_of_interest, start_time, now_time):
 	""" get a dataframe for an american stock of interest """
-	f_dat = web.DataReader(stock_of_interest, 'google', start_time, now_time)
+	f_dat = web.DataReader(stock_of_interest, 'yahoo', start_time, now_time)
 	return f_dat
 
 
@@ -62,7 +62,8 @@ if __name__ == '__main__':
 	bad_names =[]
 	for i, stock in enumerate(s_and_p):
 		try:
-			stock_df = get_american_stock_dat('NYSE:{0}'.format(stock), start_time, now_time)
+			print(stock)
+			stock_df = get_american_stock_dat(stock, start_time, now_time)
 			stock_df['Name'] = stock
 			output_name = stock + '_data.csv'
 			stock_df.to_csv(output_name)
@@ -72,6 +73,8 @@ if __name__ == '__main__':
 				big_df = big_df.append(stock_df)
 		except:
 			bad_names.append(stock)
+			print('bad: %s' % (stock))
+	
 	print(bad_names)
 	big_df.to_csv('all_s_and_p_data.csv')
 
@@ -80,5 +83,4 @@ if __name__ == '__main__':
 		with open('failed_queries.txt','w') as outfile:
 			for name in bad_names:
 				outfile.write(name+'\n')
-
 
