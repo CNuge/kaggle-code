@@ -57,10 +57,9 @@ if __name__ == '__main__':
 	'WBA','DIS','WM','WAT','WEC','WFC','HCN','WDC','WU','WRK','WY','WHR','WFM','WMB',
 	'WLTW','WYN','WYNN','XEL','XRX','XLNX','XL','XYL','YUM','ZBH','ZION','ZTS']
 	
-	
-	
+	undone =['ALLE', 'AMGN', 'AON', 'AOS', 'AVB', 'BAC', 'BRK.B', 'BA', 'BF.B', 'CI', 'COH', 'CMCSA', 'STZ', 'DVN', 'DOW', 'DD', 'EFX', 'FDX', 'LB', 'NYSE:LMT', 'MAT', 'NYSE:NWL', 'NYSE:NBL', 'OMC', 'RHT', 'SPLS', 'WFM']
 	bad_names =[]
-	for i, stock in enumerate(s_and_p):
+	for i, stock in enumerate(undone):
 		try:
 			print(stock)
 			stock_df = get_american_stock_dat(stock, start_time, now_time)
