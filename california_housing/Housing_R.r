@@ -2,15 +2,15 @@
 library(tidyverse)
 library(reshape2)
 
-housing = read.csv('housing.csv')
+housing = read.csv('./housing.csv')
 
 head(housing)
 
 summary(housing)
 
-par(mfrow=c(2,5))
-
 colnames(housing)
+
+par(mfrow=c(2,5))
 
 ggplot(data = melt(housing), mapping = aes(x = value)) + 
     geom_histogram(bins = 30) + facet_wrap(~variable, scales = 'free_x')
@@ -49,6 +49,8 @@ cat_housing = select(cat_housing,one_of(keep_columns))
 
 tail(cat_housing)
 
+head(cat_housing)
+
 colnames(housing)
 
 drops = c('ocean_proximity','median_house_value')
@@ -65,6 +67,8 @@ head(housing_num)
 cleaned_housing = cbind(cat_housing, scaled_housing_num, median_house_value=housing$median_house_value)
 
 head(cleaned_housing)
+
+?sample.int
 
 set.seed(19) # Set a random seed so that same sample can be reproduced in future runs
 
@@ -109,12 +113,18 @@ head(train_x)
 
 #some people like weird r format like this... I find it causes headaches
 #rf_model = randomForest(median_house_value~. , data = train, ntree =500, importance = TRUE)
+
+#I find this more clear
 rf_model = randomForest(train_x, y = train_y , ntree = 500, importance = TRUE)
 
 
 names(rf_model) #these are all the different things you can call from the model.
 
-rf_model$importance
+importance_dat = rf_model$importance
+importance_dat
+
+sorted_predictors = sort(importance_dat[,1], decreasing=TRUE)
+sorted_predictors
 
 oob_prediction = predict(rf_model) #leaving out a data source forces OOB predictions
 
