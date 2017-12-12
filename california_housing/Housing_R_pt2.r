@@ -73,6 +73,10 @@ test_x = test[, names(test) !='median_house_value']
 #some people like weird r format like this... I find it causes headaches
 #rf_model = randomForest(median_house_value~. , data = train, ntree =500, importance = TRUE)
 
+
+#if it gives a worse rmse on the test when using a validation in train, point out that this 
+#is evidence of how a lower rmse isn't necessarily better, as we now have more confidence in external predictions.
+
 ######
 # XG Boost
 ######
@@ -90,11 +94,11 @@ bst = xgb.train(data=dtrain, max.depth=8, eta=0.3, nthread = 2, nround=1000, wat
 
 bst_slow = xgb.train(data=dtrain, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
 
-
+#note the best iteration is not the last iteration. 
 XGBoost_importance = xgb.importance(feature_names = names(train_x), model = bst_slow)
 XGBoost_importance[1:10]
 
-# rmse: 45225.968750 #max.depth=5
+# rmse: 45225.968750 # max.depth=5
 # an improvement of ~$3400 in average error
 # but what we have done there is fit to the training set. need to work with a validation set,
 # the only at the end evaluate the model performance against the test set.
