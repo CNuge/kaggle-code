@@ -79,19 +79,42 @@ test_x = test[, names(test) !='median_house_value']
 # http://cran.fhcrc.org/web/packages/xgboost/vignettes/xgboost.pdf
 library(xgboost)
 
-
 dtrain = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
 dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
 
 
 watchlist = list(train=dtrain, test=dtest)
+
+#try 1 -
 bst = xgb.train(data=dtrain, max.depth=8, eta=0.3, nthread = 2, nround=1000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
 
+bst_slow = xgb.train(data=dtrain, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
 
-#make the above into a graid serch
 
-XGBoost_importance = xgb.importance(feature_names = names(train_x), model = bst)
+XGBoost_importance = xgb.importance(feature_names = names(train_x), model = bst_slow)
 XGBoost_importance[1:10]
+
+# rmse: 45225.968750 #max.depth=5
+# an improvement of ~$3400 in average error
+# but what we have done there is fit to the training set. need to work with a validation set,
+# the only at the end evaluate the model performance against the test set.
+
+
+#make validation set
+
+#train xgb, evaluating against the validation
+
+#test the result
+
+
+
+#tweak the paramaters using a grid search
+
+
+
+
+
+
 
 
 #########
