@@ -80,9 +80,23 @@ test_x = test[, names(test) !='median_house_value']
 library(xgboost)
 
 
+dtrain = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
+dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
 
 
+watchlist = list(train=dtrain, test=dtest)
+bst = xgb.train(data=dtrain, max.depth=8, eta=0.3, nthread = 2, nround=1000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
 
+
+#make the above into a graid serch
+
+XGBoost_importance = xgb.importance(feature_names = names(train_x), model = bst)
+XGBoost_importance[1:10]
+
+
+#########
+# try adding one more model
+#########
 
 
 
@@ -113,3 +127,10 @@ y_pred = predict(rf_model , test_x)
 test_mse = mean(((y_pred - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse
+
+
+
+
+########
+# Ensemble the 3 models together, see if better predictions
+########
