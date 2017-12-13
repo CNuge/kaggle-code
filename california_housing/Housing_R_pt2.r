@@ -6,17 +6,6 @@ library(randomForest)
 
 housing = read.csv('./housing.csv')
 
-head(housing)
-
-summary(housing)
-
-colnames(housing)
-
-par(mfrow=c(2,5))
-
-ggplot(data = melt(housing), mapping = aes(x = value)) + 
-    geom_histogram(bins = 30) + facet_wrap(~variable, scales = 'free_x')
-
 housing$total_bedrooms[is.na(housing$total_bedrooms)] = median(housing$total_bedrooms , na.rm = TRUE)
 
 housing$mean_bedrooms = housing$total_bedrooms/housing$households
@@ -25,8 +14,6 @@ housing$mean_rooms = housing$total_rooms/housing$households
 drops = c('total_bedrooms', 'total_rooms')
 
 housing = housing[ , !(names(housing) %in% drops)]
-
-head(housing)
 
 categories = unique(housing$ocean_proximity)
 #split the categories off
@@ -68,6 +55,35 @@ train_x = train[, names(train) !='median_house_value']
 
 test_y = test[,'median_house_value']
 test_x = test[, names(test) !='median_house_value']
+
+
+########
+# Random Forest Model
+########
+rf_model = randomForest(train_x, y = train_y , ntree = 500, importance = TRUE)
+
+names(rf_model) #these are all the different things you can call from the model.
+
+importance_dat = rf_model$importance
+importance_dat
+
+sorted_predictors = sort(importance_dat[,1], decreasing=TRUE)
+sorted_predictors
+
+oob_prediction = predict(rf_model) #leaving out a data source forces OOB predictions
+
+#you may have noticed that this is avaliable using the $mse in the model options.
+#but this way we learn stuff!
+train_mse = mean(as.numeric((oob_prediction - train_y)^2))
+oob_rmse = sqrt(train_mse)
+oob_rmse
+
+
+y_pred_rf = predict(rf_model , test_x)
+test_mse = mean(((y_pred_rf - test_y)^2))
+test_rmse = sqrt(test_mse)
+test_rmse
+
 
 
 
@@ -224,10 +240,9 @@ y_hat_xgb_grid = predict(bst_tuned, dtest)
 
 test_mse = mean(((y_hat_xgb_grid - test_y)^2))
 test_rmse = sqrt(test_mse)
-test_rmse 
+test_rmse # $46675
+# By tuning the hyperparamaters we have moved to a 4% improvement over random forest
 
-
-# alternatively xgb.cv could be used for cross validation of the model
 
 
 #######
@@ -290,37 +305,6 @@ xgb_cv_yhat = predict(xgb_train_1 , as.matrix(test_x))
 test_mse = mean(((xgb_cv_yhat - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse 
-
-
-
-
-########
-# Random Forest Model
-########
-rf_model = randomForest(train_x, y = train_y , ntree = 500, importance = TRUE)
-
-names(rf_model) #these are all the different things you can call from the model.
-
-importance_dat = rf_model$importance
-importance_dat
-
-sorted_predictors = sort(importance_dat[,1], decreasing=TRUE)
-sorted_predictors
-
-oob_prediction = predict(rf_model) #leaving out a data source forces OOB predictions
-
-#you may have noticed that this is avaliable using the $mse in the model options.
-#but this way we learn stuff!
-train_mse = mean(as.numeric((oob_prediction - train_y)^2))
-oob_rmse = sqrt(train_mse)
-oob_rmse
-
-
-y_pred_rf = predict(rf_model , test_x)
-test_mse = mean(((y_pred_rf - test_y)^2))
-test_rmse = sqrt(test_mse)
-test_rmse
-
 
 
 
