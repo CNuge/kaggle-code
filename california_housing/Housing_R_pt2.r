@@ -109,8 +109,10 @@ XGBoost_importance[1:10]
 # the only at the end evaluate the model performance against the test set.
 
 
+####
+# Proper use - validation set
+####
 #make validation set
-
 
 set.seed(19) # Set a random seed so that same sample can be reproduced in future runs
 
@@ -119,24 +121,19 @@ sample = sample.int(n = nrow(train), size = floor(.8*nrow(train)), replace = F)
 train_t = train[sample, ] #just the samples
 valid  = train[-sample, ] #everything but the samples
 
-
 train_y = train_t[,'median_house_value']
 train_x = train_t[, names(train) !='median_house_value']
 
 valid_y = valid[,'median_house_value']
 valid_x = valid[, names(test) !='median_house_value']
 
-
-
 gb_train = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
 gb_valid = xgb.DMatrix(data =  as.matrix(valid_x), label = valid_y)
 
-
-watchlist = list(train= gb_train, test= gb_valid)
-
+#train xgb, evaluating against the validation
+watchlist = list(train = gb_train, valid = gb_valid)
 
 bst_slow = xgb.train(data= gb_train, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
-
 
 #error, need the matrix format
 y_hat = predict(bst_slow, test_x)
@@ -149,6 +146,7 @@ y_hat = predict(bst_slow, test_x)
 dtest = xgb.DMatrix(data =  as.matrix(test_x))
 
 
+#test the model on truly external data
 
 y_hat = predict(bst_slow, dtest)
 
@@ -159,15 +157,9 @@ test_rmse
 # that the improved score is not due to overfit thanks to our use of a validation set!
 
 
-#train xgb, evaluating against the validation
-
-#test the result
-
-
-
-#tweak the paramaters using a grid search
-
-
+#######
+#tweak the hyperparamaters using a grid search
+######
 
 
 
@@ -182,7 +174,6 @@ test_rmse
 # Random Forest Model
 ########
 rf_model = randomForest(train_x, y = train_y , ntree = 500, importance = TRUE)
-
 
 names(rf_model) #these are all the different things you can call from the model.
 
@@ -239,6 +230,7 @@ test_rmse
 ## [51] "yg"
 
 
+skrrrahh(0) #random
 skrrrahh('tpain')
 skrrrahh('ross')
 skrrrahh('future')
@@ -247,3 +239,5 @@ skrrrahh('desiigner')
 skrrrahh('bigshaq')
 skrrrahh('twochainz1')
 skrrrahh('bigsean3')
+
+#demo the machine learning benefit by running after an xgboost training line.
