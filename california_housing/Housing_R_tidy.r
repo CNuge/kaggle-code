@@ -6,6 +6,7 @@
 ## 2017-12-11
 ##
 ##############################
+setwd('/Users/Cam/Desktop/Code/bin/kaggle_code/california_housing')
 
 library(tidyverse)
 library(viridis)
