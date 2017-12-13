@@ -70,12 +70,6 @@ test_y = test[,'median_house_value']
 test_x = test[, names(test) !='median_house_value']
 
 
-#some people like weird r format like this... I find it causes headaches
-#rf_model = randomForest(median_house_value~. , data = train, ntree =500, importance = TRUE)
-
-
-#if it gives a worse rmse on the test when using a validation in train, point out that this 
-#is evidence of how a lower rmse isn't necessarily better, as we now have more confidence in external predictions.
 
 ######
 # XG Boost
@@ -87,10 +81,10 @@ library(xgboost)
 dtrain = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
 dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
 
-#these are the datasets the rmse is evaluated for at each iteration
+# these are the datasets the rmse is evaluated for at each iteration
 watchlist = list(train=dtrain, test=dtest)
 
-#try 1 -off a set of paramaters I know work pretty well generally
+# try 1 -off a set of paramaters I know work pretty well generally
 
 bst = xgb.train(data = dtrain, 
 				max.depth = 8, 
@@ -101,8 +95,8 @@ bst = xgb.train(data = dtrain,
 				objective = "reg:linear", 
 				early_stopping_rounds = 50)
 
-#try a 'slower learning' model. The up and down weights for each iteration are smaller
-#we also use more iterations
+# try a 'slower learning' model. The up and down weights for each iteration are smaller
+# we also use more iterations
 
 bst_slow = xgb.train(data = dtrain, 
 						max.depth=6, 
@@ -113,19 +107,21 @@ bst_slow = xgb.train(data = dtrain,
 						objective = "reg:linear", 
 						early_stopping_rounds = 50)
 
-#note the best iteration is not the last iteration. 
+# note the best iteration is not the last iteration. 
 XGBoost_importance = xgb.importance(feature_names = names(train_x), model = bst_slow)
 XGBoost_importance[1:10]
 
 # rmse: 45225.968750 # max.depth=5
-# an improvement of ~$3400 in average error
-# but what we have done there is fit to the training set. need to work with a validation set,
-# the only at the end evaluate the model performance against the test set.
+#last week: $48620 with random forest
+# an improvement of ~$3400 in average error. Wait! What we have done here is fit to the training set (leading to model overfit). Need to work with a validation set, then only at the end evaluate the model performance against the test set.
 
 
 ####
 # Proper use - validation set
 ####
+
+#validation set - Another subset of our data that is witheld from the training algorithm, but compared against at each iteration to see how
+
 #make validation set
 
 set.seed(19) # Set a random seed so that same sample can be reproduced in future runs
@@ -144,11 +140,11 @@ valid_x = valid[, names(test) !='median_house_value']
 gb_train = xgb.DMatrix(data = as.matrix(train_x), label = train_y )
 gb_valid = xgb.DMatrix(data = as.matrix(valid_x), label = valid_y)
 
-#train xgb, evaluating against the validation
+# train xgb, evaluating against the validation
 watchlist = list(train = gb_train, valid = gb_valid)
 
 bst_slow = xgb.train(data= gb_train, 
-						max.depth = 6, 
+						max.depth = 10, 
 						eta = 0.01, 
 						nthread = 2, 
 						nround = 10000, 
@@ -156,16 +152,13 @@ bst_slow = xgb.train(data= gb_train,
 						objective = "reg:linear", 
 						early_stopping_rounds = 50)
 
-#error, need the matrix format
+# error, need the matrix format
 y_hat = predict(bst_slow, test_x)
 
-#recall we ran the following to get the test data in the right format:
-#dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
-
-# here I have it with the label taken off, just to remind us its external data
-# xgb would ignore the label though during predictions
+# recall we ran the following to get the test data in the right format:
+# dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
+# here I have it with the label taken off, just to remind us its external data xgb would ignore the label though during predictions
 dtest = xgb.DMatrix(data =  as.matrix(test_x))
-
 
 #test the model on truly external data
 
@@ -174,14 +167,12 @@ y_hat = predict(bst_slow, dtest)
 test_mse = mean(((y_hat - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse 
-# ~46586.01 This is higher then on the first run through, but we can be confident
-# that the improved score is not due to overfit thanks to our use of a validation set!
+# ~47507.09 This is higher then on the first run through, but we can be confident that the improved score is not due to overfit thanks to our use of a validation set! point out that this is evidence of how a lower rmse isn't necessarily better, as we now have more confidence in external predictions.2.3% improvement over a basic random forest... is it worth the effort? The answer to this question always depends on the purpose of the model.
 
 
 ###
 # Grid search first principles 
 ###
-
 
 max.depths = c(3, 5, 7, 9)
 etas = c(0.01, 0.001, 0.0001)
@@ -217,10 +208,12 @@ for( depth in max.depths ){
 
 best_params
 best_score
+#valid-rmse: 47033.28
 
+# max_depth of 9, eta of 0.01
 bst_tuned = xgb.train( data = gb_train, 
-						max.depth = depth, 
-						eta = num, 
+						max.depth = 9, 
+						eta = 0.01, 
 						nthread = 2, 
 						nround = 10000, 
 						watchlist = watchlist, 
@@ -244,11 +237,11 @@ test_rmse
 
 library(caret) 
 
-#look up the model we are running to see the paramaters
+# look up the model we are running to see the paramaters
 modelLookup("xgbLinear")
  
 # set up all the pairwise combinations
-#
+
 xgb_grid_1 = expand.grid(nrounds = c(1000,2000,3000,4000) ,
 							eta = c(0.01, 0.001, 0.0001),
 							lambda = 1,
@@ -271,7 +264,7 @@ xgb_trcontrol_1 = trainControl(method = "cv",
 ######
 # train the model for each parameter combination in the grid, using CV to evaluate on multiple folds. Make sure your laptop is plugged in or RIP battery.
 
-#note how this is now the caret train function
+# note how this is now the caret train function
 ?train
 
 xgb_train_1 = train(x = as.matrix(train_x),
@@ -298,11 +291,6 @@ test_mse = mean(((xgb_cv_yhat - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse 
 
-
-
-#########
-# try adding one more model
-#########
 
 
 
