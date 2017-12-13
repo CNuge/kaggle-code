@@ -314,15 +314,18 @@ test_rmse # 48450... not really an improvement!
 ########
 
 
-y_pred_rf
-y_hat_valid
-xgb_cv_yhat
-y_hat_xgb_grid
+y_pred_rf #random forest
+y_hat_valid #xgBoost with validation
+y_hat_xgb_grid #xgBoost grid search
+xgb_cv_yhat #xgBoost caret cross validation
+
 length(y_hat_xgb_grid)
 
 
 blend_pred = (y_hat * .25) + (y_pred_rf * .25) + (xgb_cv_yhat * .25) + (y_hat_xgb_grid * .25)
 length(blend_pred)
+
+length(blend_pred) == length(y_hat_xgb_grid)
 
 blend_test_mse = mean(((blend_pred - test_y)^2))
 blend_test_rmse = sqrt(blend_test_mse)
