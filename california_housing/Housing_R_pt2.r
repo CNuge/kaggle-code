@@ -161,3 +161,36 @@ test_rmse
 ########
 # Ensemble the 3 models together, see if better predictions
 ########
+
+
+
+
+
+
+
+#######
+# Unrelated note
+#######
+# install.packages("devtools")
+# devtools::install_github("brooke-watson/BRRR")
+
+
+##  [1] "twochainz"  "twochainz1" "bigboi"     "biggie"     "bigsean"   
+##  [6] "bigsean1"   "bigsean2"   "bigsean3"   "bigsean4"   "bigsean5"  
+## [11] "bigshaq"    "birdman"    "birdman1"   "birdman2"   "busta"     
+## [16] "chance"     "desiigner"  "diddy"      "drake"      "drake1"    
+## [21] "drummaboy"  "fetty"      "flava"      "future"     "gucci"     
+## [26] "gucci1"     "gucci2"     "jayz"       "jayz1.wav"  "kendrick"  
+## [31] "khaled"     "khaled1"    "khaled2"    "khaled3"    "liljon"    
+## [36] "liljon1"    "nicki"      "pitbull"    "ross"       "ross1"     
+## [41] "schoolboy"  "snoop"      "soulja"     "takeoff"    "tpain.wav" 
+## [46] "traviscott" "treysongz"  "trick"      "waka"       "weezy"     
+## [51] "yg"
+
+skrrrahh('ross')
+skrrrahh('future')
+skrrrahh('traviscott')
+skrrrahh('desiigner')
+skrrrahh('bigshaq')
+skrrrahh('twochainz1')
+skrrrahh('bigsean3')
