@@ -82,7 +82,7 @@ oob_rmse
 y_pred_rf = predict(rf_model , test_x)
 test_mse = mean(((y_pred_rf - test_y)^2))
 test_rmse = sqrt(test_mse)
-test_rmse
+test_rmse # ~48620
 
 
 
@@ -178,9 +178,9 @@ dtest = xgb.DMatrix(data =  as.matrix(test_x))
 
 #test the model on truly external data
 
-y_hat = predict(bst_slow, dtest)
+y_hat_valid = predict(bst_slow, dtest)
 
-test_mse = mean(((y_hat - test_y)^2))
+test_mse = mean(((y_hat_valid - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse 
 # ~47507.09 This is higher then on the first run through, but we can be confident that the improved score is not due to overfit thanks to our use of a validation set! point out that this is evidence of how a lower rmse isn't necessarily better, as we now have more confidence in external predictions.2.3% improvement over a basic random forest... is it worth the effort? The answer to this question always depends on the purpose of the model.
@@ -240,7 +240,7 @@ y_hat_xgb_grid = predict(bst_tuned, dtest)
 
 test_mse = mean(((y_hat_xgb_grid - test_y)^2))
 test_rmse = sqrt(test_mse)
-test_rmse # $46675
+test_rmse # test-rmse: 46675
 # By tuning the hyperparamaters we have moved to a 4% improvement over random forest
 
 
@@ -304,7 +304,7 @@ xgb_cv_yhat = predict(xgb_train_1 , as.matrix(test_x))
 
 test_mse = mean(((xgb_cv_yhat - test_y)^2))
 test_rmse = sqrt(test_mse)
-test_rmse 
+test_rmse # 48450... not really an improvement!
 
 
 
@@ -314,13 +314,21 @@ test_rmse
 ########
 
 
-y_hat
 y_pred_rf
+y_hat_valid
 xgb_cv_yhat
 y_hat_xgb_grid
+length(y_hat_xgb_grid)
 
 
 blend_pred = (y_hat * .25) + (y_pred_rf * .25) + (xgb_cv_yhat * .25) + (y_hat_xgb_grid * .25)
+length(blend_pred)
+
+blend_test_mse = mean(((blend_pred - test_y)^2))
+blend_test_rmse = sqrt(blend_test_mse)
+blend_test_rmse # 45907 by averaging just 4 predictors we have dropped the rmse ~1.5% lower then the best scoring of the 4 models. This does come at a cost though, we now can't make accurate inferrences about the best predictors!
+
+#next step - you can grid search the weights of the ensemble to try and drop the rmse further!
 
 
 
