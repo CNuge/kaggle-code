@@ -354,7 +354,7 @@ blend_test_rmse # 45205 by averaging just 4 predictors we have dropped the rmse 
 ## [46] "traviscott" "treysongz"  "trick"      "waka"       "weezy"     
 ## [51] "yg"
 
-
+library('BRRR')
 skrrrahh(0) #random
 skrrrahh('tpain')
 skrrrahh('ross')
