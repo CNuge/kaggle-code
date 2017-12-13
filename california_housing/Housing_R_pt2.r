@@ -83,14 +83,19 @@ test_x = test[, names(test) !='median_house_value']
 # http://cran.fhcrc.org/web/packages/xgboost/vignettes/xgboost.pdf
 library(xgboost)
 
+#put into the xgb matrix format
 dtrain = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
 dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
 
-
+#these are the datasets the rmse is evaluated for at each iteration
 watchlist = list(train=dtrain, test=dtest)
 
-#try 1 -
+#try 1 -off a set of paramaters I know work pretty well generally
+
 bst = xgb.train(data=dtrain, max.depth=8, eta=0.3, nthread = 2, nround=1000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
+
+#try a 'slower learning' model. The up and down weights for each iteration are smaller
+#we also use more iterations
 
 bst_slow = xgb.train(data=dtrain, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
 
@@ -106,6 +111,54 @@ XGBoost_importance[1:10]
 
 #make validation set
 
+
+set.seed(19) # Set a random seed so that same sample can be reproduced in future runs
+
+sample = sample.int(n = nrow(train), size = floor(.8*nrow(train)), replace = F)
+
+train_t = train[sample, ] #just the samples
+valid  = train[-sample, ] #everything but the samples
+
+
+train_y = train_t[,'median_house_value']
+train_x = train_t[, names(train) !='median_house_value']
+
+valid_y = valid[,'median_house_value']
+valid_x = valid[, names(test) !='median_house_value']
+
+
+
+gb_train = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
+gb_valid = xgb.DMatrix(data =  as.matrix(valid_x), label = valid_y)
+
+
+watchlist = list(train= gb_train, test= gb_valid)
+
+
+bst_slow = xgb.train(data= gb_train, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
+
+
+#error, need the matrix format
+y_hat = predict(bst_slow, test_x)
+
+#recall we ran the following to get the test data in the right format:
+#dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
+
+# here I have it with the label taken off, just to remind us its external data
+# xgb would ignore the label though during predictions
+dtest = xgb.DMatrix(data =  as.matrix(test_x))
+
+
+
+y_hat = predict(bst_slow, dtest)
+
+test_mse = mean(((y_hat - test_y)^2))
+test_rmse = sqrt(test_mse)
+test_rmse 
+# ~46586.01 This is higher then on the first run through, but we can be confident
+# that the improved score is not due to overfit thanks to our use of a validation set!
+
+
 #train xgb, evaluating against the validation
 
 #test the result
@@ -113,8 +166,6 @@ XGBoost_importance[1:10]
 
 
 #tweak the paramaters using a grid search
-
-
 
 
 
@@ -187,6 +238,8 @@ test_rmse
 ## [46] "traviscott" "treysongz"  "trick"      "waka"       "weezy"     
 ## [51] "yg"
 
+
+skrrrahh('tpain')
 skrrrahh('ross')
 skrrrahh('future')
 skrrrahh('traviscott')
