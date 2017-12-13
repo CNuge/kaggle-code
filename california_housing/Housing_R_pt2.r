@@ -92,12 +92,26 @@ watchlist = list(train=dtrain, test=dtest)
 
 #try 1 -off a set of paramaters I know work pretty well generally
 
-bst = xgb.train(data=dtrain, max.depth=8, eta=0.3, nthread = 2, nround=1000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
+bst = xgb.train(data = dtrain, 
+				max.depth = 8, 
+				eta = 0.3, 
+				nthread = 2, 
+				nround = 1000, 
+				watchlist = watchlist, 
+				objective = "reg:linear", 
+				early_stopping_rounds = 50)
 
 #try a 'slower learning' model. The up and down weights for each iteration are smaller
 #we also use more iterations
 
-bst_slow = xgb.train(data=dtrain, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
+bst_slow = xgb.train(data = dtrain, 
+						max.depth=6, 
+						eta = 0.01, 
+						nthread = 2, 
+						nround = 10000, 
+						watchlist = watchlist, 
+						objective = "reg:linear", 
+						early_stopping_rounds = 50)
 
 #note the best iteration is not the last iteration. 
 XGBoost_importance = xgb.importance(feature_names = names(train_x), model = bst_slow)
@@ -127,13 +141,20 @@ train_x = train_t[, names(train) !='median_house_value']
 valid_y = valid[,'median_house_value']
 valid_x = valid[, names(test) !='median_house_value']
 
-gb_train = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
-gb_valid = xgb.DMatrix(data =  as.matrix(valid_x), label = valid_y)
+gb_train = xgb.DMatrix(data = as.matrix(train_x), label = train_y )
+gb_valid = xgb.DMatrix(data = as.matrix(valid_x), label = valid_y)
 
 #train xgb, evaluating against the validation
 watchlist = list(train = gb_train, valid = gb_valid)
 
-bst_slow = xgb.train(data= gb_train, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
+bst_slow = xgb.train(data= gb_train, 
+						max.depth = 6, 
+						eta = 0.01, 
+						nthread = 2, 
+						nround = 10000, 
+						watchlist = watchlist, 
+						objective = "reg:linear", 
+						early_stopping_rounds = 50)
 
 #error, need the matrix format
 y_hat = predict(bst_slow, test_x)
@@ -157,10 +178,125 @@ test_rmse
 # that the improved score is not due to overfit thanks to our use of a validation set!
 
 
+###
+# Grid search first principles 
+###
+
+
+max.depths = c(3, 5, 7, 9)
+etas = c(0.01, 0.001, 0.0001)
+
+best_params = 0
+best_score = 0
+
+count = 1
+for( depth in max.depths ){
+	for( num in etas){
+
+		bst_grid = xgb.train(data = gb_train, 
+								max.depth = depth, 
+								eta=num, 
+								nthread = 2, 
+								nround = 10000, 
+								watchlist = watchlist, 
+								objective = "reg:linear", 
+								early_stopping_rounds = 50, 
+								verbose=0)
+
+		if(count == 1){
+			best_params = bst_grid$params
+			best_score = bst_grid$best_score
+			count = count + 1
+			}
+		else if( bst_grid$best_score < best_score){
+			best_params = bst_grid$params
+			best_score = bst_grid$best_score
+		}	
+	}
+}
+
+best_params
+best_score
+
+bst_tuned = xgb.train( data = gb_train, 
+						max.depth = depth, 
+						eta = num, 
+						nthread = 2, 
+						nround = 10000, 
+						watchlist = watchlist, 
+						objective = "reg:linear", 
+						early_stopping_rounds = 50)
+
+y_hat_xgb_grid = predict(bst_tuned, dtest)
+
+test_mse = mean(((y_hat_xgb_grid - test_y)^2))
+test_rmse = sqrt(test_mse)
+test_rmse 
+
+
+# alternatively xgb.cv could be used for cross validation of the model
+
+
 #######
-#tweak the hyperparamaters using a grid search
+# tweak the hyperparamaters using a grid search
+# The caret package (short for classification and regression training)
 ######
 
+library(caret) 
+
+#look up the model we are running to see the paramaters
+modelLookup("xgbLinear")
+ 
+# set up all the pairwise combinations
+#
+xgb_grid_1 = expand.grid(nrounds = c(1000,2000,3000,4000) ,
+							eta = c(0.01, 0.001, 0.0001),
+							lambda = 1,
+							alpha = 0)
+xgb_grid_1
+
+
+#here we do one better then a validation set, we use cross validation to 
+#expand the amount of info we have!
+xgb_trcontrol_1 = trainControl(method = "cv",
+								number = 5,
+								verboseIter = TRUE,
+								returnData = FALSE,
+								returnResamp = "all", 
+								allowParallel = TRUE)
+								
+
+######
+#below a grid-search, cross-validation xgboost model in caret
+######
+# train the model for each parameter combination in the grid, using CV to evaluate on multiple folds. Make sure your laptop is plugged in or RIP battery.
+
+#note how this is now the caret train function
+?train
+
+xgb_train_1 = train(x = as.matrix(train_x),
+					y = train_y,
+					trControl = xgb_trcontrol_1,
+					tuneGrid = xgb_grid_1,
+					method = "xgbLinear",
+					maximize = "RMSE",
+					early_stopping_rounds = 50,
+					max.depth = 5)
+
+names(xgb_train_1)
+xgb_train_1$bestTune
+xgb_train_1$method
+summary(xgb_train_1)
+
+
+#alternatively, you can 'narrow in' on the best paramaters by taking a range of options around the best values found and seeing if high resolution tweaks can provide even further improvements.
+
+xgb_cv_yhat = predict(xgb_train_1 , as.matrix(test_x))
+
+
+test_mse = mean(((xgb_cv_yhat - test_y)^2))
+test_rmse = sqrt(test_mse)
+test_rmse 
 
 
 
@@ -192,8 +328,8 @@ oob_rmse = sqrt(train_mse)
 oob_rmse
 
 
-y_pred = predict(rf_model , test_x)
-test_mse = mean(((y_pred - test_y)^2))
+y_pred_rf = predict(rf_model , test_x)
+test_mse = mean(((y_pred_rf - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse
 
@@ -201,12 +337,18 @@ test_rmse
 
 
 ########
-# Ensemble the 3 models together, see if better predictions
+# Ensemble the models together, 
+# strategy for when accuracy is more important then knowing the best predictors
 ########
 
 
+y_hat
+y_pred_rf
+xgb_cv_yhat
+y_hat_xgb_grid
 
 
+blend_pred = (y_hat * .25) + (y_pred_rf * .25) + (xgb_cv_yhat * .25) + (y_hat_xgb_grid * .25)
 
 
 
