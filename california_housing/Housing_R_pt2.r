@@ -287,8 +287,6 @@ xgb_train_1 = train(x = as.matrix(train_x),
 					trControl = xgb_trcontrol_1,
 					tuneGrid = xgb_grid_1,
 					method = "xgbLinear",
-					maximize = "RMSE",
-					early_stopping_rounds = 50,
 					max.depth = 5)
 
 names(xgb_train_1)
@@ -304,7 +302,9 @@ xgb_cv_yhat = predict(xgb_train_1 , as.matrix(test_x))
 
 test_mse = mean(((xgb_cv_yhat - test_y)^2))
 test_rmse = sqrt(test_mse)
-test_rmse # 48450... not really an improvement!
+test_rmse # 46641... pretty close to the 'by hand' grid search!
+
+#Cam's hypothesis - not using 'early stopping rounds' here so the model isn't cutting out at the exact best point. re-running this with a validation setup as opposed to a cv setup would allow us to implement a grid search efficiently and wind up with the best hyperparamaters. I shall leave this as a follow up exercise for the curious.
 
 
 
@@ -329,7 +329,7 @@ length(blend_pred) == length(y_hat_xgb_grid)
 
 blend_test_mse = mean(((blend_pred - test_y)^2))
 blend_test_rmse = sqrt(blend_test_mse)
-blend_test_rmse # 45907 by averaging just 4 predictors we have dropped the rmse ~1.5% lower then the best scoring of the 4 models. This does come at a cost though, we now can't make accurate inferrences about the best predictors!
+blend_test_rmse # 45205 by averaging just 4 predictors we have dropped the rmse a few percent lower then the best scoring of the 4 models. This does come at a cost though, we now can't make accurate inferrences about the best predictors!
 
 #next step - you can grid search the weights of the ensemble to try and drop the rmse further!
 
