@@ -1,54 +1,7 @@
-train_t = train[sample, ] #just the samples
-valid  = train[-sample, ] #everything but the samples
-watchlist = list(train= gb_train, test= gb_valid)
-gb_train = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
-gb_valid = xgb.DMatrix(data =  as.matrix(valid_x), label = valid_y)
-sample = sample.int(n = nrow(train), size = floor(.8*nrow(train)), replace = F)
-train_t = train[sample, ] #just the samples
-valid  = train[-sample, ] #everything but the samples
-train_y = train_t[,'median_house_value']
-train_x = train_t[, names(train) !='median_house_value']
-valid_y = valid[,'median_house_value']
-valid_x = valid[, names(test) !='median_house_value']
-gb_train = xgb.DMatrix(data =  as.matrix(train_x), label = train_y )
-gb_valid = xgb.DMatrix(data =  as.matrix(valid_x), label = valid_y)
-watchlist = list(train= gb_train, test= gb_valid)
-bst_slow = xgb.train(data= gb_train, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)
-y_hat = predict(bst_slow, dtest)
-dtest = xgb.DMatrix(data =  as.matrix(test_x), label = test_y)
-y_hat = predict(bst_slow, dtest)
-y_hat
-y_hat = predict(bst_slow, test_x)
-dtest = xgb.DMatrix(data =  as.matrix(test_x))
-y_hat = predict(bst_slow, dtest)
-y_hat
-y_hat = predict(bst_slow, dtest)
-test_y
-test_mse = mean(((y_hat - test_y)^2))
 test_rmse = sqrt(test_mse)
 test_rmse
 bst_slow = xgb.train(data= gb_train, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist=watchlist, objective = "reg:linear", early_stopping_rounds = 50)#
 skrrrahh('ross')
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
 skrrrahh(0) #random
 bst_slow = xgb.train(data= gb_train, max.depth=6, eta=0.01, nthread = 2, nround=10000, watchlist= gb_valid, objective = "reg:linear", early_stopping_rounds = 50)
 watchlist = list(train= gb_train, valid= gb_valid)
@@ -119,15 +72,8 @@ xgb_train_1 = train(x = as.matrix(train_x),#
 					tuneGrid = xgb_grid_1,#
 					method = "xgbLinear")
 skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
 skrrrahh('ross')
 skrrrahh('traviscott')
-skrrrahh('desiigner')
 skrrrahh('desiigner')
 xgb_train_1 = train(x = as.matrix(train_x),#
 					y = train_y,#
@@ -161,10 +107,6 @@ xgb_grid_1 = expand.grid(nrounds = c(1000,10000) ,#
 							max_depth = c(2, 4, 6, 8, 10),#
 							early_stopping_rounds = c(2
 )
-xgb_grid_1 = expand.grid(nrounds = c(1000,10000) ,#
-							eta = c(0.01, 0.001, 0.0001),#
-							max_depth = c(2, 4, 6, 8, 10),#
-							early_stopping_rounds = c(25,50,100))
 xgb_grid_1 = expand.grid(nrounds = c(1000,10000) ,#
 							eta = c(0.01, 0.001, 0.0001),#
 							max_depth = c(2, 4, 6, 8, 10),#
@@ -232,16 +174,6 @@ xgb_train_1 = train(x = as.matrix(train_x),#
 					early_stopping_rounds = 50,#
 					max_depth = 5)
 ? train
-xgb_trcontrol_1 = trainControl(method = "cv",#
-								number = 5,#
-								verboseIter = TRUE,#
-								returnData = FALSE,#
-								returnResamp = "all", #
-								allowParallel = TRUE,#
-								maximize = "RMSE"#
-								early_stopping_rounds = 50,#
-								max_depth = 5#
-								)
 xgb_trcontrol_1 = trainControl(method = "cv",#
 								number = 5,#
 								verboseIter = TRUE,#
@@ -458,7 +390,6 @@ for( depth in max.depths ){#
 }
 best_params
 best_score
-best_score
 bst_tuned = xgb.train( data = gb_train, #
 						max.depth = 9, #
 						eta = 0.01, #
@@ -632,3 +563,116 @@ blend_test_mse = mean(((blend_pred - test_y)^2))
 blend_test_rmse = sqrt(blend_test_mse)
 blend_test_rmse # 45907 by averaging just 4 predictors we have dropped the rmse ~1.5% lower then the best scoring of the 4 models. This does come at a cost though, we now can't make accurate inferrences about the best predictors!
 45205/46641
+library(viridis)
+?viridis
+setwd('/Users/Cam/Desktop/Code/bin/kaggle_code/california_housing')
+library(tidyverse)
+housing.tidy = read_csv('housing.csv')
+housing.tidy = housing.tidy %>% #
+  mutate(total_bedrooms = ifelse(is.na(total_bedrooms), #
+                                 median(total_bedrooms, na.rm = T),#
+                                 total_bedrooms),#
+         mean_bedrooms = total_bedrooms/households,#
+         mean_rooms = total_rooms/households) %>%#
+  select(-c(total_rooms, total_bedrooms))
+categories = unique(housing.tidy$ocean_proximity) # all categories#
+cat_housing.tidy = categories %>% # compare the full vector against each category consecutively#
+  lapply(function(x) as.numeric(housing.tidy$ocean_proximity == x)) %>% # convert to numeric#
+  do.call("cbind", .) %>% as.tibble() # clean up#
+colnames(cat_housing.tidy) = categories # make nice column names
+cat_housing.tidy
+skrrrahh(0) #random
+library('BRRR')
+skrrrahh(0) #random
+train
+setwd('/Users/Cam/Desktop/Code/bin/kaggle_code/california_housing')#
+library(tidyverse)#
+library(reshape2)#
+library(boot)#
+library(randomForest)#
+#
+housing = read.csv('./housing.csv')#
+#
+housing$total_bedrooms[is.na(housing$total_bedrooms)] = median(housing$total_bedrooms , na.rm = TRUE)#
+#
+housing$mean_bedrooms = housing$total_bedrooms/housing$households#
+housing$mean_rooms = housing$total_rooms/housing$households#
+#
+drops = c('total_bedrooms', 'total_rooms')#
+#
+housing = housing[ , !(names(housing) %in% drops)]#
+#
+categories = unique(housing$ocean_proximity)#
+#split the categories off#
+cat_housing = data.frame(ocean_proximity = housing$ocean_proximity)#
+for(cat in categories){#
+    cat_housing[,cat] = rep(0, times= nrow(cat_housing))#
+}#
+head(cat_housing) #see the new columns on the right#
+#
+for(i in 1:length(cat_housing$ocean_proximity)){#
+    cat = as.character(cat_housing$ocean_proximity[i])#
+    cat_housing[,cat][i] = 1#
+}#
+cat_columns = names(cat_housing)#
+keep_columns = cat_columns[cat_columns != 'ocean_proximity']#
+cat_housing = select(cat_housing,one_of(keep_columns))#
+drops = c('ocean_proximity','median_house_value')#
+housing_num =  housing[ , !(names(housing) %in% drops)]#
+scaled_housing_num = scale(housing_num)#
+#
+cleaned_housing = cbind(cat_housing, scaled_housing_num, median_house_value=housing$median_house_value)#
+set.seed(19) # Set a random seed so that same sample can be reproduced in future runs#
+#
+sample = sample.int(n = nrow(cleaned_housing), size = floor(.8*nrow(cleaned_housing)), replace = F)#
+train = cleaned_housing[sample, ] #just the samples#
+test  = cleaned_housing[-sample, ] #everything but the samples#
+train_y = train[,'median_house_value']#
+train_x = train[, names(train) !='median_house_value']#
+#
+test_y = test[,'median_house_value']#
+test_x = test[, names(test) !='median_house_value']
+train_t = train[sample, ] #just the samples
+valid  = train[-sample, ] #everything but the samples
+train_t = train[sample, ] #just the samples
+sample = sample.int(n = nrow(train), size = floor(.8*nrow(train)), replace = F)
+train_t = train[sample, ] #just the samples
+valid  = train[-sample, ] #everything but the samples
+train_t
+valid  = train[-sample, ] #everything but the samples
+train_y = train_t[,'median_house_value']
+train_x = train_t[, names(train_t) !='median_house_value']
+valid_y = valid[,'median_house_value']
+valid_x = valid[, names(train_t) !='median_house_value']
+gb_train = xgb.DMatrix(data = as.matrix(train_x), label = train_y )
+library(xgboost)
+gb_train = xgb.DMatrix(data = as.matrix(train_x), label = train_y )
+gb_valid = xgb.DMatrix(data = as.matrix(valid_x), label = valid_y)
+watchlist = list(train = gb_train, valid = gb_valid)
+valid_y
+library('BRRR')
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh('ross')
+skrrrahh('ross')
+skrrrahh('future')
+skrrrahh('traviscott')
+skrrrahh('desiigner')
+skrrrahh('bigshaq')
+skrrrahh('twochainz1')
+skrrrahh('bigsean3')
+skrrrahh('desiigner')
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random
+skrrrahh(0) #random

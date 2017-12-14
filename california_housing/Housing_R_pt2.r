@@ -148,10 +148,10 @@ train_t = train[sample, ] #just the samples
 valid  = train[-sample, ] #everything but the samples
 
 train_y = train_t[,'median_house_value']
-train_x = train_t[, names(train) !='median_house_value']
+train_x = train_t[, names(train_t) !='median_house_value']
 
 valid_y = valid[,'median_house_value']
-valid_x = valid[, names(test) !='median_house_value']
+valid_x = valid[, names(train_t) !='median_house_value']
 
 gb_train = xgb.DMatrix(data = as.matrix(train_x), label = train_y )
 gb_valid = xgb.DMatrix(data = as.matrix(valid_x), label = valid_y)
