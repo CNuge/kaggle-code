@@ -652,10 +652,6 @@ watchlist = list(train = gb_train, valid = gb_valid)
 valid_y
 library('BRRR')
 skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh('ross')
 skrrrahh('ross')
 skrrrahh('future')
 skrrrahh('traviscott')
@@ -665,14 +661,15 @@ skrrrahh('twochainz1')
 skrrrahh('bigsean3')
 skrrrahh('desiigner')
 skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
-skrrrahh(0) #random
+setwd('/Users/Cam/Desktop/Code/bin/kaggle_code/california_housing')
+library(tidyverse)
+library(reshape2)
+library(boot)
+library(randomForest)
+skrrrahh('future')
+library('BRRR')
+skrrrahh('desiigner')
+library('BRRR')
+skrrrahh('ross')
+skrrrahh('traviscott')
+skrrrahh('desiigner')
