@@ -4,7 +4,7 @@ General Approach for Parameter Tuning
 
 We will use an approach similar to that of GBM here. The various steps to be performed are:
 
-Choose a relatively high learning rate. Generally a learning rate of 0.1 works but somewhere 
+1.Choose a relatively high learning rate. Generally a learning rate of 0.1 works but somewhere 
 between 0.05 to 0.3 should work for different problems. Determine the optimum number of trees 
 for this learning rate. XGBoost has a very useful function called as “cv” which performs cross-validation 
 at each boosting iteration and thus returns the optimum number of trees required.
@@ -21,7 +21,7 @@ Let us look at a more detailed step by step approach.
 ### below may be helpful
 
 
-def modelfit(alg, dtrain, predictors,useTrainCV=True, cv_folds=5, early_stopping_rounds=50):
+def modelfit(alg, dtrain, predictors, useTrainCV=True, cv_folds=5, early_stopping_rounds=50):
     
     if useTrainCV:
         xgb_param = alg.get_xgb_params()
@@ -132,10 +132,11 @@ but we haven’t tried values more than 6. We can do that as follow:.
 param_test2b = {
  'min_child_weight':[6,8,10,12]
 }
+
 gsearch2b = GridSearchCV(estimator = XGBClassifier( learning_rate=0.1, n_estimators=140, max_depth=4,
  min_child_weight=2, gamma=0, subsample=0.8, colsample_bytree=0.8,
  objective= 'binary:logistic', nthread=4, scale_pos_weight=1,seed=27), 
- param_grid = param_test2b, scoring='roc_auc',n_jobs=4,iid=False, cv=5)
+ param_grid = param_test2b, scoring='roc_auc', n_jobs=4, iid=False, cv=5)
 gsearch2b.fit(train[predictors],train[target])
 modelfit(gsearch3.best_estimator_, train, predictors)
 gsearch2b.grid_scores_, gsearch2b.best_params_, gsearch2b.best_score_

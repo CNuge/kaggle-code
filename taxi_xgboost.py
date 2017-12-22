@@ -338,7 +338,7 @@ for m in md:
 	for l in lr:
 		for n in mcw:
 			t0 = datetime.now()
-			xgb_pars = {'min_child_weight': n, 'eta': l, 'colsample_bytree': 0.9, 
+			xgb_pars = {'min_child_weight': n, 'eta': l, 00.9, 
 						'max_depth': m,
 			'subsample': 0.9, 'lambda': 1., 'nthread': -1, 'booster' : 'gbtree', 'silent': 1,
 			'eval_metric': 'rmse', 'objective': 'reg:linear'}
