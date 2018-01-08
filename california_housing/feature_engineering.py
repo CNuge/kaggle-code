@@ -86,6 +86,27 @@ y_test = test_set['median_house_value'].values.astype(float)
 
 
 
+
+#########
+# Engineer more features here prior to 
+# passing data in for imputation and one hot encoding
+#########
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #####
 # fill numerical values
 #####
@@ -113,11 +134,20 @@ X_train = fill_median(X_train, missing_vals)
 for i in missing_vals:
     X_test = fill_value(X_test, i, X_train[i].median(skipna=True))
 
+
+
 #####
 # One hot encode the categoricals
 #####
 
 
+####
+#
+#If more categoricals created in engineering, add them to this step
+#
+#
+#
+####
 encoder = LabelBinarizer()
 
 encoded_ocean_train_1hot = encoder.fit_transform(X_train['ocean_proximity'])
@@ -141,25 +171,7 @@ X_train = pd.concat([X_train, train_cat_df], axis=1)
 X_test = pd.concat([X_test, test_cat_df], axis=1)
 
 
-
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-
-"""
-
->>> from sklearn.preprocessing import StandardScaler
->>>
->>> data = [[0, 0], [0, 0], [1, 1], [1, 1]]
->>> scaler = StandardScaler()
->>> print(scaler.fit(data))
-StandardScaler(copy=True, with_mean=True, with_std=True)
->>> print(scaler.mean_)
-[ 0.5  0.5]
->>> print(scaler.transform(data))
-"""
-
-
-#bind the encoded cols to the scaled train and test. 
-#then proceed with more feature engineering
