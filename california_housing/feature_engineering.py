@@ -98,10 +98,35 @@ city_pop_data = pd.read_csv('cal_populations_city.csv')
 county_pop_data = pd.read_csv('cal_populations_county.csv')
 
 
+"""
+original, had to change because we only want to deal with cities we have
+both location and population data on.
+
 city_coords = {}
 for dat in city_lat_long.iterrows():
     row = dat[1]
     city_coords[row['Name']] = (float(row['Latitude']), float(row['Longitude']))
+
+#how we deiscovered the need for the change
+present = []
+absent = []
+for city in city_coords.keys():
+    if city in city_pop_data['City'].values:
+        present.append(city)
+    else:
+        absent.append(city)
+len(present)
+len(absent)
+absent
+"""
+city_coords = {}
+
+for dat in city_lat_long.iterrows():
+    row = dat[1]
+    if row['Name'] not in city_pop_data['City'].values:   
+        continue           
+    else: 
+        city_coords[row['Name']] = (float(row['Latitude']), float(row['Longitude']))
 
 
 #clean pop
@@ -112,7 +137,16 @@ for dat in city_lat_long.iterrows():
 #two functions
 #1. take two lat long tuples as input
 	#return the distance between the two
-vincenty(tuple1, tuple2)
+    #vincenty(tuple1, tuple2)
+
+
+#example below
+newport_ri = (41.49008, -71.312796)
+cleveland_oh = (41.499498, -81.695391)
+x = vincenty(newport_ri, cleveland_oh)
+x #distance stored in km, see units on printing
+print(x)
+type(x.kilometers)
 
 #2. take a dict[city] = (lat, long) of locations and a tuple of lat long
 	# run number 1 for each comparison and return a tuple with
@@ -132,26 +166,29 @@ def closest_point(location, location_dict):
             closest_location = (city, distance)
     return closest_location
 
-test = (39.524325, -122.293592) #likely 'Willows'
+#test = (39.524325, -122.293592) #likely 'Willows'
+#closest_point(test, city_coords)
 
-
-closest_point(test, city_coords)
 
 #run number 2 to determine both the nearest city, and then
 	#also the nearest city with 1million people (subset the original dict)
 
+city_pop_dict = {}
+for dat in city_pop_data.iterrows():
+    row = dat[1]
+    city_pop_dict[row['City']] =  row['pop_april_1990']
 
 
+big_cities = {}
 
-#example below
-newport_ri = (41.49008, -71.312796)
-cleveland_oh = (41.499498, -81.695391)
-x = vincenty(newport_ri, cleveland_oh)
-x #distance stored in km, see units on printing
-print(x)
-type(x.kilometers)
+for key, value in city_coords.items():
+    if city_pop_dict[key] > 500000:
+        big_cities[key] = value
 
 
+#do df.apply(closest_point(point,  closest city))
+
+#then do df.apply(closest_point(point, to closest big city))
 
 
 
