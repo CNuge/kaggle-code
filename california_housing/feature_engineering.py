@@ -165,6 +165,7 @@ housing = housing.drop('big_city', axis=1)
 #and even stratified shuffle split of the closest cities into the two sets
 
 
+
 #make a stratified split of the data
 split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 for train_index, test_index in split.split(housing, housing["income_cat"]):
@@ -294,3 +295,10 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
+
+
+#from here lets go in to an XGB model first,
+#then build up a little (4-5 layer) neural network in keras
+#I suspect XGB will do well, but we can try out both
+#once a final rmse is arrived at, compare it to the previous results from
+#the other kernels I made on the dataset.
