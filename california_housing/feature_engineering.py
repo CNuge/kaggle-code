@@ -411,7 +411,7 @@ import xgboost as xgb
 dtrain = xgb.DMatrix(X_train, y_train)
 dtest = xgb.DMatrix(X_test)
 
-
+y_mean = np.mean(y_train)
 xgb_params = {
     'eta': 0.001,
     'max_depth': 8,
