@@ -30,7 +30,7 @@ housing["income_cat"].where(housing["income_cat"] < 5, 5.0, inplace=True)
 #look a the categories
 housing["income_cat"].hist()
 
-
+housing['ocean_proximity'][housing['ocean_proximity'] == '<1H OCEAN'] = 'LessThan1h'
 
 
 
@@ -164,19 +164,6 @@ housing = housing.drop('big_city', axis=1)
 #and even stratified shuffle split of the closest cities into the two sets
 
 
-
-#make a stratified split of the data
-split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
-for train_index, test_index in split.split(housing, housing["income_cat"]):
-	train_set = housing.loc[train_index]
-	test_set = housing.loc[test_index]
-
-for set_ in (train_set, test_set):
-	set_.drop("income_cat", axis=1, inplace=True)
-
-gc.collect()
-
-
 #####
 # plot data 
 #####
@@ -281,6 +268,19 @@ plt.show()
 # total rooms --> rooms_per_household
 # total bedrooms --> bedrooms per household
 
+
+#make a stratified split of the data
+split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
+for train_index, test_index in split.split(housing, housing["income_cat"]):
+	train_set = housing.loc[train_index]
+	test_set = housing.loc[test_index]
+
+for set_ in (train_set, test_set):
+	set_.drop("income_cat", axis=1, inplace=True)
+
+gc.collect()
+
+
 def housing_data_clean(input_df):
 	input_df['rooms_per_household'] = input_df['total_rooms']/input_df['households']
 	input_df['bedrooms_per_household'] = input_df['total_bedrooms']/input_df['households']
@@ -344,36 +344,59 @@ for i in missing_vals:
 #
 #
 ####
-encoder = LabelBinarizer()
+encoder1 = LabelBinarizer()
 
-encoded_ocean_train_1hot = encoder.fit_transform(X_train[['ocean_proximity', 
-															'close_city_name',
-															'big_city_name']])
+encoded_ocean_train_1hot = encoder1.fit_transform(X_train['ocean_proximity'])
+ 
 #I'm using just transform below to ensure that the categories are sorted and used the same as in the train fit.
-encoded_ocean_test_1hot = encoder.transform(X_test[['ocean_proximity', 
-													'close_city_name',
-													'big_city_name']])
+encoded_ocean_test_1hot = encoder1.transform(X_test['ocean_proximity']) 
+													
+
+encoder2 = LabelBinarizer()
+encoded_train_close_city = encoder2.fit_transform(X_train['close_city_name'])
+encoded_test_close_city = encoder2.transform(X_test['close_city_name'])
+													
 
 
-train_cat_df = pd.DataFrame(encoded_ocean_train_1hot, index = X_train.index, columns = encoder.classes_ )
-test_cat_df = pd.DataFrame(encoded_ocean_test_1hot,index = X_test.index, columns = encoder.classes_ )
+encoder3 = LabelBinarizer()
+encoded_train_big_city = encoder3.fit_transform(X_train['big_city_name'])
+encoded_test_big_city = encoder3.transform(X_test['big_city_name'])
+													
+
+all_classes = list(encoder1.classes_) + [x + '_city' for x in encoder2.classes_ ]  + [x + '_Bigcity' for x in encoder3.classes_]
+
+train_bool_data = np.concatenate((encoded_ocean_train_1hot, encoded_train_close_city, encoded_train_big_city), axis=1)
+test_bool_data = np.concatenate((encoded_ocean_test_1hot, encoded_test_close_city, encoded_test_big_city), axis=1)
+
+train_cat_df = pd.DataFrame(train_bool_data,
+	index = X_train.index, columns = all_classes )
+
+test_cat_df = pd.DataFrame(test_bool_data,index = X_test.index, columns = all_classes)
 
 
 ###
 # Combine and scale the dfs
 ###
 
-X_train.drop('ocean_proximity', axis=1, inplace=True)
-X_test.drop('ocean_proximity', axis=1, inplace=True)
+X_train.drop(['ocean_proximity','close_city_name','big_city_name'], axis=1, inplace=True)
+X_test.drop(['ocean_proximity','close_city_name','big_city_name'], axis=1, inplace=True)
 
 
-X_train = pd.concat([X_train, train_cat_df], axis=1)
-X_test = pd.concat([X_test, test_cat_df], axis=1)
-
+num_cols = X_train.columns
+num_train_index = X_train.index
+num_test_index = X_test.index
 
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
+
+
+X_train = pd.DataFrame(X_train,index = num_train_index, columns = num_cols)
+X_test = pd.DataFrame(X_test,index = num_test_index, columns = num_cols)
+
+
+X_train = pd.concat([X_train, train_cat_df], axis=1)
+X_test = pd.concat([X_test, test_cat_df], axis=1)
 
 
 
@@ -382,3 +405,40 @@ X_test = scaler.transform(X_test)
 #I suspect XGB will do well, but we can try out both
 #once a final rmse is arrived at, compare it to the previous results from
 #the other kernels I made on the dataset.
+
+import xgboost as xgb
+
+dtrain = xgb.DMatrix(X_train, y_train)
+dtest = xgb.DMatrix(X_test)
+
+
+xgb_params = {
+    'eta': 0.001,
+    'max_depth': 8,
+    'subsample': 0.80,
+    'objective': 'reg:linear',
+    'eval_metric': 'mae',
+    'base_score': y_mean,
+    'silent': 1
+}
+
+cv_result = xgb.cv(xgb_params, 
+                   dtrain, 
+                   nfold=5,
+                   num_boost_round=5000,
+                   early_stopping_rounds=50,
+                   verbose_eval=10, 
+                   show_stdv=False
+                  )
+
+num_boost_rounds = len(cv_result)
+
+model = xgb.train(dict(xgb_params, silent=1), 
+				dtrain, num_boost_round=num_boost_rounds)
+
+
+xgb_pred2 = model.predict(dtest)
+
+
+rmse = 
+y_test
