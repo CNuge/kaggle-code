@@ -1,4 +1,3 @@
-
 import pandas as pd 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -177,25 +176,106 @@ for set_ in (train_set, test_set):
 
 gc.collect()
 
+
 #####
 # plot data 
 #####
 
+#Housekeeping, plot background load in, necessary import and new df for graphing
+import matplotlib.image as mpimg
 
-train_set.plot(kind='scatter', x='longitude', y='latitude', alpha=0.4,
-				s=train_set['population']/100, label='population', figsize=(10,7),
+california_img=mpimg.imread('california.png')
+
+housing_plot = housing[['longitude','population','latitude', 'close_city_name','big_city_name','big_city_dist','median_house_value']]
+
+#California range:Longitude: 114° 8' W to 124° 24' W Latitude: 32° 30' N to 42° N
+
+
+housing_plot.plot(kind='scatter', x='longitude', y='latitude', alpha=0.4,
+				s=housing_plot['population']/100, label='population', figsize=(10,7),
 				c='median_house_value', cmap=plt.get_cmap('jet'), colorbar=True)
+
+
+plt.imshow(california_img, extent=[-124.55, -113.80, 32.45, 42.05], alpha=0.5)
+plt.ylabel("Latitude", fontsize=14)
+plt.xlabel("Longitude", fontsize=14)
 plt.legend() 
 plt.show()
 
-attributes = ['median_house_value', 'median_income', 'total_rooms', 'housing_median_age']
 
-scatter_matrix(housing[attributes], figsize=(12,8))
+
+
+#attributes = ['median_house_value', 'median_income', 'total_rooms', 'housing_median_age']
+#scatter_matrix(housing[attributes], figsize=(12,8))
+
+####
+# Plots to add
+
+
+####
+city_lat_long['Population'] = [city_pop_dict[x] if x in city_pop_dict.keys() 
+												else 0 for x in city_lat_long['Name'].values]
+# graph of the location of the cities and their size
+city_lat_long.plot(kind='scatter', x='Longitude', y='Latitude',  alpha=0.4,
+				s=housing_plot['population']/100, label='population', figsize=(10,7))
+
+plt.imshow(california_img, extent=[-124.55, -113.80, 32.45, 42.05], alpha=0.5)
+plt.ylabel("Latitude", fontsize=14)
+plt.xlabel("Longitude", fontsize=14)
+plt.legend() 
+plt.show()
+
+
+
+
+####
+# graph of vectors connecting points to their nearest city
+
+city_lat_long.plot(kind='scatter', x='Longitude', y='Latitude',  alpha=0.4,
+				s=housing_plot['population']/100, label='population', figsize=(10,7))
+
+for line in housing.iterrows():
+	dat = line[1]
+	x1 = dat['longitude']
+	y1 = dat['latitude']
+	p2 = city_coords[dat['close_city_name']]
+	x2 = p2[1]
+	y2 = p2[0]
+	plt.plot([x1,x2],[y1, y2], 'k-',linewidth=0.1)
+
+plt.imshow(california_img, extent=[-124.55, -113.80, 32.45, 42.05], alpha=0.5)
+plt.ylabel("Latitude", fontsize=14)
+plt.xlabel("Longitude", fontsize=14)
+plt.show()
+
+
+####
+# graph of the vectors connecting districts to the nearest major city
+# and a barplot of distance to the nearest major city
+
+
+city_lat_long.plot(kind='scatter', x='Longitude', y='Latitude',  alpha=0.4,
+				s=housing_plot['population']/100, label='population', figsize=(10,7))
+
+for line in housing.iterrows():
+	dat = line[1]
+	x1 = dat['longitude']
+	y1 = dat['latitude']
+	p2 = big_cities[dat['big_city_name']]
+	x2 = p2[1]
+	y2 = p2[0]
+	plt.plot([x1,x2],[y1, y2], 'k-',linewidth=0.1)
+
+plt.imshow(california_img, extent=[-124.55, -113.80, 32.45, 42.05], alpha=0.5)
+plt.ylabel("Latitude", fontsize=14)
+plt.xlabel("Longitude", fontsize=14)
+plt.show()
+
 
 
 
 #####
-# Alter existing features
+# Alter existing features, train test split.
 #####
 
 # total rooms --> rooms_per_household
