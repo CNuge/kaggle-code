@@ -417,7 +417,7 @@ xgb_params = {
     'max_depth': 8,
     'subsample': 0.80,
     'objective': 'reg:linear',
-    'eval_metric': 'mae',
+    'eval_metric': 'rmse',
     'base_score': y_mean,
     'silent': 1
 }
@@ -437,8 +437,8 @@ model = xgb.train(dict(xgb_params, silent=1),
 				dtrain, num_boost_round=num_boost_rounds)
 
 
-xgb_pred2 = model.predict(dtest)
+xgb_pred = model.predict(dtest)
 
-
-rmse = 
-y_test
+test_mse = mean(((xgb_pred - y_test)^2))
+test_rmse = sqrt(test_mse)
+print(f'final test rmse:{test_rmse} with {num_boost_rounds} prediction rounds used')
