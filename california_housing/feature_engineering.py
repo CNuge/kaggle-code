@@ -411,21 +411,22 @@ import xgboost as xgb
 dtrain = xgb.DMatrix(X_train, y_train)
 dtest = xgb.DMatrix(X_test)
 
+
+
 y_mean = np.mean(y_train)
 xgb_params = {
-    'eta': 0.001,
+    'eta': 0.01,
     'max_depth': 8,
     'subsample': 0.80,
     'objective': 'reg:linear',
     'eval_metric': 'rmse',
     'base_score': y_mean,
-    'silent': 1
-}
+    'silent': 1}
 
 cv_result = xgb.cv(xgb_params, 
                    dtrain, 
                    nfold=5,
-                   num_boost_round=5000,
+                   num_boost_round=10000,
                    early_stopping_rounds=50,
                    verbose_eval=10, 
                    show_stdv=False
@@ -433,12 +434,36 @@ cv_result = xgb.cv(xgb_params,
 
 num_boost_rounds = len(cv_result)
 
+"""
+from sklearn.model_selection import train_test_split
+
+X_train_a, X_train_b, y_train_a, y_train_b = train_test_split
+
+
+
+
+dtrain_a = xgb.DMatrix(X_train, label=Y_train)
+dvalid = xgb.DMatrix(X_test, label=Y_test)
+
+watchlist = [(dtrain_a, 'train'), (dvalid, 'valid')]
+
+model = xgb.train(dict(xgb_params, silent=1), 
+				dtrain, watchlist, num_boost_round=num_boost_rounds)
+
+
+"""
+
+
 model = xgb.train(dict(xgb_params, silent=1), 
 				dtrain, num_boost_round=num_boost_rounds)
 
 
 xgb_pred = model.predict(dtest)
 
-test_mse = mean(((xgb_pred - y_test)^2))
-test_rmse = sqrt(test_mse)
+test_mse = np.mean(((xgb_pred - y_test)**2))
+test_rmse = np.sqrt(test_mse)
 print(f'final test rmse:{test_rmse} with {num_boost_rounds} prediction rounds used')
+
+
+
+
