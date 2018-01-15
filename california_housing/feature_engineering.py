@@ -23,26 +23,16 @@ housing = pd.read_csv('housing.csv')
 housing.head()
 
 
-# Divide by 1.5 to limit the number of income categories
-housing["income_cat"] = np.ceil(housing["median_income"] / 1.5)
-# Label those above 5 as 5
-housing["income_cat"].where(housing["income_cat"] < 5, 5.0, inplace=True)
-#look a the categories
-housing["income_cat"].hist()
 
-housing['ocean_proximity'][housing['ocean_proximity'] == '<1H OCEAN'] = 'LessThan1h'
-
+city_lat_long = pd.read_csv('cal_cities_lat_long.csv')
+city_pop_data = pd.read_csv('cal_populations_city.csv')
+county_pop_data = pd.read_csv('cal_populations_county.csv')
 
 
 #########
 # Engineer more features here prior to 
 # passing data in for imputation and one hot encoding
 #########
-
-city_lat_long = pd.read_csv('cal_cities_lat_long.csv')
-city_pop_data = pd.read_csv('cal_populations_city.csv')
-county_pop_data = pd.read_csv('cal_populations_county.csv')
-
 
 """
 original, had to change because we only want to deal with cities we have
@@ -133,10 +123,6 @@ for key, value in city_coords.items():
         big_cities[key] = value
 
 
-#do df.apply(closest_point(point,  closest city))
-
-#then do df.apply(closest_point(point, to closest big city))
-
 
 #######
 # adding closest city data to dataframes
@@ -160,8 +146,6 @@ housing['big_city_dist'] = [x[1] for x in housing['big_city'].values]
 housing = housing.drop('big_city', axis=1)
 
 
-#I moved the feature engineering before the train/test split so that we can get
-#and even stratified shuffle split of the closest cities into the two sets
 
 
 #####
@@ -190,13 +174,6 @@ plt.legend()
 plt.show()
 
 
-
-
-#attributes = ['median_house_value', 'median_income', 'total_rooms', 'housing_median_age']
-#scatter_matrix(housing[attributes], figsize=(12,8))
-
-####
-# Plots to add
 
 
 ####
@@ -264,6 +241,18 @@ plt.show()
 #####
 # Alter existing features, train test split.
 #####
+
+
+# Divide by 1.5 to limit the number of income categories
+housing["income_cat"] = np.ceil(housing["median_income"] / 1.5)
+# Label those above 5 as 5
+housing["income_cat"].where(housing["income_cat"] < 5, 5.0, inplace=True)
+#look a the categories
+housing["income_cat"].hist()
+
+housing['ocean_proximity'][housing['ocean_proximity'] == '<1H OCEAN'] = 'LessThan1h'
+
+
 
 # total rooms --> rooms_per_household
 # total bedrooms --> bedrooms per household
