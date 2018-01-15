@@ -407,7 +407,7 @@ dtest = xgb.DMatrix(X_test)
 
 y_mean = np.mean(y_train)
 xgb_params = {
-    'eta': 0.01,
+    'eta': 0.05,
     'max_depth': 8,
     'subsample': 0.80,
     'objective': 'reg:linear',
@@ -418,7 +418,7 @@ xgb_params = {
 cv_result = xgb.cv(xgb_params, 
                    dtrain, 
                    nfold=5,
-                   num_boost_round=10000,
+                   num_boost_round=20000,
                    early_stopping_rounds=50,
                    verbose_eval=10, 
                    show_stdv=False
@@ -457,5 +457,4 @@ test_rmse = np.sqrt(test_mse)
 lr = xgb_params['eta']
 print(f'final test rmse:{test_rmse} with {num_boost_rounds} prediction rounds used and a learning rate of {lr}')
 
-#final test rmse:40782.190577818816 with 10000 prediction rounds used
-
+#final test rmse:40782.190577818816 with 10000 prediction rounds used and a learning rate of 0.01
