@@ -454,8 +454,8 @@ xgb_pred = model.predict(dtest)
 
 test_mse = np.mean(((xgb_pred - y_test)**2))
 test_rmse = np.sqrt(test_mse)
-print(f'final test rmse:{test_rmse} with {num_boost_rounds} prediction rounds used')
+lr = xgb_params['eta']
+print(f'final test rmse:{test_rmse} with {num_boost_rounds} prediction rounds used and a learning rate of {lr}')
 
-
-
+#final test rmse:40782.190577818816 with 10000 prediction rounds used
 
