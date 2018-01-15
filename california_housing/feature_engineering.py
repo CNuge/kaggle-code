@@ -132,6 +132,9 @@ housing['close_city'] = housing.apply(lambda x:
 							closest_point((x['latitude'],x['longitude']),city_coords), axis = 1)
 housing['close_city_name'] = [x[0] for x in housing['close_city'].values]
 housing['close_city_dist'] = [x[1] for x in housing['close_city'].values]
+housing['close_city_pop'] = housing.apply(lambda x: city_pop_dict[x['close_city_name']])
+
+
 
 housing = housing.drop('close_city', axis=1)
 housing.head()
