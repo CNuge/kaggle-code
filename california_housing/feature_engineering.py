@@ -446,8 +446,8 @@ model = xgb.train(dict(xgb_params, silent=1),
 """
 
 
-model = xgb.train(dict(xgb_params, silent=1), 
-				dtrain, num_boost_round=num_boost_rounds)
+model = xgb.train(xgb_params, dtrain,
+				verbose_eval=100, num_boost_round=num_boost_rounds)
 
 
 xgb_pred = model.predict(dtest)
