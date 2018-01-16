@@ -132,7 +132,7 @@ housing['close_city'] = housing.apply(lambda x:
 							closest_point((x['latitude'],x['longitude']),city_coords), axis = 1)
 housing['close_city_name'] = [x[0] for x in housing['close_city'].values]
 housing['close_city_dist'] = [x[1] for x in housing['close_city'].values]
-housing['close_city_pop'] = housing.apply(lambda x: city_pop_dict[x['close_city_name']])
+housing['close_city_pop'] = [city_pop_dict[x] for x in housing['close_city_name'].values]
 
 
 
@@ -407,7 +407,7 @@ dtest = xgb.DMatrix(X_test)
 
 y_mean = np.mean(y_train)
 xgb_params = {
-    'eta': 0.05,
+    'eta': 0.01,
     'max_depth': 8,
     'subsample': 0.80,
     'objective': 'reg:linear',
@@ -458,3 +458,4 @@ lr = xgb_params['eta']
 print(f'final test rmse:{test_rmse} with {num_boost_rounds} prediction rounds used and a learning rate of {lr}')
 
 #final test rmse:40782.190577818816 with 10000 prediction rounds used and a learning rate of 0.01
+#final test rmse:40781.609816240634 with 10039 prediction rounds used and a learning rate of 0.01
