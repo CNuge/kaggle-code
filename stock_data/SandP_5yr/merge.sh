@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "date,open,high,low,close,volume,Name" > ../alldat5yr.csv
+
 files=$(ls *.csv)
 for file in $files
 do
