@@ -77,12 +77,16 @@ boxplot(list(viruses = viruses$"GC%",
 
 
 all_genomes = data.frame(kingdom= "virus", 
-						GC = viruses$"GC%", 
-						size_mb = viruses$"Size(Mb)" )
+							GC = viruses$"GC%", 
+							size_mb = viruses$"Size(Mb)" )
 
-all_genomes = rbind(all_genomes, data.frame(kingdom="prokaryote", GC = prokaryote$"GC%", size_mb = prokaryote$"Size(Mb)"))
-all_genomes = rbind(all_genomes, data.frame(kingdom="eukaryote", GC = eukaryote$"GC%", size_mb = eukaryote$"Size(Mb)"))
-
+all_genomes = rbind(all_genomes, data.frame(kingdom="prokaryote", 
+												GC = prokaryote$"GC%", 
+												size_mb = prokaryote$"Size(Mb)"))
+all_genomes = rbind(all_genomes, data.frame(kingdom="eukaryote", 
+												GC = eukaryote$"GC%", 
+												size_mb = eukaryote$"Size(Mb)"))
+	
 head(all_genomes)
 tail(all_genomes)
 
@@ -105,7 +109,8 @@ ggplot(all_genomes, aes(x=size_mb, y=GC, shape=kingdom, colour=kingdom)) +
         scale_colour_brewer(palette="Set1") +
         coord_trans(x = "log10") +
         labs(title = "GC content vs genome size (mb) of genome sequences stored on NCBI", 
-        	y = "%GC content", x = "Genome size (mb) - Note this axis is log scaled") +
+        		y = "%GC content", 
+        		x = "Genome size (mb) - Note this axis is log scaled") +
         theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 
@@ -213,6 +218,7 @@ ggplot(all_genomes, aes(x = kingdom, y = GC, fill=kingdom)) +
 					position = position_jitterdodge(jitter.width = .55, jitter.height = 0.01, dodge.width = 0.75)) +
 	theme_fivethirtyeight() +
     labs(title = "GC content of genome sequences stored on NCBI", 
-        	y = "%GC content", x = "Genome size (mb)")
+        	y = "%GC content", 
+        	x = "Genome size (mb)")
 
 
