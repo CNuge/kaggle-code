@@ -8,7 +8,7 @@
 ######
 
 library('tidyverse')
-
+library('ggthemes')
 
 raw_eukaryote = read_csv('all_genomes_lists/eukaryotes.csv')
 names(raw_eukaryote)
@@ -136,7 +136,6 @@ ggplot(all_genomes, aes(x=kingdom, y=GC, fill=kingdom, color=kingdom))+
 # I have pasted in the raw function below for the use in this kernel
 #######
 
-library(ggthemes)
 
 "%||%" <- function(a, b) {
   if (!is.null(a)) a else b
@@ -214,6 +213,7 @@ ggplot(all_genomes, aes(x = kingdom, y = GC, fill=kingdom)) +
 	geom_flat_violin( colour="white") +
 	geom_point(aes(x = as.numeric(kingdom) + .12, colour=kingdom) , 
 					size = 0.01, 
+          alpha = 0.1,
 					pch=21, 
 					position = position_jitterdodge(jitter.width = .55, jitter.height = 0.01, dodge.width = 0.75)) +
 	theme_fivethirtyeight() +
