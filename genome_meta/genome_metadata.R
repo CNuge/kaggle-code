@@ -210,10 +210,10 @@ GeomFlatViolin <-
 #####
 
 ggplot(all_genomes, aes(x = kingdom, y = GC, fill=kingdom)) +
-	geom_flat_violin( colour="white") +
+	geom_flat_violin(colour="white") +
 	geom_point(aes(x = as.numeric(kingdom) + .12, colour=kingdom) , 
 					size = 0.01, 
-          alpha = 0.1,
+          			alpha = 0.1,
 					pch=21, 
 					position = position_jitterdodge(jitter.width = .55, jitter.height = 0.01, dodge.width = 0.75)) +
 	theme_fivethirtyeight() +
