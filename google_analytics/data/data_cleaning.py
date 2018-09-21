@@ -33,7 +33,7 @@ test = []
 gc.collect()
 #which columns have json
 #device
-json_cols = ['device', 'geoNetwork', 'totals',  'trafficSource']
+json_cols = ['device', 'geoNetwork', 'totals',  'trafficSource', 'adwordsClickInfo']
 column = 'device'
 
 for column in json_cols:
