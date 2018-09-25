@@ -11,6 +11,18 @@ all_train.head()
 final_test = pd.read_csv('./data/test_cleaned.csv')
 final_test.head()
 
+submission = pd.read_csv('./data/sample_submission.csv')
+submission.head()
+
+####
+# check submission length
+####
+
+#it is lower than the number of ids in the test set?
+len(submission['fullVisitorId']) == len(set(submission['fullVisitorId']))
+len(set(submission['fullVisitorId'])) == len(set(final_test['fullVisitorId']))
+
+
 ####
 # explore what we are looking at
 ####
