@@ -6,26 +6,28 @@ import numpy as np
 ####
 
 all_train = pd.read_csv('./data/train_cleaned.csv')
-
 all_train.head() 
+
+final_test = pd.read_csv('./data/test_cleaned.csv')
+final_test.head()
 
 ####
 # explore what we are looking at
 ####
 
-
 #need to go through and clean the columns
 all_train.describe()
 
 all_train.columns
-
 #51 columns
-
 all_train['adwordsClickInfo'][0] #this is still json buy okay
-
 type(all_train['transactionRevenue'][0])  == np.float64#this is the one we are trying to predict
-
 all_train.columns
+
+
+####
+# scan columns and classify
+####
 
 numeric = []
 categorical = []
@@ -48,20 +50,28 @@ categorical
 flatline
 other
 
+####
+# drop flat cols for both the train and test data
+####
+
 #should drop the flatline columns from the df
 all_train = all_train.drop(flatline, axis = 1)
-
 all_train.shape
+
+final_test = final_test.drop(flatline, axis=1)
+final_test.shape
+
 
 ####
 # handling duplicated ids
 ####
+
 len(all_train['fullVisitorId'])
 len(all_train['fullVisitorId'].unique())
 len(all_train['fullVisitorId'][all_train['fullVisitorId'].duplicated()])
 
-#several instances where the id is not unique, these are repeat visitors
 
+#several instances where the id is not unique, these are repeat visitors
 dups = all_train['fullVisitorId'][all_train['fullVisitorId'].duplicated()]
 
 test_id = list(dups)[0]
@@ -82,3 +92,11 @@ for i in list(dups)[:100]:
 flex_cols = set(flex_cols)
 
 len(flex_cols) #thirty of them are varying across the two visits
+
+
+#numeric flex cols:
+#see which make sense to take average of and which should be summers
+
+#categorical flex cols:
+#see which should be merged somehow (possibly into a numeric count)
+#and for which a single value should be kept
