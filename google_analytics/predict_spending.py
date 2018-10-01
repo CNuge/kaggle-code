@@ -73,6 +73,11 @@ all_train.shape
 final_test = final_test.drop(flatline, axis=1)
 final_test.shape
 
+for i in list(all_train.columns):
+	if i not in list(final_test.columns):
+		print(i)
+
+#drop campaign code, transactionRevenue is what we are trying to predict
 
 ####
 # handling duplicated ids
@@ -112,3 +117,41 @@ len(flex_cols) #thirty of them are varying across the two visits
 #categorical flex cols:
 #see which should be merged somehow (possibly into a numeric count)
 #and for which a single value should be kept
+
+
+#split the date columns into hour/day etc.
+
+
+#idea: don't merge across users - just leave them separate as individual sessions
+#and train the algorithm on that data. Then for the test data make the recommendations
+#at a session level and then sum the results to make the final prediction.
+
+
+
+######
+# build the first model
+######
+
+#split off 20% of the train data for evaluation - validation
+
+#use a k fold cross validation approach on the remaining all_trian dataset
+	#set up an xgboost model for the dataset via cv
+	#see how well the model works on the 20% validation data
+
+#run a grid search to pick the best params
+
+
+#traing the model on the full all_train dataset
+
+
+#make predictions on the test data
+
+#sum the predictions using the defined formula to get a revenue by user metric
+
+#submit
+
+
+#after that -> try some mode models and ensemble the solutions.
+
+
+
