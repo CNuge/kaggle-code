@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
+from sklearn.preprocessing import LabelBinarizer
+
+
 ####
 # load the data
 ####
@@ -179,12 +182,27 @@ categorical = 	['channelGrouping',
 				 'campaign',
 				 'keyword',
 				 'medium',
-				 'source',
-				 'bounces',
-				 'isTrueDirect']
+				 'source']
 
 all_train.adwordsClickInfo #this one isn't fixed!
 final_test.adwordsClickInfo
+
+with_na = []
+for col in categorical:
+	if all_train[col].isnull().any() :
+		with_na.append(col)		
+
+#most common value to fill the na
+all_train.keyword.fillna('(not provided)', inplace = True)
+
+
+
+
+encoder = LabelBinarizer()
+
+cat_train_1hot = encoder.fit_transform(all_train[col])
+cat_test_1hot = encoder.transform(final_test[col])
+
 
 
 
