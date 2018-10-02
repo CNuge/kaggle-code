@@ -77,7 +77,12 @@ for i in list(all_train.columns):
 	if i not in list(final_test.columns):
 		print(i)
 
+all_train = all_train.drop('campaignCode', axis=1)
+
+
 #drop campaign code, transactionRevenue is what we are trying to predict
+
+"""
 
 ####
 # handling duplicated ids
@@ -121,10 +126,65 @@ len(flex_cols) #thirty of them are varying across the two visits
 
 #split the date columns into hour/day etc.
 
+"""
 
 #idea: don't merge across users - just leave them separate as individual sessions
 #and train the algorithm on that data. Then for the test data make the recommendations
 #at a session level and then sum the results to make the final prediction.
+
+#######
+# finish cleaning the columns
+#######
+all_train.head()
+final_test.head()
+
+'fullVisitorId' #removed form numeric, this is just the id
+'transactionRevenue' #this is the response variable we want to predict
+
+numeric = [ 'newVisits',
+			 'pageviews',
+			 'transactionRevenue',
+			 ]
+
+def fill_and_adj_numeric(df):
+	#there are NA for page views, fill median for this == 1
+	df.isTrueDirect.fillna(df.pageviews.median(), inplace = True)
+
+	#are boolean, fill NaN with zeros, add to categorical
+	df.isTrueDirect.fillna(0, inplace = True)
+	df.bounces.fillna(0, inplace = True)
+	df.newVisits.fillna(0, inplace = True)
+
+	for col in ['isTrueDirect', 'bounces', 'newVisits']:
+		df[col] = df[col].astype(int)
+
+	return df
+
+all_train = fill_and_adj_numeric(all_train)
+final_test = fill_and_adj_numeric(final_test)
+
+categorical = 	['channelGrouping',
+				 'sessionId',
+				 'browser',
+				 'deviceCategory',
+				 'operatingSystem',
+				 'city',
+				 'continent',
+				 'country',
+				 'metro',
+				 'networkDomain',
+				 'region',
+				 'subContinent',
+				 'adwordsClickInfo',
+				 'campaign',
+				 'keyword',
+				 'medium',
+				 'source',
+				 'bounces',
+				 'isTrueDirect']
+
+all_train.adwordsClickInfo #this one isn't fixed!
+final_test.adwordsClickInfo
 
 
 
