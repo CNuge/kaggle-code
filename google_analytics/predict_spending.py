@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+
+import gc
 from sklearn.preprocessing import LabelBinarizer
 
 
@@ -59,6 +61,8 @@ for col in all_train.columns:
 	elif type(all_train[col][0]) == int or type(all_train[col][0]) == np.float64:
 		#numeric
 		numeric.append(col)
+	else:
+		other.append(col)
 
 numeric
 categorical
@@ -85,61 +89,17 @@ all_train = all_train.drop('campaignCode', axis=1)
 
 #drop campaign code, transactionRevenue is what we are trying to predict
 
-"""
-
-####
-# handling duplicated ids
-####
-
-len(all_train['fullVisitorId'])
-len(all_train['fullVisitorId'].unique())
-len(all_train['fullVisitorId'][all_train['fullVisitorId'].duplicated()])
-
-
-#several instances where the id is not unique, these are repeat visitors
-dups = all_train['fullVisitorId'][all_train['fullVisitorId'].duplicated()]
-
-test_id = list(dups)[0]
-
-
-#find which columns in the data are varying between the duplicate visitor ids
-#these data must somehow be collapsed into a single entry... will be case by 
-#case depending on numeric/ categorical/ NaN situation.
-flex_cols = []
-
-for i in list(dups)[:100]:
-	ex_dup = all_train[all_train['fullVisitorId'] == i]
-
-	for col in ex_dup.columns:
-		if len(ex_dup[col].unique()) != 1 :
-			flex_cols.append(col)
-
-flex_cols = set(flex_cols)
-
-len(flex_cols) #thirty of them are varying across the two visits
-
-
-#numeric flex cols:
-#see which make sense to take average of and which should be summers
-
-#categorical flex cols:
-#see which should be merged somehow (possibly into a numeric count)
-#and for which a single value should be kept
-
-
-#split the date columns into hour/day etc.
-
-"""
-
-#idea: don't merge across users - just leave them separate as individual sessions
-#and train the algorithm on that data. Then for the test data make the recommendations
-#at a session level and then sum the results to make the final prediction.
-
 #######
 # finish cleaning the columns
 #######
 all_train.head()
 final_test.head()
+
+
+####
+# numeric
+####
+
 
 'fullVisitorId' #removed form numeric, this is just the id
 'transactionRevenue' #this is the response variable we want to predict
@@ -165,6 +125,41 @@ def fill_and_adj_numeric(df):
 
 all_train = fill_and_adj_numeric(all_train)
 final_test = fill_and_adj_numeric(final_test)
+
+####
+# other
+####
+other = ['Unnamed: 0',
+			 'date',
+			 ,
+			 'referralPath']
+
+drop_other = ['visitId',
+				'Unnamed: 0',
+				'campaignCode'
+				'referralPath']
+
+
+
+numeric_other = ['visitNumber', 
+					'hits',
+					'visits']
+
+categorical_other = ['isMobile',
+						'adContent',
+						]
+
+all_train['date'] #this needs to be processed with datetime
+all_train['visitStartTime'] 
+
+
+
+
+#######
+
+####
+# categorical
+####
 
 categorical = 	['channelGrouping',
 				 'sessionId',
@@ -192,8 +187,15 @@ for col in categorical:
 	if all_train[col].isnull().any() :
 		with_na.append(col)		
 
+
+####
+# fill na for all the categoricals with the 'None' if string or mode if bool
+####
 #most common value to fill the na
 all_train.keyword.fillna('(not provided)', inplace = True)
+
+
+
 
 
 def binarize_col(train, test, col):
@@ -208,6 +210,7 @@ def binarize_col(train, test, col):
 
 train_bins = []
 test_bins = []
+#this is crashing... need a little more memory I think
 for col in categorical:
 	if len(all_train[col].unique()) > 1:
 		bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
@@ -218,6 +221,7 @@ for col in categorical:
 		else:
 			train_bins = np.c_[train_bins, bin_col_all_train]
 			test_bins = np.c_[test_bins, bin_col_final_test]
+	gc.collect()
 
 train_bins.shape
 test_bins.shape
@@ -260,15 +264,32 @@ X_test = np.c_[X_test, test_bins]
 
 #make predictions on the test data
 
+
+test_y = model.predict(X_test)
+
 # sum the predictions using the defined formula to get a revenue by user metric
 # aggregate on 'fullVisitorId' 
 # final_test['fullVisitorId' ]
 
 
-#submit
 
+final_pred = final_test['fullVisitorId']
+
+final_pred[train_yht] = test_y
+
+
+final_pred = final_pred.sort(['fullVisitorId'])
+
+final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
+
+final_by_ind = final_by_ind.add_suffix('_sum').reset_index()
+
+final_by_ind['PredictedLogRevenue'] = np.log1p(final_by_ind['train_yht_sum'])
+#submit
+submission
 
 #after that -> try some mode models and ensemble the solutions.
+
 
 
 
