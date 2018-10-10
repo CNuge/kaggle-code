@@ -9,13 +9,13 @@ from sklearn.preprocessing import LabelBinarizer
 ####
 
 all_train = pd.read_csv('./data/train_cleaned.csv')
-all_train.head() 
+#all_train.head() 
 
 final_test = pd.read_csv('./data/test_cleaned.csv')
-final_test.head()
+#final_test.head()
 
 submission = pd.read_csv('./data/sample_submission.csv')
-submission.head()
+#submission.head()
 
 ####
 # check submission length
@@ -196,12 +196,35 @@ for col in categorical:
 all_train.keyword.fillna('(not provided)', inplace = True)
 
 
+def binarize_col(train, test, col):
+	encoder = LabelBinarizer()
+
+	cat_train_1hot = encoder.fit_transform(train[col])
+	
+	cat_test_1hot = encoder.transform(test[col])
+
+	return cat_train_1hot, cat_test_1hot
 
 
-encoder = LabelBinarizer()
+train_bins = []
+test_bins = []
+for col in categorical:
+	bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
 
-cat_train_1hot = encoder.fit_transform(all_train[col])
-cat_test_1hot = encoder.transform(final_test[col])
+	if len(train_bins) == 0:
+		train_bins = bin_col_all_train	
+		test_bins =	bin_col_final_test
+	else:
+		train_bins = np.c_[train_bins, bin_col_all_train]
+		test_bins = np.c_[test_bins, bin_col_final_test]
+
+train_bins.shape
+test_bins.shape
+
+
+#drop the non binary 
+
+
 
 
 
