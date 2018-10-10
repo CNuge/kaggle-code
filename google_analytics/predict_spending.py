@@ -155,6 +155,7 @@ all_train['visitStartTime']
 
 
 
+
 #######
 
 ####
@@ -244,6 +245,23 @@ X_train = np.c_[X_train, train_bins]
 
 X_test = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
 X_test = np.c_[X_test, test_bins]
+
+
+
+
+####
+# TODO
+####
+#1. turn datetimes into numerics from a start date
+#2. fill na on all the categoricals
+#3. drop all the other columns not to be used
+#4. treat numeric others with numerics
+#5. get the label binarizer to not crash
+
+
+
+
+
 
 
 ######
