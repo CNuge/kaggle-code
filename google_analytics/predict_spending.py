@@ -209,24 +209,37 @@ def binarize_col(train, test, col):
 train_bins = []
 test_bins = []
 for col in categorical:
-	bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
+	if len(all_train[col].unique()) > 1:
+		bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
 
-	if len(train_bins) == 0:
-		train_bins = bin_col_all_train	
-		test_bins =	bin_col_final_test
-	else:
-		train_bins = np.c_[train_bins, bin_col_all_train]
-		test_bins = np.c_[test_bins, bin_col_final_test]
+		if len(train_bins) == 0:
+			train_bins = bin_col_all_train	
+			test_bins =	bin_col_final_test
+		else:
+			train_bins = np.c_[train_bins, bin_col_all_train]
+			test_bins = np.c_[test_bins, bin_col_final_test]
 
 train_bins.shape
 test_bins.shape
 
 
-#drop the non binary 
+#drop the non binary categories and the 
+
+all_train = all_train.drop(categorical, axis = 1)
 
 
+final_test = final_test.drop(final_test, axis = 1)
 
 
+# isolate the response variable
+y_train = all_train['transactionRevenue']
+y_test = final_test['transactionRevenue']
+
+X_train = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
+X_train = np.c_[X_train, train_bins]
+
+X_test = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
+X_test = np.c_[X_test, test_bins]
 
 
 ######
@@ -247,7 +260,10 @@ test_bins.shape
 
 #make predictions on the test data
 
-#sum the predictions using the defined formula to get a revenue by user metric
+# sum the predictions using the defined formula to get a revenue by user metric
+# aggregate on 'fullVisitorId' 
+# final_test['fullVisitorId' ]
+
 
 #submit
 
