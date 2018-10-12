@@ -3,6 +3,7 @@ import numpy as np
 
 
 import gc
+import time
 from sklearn.preprocessing import LabelBinarizer
 
 
@@ -70,9 +71,29 @@ flatline
 other
 
 ####
+# other columns
+####
+drop_other = ['visitId',
+				'Unnamed: 0',
+				'campaignCode'
+				'referralPath']
+
+
+numeric_other = ['visitNumber', 
+					'hits',
+					'visits']
+
+categorical_other = ['isMobile',
+						'adContent',
+						]
+
+
+
+####
 # drop flat cols for both the train and test data
 ####
 
+flatline.extend(drop_other)
 #should drop the flatline columns from the df
 all_train = all_train.drop(flatline, axis = 1)
 all_train.shape
@@ -109,6 +130,8 @@ numeric = [ 'newVisits',
 			 'transactionRevenue',
 			 ]
 
+numeric.extend(numeric_other)
+
 def fill_and_adj_numeric(df):
 	#there are NA for page views, fill median for this == 1
 	df.isTrueDirect.fillna(df.pageviews.median(), inplace = True)
@@ -126,37 +149,38 @@ def fill_and_adj_numeric(df):
 all_train = fill_and_adj_numeric(all_train)
 final_test = fill_and_adj_numeric(final_test)
 
+
 ####
-# other
-####
-other = ['Unnamed: 0',
-			 'date',
-			 ,
-			 'referralPath']
-
-drop_other = ['visitId',
-				'Unnamed: 0',
-				'campaignCode'
-				'referralPath']
-
-
-
-numeric_other = ['visitNumber', 
-					'hits',
-					'visits']
-
-categorical_other = ['isMobile',
-						'adContent',
-						]
+# datetime columns
+##
 
 all_train['date'] #this needs to be processed with datetime
-all_train['visitStartTime'] 
 
+def parseDateCol(df, date_col):
+	""" takes the date column and adds new columns with the features:
+		yr, mon, day, day of week, day of year """
+	df['datetime'] = df.apply(lambda x : time.strptime(x[date_col],  "%Y%M%d"), axis = 1)
 
+	df['year'] = df.apply(lambda x : x['datetime'].tm_year, axis = 1)
+	df['month'] = df.apply(lambda x :x['datetime'].tm_mon , axis = 1)
+	df['mday'] = df.apply(lambda x : x['datetime'].tm_mday, axis = 1)
+	df['wyear'] = df.apply(lambda x : x['datetime'].tm_wday , axis = 1)
+	df['yyear'] = df.apply(lambda x : x['datetime'].tm_yday , axis = 1)
 
+	#drop date and datetime
+	df.drop([date_col, datetime], axis = 1)
+	
+	return df
 
+test = str(20170104)
 
-#######
+x = time.strptime(test, "%Y%M%d")
+x.tm_year
+x.tm_mon
+x.tm_mday #date numeric
+x.tm_wday #wday of week
+x.tm_yday
+
 
 ####
 # categorical
@@ -179,6 +203,8 @@ categorical = 	['channelGrouping',
 				 'keyword',
 				 'medium',
 				 'source']
+
+categorical.extend(categorical_other)
 
 all_train.adwordsClickInfo #this one isn't fixed!
 final_test.adwordsClickInfo
