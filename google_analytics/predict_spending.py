@@ -76,7 +76,8 @@ other
 drop_other = ['visitId',
 				'Unnamed: 0',
 				'campaignCode'
-				'referralPath']
+				'referralPath',
+				'adwordsClickInfo']
 
 
 numeric_other = ['visitNumber', 
@@ -172,16 +173,6 @@ def parseDateCol(df, date_col):
 	
 	return df
 
-test = str(20170104)
-
-x = time.strptime(test, "%Y%M%d")
-x.tm_year
-x.tm_mon
-x.tm_mday #date numeric
-x.tm_wday #wday of week
-x.tm_yday
-
-
 ####
 # categorical
 ####
@@ -198,7 +189,6 @@ categorical = 	['channelGrouping',
 				 'networkDomain',
 				 'region',
 				 'subContinent',
-				 'adwordsClickInfo',
 				 'campaign',
 				 'keyword',
 				 'medium',
@@ -206,8 +196,6 @@ categorical = 	['channelGrouping',
 
 categorical.extend(categorical_other)
 
-all_train.adwordsClickInfo #this one isn't fixed!
-final_test.adwordsClickInfo
 
 with_na = []
 for col in categorical:
@@ -218,10 +206,9 @@ for col in categorical:
 ####
 # fill na for all the categoricals with the 'None' if string or mode if bool
 ####
+
 #most common value to fill the na
 all_train.keyword.fillna('(not provided)', inplace = True)
-
-
 
 
 
@@ -254,12 +241,11 @@ train_bins.shape
 test_bins.shape
 
 
-#drop the non binary categories and the 
+#drop the non binarized categorical columns and the housekeeping ones ones to the 
+#the train and test sets for sklearn
 
 all_train = all_train.drop(categorical, axis = 1)
-
-
-final_test = final_test.drop(final_test, axis = 1)
+final_test = final_test.drop(categorical, axis = 1)
 
 
 # isolate the response variable
@@ -278,13 +264,8 @@ X_test = np.c_[X_test, test_bins]
 ####
 # TODO
 ####
-#1. turn datetimes into numerics from a start date
 #2. fill na on all the categoricals
-#3. drop all the other columns not to be used
-#4. treat numeric others with numerics
 #5. get the label binarizer to not crash
-
-
 
 
 
