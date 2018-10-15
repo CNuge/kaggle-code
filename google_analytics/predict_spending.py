@@ -217,7 +217,7 @@ for col in categorical:
 
 #most common value to fill the na
 all_train.keyword.fillna('(not provided)', inplace = True)
-
+all_train.adContent.fillna('(not provided)', inplace = True)
 
 
 def binarize_col(train, test, col):
@@ -234,7 +234,7 @@ train_bins = []
 test_bins = []
 #this is crashing... need a little more memory I think
 for col in categorical:
-	if len(all_train[col].unique()) > 1:
+	if len(all_train[col].unique()) > 1 and len(all_train[col].unique()) < 500:
 		bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
 
 		if len(train_bins) == 0:
@@ -347,7 +347,10 @@ final_by_ind['PredictedLogRevenue'] = np.log1p(final_by_ind['train_yht_sum'])
 #submit
 submission
 
-#after that -> try some mode models and ensemble the solutions.
+
+#after that:
+	#
+	#try some mode models and ensemble the solutions.
 
 
 #improve:
