@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
-
+from sklearn.preprocessing import LabelBinarizer
+import xgboost as xgb
 
 import gc
 import time
-from sklearn.preprocessing import LabelBinarizer
 
 
 ####
@@ -173,6 +173,11 @@ def parseDateCol(df, date_col):
 	
 	return df
 
+all_train = parseDateCol(all_train, 'date')
+
+final_test = parseDateCol(final_test, 'date')
+
+
 ####
 # categorical
 ####
@@ -281,14 +286,34 @@ X_test = np.c_[X_test, test_bins]
 	#set up an xgboost model for the dataset via cv
 	#see how well the model works on the 20% validation data
 
-#run a grid search to pick the best params
+#run a cv search to pick the num of rounds
 
+xgb_params = {'eta' :  0.05,
+                'max_depth' :  8,
+                'subsample' : 0.80, 
+                'objective' :  'reg:linear',
+                'eval_metric' : 'rmse',
+                'base_score' :  y_mean,
+                'nthread' : n_cpus_avaliable}
+
+
+
+cv_result = xgb.cv(xgb_params, dtrain, 
+					nfold=5, 
+					num_boost_round=20000, 
+					early_stopping_rounds=50, 
+					verbose_eval=10, show_stdv=False)
+
+num_boost_rounds = len(cv_result)
 
 #traing the model on the full all_train dataset
+model = xgb.train(xgb_params, X_train, 
+                  num_boost_round = num_boost_rounds)
+
+
 
 
 #make predictions on the test data
-
 
 test_y = model.predict(X_test)
 
@@ -316,5 +341,29 @@ submission
 #after that -> try some mode models and ensemble the solutions.
 
 
+#improve:
+# after original model submission is validated, then take the model and 
+# run girdsearch cv to try a bunch of different hyperparams
+from sklearn.model_selection import GridSearchCV
 
+
+param_grid = [
+    # try 12 (3×4) combinations of hyperparameters
+    {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
+    # then try 6 (2×3) combinations with bootstrap set as False
+    {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
+  ]
+
+#set the random state to ensure results are consistent.
+forest_reg = RandomForestRegressor(random_state=42)
+# train across 5 folds, that's a total of (12+6)*5=90 rounds of training 
+#if below passed refit = True, it would train the model with all the data once the optimal
+#paramater set was found.
+grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
+                           scoring='neg_mean_squared_error')
+
+#fit the grid search with the training data
+grid_search.fit(housing_prepared, y_train)
+
+grid_search.best_params_
 
