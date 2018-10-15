@@ -235,12 +235,15 @@ test_bins = []
 #this is crashing... need a little more memory I think
 for col in categorical:
 	if len(all_train[col].unique()) > 1 and len(all_train[col].unique()) < 500:
+		print(f'binarizing:{col}\tunique: {len(all_train[col].unique())}\n')
 		bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
 
 		if len(train_bins) == 0:
+			print('initializing np matrix')
 			train_bins = bin_col_all_train	
 			test_bins =	bin_col_final_test
 		else:
+			print('appending to np matrix\n')
 			train_bins = np.c_[train_bins, bin_col_all_train]
 			test_bins = np.c_[test_bins, bin_col_final_test]
 	gc.collect()
