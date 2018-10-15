@@ -260,14 +260,15 @@ final_test = final_test.drop(categorical, axis = 1)
 
 # isolate the response variable
 y_train = all_train['transactionRevenue']
-y_test = final_test['transactionRevenue']
+
 
 X_train = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
 X_train = np.c_[X_train, train_bins]
+X_train.shape
 
-X_test = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
+X_test = final_test.drop(['fullVisitorId'],axis = 1).values
 X_test = np.c_[X_test, test_bins]
-
+X_test.shape
 
 
 
