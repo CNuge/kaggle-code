@@ -171,7 +171,7 @@ def parseDateCol(df, date_col):
 	df['yyear'] = df.apply(lambda x : x['datetime'].tm_yday , axis = 1)
 
 	#drop date and datetime
-	df.drop([date_col, datetime], axis = 1)
+	df.drop([date_col, 'datetime'], axis = 1)
 	
 	return df
 
@@ -179,7 +179,7 @@ all_train = parseDateCol(all_train, 'date')
 
 final_test = parseDateCol(final_test, 'date')
 
-all_train.head()
+
 
 ####
 # categorical
@@ -291,6 +291,13 @@ X_test = np.c_[X_test, test_bins]
 
 #run a cv search to pick the num of rounds
 
+
+dtrain = xgb.DMatrix(X_train, y_train)
+dtest = xgb.DMatrix(X_test)
+
+y_mean = np.mean(y_train) #this is the baseline prediction, the mean
+
+
 xgb_params = {'eta' :  0.05,
                 'max_depth' :  8,
                 'subsample' : 0.80, 
@@ -298,7 +305,6 @@ xgb_params = {'eta' :  0.05,
                 'eval_metric' : 'rmse',
                 'base_score' :  y_mean,
                 'nthread' : n_cpus_avaliable}
-
 
 
 cv_result = xgb.cv(xgb_params, dtrain, 
@@ -310,7 +316,7 @@ cv_result = xgb.cv(xgb_params, dtrain,
 num_boost_rounds = len(cv_result)
 
 #traing the model on the full all_train dataset
-model = xgb.train(xgb_params, X_train, 
+model = xgb.train(xgb_params, dtrain, 
                   num_boost_round = num_boost_rounds)
 
 
@@ -349,24 +355,18 @@ submission
 # run girdsearch cv to try a bunch of different hyperparams
 from sklearn.model_selection import GridSearchCV
 
+param_test1 = {
+ 'max_depth':range(3,12,2),
+ 'min_child_weight':range(1,6,2)
+}
 
-param_grid = [
-    # try 12 (3×4) combinations of hyperparameters
-    {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8]},
-    # then try 6 (2×3) combinations with bootstrap set as False
-    {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
-  ]
+gsearch1 = GridSearchCV(estimator = XGBClassifier( learning_rate =0.1, n_estimators=140, max_depth=5,
+				 		min_child_weight=1, gamma=0, subsample=0.8, colsample_bytree=0.8,
+ 						objective= 'binary:logistic', nthread=4, scale_pos_weight=1, seed=27), 
+ 						param_grid = param_test1, scoring='roc_auc',n_jobs=4,iid=False, cv=5)
 
-#set the random state to ensure results are consistent.
-forest_reg = RandomForestRegressor(random_state=42)
-# train across 5 folds, that's a total of (12+6)*5=90 rounds of training 
-#if below passed refit = True, it would train the model with all the data once the optimal
-#paramater set was found.
-grid_search = GridSearchCV(forest_reg, param_grid, cv=5,
-                           scoring='neg_mean_squared_error')
+gsearch1.fit(dtrain)
 
-#fit the grid search with the training data
-grid_search.fit(housing_prepared, y_train)
+gsearch1.grid_scores_, gsearch1.best_params_, gsearch1.best_score_
 
-grid_search.best_params_
 
