@@ -160,10 +160,12 @@ all_train['date'] #this needs to be processed with datetime
 def parseDateCol(df, date_col):
 	""" takes the date column and adds new columns with the features:
 		yr, mon, day, day of week, day of year """
-	df['datetime'] = df.apply(lambda x : time.strptime(x[date_col],  "%Y%M%d"), axis = 1)
-
+	df['datetime'] = df.apply(lambda x : time.strptime(str(x[date_col]),  "%Y%M%d"), axis = 1)
+	print('parsing year')
 	df['year'] = df.apply(lambda x : x['datetime'].tm_year, axis = 1)
+	print('parsing month')
 	df['month'] = df.apply(lambda x :x['datetime'].tm_mon , axis = 1)
+	print('parsing days (*3 versions)')
 	df['mday'] = df.apply(lambda x : x['datetime'].tm_mday, axis = 1)
 	df['wyear'] = df.apply(lambda x : x['datetime'].tm_wday , axis = 1)
 	df['yyear'] = df.apply(lambda x : x['datetime'].tm_yday , axis = 1)
@@ -177,6 +179,7 @@ all_train = parseDateCol(all_train, 'date')
 
 final_test = parseDateCol(final_test, 'date')
 
+all_train.head()
 
 ####
 # categorical
