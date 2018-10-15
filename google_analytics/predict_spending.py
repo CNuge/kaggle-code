@@ -77,16 +77,15 @@ drop_other = ['visitId',
 				'Unnamed: 0',
 				'campaignCode'
 				'referralPath',
-				'adwordsClickInfo']
+				'adwordsClickInfo',
+				'adContent']
 
 
 numeric_other = ['visitNumber', 
 					'hits',
 					'visits']
 
-categorical_other = ['isMobile',
-						'adContent',
-						]
+categorical_other = ['isMobile',]
 
 
 
@@ -123,8 +122,8 @@ final_test.head()
 ####
 
 
-'fullVisitorId' #removed form numeric, this is just the id
-'transactionRevenue' #this is the response variable we want to predict
+#'fullVisitorId' #removed form numeric, this is just the id
+#'transactionRevenue' #this is the response variable we want to predict
 
 numeric = [ 'newVisits',
 			 'pageviews',
@@ -217,8 +216,6 @@ for col in categorical:
 
 #most common value to fill the na
 all_train.keyword.fillna('(not provided)', inplace = True)
-all_train.adContent.fillna('(not provided)', inplace = True)
-
 
 def binarize_col(train, test, col):
 	encoder = LabelBinarizer()
@@ -237,7 +234,7 @@ for col in categorical:
 	if len(all_train[col].unique()) > 1 and len(all_train[col].unique()) < 500:
 
 		print(f'binarizing:{col}\tunique: {len(all_train[col].unique())}')
-		
+
 		bin_col_all_train, bin_col_final_test = binarize_col(all_train, final_test, col)
 
 		if len(train_bins) == 0:
