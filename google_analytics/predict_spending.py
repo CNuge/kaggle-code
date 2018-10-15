@@ -272,13 +272,6 @@ X_test.shape
 
 
 
-####
-# TODO
-####
-#2. fill na on all the categoricals
-#5. get the label binarizer to not crash
-
-
 
 
 
@@ -321,7 +314,6 @@ num_boost_rounds = len(cv_result)
 #traing the model on the full all_train dataset
 model = xgb.train(xgb_params, dtrain, 
                   num_boost_round = num_boost_rounds)
-
 
 
 
