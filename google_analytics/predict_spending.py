@@ -315,7 +315,7 @@ xgb_params = {'eta' :  0.05,
 
 cv_result = xgb.cv(xgb_params, dtrain, 
 					nfold=5, 
-					num_boost_round=20000, 
+					num_boost_round=2000, 
 					early_stopping_rounds=50, 
 					verbose_eval=10, show_stdv=False)
 
