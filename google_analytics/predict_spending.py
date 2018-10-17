@@ -75,7 +75,7 @@ other
 ####
 drop_other = ['visitId',
 				'Unnamed: 0',
-				'campaignCode'
+				'campaignCode',
 				'referralPath',
 				'adwordsClickInfo',
 				'adContent']
@@ -98,6 +98,7 @@ flatline.extend(drop_other)
 all_train = all_train.drop(flatline, axis = 1)
 all_train.shape
 
+flatline = [x for x in flatline if x != 'campaignCode' ]
 final_test = final_test.drop(flatline, axis=1)
 final_test.shape
 
@@ -105,10 +106,6 @@ for i in list(all_train.columns):
 	if i not in list(final_test.columns):
 		print(i)
 
-all_train = all_train.drop('campaignCode', axis=1)
-
-
-#drop campaign code, transactionRevenue is what we are trying to predict
 
 #######
 # finish cleaning the columns
@@ -136,12 +133,16 @@ all_train['transactionRevenue'].fillna(0, inplace = True)
 
 def fill_and_adj_numeric(df):
 	#there are NA for page views, fill median for this == 1
-	df.isTrueDirect.fillna(df.pageviews.median(), inplace = True)
+	df.pageviews.fillna(df.pageviews.median(), inplace = True)
+
+	df.hits.fillna(df.hits.median(), inplace = True)
+	df.visits.fillna(df.visits.median(), inplace = True)
 
 	#are boolean, fill NaN with zeros, add to categorical
 	df.isTrueDirect.fillna(0, inplace = True)
 	df.bounces.fillna(0, inplace = True)
 	df.newVisits.fillna(0, inplace = True)
+	df.visitNumber.fillna(1, inplace = True)
 
 	for col in ['isTrueDirect', 'bounces', 'newVisits']:
 		df[col] = df[col].astype(int)
@@ -264,9 +265,16 @@ final_test = final_test.drop(categorical, axis = 1)
 y_train = all_train['transactionRevenue'].values
 
 
+all_train.columns
+
+for x in all_train.columns:
+	print(x, type(all_train[x]))
+
+
 X_train = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
 X_train = np.c_[X_train, train_bins]
 X_train.shape
+
 
 X_test = final_test.drop(['fullVisitorId'],axis = 1).values
 X_test = np.c_[X_test, test_bins]
@@ -287,11 +295,11 @@ X_test.shape
 #run a cv search to pick the num of rounds
 
 
-dtrain = xgb.DMatrix(X_train, y_train.values)
+dtrain = xgb.DMatrix(X_train, y_train)
 dtest = xgb.DMatrix(X_test)
 
 y_mean = np.mean(y_train) #this is the baseline prediction, the mean
-
+#possibly switch this to the median
 
 xgb_params = {'eta' :  0.05,
                 'max_depth' :  8,
