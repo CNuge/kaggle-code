@@ -20,6 +20,7 @@ final_test = pd.read_csv('./data/test_cleaned.csv')
 submission = pd.read_csv('./data/sample_submission.csv')
 #submission.head()
 
+"""
 ####
 # check submission length
 ####
@@ -27,8 +28,9 @@ submission = pd.read_csv('./data/sample_submission.csv')
 #it is lower than the number of ids in the test set?
 len(submission['fullVisitorId']) == len(set(submission['fullVisitorId']))
 len(set(submission['fullVisitorId'])) == len(set(final_test['fullVisitorId']))
+"""
 
-
+"""
 ####
 # explore what we are looking at
 ####
@@ -41,7 +43,7 @@ all_train.columns
 all_train['adwordsClickInfo'][0] #this is still json buy okay
 type(all_train['transactionRevenue'][0])  == np.float64#this is the one we are trying to predict
 all_train.columns
-
+"""
 
 ####
 # scan columns and classify
@@ -299,6 +301,8 @@ dtrain = xgb.DMatrix(X_train, y_train)
 dtest = xgb.DMatrix(X_test)
 
 y_mean = np.mean(y_train) #this is the baseline prediction, the mean
+y_median = np.median(y_train) #this is the baseline prediction, the mean
+
 #possibly switch this to the median
 
 xgb_params = {'eta' :  0.05,
@@ -306,8 +310,7 @@ xgb_params = {'eta' :  0.05,
                 'subsample' : 0.80, 
                 'objective' :  'reg:linear',
                 'eval_metric' : 'rmse',
-                'base_score' :  y_mean,
-                'nthread' : n_cpus_avaliable}
+                'base_score' :  y_median,}
 
 
 cv_result = xgb.cv(xgb_params, dtrain, 
