@@ -9,6 +9,7 @@ import time
 ####
 # load the data
 ####
+print('reading in data')
 
 all_train = pd.read_csv('./data/train_cleaned.csv')
 #all_train.head() 
@@ -118,7 +119,7 @@ final_test.head()
 ####
 # numeric
 ####
-
+print('numeric variables')
 
 #'fullVisitorId' #removed form numeric, this is just the id
 #'transactionRevenue' #this is the response variable we want to predict
@@ -157,7 +158,7 @@ final_test = fill_and_adj_numeric(final_test)
 ####
 # datetime columns
 ##
-
+print('Date variable')
 all_train['date'] #this needs to be processed with datetime
 
 def parseDateCol(df, date_col):
@@ -187,6 +188,7 @@ final_test = parseDateCol(final_test, 'date')
 ####
 # categorical
 ####
+print('Cleaning categorical variables')
 
 categorical = ['channelGrouping',
 				 'sessionId',
@@ -281,7 +283,3 @@ X_test = final_test.drop(['fullVisitorId'], axis = 1).values
 X_test = np.c_[X_test, test_bins]
 X_test.shape
 
-
-np.savetxt('./data/X_train.csv', X_train, delimiter=',')
-np.savetxt('./data/y_train.csv', y_train, delimiter=',')
-np.savetxt('./data/X_test.csv', X_test, delimiter=',')

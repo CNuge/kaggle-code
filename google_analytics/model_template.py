@@ -1,19 +1,7 @@
 import pandas as pd
 import numpy as np
 
-
-#read in the sample submission
-submission = pd.read_csv('./data/sample_submission.csv')
-
-#read in the three matricies and extract just the np arrays
-X_train=pd.read_csv('./data/X_train.csv', sep=',', header=None)
-X_train = X_train.values
-y_train=pd.read_csv('./data/y_train.csv', sep=',', header=None)
-y_train = y_train.values
-X_test=pd.read_csv('./data/X_test.csv', sep=',', header=None)
-X_test = X_test.values
-
-
+#run clean_to_np_matrix.py first
 
 
 #####

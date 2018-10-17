@@ -283,9 +283,6 @@ X_test = np.c_[X_test, test_bins]
 X_test.shape
 
 
-np.savetxt("X_train.csv", X_train, delimiter=",")
-np.savetxt("y_train.csv", y_train, delimiter=",")
-np.savetxt("X_test.csv", X_test, delimiter=",")
 
 ######
 # build the first model
