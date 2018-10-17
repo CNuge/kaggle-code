@@ -319,7 +319,8 @@ xgb_params = {'eta' :  0.05,
 
 #before cv, can try with just a super simple train to make sure it is working
 test_model = xgb.train(xgb_params, dtrain, 
-                  num_boost_round = 5)
+                  num_boost_round = 2,
+                  verbose_eval=1)
 
 
 cv_result = xgb.cv(xgb_params, dtrain, 
