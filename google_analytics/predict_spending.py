@@ -169,11 +169,11 @@ def parseDateCol(df, date_col):
 	df['month'] = df.apply(lambda x :x['datetime'].tm_mon , axis = 1)
 	print('parsing days (*3 versions)')
 	df['mday'] = df.apply(lambda x : x['datetime'].tm_mday, axis = 1)
-	df['wyear'] = df.apply(lambda x : x['datetime'].tm_wday , axis = 1)
-	df['yyear'] = df.apply(lambda x : x['datetime'].tm_yday , axis = 1)
+	df['wday'] = df.apply(lambda x : x['datetime'].tm_wday , axis = 1)
+	df['yday'] = df.apply(lambda x : x['datetime'].tm_yday , axis = 1)
 
 	#drop date and datetime
-	df.drop([date_col, 'datetime'], axis = 1)
+	df = df.drop([date_col, 'datetime'], axis = 1)
 	
 	return df
 
@@ -268,7 +268,7 @@ y_train = all_train['transactionRevenue'].values
 all_train.columns
 
 for x in all_train.columns:
-	print(x, type(all_train[x]))
+	print(x, all_train[x].dtype)
 
 
 X_train = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
