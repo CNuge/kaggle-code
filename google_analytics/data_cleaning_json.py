@@ -5,7 +5,7 @@ import numpy as np
 import json
 import gc
 
-test = pd.read_csv('test.csv')
+test = pd.read_csv('./data/test.csv')
 
 test.head()
 
@@ -26,7 +26,7 @@ for column in json_cols:
 test.head()
 test.to_csv('test_cleaned.csv')
 
-train = pd.read_csv('train.csv')
+train = pd.read_csv('./data/train.csv')
 train.head()
 
 test = []

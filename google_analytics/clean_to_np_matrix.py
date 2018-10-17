@@ -272,16 +272,16 @@ for x in all_train.columns:
 	print(x, all_train[x].dtype)
 
 
-X_train = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
+X_train = all_train.drop(['fullVisitorId','transactionRevenue'], axis = 1).values
 X_train = np.c_[X_train, train_bins]
 X_train.shape
 
 
-X_test = final_test.drop(['fullVisitorId'],axis = 1).values
+X_test = final_test.drop(['fullVisitorId'], axis = 1).values
 X_test = np.c_[X_test, test_bins]
 X_test.shape
 
 
-np.savetxt("X_train.csv", X_train, delimiter=",")
-np.savetxt("y_train.csv", y_train, delimiter=",")
-np.savetxt("X_test.csv", X_test, delimiter=",")
+np.savetxt('./data/X_train.csv', X_train, delimiter=',')
+np.savetxt('./data/y_train.csv', y_train, delimiter=',')
+np.savetxt('./data/X_test.csv', X_test, delimiter=',')

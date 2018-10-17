@@ -4,3 +4,4 @@ google_analytics/data/test.csv
 google_analytics/data/train.csv
 google_analytics/data/test_cleaned.csv
 google_analytics/data/train_cleaned.csv
+google_analytics/X_train.csv
