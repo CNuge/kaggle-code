@@ -45,5 +45,6 @@ final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
 final_by_ind = final_by_ind.add_suffix('_sum').reset_index()
 
 final_by_ind['PredictedLogRevenue'] = np.log1p(final_by_ind['train_yht_sum'])
+
 #submit
-submission
+final_by_ind.to_csv('cam_pred1.csv')
