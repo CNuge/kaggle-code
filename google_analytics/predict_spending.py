@@ -132,6 +132,8 @@ numeric = [ 'newVisits',
 
 numeric.extend(numeric_other)
 
+all_train['transactionRevenue'].fillna(0, inplace = True)
+
 def fill_and_adj_numeric(df):
 	#there are NA for page views, fill median for this == 1
 	df.isTrueDirect.fillna(df.pageviews.median(), inplace = True)
@@ -184,7 +186,7 @@ final_test = parseDateCol(final_test, 'date')
 # categorical
 ####
 
-categorical = 	['channelGrouping',
+categorical = ['channelGrouping',
 				 'sessionId',
 				 'browser',
 				 'deviceCategory',
@@ -259,7 +261,7 @@ final_test = final_test.drop(categorical, axis = 1)
 
 
 # isolate the response variable
-y_train = all_train['transactionRevenue']
+y_train = all_train['transactionRevenue'].values
 
 
 X_train = all_train.drop(['fullVisitorId','transactionRevenue'],axis = 1).values
@@ -269,9 +271,6 @@ X_train.shape
 X_test = final_test.drop(['fullVisitorId'],axis = 1).values
 X_test = np.c_[X_test, test_bins]
 X_test.shape
-
-
-
 
 
 
@@ -288,7 +287,7 @@ X_test.shape
 #run a cv search to pick the num of rounds
 
 
-dtrain = xgb.DMatrix(X_train, y_train)
+dtrain = xgb.DMatrix(X_train, y_train.values)
 dtest = xgb.DMatrix(X_test)
 
 y_mean = np.mean(y_train) #this is the baseline prediction, the mean
