@@ -287,6 +287,8 @@ final_test = final_test.drop(categorical, axis = 1)
 
 # isolate the response variable
 y_train = all_train['transactionRevenue'].values
+#take the log on the front and then use that to train the algorithm.
+y_train =  np.log1p(y_train)
 
 
 all_train.columns
@@ -303,6 +305,8 @@ X_train.shape
 X_test = final_test.drop(['fullVisitorId'], axis = 1).values
 X_test = np.c_[X_test, test_bins]
 X_test.shape
+
+
 
 #TODO: try pickling the data instead of writing to file!
 
