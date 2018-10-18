@@ -284,3 +284,10 @@ X_test = np.c_[X_test, test_bins]
 X_test.shape
 
 #TODO: try pickling the data instead of writing to file!
+
+#X_train.dump('X_train.dat')
+#y_train.dump('y_train.dat')
+#X_test.dump('X_test.dat')
+
+
+

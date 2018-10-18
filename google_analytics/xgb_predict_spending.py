@@ -4,6 +4,41 @@ import numpy as np
 import xgboost as xgb
 
 
+
+#X_train = np.load('X_train.dat')
+#y_train = np.load('y_train.dat')
+#X_test = np.load('X_test.dat')
+
+
+#try a subset and make sure it works
+sub_X_train = X_train[:1000,]
+sub_y_train = y_train[:1000]
+
+
+sub_dtrain = xgb.DMatrix(X_train, y_train)
+
+y_median = np.median(y_train) #this is the baseline prediction, the mean
+
+np.mean(y_train)
+len([x for x in y_train if x > 0])
+
+#possibly switch this to the median
+
+xgb_params = {'eta' :  0.05,
+                'max_depth' :  8,
+                'subsample' : 0.80, 
+                'objective' :  'reg:linear',
+                'eval_metric' : 'rmse',
+                'base_score' :  y_median,}
+
+
+#before cv, can try with just a super simple train to make sure it is working
+test_model = xgb.train(xgb_params, sub_dtrain, 
+                  num_boost_round = 200,
+                  verbose_eval=10)
+
+
+
 #####
 #
 # put the model training here
@@ -37,6 +72,16 @@ xgb_params = {'eta' :  0.05,
 
 
 
+
+
+
+
+
+
+
+
+########################################################
+# model work - need to scale with the data
 #before cv, can try with just a super simple train to make sure it is working
 test_model = xgb.train(xgb_params, dtrain, 
                   num_boost_round = 200,
@@ -65,6 +110,7 @@ model = xgb.train(xgb_params, dtrain,
                   num_boost_round = num_boost_rounds)
 
 
+#####################################################################
 
 #make predictions on the test data
 

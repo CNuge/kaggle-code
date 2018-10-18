@@ -1,7 +1,10 @@
 import pandas as pd
 import numpy as np
 
-#run clean_to_np_matrix.py first
+#load the pickled matricies
+X_train = np.load('X_train.dat')
+y_train = np.load('y_train.dat')
+X_test = np.load('X_test.dat')
 
 
 #####
