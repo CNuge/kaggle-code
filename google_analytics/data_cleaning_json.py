@@ -23,17 +23,16 @@ for column in json_cols:
 
 	intermediate = pd.read_json(c_dat)
 
-	try:
+	if 'fullVisitorId' in intermediate.columns:
 		intermediate = intermediate.drop(['fullVisitorId'], axis=1)
-	except:
-		pass
 
 	print('merging to main')
 	test = test.join(intermediate)
 	test = test.drop(column , axis=1)
 
+print('writing test data')
 test.head()
-test.to_csv('test_cleaned.csv', index=False)
+test.to_csv('./data/test_cleaned.csv', index=False)
 
 
 print('loading: train')
@@ -56,15 +55,14 @@ for column in json_cols:
 	
 	intermediate = pd.read_json(c_dat)
 
-	try:
+	if 'fullVisitorId' in intermediate.columns:
 		intermediate = intermediate.drop(['fullVisitorId'], axis=1)
-	except:
-		pass
 
 
 	print('merging to main')
 	train = train.join(intermediate)
 	train = train.drop(column , axis=1)
 
+print('writing train data')
 train.head()
-train.to_csv('train_cleaned.csv', index=False)
+train.to_csv('./data/train_cleaned.csv', index=False)

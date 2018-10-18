@@ -17,37 +17,40 @@ all_train = pd.read_csv('./data/train_cleaned.csv')
 final_test = pd.read_csv('./data/test_cleaned.csv')
 #final_test.head()
 
-raw_test = pd.read_csv('./data/test.csv')
+#raw_test = pd.read_csv('./data/test.csv')
 
 submission = pd.read_csv('./data/sample_submission.csv')
 #submission.head()
 
+#getting mixed types b/c of bigints... need all to str
+#it is lower than the number of ids in the test set?
+submission['fullVisitorId'] = submission['fullVisitorId'].astype('str')
+final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
 
+"""
 ####
 # check submission length
 ####
 
-#it is lower than the number of ids in the test set?
+
 len(submission['fullVisitorId']) == len(set(submission['fullVisitorId']))
 len(set(submission['fullVisitorId'])) == len(set(final_test['fullVisitorId']))
 len(submission['fullVisitorId']) ==  len(set(final_test['fullVisitorId']))
 
-unaccounted = [x for x in submission['fullVisitorId'] if x not in final_test['fullVisitorId'] ]
-len(unaccounted)
-for i, x in enumerate(submission['fullVisitorId']):
-	try:
-		int(x)
-	except:
-		print(i, x)
-#there are 
-for i, x in enumerate(final_test['fullVisitorId']):
-	try:
-		int(x)
-	except:
-		print(i, x)
+sub_set = set(submission['fullVisitorId'])
+test_set = set(final_test['fullVisitorId'])
 
+sub_set = sorted(sub_set)
+test_set = sorted(test_set)
 
-len(raw_test['fullVisitorId']) == len(final_test['fullVisitorId'])
+sub_set[:10]
+test_set[:10]
+
+len(sub_set)
+len(test_set)
+len(set(list(sub_set) + list(test_set)))
+
+"""
 
 """
 ####
