@@ -21,8 +21,8 @@ lgb_params = {
 	"metric" : "rmse",
 	"num_leaves" : 40,
 	"learning_rate" : 0.001,
-	"bagging_fraction" : 0.5,
-	"feature_fraction" : 0.5,
+	"bagging_fraction" : 0.6,
+	"feature_fraction" : 0.6,
 	}
 
 #load in lgbm matrix fmt
@@ -31,9 +31,9 @@ lval = lgb.Dataset(X_val, label=y_val)
 
 #build and train the model
 lgb_model1 = lgb.train(lgb_params, ltrain, 
-                  num_boost_round=5000,
+                  num_boost_round=50000,
                   valid_sets=[ltrain, lval],
-                  early_stopping_rounds=100,
+                  early_stopping_rounds=500,
                   verbose_eval=100)
 
 
@@ -44,22 +44,25 @@ test_y = lgb_model1.predict(X_test, num_iteration = lgb_model1.best_iteration)
 # aggregate on 'fullVisitorId' 
 # final_test['fullVisitorId' ]
 
+
 final_pred = final_test[['fullVisitorId']].copy()
 
 final_pred['train_yht'] = test_y
 
+########
+# experiment - try without this as well see if setting the floor is causing the issue
 def set_floor(x):
 	if x < 0:
 		return 0
 	else:
 		return x
 
+final_pred['train_yht'] = final_pred['train_yht'].apply(lambda x: set_floor(x))
+####
+
 
 #issue - the ids in the submission file and the ids in the test aren't a 1:1 match?
 #have I jumbled them or something?
-
-
-final_pred['train_yht'] = final_pred['train_yht'].apply(lambda x: set_floor(x))
 
 
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()

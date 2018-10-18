@@ -17,10 +17,12 @@ all_train = pd.read_csv('./data/train_cleaned.csv')
 final_test = pd.read_csv('./data/test_cleaned.csv')
 #final_test.head()
 
+raw_test = pd.read_csv('./data/test.csv')
+
 submission = pd.read_csv('./data/sample_submission.csv')
 #submission.head()
 
-"""
+
 ####
 # check submission length
 ####
@@ -28,7 +30,24 @@ submission = pd.read_csv('./data/sample_submission.csv')
 #it is lower than the number of ids in the test set?
 len(submission['fullVisitorId']) == len(set(submission['fullVisitorId']))
 len(set(submission['fullVisitorId'])) == len(set(final_test['fullVisitorId']))
-"""
+len(submission['fullVisitorId']) ==  len(set(final_test['fullVisitorId']))
+
+unaccounted = [x for x in submission['fullVisitorId'] if x not in final_test['fullVisitorId'] ]
+len(unaccounted)
+for i, x in enumerate(submission['fullVisitorId']):
+	try:
+		int(x)
+	except:
+		print(i, x)
+#there are 
+for i, x in enumerate(final_test['fullVisitorId']):
+	try:
+		int(x)
+	except:
+		print(i, x)
+
+
+len(raw_test['fullVisitorId']) == len(final_test['fullVisitorId'])
 
 """
 ####
@@ -76,7 +95,6 @@ other
 # other columns
 ####
 drop_other = ['visitId',
-				'Unnamed: 0',
 				'campaignCode',
 				'referralPath',
 				'adwordsClickInfo',

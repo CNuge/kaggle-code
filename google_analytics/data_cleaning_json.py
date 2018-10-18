@@ -5,6 +5,7 @@ import numpy as np
 import json
 import gc
 
+print('loading: test')
 test = pd.read_csv('./data/test.csv')
 
 test.head()
@@ -15,17 +16,27 @@ json_cols = ['device', 'geoNetwork', 'totals',  'trafficSource']
 column = 'device'
 
 for column in json_cols:
-
+	print(f'cleaning: {column}')
 	c_load = test[column].apply(json.loads)
 	c_list = list(c_load)
 	c_dat = json.dumps(c_list)
 
-	test = test.join(pd.read_json(c_dat))
+	intermediate = pd.read_json(c_dat)
+
+	try:
+		intermediate = intermediate.drop(['fullVisitorId'], axis=1)
+	except:
+		pass
+
+	print('merging to main')
+	test = test.join(intermediate)
 	test = test.drop(column , axis=1)
 
 test.head()
-test.to_csv('test_cleaned.csv')
+test.to_csv('test_cleaned.csv', index=False)
 
+
+print('loading: train')
 train = pd.read_csv('./data/train.csv')
 train.head()
 
@@ -37,13 +48,23 @@ json_cols = ['device', 'geoNetwork', 'totals',  'trafficSource', 'adwordsClickIn
 column = 'device'
 
 for column in json_cols:
+	print(f'cleaning: {column}')
 
 	c_load = train[column].apply(json.loads)
 	c_list = list(c_load)
 	c_dat = json.dumps(c_list)
+	
+	intermediate = pd.read_json(c_dat)
 
-	train = train.join(pd.read_json(c_dat))
+	try:
+		intermediate = intermediate.drop(['fullVisitorId'], axis=1)
+	except:
+		pass
+
+
+	print('merging to main')
+	train = train.join(intermediate)
 	train = train.drop(column , axis=1)
 
 train.head()
-train.to_csv('train_cleaned.csv')
+train.to_csv('train_cleaned.csv', index=False)
