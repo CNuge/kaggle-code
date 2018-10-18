@@ -283,3 +283,4 @@ X_test = final_test.drop(['fullVisitorId'], axis = 1).values
 X_test = np.c_[X_test, test_bins]
 X_test.shape
 
+#TODO: try pickling the data instead of writing to file!

@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+import xgboost as xgb
 
 
 #####
@@ -8,6 +9,16 @@ import numpy as np
 # put the model training here
 #
 #####
+
+
+#tried to bring x train and y train down to a more reasonable size
+#or use batches - did this and the model ran.. so its a scale things
+
+#ideas:
+# set xgb up for a batch workflow
+# run it on kaggle and use their ram/cpu
+# downsample the 0s, so only the rows that led to revenue and maybe 5% of 1s
+
 
 dtrain = xgb.DMatrix(X_train, y_train)
 dtest = xgb.DMatrix(X_test)
@@ -28,7 +39,7 @@ xgb_params = {'eta' :  0.05,
 
 #before cv, can try with just a super simple train to make sure it is working
 test_model = xgb.train(xgb_params, dtrain, 
-                  num_boost_round = 2,
+                  num_boost_round = 200,
                   verbose_eval=1)
 
 
