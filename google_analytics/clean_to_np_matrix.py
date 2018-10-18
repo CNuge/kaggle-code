@@ -23,7 +23,6 @@ submission = pd.read_csv('./data/sample_submission.csv')
 #submission.head()
 
 #getting mixed types b/c of bigints... need all to str
-#it is lower than the number of ids in the test set?
 submission['fullVisitorId'] = submission['fullVisitorId'].astype('str')
 final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
 
@@ -130,19 +129,13 @@ for i in list(all_train.columns):
 		print(i)
 
 
-#######
-# finish cleaning the columns
-#######
-all_train.head()
-final_test.head()
-
 
 ####
 # numeric
 ####
 print('numeric variables')
 
-#'fullVisitorId' #removed form numeric, this is just the id
+#'fullVisitorId' #removed from numeric, this is just the id
 #'transactionRevenue' #this is the response variable we want to predict
 
 numeric = [ 'newVisits',
@@ -278,9 +271,8 @@ train_bins.shape
 test_bins.shape
 
 
-#drop the non binarized categorical columns and the housekeeping ones ones to the 
+#drop the non binarized categorical columns and the housekeeping ones from 
 #the train and test sets for sklearn
-
 all_train = all_train.drop(categorical, axis = 1)
 final_test = final_test.drop(categorical, axis = 1)
 
@@ -291,12 +283,8 @@ y_train = all_train['transactionRevenue'].values
 y_train =  np.log1p(y_train)
 
 
-all_train.columns
-
-for x in all_train.columns:
-	print(x, all_train[x].dtype)
-
-
+#merge the one hot encoded categorical matricies with the 
+#original df, drop the id and response columns
 X_train = all_train.drop(['fullVisitorId','transactionRevenue'], axis = 1).values
 X_train = np.c_[X_train, train_bins]
 X_train.shape
@@ -309,7 +297,7 @@ X_test.shape
 
 
 #TODO: try pickling the data instead of writing to file!
-
+#this ends up massive and crashes unfortunately...
 #X_train.dump('X_train.dat')
 #y_train.dump('y_train.dat')
 #X_test.dump('X_test.dat')

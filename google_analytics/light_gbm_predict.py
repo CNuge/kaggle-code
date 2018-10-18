@@ -42,7 +42,6 @@ lgb_model1 = lgb.train(lgb_params, ltrain,
 #make predictions on the test data
 test_y = lgb_model1.predict(X_test, num_iteration = lgb_model1.best_iteration)
 
-
 final_pred = final_test[['fullVisitorId']].copy()
 
 final_pred['test_pred'] = test_y
@@ -68,7 +67,9 @@ submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
 submission = submission.drop(['test_pred'], axis = 1)
 
 #submit the output
-submission.to_csv('cam_pred1.csv', index = False)
+submission.to_csv('cam_lightgbm_pred1.csv', index = False)
+#1.78 first go
+
 
 """
 #once the above is working try the following:
