@@ -6,7 +6,8 @@ from sklearn.model_selection import train_test_split
 
 
 X_train.shape 
-y_train.shape 
+y_train.shape
+
 X_test.shape 
 
 #split off a validation set
@@ -44,58 +45,29 @@ test_y = lgb_model1.predict(X_test, num_iteration = lgb_model1.best_iteration)
 
 final_pred = final_test[['fullVisitorId']].copy()
 
-final_pred['train_yht'] = test_y
+final_pred['test_pred'] = test_y
 
-"""
-########
-def set_floor(x):
-	if x < 0:
-		return 0
-	else:
-		return x
-
-final_pred['train_yht'] = final_pred['train_yht'].apply(lambda x: set_floor(x))
-####
-"""
 # sum the predictions using the defined formula to get a revenue by user metric
 # aggregate on 'fullVisitorId' 
 # final_test['fullVisitorId' ]
-
-
 #issue - the ids in the submission file and the ids in the test aren't a 1:1 match?
 #have I jumbled them or something?
 #resolved - they were mixed type in the train, some string, some int... 
-# I flipped all ids in both sub and test to str
+# I flipped all ids in both sub and test to str... still not all there :/
 
+
+#group by id
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
-
+#move index to a col
 final_by_ind = final_by_ind.reset_index()
 
-final_by_ind.head()
-
+#merge the predictions with the sample sub
 submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
+#fill nas and move to right column name
+submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
+submission = submission.drop(['test_pred'], axis = 1)
 
-
-submission['train_yht'] = submission['train_yht'].fillna(0.0)
-
-
-for i, x in enumerate(submission['train_yht']):
-	try:
-		np.log1p(x)
-	except:
-		print(i)
-		print(type(x))
-		print(x)
-
-submission['PredictedLogRevenue'] = np.log1p(submission['train_yht'])
-
-submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].fillna(0)
-
-submission = submission.drop(['train_yht'], axis = 1)
-
-submission.head()
-
-#submit
+#submit the output
 submission.to_csv('cam_pred1.csv', index = False)
 
 """
