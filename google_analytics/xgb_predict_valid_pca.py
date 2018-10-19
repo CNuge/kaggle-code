@@ -10,6 +10,14 @@ y_train = np.load('y_train.dat')
 X_test = np.load('X_test.dat')
 
 
+"""
+run a PCA on the features, take the x number of features explaining 95%
+of the variance and train up the model using the PCs for the train/test matricies
+"""
+
+
+
+
 y_median = np.median(y_train) 
 y_mean = np.mean(y_train)
 
@@ -86,42 +94,5 @@ submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
 
 
 #submit the output
-submission.to_csv('cam_xgb_pred1.csv', index = False)
+submission.to_csv('cam_xgb_pred_pca.csv', index = False)
 
-"""
-to try:
-set a floor on predictions
-paramater tuning
-
-
-first: 1.7079 - not any better than predicting 0s
-
-Will train until valid-rmse hasn't improved in 25 rounds.
-[25]    train-rmse:1.64936  valid-rmse:1.67084
-[50]    train-rmse:1.58183  valid-rmse:1.63526
-[75]    train-rmse:1.54565  valid-rmse:1.62727
-[100]   train-rmse:1.51819  valid-rmse:1.62462
-[125]   train-rmse:1.49977  valid-rmse:1.62481
-Stopping. Best iteration:
-[103]   train-rmse:1.51485  valid-rmse:1.62411
-
-
-########################################################
-
-cv_result = xgb.cv(xgb_params, dtrain, 
-					nfold=5, 
-					num_boost_round=2000, 
-					early_stopping_rounds=50, 
-					verbose_eval=0, show_stdv=False)
-
-num_boost_rounds = len(cv_result)
-
-#traing the model on the full all_train dataset
-model = xgb.train(xgb_params, dtrain, 
-                  num_boost_round = num_boost_rounds)
-
-
-
-
-#####################################################################
-"""

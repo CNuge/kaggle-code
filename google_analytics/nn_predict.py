@@ -7,11 +7,10 @@ y_train = np.load('y_train.dat')
 X_test = np.load('X_test.dat')
 
 
-#####
-#
-# put the model training here
-#
-#####
+
+
+
+
 
 
 #make predictions on the test data
