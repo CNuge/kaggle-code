@@ -14,16 +14,22 @@ y_train = np.float32(y_train)
 X_test = np.float32(X_test)
 
 
-config = tf.contrib.learn.RunConfig(tf_random_seed=42)
 
-feature_cols = tf.contrib.learn.infer_real_valued_columns_from_input(X_train)
-
-dnn_clf = tf.contrib.learn.DNNClassifier(hidden_units=[150,300,900,300,150], n_classes=2,
+dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,900,300,150],
                                          feature_columns=feature_cols, config=config)
 
-dnn_clf.fit(X_train, y_train, batch_size=50, steps=40000)
+dnn_clf.train(X_train, y_train, steps=400)
 
 
+feature_cols = [tf.feature_column.numeric_column("X", shape=[91])]
+dnn_clf = tf.estimator.DNNRegressor(hidden_units=[300,100],
+                                     feature_columns=feature_cols)
+
+input_fn = tf.estimator.inputs.numpy_input_fn(
+    x={"X": X_train}, y=y_train, num_epochs=40, batch_size=50, shuffle=True)
+
+
+#the output is a generator object
 dnn_y_pred = dnn_clf.predict(X_test)
 
 test_y = list(dnn_y_pred)
