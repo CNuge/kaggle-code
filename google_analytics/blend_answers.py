@@ -8,8 +8,8 @@ import numpy as np
 
 
 weights = { 
-	'cam_lightgbm_pred3_floor.csv' : ,
-	'cam_xgb_pred1.csv' : ,
+	'cam_lightgbm_pred4_floor.csv' : 0.5,
+	'cam_xgb_pred1.csv' : 0.5,
 	}
 
 data = {}
@@ -21,7 +21,7 @@ for k, v in data.items():
 	print(k)
 	print(v.columns)
 
-test_ids = pd.read_csv('sample_submission.csv')
+test_ids = pd.read_csv('./data/sample_submission.csv')
 
 revenue = ['PredictedLogRevenue']
 
