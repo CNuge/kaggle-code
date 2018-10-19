@@ -100,7 +100,8 @@ drop_other = ['visitId',
 				'campaignCode',
 				'referralPath',
 				'adwordsClickInfo',
-				'adContent']
+				'adContent',
+				'Unnamed: 0']
 
 
 numeric_other = ['visitNumber', 
@@ -251,7 +252,7 @@ train_bins = []
 test_bins = []
 #this is crashing... need a little more memory I think
 for col in categorical:
-	if len(all_train[col].unique()) > 1 and len(all_train[col].unique()) < 500:
+	if len(all_train[col].unique()) > 1 and len(all_train[col].unique()) < 50:
 
 		print(f'binarizing:{col}\tunique: {len(all_train[col].unique())}')
 
@@ -285,7 +286,10 @@ y_train =  np.log1p(y_train)
 
 #merge the one hot encoded categorical matricies with the 
 #original df, drop the id and response columns
-X_train = all_train.drop(['fullVisitorId','transactionRevenue'], axis = 1).values
+all_train.columns
+final_test.columns
+
+X_train = all_train.drop(['fullVisitorId','transactionRevenue',], axis = 1).values
 X_train = np.c_[X_train, train_bins]
 X_train.shape
 

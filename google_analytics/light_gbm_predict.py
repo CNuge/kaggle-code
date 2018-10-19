@@ -66,6 +66,7 @@ submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
 submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
 submission = submission.drop(['test_pred'], axis = 1)
 
+
 def set_min_zero(x):
 	if x < 0:
 		return 0
@@ -77,14 +78,31 @@ submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
 
 
 #submit the output
-submission.to_csv('cam_lightgbm_pred2.csv', index = False)
+submission.to_csv('cam_lightgbm_pred3_floor.csv', index = False)
 #1.78 first go, worse than all 0s
-
+#1.775 on second... beating the all 0s but barely.
+#1.6371 on third... making gains now
 
 
 """
-still lower than an all zeros prediction in terms of accuracy.
-raise the learning rate and tweak some other params
+changes:
+try3 : dropped the categoricals with 50+ options, possibly too much noise in the features
+training
+[1968]	training's rmse: 1.53077	valid_1's rmse: 1.6381
+lb: 1.6371
+
+
+NOTES:
+#train, drop features/ repeat seems like a good way to go... removing the noisy columns
+greatly improved the accuracy
+
+
+#need to figure out what is causing the lack of strength in predictions.
+#try:
+#upsampling the #s
+#PCA
+#increase the train size?
+
 
 
 #something is still wrong here... shouldn't be getting negative predictions
