@@ -58,6 +58,9 @@ final_pred['test_pred'] = test_y
 # I flipped all ids in both sub and test to str... still not all there :/
 
 
+final_test = pd.read_csv('./data/test_cleaned.csv')
+final_pred = final_test[['fullVisitorId']].copy()
+
 #group by id
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
 #move index to a col
