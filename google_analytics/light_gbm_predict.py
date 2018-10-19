@@ -4,10 +4,13 @@ import numpy as np
 import lightgbm as lgb
 from sklearn.model_selection import train_test_split
 
+#run
+X_train = np.load('X_train.dat')
+y_train = np.load('y_train.dat')
+X_test = np.load('X_test.dat')
 
 X_train.shape 
 y_train.shape
-
 X_test.shape 
 
 #split off a validation set
