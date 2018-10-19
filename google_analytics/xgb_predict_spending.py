@@ -49,15 +49,24 @@ print(f'Best score: validation RMSE = {xbg_model1.best_score}')
 #make predictions on the test data
 test_y = xbg_model1.predict(xgb_test)
 
-#group by id
 final_test = pd.read_csv('./data/test_cleaned.csv')
+final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
+
+#group by id
+
 final_pred = final_test[['fullVisitorId']].copy()
+
+final_pred['test_pred'] = test_y
+
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
+
 
 #move index to a col
 final_by_ind = final_by_ind.reset_index()
 
 #merge the predictions with the sample sub
+
+submission = pd.read_csv('./data/sample_submission.csv')
 submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
 
 #fill nas and move to right column name

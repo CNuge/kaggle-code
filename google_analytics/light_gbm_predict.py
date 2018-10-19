@@ -59,6 +59,8 @@ final_pred['test_pred'] = test_y
 
 
 final_test = pd.read_csv('./data/test_cleaned.csv')
+final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
+
 final_pred = final_test[['fullVisitorId']].copy()
 
 #group by id
@@ -67,6 +69,7 @@ final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
 final_by_ind = final_by_ind.reset_index()
 
 #merge the predictions with the sample sub
+submission = pd.read_csv('./data/sample_submission.csv')
 submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
 #fill nas and move to right column name
 submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
