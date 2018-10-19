@@ -24,7 +24,7 @@ lgb_params = {
 	"bagging_seed" : 42,
 	"objective" : "regression",
 	"metric" : "rmse",
-	"num_leaves" : 40,
+	"num_leaves" : 25,
 	"learning_rate" : 0.01,
 	"bagging_fraction" : 0.6,
 	"feature_fraction" : 0.6,
@@ -36,7 +36,7 @@ lval = lgb.Dataset(X_val, label = y_val)
 
 #build and train the model
 lgb_model1 = lgb.train(lgb_params, ltrain, 
-                  num_boost_round = 50000,
+                  num_boost_round = 5000,
                   valid_sets = [ltrain, lval],
                   early_stopping_rounds = 100,
                   verbose_eval = 100)
@@ -81,7 +81,7 @@ submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
 
 
 #submit the output
-submission.to_csv('cam_lightgbm_pred3_floor.csv', index = False)
+submission.to_csv('cam_lightgbm_pred4_floor.csv', index = False)
 #1.78 first go, worse than all 0s
 #1.775 on second... beating the all 0s but barely.
 #1.6371 on third... making gains now
