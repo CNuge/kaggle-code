@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import tensorflow as tf
 
 #load the pickled matricies
 X_train = np.load('X_train.dat')
@@ -7,15 +8,26 @@ y_train = np.load('y_train.dat')
 X_test = np.load('X_test.dat')
 
 
+#need to change all the columns from float64 to float32
+X_train = np.float32(X_train)
+y_train = np.float32(y_train)
+X_test = np.float32(X_test)
 
 
+config = tf.contrib.learn.RunConfig(tf_random_seed=42)
+
+feature_cols = tf.contrib.learn.infer_real_valued_columns_from_input(train_x)
+
+dnn_clf = tf.contrib.learn.DNNClassifier(hidden_units=[150,300,900,300,150], n_classes=2,
+                                         feature_columns=feature_cols, config=config)
+
+dnn_clf.fit(train_x, train_y, batch_size=50, steps=40000)
 
 
+dnn_y_pred = dnn_clf.predict(test_dat)
 
+test_y = list(dnn_y_pred)
 
-#make predictions on the test data
-
-test_y = model.predict(X_test)
 
 # sum the predictions using the defined formula to get a revenue by user metric
 # aggregate on 'fullVisitorId' 

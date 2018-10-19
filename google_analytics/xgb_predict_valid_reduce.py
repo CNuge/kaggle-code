@@ -50,6 +50,24 @@ print(f'Best score: validation RMSE = {xbg_model1.best_score}')
 #drop the worst predictors from the matrix and retrain with the reduced feature set
 
 
+xbg_model1.feature_importances_
+#zip the feature importances with the range of column numbers
+#take out just the columns with imortances above a given cutoff
+#slice the train and test to drop the non useful columns
+#retrain the model, repeat
+
+
+
+from matplotlib import pyplot
+from xgboost import plot_importance
+plot_importance(xbg_model1)
+pyplot.show()
+
+
+
+
+
+
 #make predictions on the test data
 test_y = xbg_model1.predict(xgb_test)
 

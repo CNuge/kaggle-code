@@ -24,7 +24,7 @@ of the variance and train up the model using the PCs for the train/test matricie
 
 """
 
-dim_red = PCA(n_components=2)
+dim_red = PCA(n_components = 10)
 
 PC_X_train = dim_red.fit_transform(X_train)
 PC_X_test = dim_red.transform(X_test)
