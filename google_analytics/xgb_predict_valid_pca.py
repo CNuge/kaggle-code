@@ -3,7 +3,7 @@ import numpy as np
 
 import xgboost as xgb
 from sklearn.model_selection import train_test_split
-
+from sklearn.decomposition import PCA
 
 X_train = np.load('X_train.dat')
 y_train = np.load('y_train.dat')
@@ -15,14 +15,22 @@ run a PCA on the features, take the x number of features explaining 95%
 of the variance and train up the model using the PCs for the train/test matricies
 """
 
+dim_red = PCA(n_components=10)
 
+PC_X_train = dim_red.fit_transform(X_train)
+PC_X_test = dim_red.transform(X_test)
+
+PC_X_train.shape
+PC_X_train[:5]
+PC_X_test.shape
+PC_X_test[:5]
 
 
 y_median = np.median(y_train) 
 y_mean = np.mean(y_train)
 
 
-X_trainr, X_val, y_trainr, y_val = train_test_split(X_train, y_train, 
+X_trainr, X_val, y_trainr, y_val = train_test_split(PC_X_train, y_train, 
 									test_size = 0.2, random_state = 38)
 
 
@@ -34,7 +42,7 @@ y_mean = np.mean(y_train)
 y_median = np.median(y_train)
 
 
-xgb_params = {'n_estimators': 2000,
+xgb_params = {'n_estimators': 5000,
 				'eta' :  0.05,
                 'max_depth' :  8,
                 'subsample' : 0.80, 
@@ -48,14 +56,14 @@ watchlist = [(xgb_train, 'train'), (xgb_valid, 'valid')]
 xbg_model1 = xgb.train(xgb_params, xgb_train, 
                 num_boost_round = 500,
                 evals = watchlist,
-				early_stopping_rounds=25, 
+				early_stopping_rounds=50, 
 				verbose_eval=25)
 
 print(f'Best score: validation RMSE = {xbg_model1.best_score}')
 
 
 #make predictions on the test data
-test_y = xbg_model1.predict(xgb_test)
+test_y = xbg_model1.predict(PC_X_test)
 
 final_test = pd.read_csv('./data/test_cleaned.csv')
 final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
