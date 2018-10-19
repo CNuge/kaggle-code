@@ -13,9 +13,18 @@ X_test = np.load('X_test.dat')
 """
 run a PCA on the features, take the x number of features explaining 95%
 of the variance and train up the model using the PCs for the train/test matricies
+
+#the first axis is explining 100% of the variation in the data?
+- need to trim down the number of features we have first and then run the pca
+
+
+
+
+- come back to this after finishing valid_reduce.py
+
 """
 
-dim_red = PCA(n_components=10)
+dim_red = PCA(n_components=2)
 
 PC_X_train = dim_red.fit_transform(X_train)
 PC_X_test = dim_red.transform(X_test)
@@ -25,6 +34,10 @@ PC_X_train[:5]
 PC_X_test.shape
 PC_X_test[:5]
 
+dim_red.n_components_
+dim_red.components_
+dim_red.explained_variance_
+dim_red.explained_variance_ratio_
 
 y_median = np.median(y_train) 
 y_mean = np.mean(y_train)
