@@ -73,7 +73,7 @@ def set_min_zero(x):
 		return x
 
 submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
-									lambda x: set_min_zero(x), axis = 1)
+									lambda x: set_min_zero(x))
 
 
 #submit the output
@@ -87,8 +87,11 @@ still lower than an all zeros prediction in terms of accuracy.
 raise the learning rate and tweak some other params
 
 
+#something is still wrong here... shouldn't be getting negative predictions
+#need to find out how to ensure the predictions stay positive
+
 #once the above is working try the following:
 1. up the iterations to train a little 
 2. grid search to pick better hyperparams
-3. 
+3. need a faster learning rate to get things working
 """
