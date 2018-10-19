@@ -45,10 +45,6 @@ lgb_model1 = lgb.train(lgb_params, ltrain,
 #make predictions on the test data
 test_y = lgb_model1.predict(X_test, num_iteration = lgb_model1.best_iteration)
 
-final_pred = final_test[['fullVisitorId']].copy()
-
-final_pred['test_pred'] = test_y
-
 # sum the predictions using the defined formula to get a revenue by user metric
 # aggregate on 'fullVisitorId' 
 # final_test['fullVisitorId' ]
@@ -61,7 +57,10 @@ final_pred['test_pred'] = test_y
 final_test = pd.read_csv('./data/test_cleaned.csv')
 final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
 
+
 final_pred = final_test[['fullVisitorId']].copy()
+final_pred['test_pred'] = test_y
+
 
 #group by id
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()

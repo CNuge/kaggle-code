@@ -26,7 +26,7 @@ y_mean = np.mean(y_train)
 y_median = np.median(y_train)
 
 
-xgb_params = {'n_estimators': 500,
+xgb_params = {'n_estimators': 2000,
 				'eta' :  0.05,
                 'max_depth' :  8,
                 'subsample' : 0.80, 
@@ -73,10 +73,39 @@ submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
 submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
 submission = submission.drop(['test_pred'], axis = 1)
 
+
+def set_min_zero(x):
+    if x < 0:
+        return 0
+    else:
+        return x
+
+submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
+                                    lambda x: set_min_zero(x))
+
+
+
 #submit the output
 submission.to_csv('cam_xgb_pred1.csv', index = False)
 
 """
+to try:
+set a floor on predictions
+paramater tuning
+
+
+first: 1.7079 - not any better than predicting 0s
+
+Will train until valid-rmse hasn't improved in 25 rounds.
+[25]    train-rmse:1.64936  valid-rmse:1.67084
+[50]    train-rmse:1.58183  valid-rmse:1.63526
+[75]    train-rmse:1.54565  valid-rmse:1.62727
+[100]   train-rmse:1.51819  valid-rmse:1.62462
+[125]   train-rmse:1.49977  valid-rmse:1.62481
+Stopping. Best iteration:
+[103]   train-rmse:1.51485  valid-rmse:1.62411
+
+
 ########################################################
 
 cv_result = xgb.cv(xgb_params, dtrain, 
