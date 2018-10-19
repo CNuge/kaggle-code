@@ -16,15 +16,15 @@ X_test = np.float32(X_test)
 
 config = tf.contrib.learn.RunConfig(tf_random_seed=42)
 
-feature_cols = tf.contrib.learn.infer_real_valued_columns_from_input(train_x)
+feature_cols = tf.contrib.learn.infer_real_valued_columns_from_input(X_train)
 
 dnn_clf = tf.contrib.learn.DNNClassifier(hidden_units=[150,300,900,300,150], n_classes=2,
                                          feature_columns=feature_cols, config=config)
 
-dnn_clf.fit(train_x, train_y, batch_size=50, steps=40000)
+dnn_clf.fit(X_train, y_train, batch_size=50, steps=40000)
 
 
-dnn_y_pred = dnn_clf.predict(test_dat)
+dnn_y_pred = dnn_clf.predict(X_test)
 
 test_y = list(dnn_y_pred)
 
@@ -53,6 +53,9 @@ submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
 submission = submission.drop(['test_pred'], axis = 1)
 
 #submit the output
-submission.to_csv('cam_lightgbm_pred2.csv', index = False)
+submission.to_csv('cam_dnn_pred2.csv', index = False)
 
-
+"""
+I suspect this may not work the first time around.... can try to downsample the 0s
+in order to give a more balanced dataset.... possibly 3:1 0s:purchases
+"""
