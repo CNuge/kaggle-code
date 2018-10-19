@@ -22,7 +22,7 @@ lgb_params = {
 	"objective" : "regression",
 	"metric" : "rmse",
 	"num_leaves" : 40,
-	"learning_rate" : 0.001,
+	"learning_rate" : 0.01,
 	"bagging_fraction" : 0.6,
 	"feature_fraction" : 0.6,
 	}
@@ -35,7 +35,7 @@ lval = lgb.Dataset(X_val, label = y_val)
 lgb_model1 = lgb.train(lgb_params, ltrain, 
                   num_boost_round = 50000,
                   valid_sets = [ltrain, lval],
-                  early_stopping_rounds = 500,
+                  early_stopping_rounds = 100,
                   verbose_eval = 100)
 
 
@@ -66,12 +66,27 @@ submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
 submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
 submission = submission.drop(['test_pred'], axis = 1)
 
+def set_min_zero(x):
+	if x < 0:
+		return 0
+	else:
+		return x
+
+submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
+									lambda x: set_min_zero(x), axis = 1)
+
+
 #submit the output
-submission.to_csv('cam_lightgbm_pred1.csv', index = False)
-#1.78 first go
+submission.to_csv('cam_lightgbm_pred2.csv', index = False)
+#1.78 first go, worse than all 0s
+
 
 
 """
+still lower than an all zeros prediction in terms of accuracy.
+raise the learning rate and tweak some other params
+
+
 #once the above is working try the following:
 1. up the iterations to train a little 
 2. grid search to pick better hyperparams

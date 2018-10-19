@@ -23,19 +23,18 @@ test_y = model.predict(X_test)
 # final_test['fullVisitorId' ]
 
 
-
-final_pred = final_test['fullVisitorId']
-
-final_pred[train_yht] = test_y
-
-
-final_pred = final_pred.sort(['fullVisitorId'])
-
+#group by id
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
+#move index to a col
+final_by_ind = final_by_ind.reset_index()
 
-final_by_ind = final_by_ind.add_suffix('_sum').reset_index()
+#merge the predictions with the sample sub
+submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
+#fill nas and move to right column name
+submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
+submission = submission.drop(['test_pred'], axis = 1)
 
-final_by_ind['PredictedLogRevenue'] = np.log1p(final_by_ind['train_yht_sum'])
+#submit the output
+submission.to_csv('cam_lightgbm_pred2.csv', index = False)
 
-#submit
-final_by_ind.to_csv('cam_pred1.csv')
+
