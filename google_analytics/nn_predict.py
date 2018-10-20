@@ -68,7 +68,7 @@ dnn_clf = tf.estimator.DNNRegressor(hidden_units=[300,150],
 input_fn = tf.estimator.inputs.numpy_input_fn(
 	 					x={"X": X_train_changed}, 
 	 					y=y_train_changed, 
-	 					num_epochs=40000, batch_size=50, shuffle=True)
+	 					num_epochs=40000, batch_size=100, shuffle=True)
 
 dnn_clf.train(input_fn=input_fn)
 
