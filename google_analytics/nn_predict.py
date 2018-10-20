@@ -17,8 +17,37 @@ X_test = np.float32(X_test)
 """
 I suspect this may not work the first time around.... can try to downsample the 0s
 in order to give a more balanced dataset.... possibly 3:1 0s:purchases
+or:upsample the 1+s, this is likely okay b/c the training algo works in batches
 """
 
+nz = y_train != 0
+
+nz_index = []
+for i, x in enumerate(nz):
+	if x == True:
+		nz_index.append(i)
+
+
+len(nz_index)/len(y_train)
+#1.2% of data non zero
+
+X_train_non_zeros = X_train[nz_index]
+
+y_train_non_zeros = y_train[nz_index]
+
+
+upsample_X_train = np.repeat(X_train_non_zeros, 99 , axis = 0)
+upsample_X_train.shape
+
+upsample_y_train = np.repeat(y_train_non_zeros, 99 , axis = 0)
+upsample_y_train.shape
+
+
+X_train_changed = np.concatenate((X_train, upsample_X_train), axis = 0)
+X_train_changed.shape[0] == X_train.shape[0] + upsample_X_train.shape[0]
+
+y_train_changed = np.append(y_train,upsample_y_train)
+y_train_changed.shape
 
 
 ####
@@ -26,13 +55,20 @@ in order to give a more balanced dataset.... possibly 3:1 0s:purchases
 ####
 
 
-feature_cols = [tf.feature_column.numeric_column("X", shape=[X_train.shape[1]])]
+feature_cols = [tf.feature_column.numeric_column("X", shape=[X_train_changed.shape[1]])]
 
-dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,900,300,150],
-                                     feature_columns=feature_cols)
+#hidden_units=[150,300,600,300,150]
+dnn_clf = tf.estimator.DNNRegressor(hidden_units=[300,150],
+										feature_columns=feature_cols,
+										optimizer=tf.train.ProximalAdagradOptimizer(
+											learning_rate=0.001,
+											l1_regularization_strength=0.001
+											))
 
 input_fn = tf.estimator.inputs.numpy_input_fn(
-    x={"X": X_train}, y=y_train, num_epochs=40, batch_size=50, shuffle=True)
+	 					x={"X": X_train_changed}, 
+	 					y=y_train_changed, 
+	 					num_epochs=40000, batch_size=50, shuffle=True)
 
 dnn_clf.train(input_fn=input_fn)
 
