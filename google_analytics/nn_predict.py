@@ -54,11 +54,10 @@ y_train_changed.shape
 # dnn
 ####
 
-
 feature_cols = [tf.feature_column.numeric_column("X", shape=[X_train_changed.shape[1]])]
 
 #hidden_units=[150,300,600,300,150]
-dnn_clf = tf.estimator.DNNRegressor(hidden_units=[300,150],
+dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,600,300,150],
 										feature_columns=feature_cols,
 										optimizer=tf.train.ProximalAdagradOptimizer(
 											learning_rate=0.001,
