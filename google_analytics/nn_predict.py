@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+
 import tensorflow as tf
 
 #load the pickled matricies
@@ -67,7 +68,7 @@ dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,600,300,150],
 input_fn = tf.estimator.inputs.numpy_input_fn(
 	 					x={"X": X_train_changed}, 
 	 					y=y_train_changed, 
-	 					num_epochs=40000, batch_size=100, shuffle=True)
+	 					num_epochs=20000, batch_size=100, shuffle=True)
 
 dnn_clf.train(input_fn=input_fn)
 
@@ -81,24 +82,37 @@ test_y = list(dnn_y_pred)
 # aggregate on 'fullVisitorId' 
 # final_test['fullVisitorId' ]
 
+
+final_test = pd.read_csv('./data/test_cleaned.csv')
 final_test['fullVisitorId'] = final_test['fullVisitorId'].astype('str')
 
-#group by id
+
 final_pred = final_test[['fullVisitorId']].copy()
 final_pred['test_pred'] = test_y
+
+
+#group by id
 final_by_ind =  final_pred.groupby(['fullVisitorId']).sum()
-
-
 #move index to a col
 final_by_ind = final_by_ind.reset_index()
 
 #merge the predictions with the sample sub
 submission = pd.read_csv('./data/sample_submission.csv')
 submission = submission.merge(final_by_ind, on = 'fullVisitorId', how = 'left')
-
 #fill nas and move to right column name
 submission['PredictedLogRevenue'] = submission['test_pred'].fillna(0.0)
 submission = submission.drop(['test_pred'], axis = 1)
 
+
+def set_min_zero(x):
+	if x < 0:
+		return 0
+	else:
+		return x
+
+submission['PredictedLogRevenue'] = submission['PredictedLogRevenue'].apply(
+									lambda x: set_min_zero(x))
+
+
 #submit the output
-submission.to_csv('cam_dnn_pred1.csv', index = False)
+submission.to_csv('cam_dnn_upsample1_floor.csv', index = False)
