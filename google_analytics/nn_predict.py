@@ -1,3 +1,9 @@
+"""
+note: not working... with the upsample we are getting predictions that are too high
+the learning isn't progressing very well, need to simlify the data without getting the
+NaN error for loss, and need the loss to improve with time
+"""
+
 import pandas as pd
 import numpy as np
 
@@ -15,11 +21,6 @@ y_train = np.float32(y_train)
 X_test = np.float32(X_test)
 
 
-"""
-I suspect this may not work the first time around.... can try to downsample the 0s
-in order to give a more balanced dataset.... possibly 3:1 0s:purchases
-or:upsample the 1+s, this is likely okay b/c the training algo works in batches
-"""
 
 nz = y_train != 0
 
