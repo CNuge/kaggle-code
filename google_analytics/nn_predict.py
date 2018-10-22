@@ -58,25 +58,29 @@ y_train_changed.shape
 feature_cols = [tf.feature_column.numeric_column("X", shape=[X_train_changed.shape[1]])]
 
 #hidden_units=[150,300,600,300,150]
-dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,600,300,150],
+dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,600,300,150],
 										feature_columns=feature_cols,
 										optimizer=tf.train.ProximalAdagradOptimizer(
 											learning_rate=0.001,
-											l1_regularization_strength=0.001
+											l1_regularization_strength=0.0001
 											))
 
 input_fn = tf.estimator.inputs.numpy_input_fn(
 	 					x={"X": X_train_changed}, 
 	 					y=y_train_changed, 
-	 					num_epochs=20000, batch_size=100, shuffle=True)
+	 					num_epochs=2, batch_size=100, shuffle=True)
 
 dnn_clf.train(input_fn=input_fn)
 
 #the output is a generator object
-dnn_y_pred = dnn_clf.predict(X_test)
 
-test_y = list(dnn_y_pred)
+output_function = tf.estimator.inputs.numpy_input_fn(x={"X": X_test}, shuffle=False)
 
+dnn_y_pred = dnn_clf.predict(input_fn=output_function)
+
+test_y = np.array(list(p['predictions'] for p in dnn_y_pred))
+
+test_y[:5]
 
 # sum the predictions using the defined formula to get a revenue by user metric
 # aggregate on 'fullVisitorId' 
