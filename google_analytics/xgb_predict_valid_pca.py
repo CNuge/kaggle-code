@@ -10,6 +10,37 @@ y_train = np.load('y_train.dat')
 X_test = np.load('X_test.dat')
 
 
+nz = y_train != 0
+
+nz_index = []
+for i, x in enumerate(nz):
+    if x == True:
+        nz_index.append(i)
+
+
+len(nz_index)/len(y_train)
+#1.2% of data non zero
+
+X_train_non_zeros = X_train[nz_index]
+
+y_train_non_zeros = y_train[nz_index]
+
+
+upsample_X_train = np.repeat(X_train_non_zeros, 10 , axis = 0)
+upsample_X_train.shape
+
+upsample_y_train = np.repeat(y_train_non_zeros, 10 , axis = 0)
+upsample_y_train.shape
+
+
+
+X_train_changed = np.concatenate((X_train, upsample_X_train), axis = 0)
+X_train_changed.shape[0] == X_train.shape[0] + upsample_X_train.shape[0]
+
+y_train_changed = np.append(y_train,upsample_y_train)
+y_train_changed.shape
+
+
 """
 run a PCA on the features, take the x number of features explaining 95%
 of the variance and train up the model using the PCs for the train/test matricies

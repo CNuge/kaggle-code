@@ -37,10 +37,10 @@ X_train_non_zeros = X_train[nz_index]
 y_train_non_zeros = y_train[nz_index]
 
 
-upsample_X_train = np.repeat(X_train_non_zeros, 99 , axis = 0)
+upsample_X_train = np.repeat(X_train_non_zeros, 10 , axis = 0)
 upsample_X_train.shape
 
-upsample_y_train = np.repeat(y_train_non_zeros, 99 , axis = 0)
+upsample_y_train = np.repeat(y_train_non_zeros, 10 , axis = 0)
 upsample_y_train.shape
 
 
@@ -58,7 +58,7 @@ y_train_changed.shape
 feature_cols = [tf.feature_column.numeric_column("X", shape=[X_train_changed.shape[1]])]
 
 #hidden_units=[150,300,600,300,150]
-dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,600,300,150],
+dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,600,300,150],
 										feature_columns=feature_cols,
 										optimizer=tf.train.ProximalAdagradOptimizer(
 											learning_rate=0.001,
@@ -68,7 +68,7 @@ dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,600,300,150],
 input_fn = tf.estimator.inputs.numpy_input_fn(
 	 					x={"X": X_train_changed}, 
 	 					y=y_train_changed, 
-	 					num_epochs=2, batch_size=100, shuffle=True)
+	 					num_epochs=5, batch_size=100, shuffle=True)
 
 dnn_clf.train(input_fn=input_fn)
 
