@@ -26,10 +26,10 @@ X_train_non_zeros = X_train[nz_index]
 y_train_non_zeros = y_train[nz_index]
 
 
-upsample_X_train = np.repeat(X_train_non_zeros, 10 , axis = 0)
+upsample_X_train = np.repeat(X_train_non_zeros, 99 , axis = 0)
 upsample_X_train.shape
 
-upsample_y_train = np.repeat(y_train_non_zeros, 10 , axis = 0)
+upsample_y_train = np.repeat(y_train_non_zeros, 99 , axis = 0)
 upsample_y_train.shape
 
 
@@ -57,7 +57,7 @@ of the variance and train up the model using the PCs for the train/test matricie
 
 dim_red = PCA(n_components = 10)
 
-PC_X_train = dim_red.fit_transform(X_train)
+PC_X_train = dim_red.fit_transform(X_train_changed)
 PC_X_test = dim_red.transform(X_test)
 
 PC_X_train.shape

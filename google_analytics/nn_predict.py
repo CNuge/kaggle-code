@@ -62,13 +62,13 @@ dnn_clf = tf.estimator.DNNRegressor(hidden_units=[150,300,600,300,150],
 										feature_columns=feature_cols,
 										optimizer=tf.train.ProximalAdagradOptimizer(
 											learning_rate=0.001,
-											l1_regularization_strength=0.0001
+											l1_regularization_strength=0.00001
 											))
 
 input_fn = tf.estimator.inputs.numpy_input_fn(
 	 					x={"X": X_train_changed}, 
 	 					y=y_train_changed, 
-	 					num_epochs=5, batch_size=100, shuffle=True)
+	 					num_epochs=50, batch_size=100, shuffle=True)
 
 dnn_clf.train(input_fn=input_fn)
 
