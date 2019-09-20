@@ -9,7 +9,7 @@ def download_stock(stock):
 	""" try to query the iex for a stock, if failed note with print """
 	try:
 		print(stock)
-		stock_df = web.DataReader(stock,'iex', start_time, now_time)
+		stock_df = web.DataReader(stock,'yahoo', start_time, now_time)
 		stock_df['Name'] = stock
 		output_name = stock + '_data.csv'
 		stock_df.to_csv(output_name)
